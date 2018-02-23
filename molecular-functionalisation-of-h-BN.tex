@@ -1,0 +1,126 @@
+% Entwurf der Doktorarbeit von Domenik Zimmermann, TU M\"unchen, Grp. Prof. Dr. Auw\"arter 
+%
+% Bilder: AFM/STM 1024x1024 px exportieren, 
+%
+% Fonts are embedded by default, otherwise check 
+% https://tex.stackexchange.com/questions/10391/how-to-embed-fonts-at-compile-time-with-pdflatex
+% 
+% sudo apt-get install kile texlive-latex-extra texlive-science texlive-bibtex-extra biber
+% adjust kile tools to call biber %lS instead of bibtex
+%
+% If errors occure referring to aux files or others:
+%	Delete helper files (*.aux) and maybe others!
+%
+% Use MikTeX version 2.9.6615 or lated (check that biber is included)
+% Using BiBLaTex, biber as frontend.
+% If biber complains (ERROR - Error: Found biblatex control file version 2.6, expected version 3.4.)
+% 	Update with your Miktex package manager (mpm_mfc.exe[single user install] or mpm_mfc_admin.exe [all user install])
+% no new biblatex version there? Sync database? NO omprovement!
+
+\documentclass[10pt,a4paper,twoside
+%,draft					% uncomment for fast(er) compiling
+]{scrbook}
+\input{./includes/preamble}
+\input{./includes/commands}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \input{./includes/pages/cover}			%					%
+ \frontmatter{}			 		%					%
+   \input{./includes/pages/titlepage}		%					%
+   \input{./includes/pages/disclaimer}		% 					%
+   \input{./includes/pages/acknowledgements}	% Titlepage and all the formal stuff	%
+						% goes here!				%
+   \input{./includes/pages/abstract}		%					%
+ \microtypesetup{protrusion=false}		%					%
+ \setcounter{tocdepth}{1}			% sets depth of TOC [1=sections]	%
+ \tableofcontents{}			 	% 					%
+ \microtypesetup{protrusion=true}		%		 			%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter{}
+\chapter{Experimental procedures}
+  \section{\textbf{X}-ray \textbf{P}hotoelectron \textbf{S}pectroscopy}
+     \input{./includes/chapter/xps-technique}
+  \section{\textbf{A}tomic \textbf{F}orce \textbf{M}icroscopy}
+     \input{./includes/chapter/afm-technique}
+  \section{\textbf{S}canning \textbf{T}unneling \textbf{M}icroscopy}
+     \input{./includes/chapter/stm-technique}
+     \subsection{\textbf{S}canning \textbf{T}unneling \textbf{S}pectroscopy}
+	\input{./includes/chapter/sts-technique}
+  \section{\textbf{S}canning \textbf{E}lectron \textbf{M}icroscopy}
+     \input{./includes/chapter/sem-technique}
+  \section{\textbf{L}ow \textbf{E}nergy \textbf{E}lectron \textbf{D}iffraction}
+     \input{./includes/chapter/leed-technique}
+  \section{\textbf{C}hemical \textbf{V}apor \textbf{D}eposition}
+        \input{./includes/chapter/cvd}
+  \section{Surfaces and adlayers}
+     \subsection{Crystal facets}
+        \input{./includes/chapter/crystal}
+     \subsection{Surface states}
+	\input{./includes/chapter/surface-states}
+     \subsection{Geometric alteration of overlayers -- moire}
+	\input{./includes/chapter/moire}
+  \section{Used molecules}
+    \input{./includes/chapter/used-molecules}
+\printbibliography
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Epitaxial hexagonal boron nitride on copper foils}
+\section{Pre-treatment of Cu-foils}
+  \subsection{Electropolishing copper foils}
+  \input{./includes/chapter/electropolishing}
+%   \subsection{STM of 0.25mm Cu-foils}
+%      \input{./includes/chapter/stm-sputtered-0.25mm-cu-foil}
+%   \subsection{AFM of 0.25mm Cu-foils}
+%      \input{./includes/chapter/afm-as-bought}
+  \section{STM of BN on Cu-foil(0.25mm)}
+     \input{./includes/chapter/bn-on-foil}
+  \section{XPS of self-grown h-BN/Cu-foils}
+     \input{./includes/chapter/xps-self-grown-foils}
+  \section{XPS of as-bought h-BN/Cu-foils}
+     \input{./includes/chapter/xps-as-bought}
+\printbibliography 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{TPCN}
+    \section{on Cu(111)}
+       \input{./includes/chapter/TPCN-on-Cu111}
+    \section{on h-BN on Cu(111)}
+       \input{./includes/chapter/TPCN-on-h-BN-on-Cu111}
+    \section{on h-BN on Cu(foil)}
+       \input{./includes/chapter/TPCN-on-h-BN-on-Cu-foil}
+\printbibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{TBP - single leg}
+   \input{./includes/chapter/TBP-intro}
+   \section{on Cu(111)}
+      \input{./includes/chapter/TBP-on-Cu111}
+   \section{on Ag(100)}
+      \input{./includes/chapter/TBP-on-Ag100}
+   \section{on h-BN on Cu-foil}
+      \input{./includes/chapter/TBP-on-h-BN-on-Cufoil}
+   \section{on h-BN on Cu(111)}
+      \input{./includes/chapter/TBP-on-h-BN-on-Cu111}
+\printbibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{TBP: double}
+   \section{on Cu(111)}
+      \input{./includes/chapter/TBP-double-Cu111}
+   \section{on Ag(100)}
+      \input{./includes/chapter/TBP-double-Ag100}
+\printbibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Pyrene}
+   \section{on h-BN on Cu(111)}
+      \input{./includes/chapter/pyrene-on-h-BN}
+\printbibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Unsorted}
+   \section{measurements without clear interpretation}
+      \input{./includes/chapter/unsorted}
+\printbibliography  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter{}
+\end{document}

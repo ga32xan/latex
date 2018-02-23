@@ -1,0 +1,61 @@
+Another commonly used surface sensitive method is the scanning tunneling microscopy (STM). It is as well related to the true topography of the sample, as well as its electronic configuration.
+
+An \index{STM} STM uses the quantum mechnanical tunneling effect. Through the fact that the wave function of a particle does not strictly end within the body it lives in, it is possible to achieve an overlap into the surrounding vacuum. If another material is in a close proximity of the other surface particles can overcome the barrier and cross the vacuum gap - a process known as tunneling. The distance between the two materials is the dominant factor which determines the amount of electrons that are able to tunnel. Assuming the two materials to be the same, the created, time averaged current is zero because the same amount of electrons flow in either direction. If a voltage is applied across the vacuum gap, the current becomes non-zero and flows in a certain direction. This voltage - called bias (voltage) - may be switched and the current has to flow in the opposite direction. This enable detection of either electrons living in the sample (negative bias) or holes (positive bias).
+\underline{\ \ \ \ \ \ Bilder: STM-sketch \ \ \ \ \ \ }.
+
+In principle there are two ways to operate an STM. 
+
+First the \textbf{constant current mode}, where the tip is regulated to achieve the very same tunneling current and moved more distant or closer to the sample surface. The information on the sample are the bias voltage and the distance maintained to the sample. 
+Second the \textbf{constant height mode} where the tip has always the same absolute height, but as the tip-sample changes the tunneling current varies, which then becomes the measured quantity.
+\underline{\ \ \ \ \ \ Bilder: constant height, constant current \ \ \ \ \ \ }.
+
+To avoid crashes when the sample is very irregular, many STM's are operated in constant current mode. Typical tunneling currents are in the range of \SIrange{0.01}{100}{\nA} where the applied voltage may range from \SIrange{0.01}{10}{\volt}.
+
+With the help of STM the reconstructed surface of Si(111) was first discovered \cite{binnig_1983}.
+
+STMs may be operated at very different temperatures. The temperature range is only limited by the availability of sufficient coolants like $^4He$ (boiling point: \SI{4.2}{\K}, \SI{0.36}{\m\eV} thermal energy ($E=kT$)) or a mixture of $^3He/^4He$ where $^3He$ has a lower boiling point of \SI{3.2}{\K}. While low temperature (LT) STMs may be operated with solely Helium, it is more resource-saving to cool the direct proximity of the sample and the STM with He, but to suppress the heat flow out of the He-cryostat with a second surrounding nitrogen cryostat (boiling point: \SI{77}{\K}). This diminishes consumption of globally limited and rather expensive He. To maintain a temperature of \SIrange{5}{7}{\K}, one to two liters of liquid helium are required a day, plus an additional amount of three to four liters liquid nitrogen. Evaporated Helium is reclaimed in a closed circuit with a system of purifying and storage/cooling steps so that only a small amount of Helium escapes the circuit and is lost.
+\underline{\ \ \ \ \ \ Bilder: Kryo STM \ \ \ \ \ \ }.
+
+Experiments within these conditions allow sample temperatures down to \SIrange{5}{7}{\K} and obervations not possible at elevated (room) temperatures. Thermal energy is not high enough to let atoms or molecules move on the surface and make them accessible in STM.
+
+Additional information is found in  \underline{\ \ \ \ \ \ \ \ \ \ \ \ }.
+
+STM has a big advantage compared to techniques like XPS, LEED and such, because it offers information on atomic length scales.
+
+While some images encourage the operator to interpret points with high intensity as atoms it is not that trivial. Tunneling current between tip and sample depends on the LDOS of tip and surface and is therefore not implicitly maximised at the atomic positions. It may also vary with the bias voltage applied in a non-trivial manner. Investigation of this behaviuor led to the establishment of a new measurement technique, called scanning tunneling spectroscopy (see section \ref{section:STS}). 
+
+[This results in a non zero tunneling current when the tip is in the lateral neigh- bourhood of the adsorbate. This contributes to the apparent expansion of the adsorbate print in its STM image compared to the position of its atoms. Interferences between through-adsorbate nd through-space tunneling processes partici- pate to this effect which is orbital-symmetry- and tip-shape-depenaent. A local density-of-states calculation [8,14,28] is not adapted to grasp this effect since he tip is considered far away from the surface. Moreover, in such calculations, the tip radius or the tip-substrate distance is gener- ally optimized to fit the lateral size of the adsor- bate print with the experimental image [8,28].] \\
+\underline{\ \ \ \ \ \ taken from \cite{sautet_interpretation_1992} \ \ \ \ \ \ }.
+
+\paragraph{Angular measurements} The acuracy of a STM is very high. Its spatial resolution goes down to the atomic scale. Due to the fact, that the tips motion is controlled with different piezos, one has to take different elongations in different directions into account. For example, if the STM scans the fast scanning direction just a bit further than the slow scan direction, the resulting image (although pixelwise square) is no longer physically square anymore. Imagine a square (1:1 side ratio, diagonal angle 45\textdegree) where one side is elongated in the image by 5\%. The resulting square (1:1.05 side ratio, diagonal angle 43.6\textdegree) looks square because it has the equal number of pixels in both directions, but it is physically rectangular. The expression used to calculate the uncertainty with known calibration parameters is
+$$\Delta \Theta = 45 - \frac{180}{\pi}\cdot\arctan(\frac{1}{1+x})$$ where x is the percentage of one side beeing longer. This results in an uncertainty of 0.3\textdegree(1\%), 1.4\textdegree(5\%), 2.7\textdegree(10\%). For moderate shear conformality is almost conserved and the uncertainty below 2\textdegree.
+
+\paragraph{One dimensional tunneling}\index{STM!One dimensional tunneling}
+Most information in here refers to \cite{bonnell_scanning_1993}.
+While the tip (metal) is far away from the sample, their vacuum levels are supposed to be the same. The corresponding Fermi Energies of sample and tip lie below the vacuum level by the amount of their work functions ($\Phi_s$ and $\Phi_t$ for sample and tip respectively). Wavefunctions of electrons within the solids decay exponentially in vacuum, dependend on their energy with respect to the fermi level.
+If sample and tip are in thermodynamic equilibrium, their fermi levels are the same. Electrons now face a potential barrier (approximately rectangular) which can be overcome if their energy is high enough and the barrier sufficiently narrow. When a voltage is applied across the tunneling barrier, the energy of the tip-electrons is shifted by $eV$. When a positive bias voltage is applied, electrons tunnel from the tip into unoccupied states in the sample - a negative bias results in a tunneling current in opposite direction. Since states with highest energy have the largest decay lengths, most of the tunneling current is determined by electrons within close proximity to the fermi level.
+
+The tunneling current at a given distance is determined by:
+\begin{itemize}
+ \item The apllied voltage
+ \item The density of states of electron source and destination
+\end{itemize}
+
+Following the model of \index{STM!Tersoff-Hamann} Tersoff-Hamann((1) uniform density of states in the tip, (2) temperature is low, (3) small bias voltage of some mV, (4) waveform of electrons in tip are s-waves) the tunneling current results to 
+$$I=32\pi^3\hbar^{-1}e^2V\Phi^2 R^2\kappa^{-4}e^{2\pi R}D_1(E_F)\rho(r_o,E_F)$$ where $D_1$ is the density of states per unit volume of the tip, R the tip radius and $\rho(r_0,E_F)$ the Fermi-level density of states in the sample. If I is held constant one can see that the tip in principle follows a contour of constant Fermi-level density of states, measured at the center of the curvature of the s-wave like tip. While its a good first approximation of the system, in many cases the bias is much highger than 10mV (\SIrange{1}{5}{\V}) more than just the electrons near fermi contribute.
+
+Using \index{STM!WKB} WKB theory the tunneling current is given by
+\begin{equation}
+I=\int_0^{eV}\rho_s(r,E)\rho_t(r,eV+E)T(E,eV,r)dE
+\label{WKB}
+\end{equation}
+where $\rho_s(\rho_t)$ is the density of states of the sample (tip) and T is the tunneling transmission probability
+\begin{equation}
+T(E,eV)=exp\left(-\frac{2Z\sqrt{2m}}{\hbar}\sqrt{\frac{\Phi_s+\Phi_t}{2}+\frac{eV}{2}-E}\right)
+\label{Transmission-function} 
+\end{equation}
+If $eV<0$ the tunneling current is largest for $E=0$ (electrons on the Fermi-level of the sample), if $eV>0$ the tunneling current is largest for $E=eV$ (electrons of Fermi-level in tip).
+
+Due to the fact that it is proportional the the density of states in the tip AND the molecule one can deduce the band structure within a range of several volts in the vicinity of the Fermi ernergy.
+
+This is in line with the assumption that waves of electrons decay expotentially, having the most energetic electrons the largest decay length.

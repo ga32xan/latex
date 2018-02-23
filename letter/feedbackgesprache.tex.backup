@@ -1,0 +1,16 @@
+\documentclass{letter}
+\usepackage{hyperref}
+\signature{Prof.\ Dr.\ W.\ Auw\"arter}
+\address{Prof.\ Dr.\ Auw\"arter \\ Physik 1 - E20 \\ Am Coulombwall 2 \\ 85748 Garching }
+\begin{document}
+
+\begin{letter}{TUM Graduate School \\ Boltzmannstraﬂe 17 \\ \par 85748 Garching
+}
+\opening{Sehr geehrte Damen und Herren,}
+
+hiermit best\"atige ich formlos das Statusgespr\"ach \"uber das Promotions
+
+\closing{Mit freundlichen Gr\"u\ss{}en}
+
+\end{letter}
+\end{document}

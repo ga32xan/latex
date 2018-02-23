@@ -1,0 +1,15 @@
+% Basic information for cover & title page
+\newcommand*{\getUniversity}{Technische Universit\"at M\"unchen}
+\newcommand*{\getFaculty}{Fakult\"at für Informatik}
+\newcommand*{\getTitle}{TODO: Thesis title}
+\newcommand*{\getTitleGer}{TODO: Titel der Abschlussarbeit}
+\newcommand*{\getAuthor}{TODO: Author}
+\newcommand*{\getDoctype}{TODO: Thesis type (Bachelor's Thesis, \ldots)}
+\newcommand*{\getSupervisor}{TODO: Supervisor}
+\newcommand*{\getAdvisor}{TODO: Advisor}
+\newcommand*{\getSubmissionDate}{TODO: Submission date}
+\newcommand*{\getSubmissionLocation}{Munich}
+
+%\newcommand{\mc}[2]{\multicolumn{#1}{c}{#3}} %\use \mc{anzahl der zusammenzufassenden Spalten}{text} -- funktioniert nicht
+% \newcommand*\mc[1]{\multicolumn{1}{c}{#1}}
+% TODO: add custom commands etc.

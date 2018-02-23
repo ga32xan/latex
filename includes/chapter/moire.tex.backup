@@ -1,0 +1,11 @@
+The properties of a moire superstructure are well described in literature and Hermann gives a comprehensive overview in his paper \cite{hermann_periodic_2012}. To sum it up and restrict the information given by him to the cases that occur in this work one can conclude:
+\begin{itemize}
+ \item A moire is alway present if an overlayer shows a lattice mismatch with respect to the substrate
+ \item If lattice constants are equal like in the case of a graphene bilayer, the needed lattice mismatch occures due to a rotation of the two layers.
+ \item The moire pattern shows the same Bravais lattice type than the substrate\cite[10]{hermann_periodic_2012} (if the overlayer is isotropically scaled). The Bravais lattice type 
+ \item For isotropically scaled overlayers (no distinct stretch direction) one can calculate the scaling factor $$p=\frac{R^{'}_{O1}}{R_{O1}}$$ which gives the size of the overlayer lattice in units of the substrate lattice. 
+ \item If moire and lattice are aligned ($\alpha=0$\textdegree) the direction of moire and substrate is aligned.
+ \item If the overlayer is isotropically scaled and not rotated, the period of the moire calculates to $$a_{Moire}=\underbrace{\frac{p}{|p-1|}}_{\kappa}a_{substrate}$$
+ \item For a scaled and rotated overlayer, the angle between substrate and moire ($\gamma$[rad]) scales with the angle of overlayer and substrate ($\alpha$[rad]) as $$\alpha=(1-p)\gamma$$
+ \item For rotated and isotropically scaled overlayers, one can determine the $\alpha$ and $p$ from experimental obervables $\gamma$(moire angle to substrate) and $\kappa$(scaling factor) through relations $$ \tan(\alpha)=\frac{sin(\gamma)}{cos(\gamma)+\kappa}\qquad p=\frac{\kappa}{\sqrt{1+\kappa^2+2\kappa cos(\gamma)}}$$
+\end{itemize}

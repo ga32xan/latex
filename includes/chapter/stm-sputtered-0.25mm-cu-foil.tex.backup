@@ -1,0 +1,14 @@
+The bought and chemically polished foils are mounted on a sample holder and loaded into the load lock. It is evacuated for \SIrange{2}{3}{\hour} and the valve is opened to the chamber. During transfer, no noteable increase in the base pressure is noted. The sample is put on the parking slot.
+
+The sample was initially degased with slowly increasing temperatures to remove adsorbats like $CO, CO_2$ and $H_2O$.
+
+After some time of degassing, the sample was prepared with repeated sputter and anneal cycles. The annealing temperatures were increased up to \SI{800}{\degreeCelsius}. 
+After that procedure, the sample was cooled down and observed in STM.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.8\textwidth]{./images/F150331-125720.jpg}
+ \caption{Cu-foil after repeated sputtering and annealing cycles. The roughness is about \SI{72}{\pico\meter}}
+\end{figure}
+
+A first look onto the sample shows a quite

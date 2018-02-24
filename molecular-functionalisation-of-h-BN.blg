@@ -1,57 +1,57 @@
 [0] Config.pm:302> INFO - This is Biber 2.10
-[1] Config.pm:305> INFO - Logfile is 'molecular-functionalisation-of-h-BN.blg'
-[31] biber-MSWIN64:313> INFO - === 
-[92] Biber.pm:371> INFO - Reading 'molecular-functionalisation-of-h-BN.bcf'
-[173] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[174] Biber.pm:857> INFO - Found 0 citekeys in bib section 1
-[174] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[175] Biber.pm:857> INFO - Found 0 citekeys in bib section 2
-[176] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[177] Biber.pm:857> INFO - Found 55 citekeys in bib section 3
-[178] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[179] Biber.pm:857> INFO - Found 16 citekeys in bib section 4
-[180] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[181] Biber.pm:857> INFO - Found 6 citekeys in bib section 5
-[182] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[182] Biber.pm:857> INFO - Found 4 citekeys in bib section 6
-[183] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[184] Biber.pm:857> INFO - Found 0 citekeys in bib section 7
-[185] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[185] Biber.pm:857> INFO - Found 0 citekeys in bib section 8
-[186] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[187] Biber.pm:857> INFO - Found 1 citekeys in bib section 9
-[188] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[248] Biber.pm:3976> INFO - Processing section 3
-[262] Biber.pm:4136> INFO - Looking for bibtex format file './bib.bib' for section 3
-[285] bibtex.pm:1490> INFO - LaTeX decoding ...
-[430] bibtex.pm:1306> INFO - Found BibTeX data source './bib.bib'
-[736] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[736] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[737] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[738] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[791] Biber.pm:3976> INFO - Processing section 4
-[792] Biber.pm:4136> INFO - Looking for bibtex format file './bib.bib' for section 4
-[922] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[923] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[924] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[924] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[941] Biber.pm:3976> INFO - Processing section 5
-[942] Biber.pm:4136> INFO - Looking for bibtex format file './bib.bib' for section 5
-[1012] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1013] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1014] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[1014] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[1022] Biber.pm:3976> INFO - Processing section 6
-[1023] Biber.pm:4136> INFO - Looking for bibtex format file './bib.bib' for section 6
-[1069] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1070] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1071] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[1072] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[1077] Biber.pm:3976> INFO - Processing section 9
-[1078] Biber.pm:4136> INFO - Looking for bibtex format file './bib.bib' for section 9
-[1096] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1097] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1098] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[1099] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[1101] bbl.pm:617> INFO - Writing 'molecular-functionalisation-of-h-BN.bbl' with encoding 'UTF-8'
-[1334] bbl.pm:720> INFO - Output to molecular-functionalisation-of-h-BN.bbl
+[0] Config.pm:305> INFO - Logfile is 'molecular-functionalisation-of-h-BN.blg'
+[47] biber-MSWIN64:313> INFO - === 
+[87] Biber.pm:371> INFO - Reading 'molecular-functionalisation-of-h-BN.bcf'
+[230] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[231] Biber.pm:857> INFO - Found 0 citekeys in bib section 1
+[231] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[231] Biber.pm:857> INFO - Found 0 citekeys in bib section 2
+[231] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[232] Biber.pm:857> INFO - Found 55 citekeys in bib section 3
+[232] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[232] Biber.pm:857> INFO - Found 16 citekeys in bib section 4
+[232] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[233] Biber.pm:857> INFO - Found 6 citekeys in bib section 5
+[233] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[233] Biber.pm:857> INFO - Found 4 citekeys in bib section 6
+[233] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[233] Biber.pm:857> INFO - Found 0 citekeys in bib section 7
+[233] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[233] Biber.pm:857> INFO - Found 0 citekeys in bib section 8
+[233] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[233] Biber.pm:857> INFO - Found 1 citekeys in bib section 9
+[233] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[351] Biber.pm:3976> INFO - Processing section 3
+[374] Biber.pm:4136> INFO - Looking for bibtex format file './bib.bib' for section 3
+[392] bibtex.pm:1490> INFO - LaTeX decoding ...
+[656] bibtex.pm:1306> INFO - Found BibTeX data source './bib.bib'
+[1218] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1218] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1218] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1218] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[1306] Biber.pm:3976> INFO - Processing section 4
+[1306] Biber.pm:4136> INFO - Looking for bibtex format file './bib.bib' for section 4
+[1530] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1530] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1530] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1530] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[1559] Biber.pm:3976> INFO - Processing section 5
+[1559] Biber.pm:4136> INFO - Looking for bibtex format file './bib.bib' for section 5
+[1675] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1675] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1675] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1675] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[1687] Biber.pm:3976> INFO - Processing section 6
+[1688] Biber.pm:4136> INFO - Looking for bibtex format file './bib.bib' for section 6
+[1761] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1762] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1762] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1762] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[1770] Biber.pm:3976> INFO - Processing section 9
+[1770] Biber.pm:4136> INFO - Looking for bibtex format file './bib.bib' for section 9
+[1791] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1791] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1791] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1791] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[1794] bbl.pm:617> INFO - Writing 'molecular-functionalisation-of-h-BN.bbl' with encoding 'UTF-8'
+[1847] bbl.pm:720> INFO - Output to molecular-functionalisation-of-h-BN.bbl

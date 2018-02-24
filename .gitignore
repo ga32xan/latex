@@ -1,7 +1,10 @@
-*.pdf
+molecular-functionalisation-of-h-BN.pdf
 *.aux
 *.bcf
+*.blg
+*.gz
 *.idx
 *.log
 *.out
 *.toc
+*.xml

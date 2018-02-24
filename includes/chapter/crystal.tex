@@ -2,20 +2,27 @@ Crystal orientation and distances: (FIND NICE IMAGES FOR THAT!!)
 \begin{table}
 \centering
 \caption{Inter atomic distances for Cu and Ag (both fcc) with respect to different surfaces. $a$ denotes the lattice constant and $\beta$ describes the angle within the (111) unit cell \SI{60}{\degree}}
-  \begin{tabular}{cccccc}
-& Lattice constant a [\SI{}{\angstrom}] & Nearest neighbors [\SI{}{\angstrom}] & diagonal [\SI{}{\angstrom}] & \\ \hline \hline
-\multicolumn{2}{c}{fcc(100)} & $\frac{\sqrt{2}a}{2}$ & a & \\
-  Cu	 	& 3.61	& 2.55 | 2.55 & 3.61 & \multirow{2}{*}{\includegraphics[width=4cm]{./images/fcc-111-persp}} \\
-  Ag		& 4.09	& 2.89 | 2.89 & 4.09 & \\ \hline 
-\multicolumn{2}{c}{fcc(110)} & $\frac{\sqrt{2}a}{2}$ | a & $\sqrt{\frac{3}{2}}a$& \\
-  Cu	 	& 3.61	& 2.55 | 3.61	& 4.42 & \\
-  Ag		& 4.09	& 2.89 | 4.09	& 5.00 & \\ \hline 
+  \begin{tabular}{ccccc}
+& Lattice constant a [\SI{}{\angstrom}] & Nearest neighbors [\SI{}{\angstrom}] & diagonal [\SI{}{\angstrom}]\\ \hline \hline
+\multicolumn{2}{c}{fcc(100)} & $\frac{\sqrt{2}a}{2}$ & a \\
+  Cu	 	& 3.61	& 2.55 | 2.55 & 3.61  \\
+  Ag		& 4.09	& 2.89 | 2.89 & 4.09 \\ \hline 
+\multicolumn{2}{c}{fcc(110)} & $\frac{\sqrt{2}a}{2}$ | a & $\sqrt{\frac{3}{2}}a$\\
+  Cu	 	& 3.61	& 2.55 | 3.61	& 4.42 \\
+  Ag		& 4.09	& 2.89 | 4.09	& 5.00 \\ \hline 
 \multicolumn{2}{c}{fcc(111)} & $\frac{\sqrt{2}a}{2} \ <110>$ & $\sqrt{2}a\sin(\frac{\beta}{2})$ | $\sqrt{2}a\cos(\frac{\beta}{2})$\\
-  Cu 		& 3.61	& 2.55 | 2.55	& 2.55 | 4.42 & \\
-  Ag		& 4.09	& 2.89 | 2.89	& 2.89 | 5.01 & \\ \hline
+  Cu 		& 3.61	& 2.55 | 2.55	& 2.55 | 4.42 \\
+  Ag		& 4.09	& 2.89 | 2.89	& 2.89 | 5.01 \\ \hline
  \end{tabular}
-
 \end{table}
+
+\begin{figure}\centering
+	\subfigure[(111)]{\includegraphics[height=5cm]{./images/fcc-111-persp}}
+	\subfigure[(100)]{\includegraphics[height=5cm]{./images/fcc-100-persp}}
+	\caption{Two identical atomic balls with fcc lattice configuration. The surface termination is determined by the direction of the intersecting plane (parallel to the paper plane) relative to the unit cell.}
+	\label{fig:crystal-termination}
+\end{figure}
+
  
  ``This surface consists of (111) terraces (three close-packed rows wide) and intrinsic (100) steps, which run parallel to the [011] direction. The close-packed atom rows located at the step edges are characterized by
 a nearest-neighbor distance of \SI{2.55}{\angstrom}  for Cu and of \SI{2.89}{\angstrom} for Ag, whereas the intrinsic step
@@ -33,14 +40,14 @@ Dense packed rows are for fcc(111) the following directions: $<\bar 1 01>$, $<01
 			&				& Copper 	 & Silver \\
 \multicolumn{2}{c}{Lattice constant}			& \SI{3.61}{\angstrom} & \SI{4.08}{\angstrom} \\
 \multicolumn{2}{c}{Nearest neighbor}			& \SI{2.55}{\angstrom} & \SI{2.89}{\angstrom} \\ \hline \\
-\multirow{3}{*}{intrinsic step separation}	& (311) & \SI{4.23}{\angstrom} & \SI{4.78}{\angstrom} \\
-						& (211) & \SI{6.25}{\angstrom} & \SI{7.07}{\angstrom} \\
-						& (221) & \SI{7.66}{\angstrom} & \SI{8.65}{\angstrom} \\
-						& (110) & \SI{1.38}{\angstrom} & \\
-						& (111) & \SI{1}{\angstrom} & \\
+\multirow{3}{*}{Step height}	& (311) & \SI{4.23}{\angstrom} & \SI{4.78}{\angstrom} \\
+								& (211) & \SI{6.25}{\angstrom} & \SI{7.07}{\angstrom} \\
+								& (221) & \SI{7.66}{\angstrom} & \SI{8.65}{\angstrom} \\
+								& (110) & \SI{1.38}{\angstrom} & \\
+								& (111) & \SI{1}{\angstrom} & \\
 \end{tabular}
 \end{table}
-Cu(100) has a step height of \SI{1.8}{\angstrom}. See http://dx.doi.org/10.1103/PhysRevB.94.064106
+Cu(100) has a step height of \SI{1.8}{\angstrom}. \textbf{See http://dx.doi.org/10.1103/PhysRevB.94.064106}
 See \cite{riemann_ionic_2002} for another examples of vicinal metal surfaces (531),(532),(221),(311),(211).
 
 The surface free energy increases from the (111) surface with increasing angle of the (hkl) surface of interest $$\cos(\phi)=\frac{h+k+l}{\sqrt{3(h^2+k^2+l^2)}}$$ \cite{jian-min_calculation_2004}. Thus, the (111) surface is the one with lowest energy, followed by (110) and (100).

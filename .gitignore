@@ -1,6 +1,7 @@
 molecular-functionalisation-of-h-BN.pdf
 Thumbs.db
 .directory
+*.backup
 *.aux
 *.bbl
 *.bcf

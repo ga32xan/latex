@@ -1,0 +1,10 @@
+%%%%%% Full Compile cycle, use MikTeX version 2.9.6615 or later
+%%% pdflatex.exe -synctex=1 -interaction=nonstopmode "\def\draftmode{1} \input{%FN%.tex}"
+%%% Just enter ur filename of your tex-file here (without ending)
+SET FN="molecular-functionalisation-of-h-BN"
+
+pdflatex.exe -synctex=1 -interaction=nonstopmode --draftmode --quiet %FN%.tex
+biber.exe %FN%
+makeindex.exe %FN%
+pdflatex.exe -synctex=1 -interaction=nonstopmode --draftmode --quiet %FN%.tex
+pdflatex.exe -synctex=1 -interaction=nonstopmode %FN%.tex

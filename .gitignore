@@ -7,8 +7,12 @@ Thumbs.db
 *.bcf
 *.blg
 *.gz
+*.ilg
+*.ind
 *.idx
+*.lof
 *.log
+*.lot
 *.out
 *.toc
 *.xml

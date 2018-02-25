@@ -11,60 +11,77 @@
 % If errors occure referring to aux files or others:
 %	Delete helper files (*.aux) and maybe others!
 %
-% Use MikTeX version 2.9.6615 or lated (check that biber is included)
+% Use MikTeX version 2.9.6615 or later (check that biber is included)
 % Using BiBLaTex, biber as frontend.
 % If biber complains (ERROR - Error: Found biblatex control file version 2.6, expected version 3.4.)
 % 	Update with your Miktex package manager (mpm_mfc.exe[single user install] or mpm_mfc_admin.exe [all user install])
 % no new biblatex version there? Sync database? NO omprovement!
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[10pt,a4paper,twoside
-%,draft					% uncomment for fast(er) compiling
-,BCOR=8mm				%Bindekorrektur inkl. Biegefalz
+,BCOR=8mm				% Bindekorrektur inkl. Biegefalz
+,headings=normal		% Kleinere Kapitelüberschriften => check preamble
+,headsepline			% Switches for package scrlayer-scrpage
+,footsepline			% .
 ]{scrbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{./includes/preamble}
 \input{./includes/commands}
+%%%%%%%%%%%%%%%%%%%% Draft Mode Compilation from command line %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% pdflatex "\def\draftmode{1} \input{FILE}"  %%%%%%%%%%%%%%%%%%
+%%%%%% TEXSTUDIO %%% pdflatex "\def\draftmode{1} \input{%.tex}" %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\def\draftmode{1}
+%\ifdefined\draftmode
+%\KOMAoptions{draft}
+%\else
+%\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \input{./includes/pages/cover}										%					%
- \frontmatter{}			 											%					%
-   \input{./includes/pages/titlepage}								%					%
-   \input{./includes/pages/disclaimer}								% 					%
-   \input{./includes/pages/acknowledgements}	% Titlepage and all the formal stuff	%
-												%				 goes here!				%
-   \input{./includes/pages/abstract}								%					%
- \microtypesetup{protrusion=false}									%					%
- \setcounter{tocdepth}{1}							% sets depth of TOC [1=sections]	%
- \tableofcontents{}												 	% 					%
- \microtypesetup{protrusion=true}									%		 			%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \input{./includes/frontmatter/cover}											%					%
+ \frontmatter{}			 														%					%
+   \input{./includes/frontmatter/titlepage}										%					%
+   \input{./includes/frontmatter/disclaimer}									% 					%
+   \input{./includes/frontmatter/acknowledgements}								%	 				%
+   \input{./includes/frontmatter/abstract}										%					%
+ \microtypesetup{protrusion=false}												%					%
+ \setcounter{tocdepth}{1}														%   [1=sections]	%
+	\tableofcontents{}														 	% 					%
+ 	\listoffigures														 		% 					%
+ 	\listoftables																% 					%
+ \microtypesetup{protrusion=true}												%		 			%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mainmatter{}
 \chapter{Experimental procedures}
-  \section{\textbf{X}-ray \textbf{P}hotoelectron \textbf{S}pectroscopy}
-     \input{./includes/chapter5/xps-technique}
   \section{\textbf{A}tomic \textbf{F}orce \textbf{M}icroscopy}
      \input{./includes/chapter/afm-technique}
+  \section{\textbf{C}hemical \textbf{V}apor \textbf{D}eposition}
+	 \input{./includes/chapter/cvd}
+  \section{\textbf{S}canning \textbf{E}lectron \textbf{M}icroscopy}
+	 \input{./includes/chapter/sem-technique}
   \section{\textbf{S}canning \textbf{T}unneling \textbf{M}icroscopy}
      \input{./includes/chapter/stm-technique}
      \subsection{\textbf{S}canning \textbf{T}unneling \textbf{S}pectroscopy}
-	\input{./includes/chapter/sts-technique}
-  \section{\textbf{S}canning \textbf{E}lectron \textbf{M}icroscopy}
-     \input{./includes/chapter/sem-technique}
-  \section{\textbf{L}ow \textbf{E}nergy \textbf{E}lectron \textbf{D}iffraction}
-     \input{./includes/chapter/leed-technique}
-  \section{\textbf{C}hemical \textbf{V}apor \textbf{D}eposition}
-        \input{./includes/chapter/cvd}
-  \section{Surfaces and adlayers}
+ 	 	\input{./includes/chapter/sts-technique}
+%  \section{\textbf{L}ow \textbf{E}nergy \textbf{E}lectron \textbf{D}iffraction}
+ %    \input{./includes/chapter/leed-technique}
+  \section{\textbf{X}-ray \textbf{P}hotoelectron \textbf{S}pectroscopy}
+	\input{./includes/chapter/xps-technique}
+  \section{Surfaces and ad-layers}
      \subsection{Crystal facets}
         \input{./includes/chapter/crystal}
      \subsection{Surface states}
-	\input{./includes/chapter/surface-states}
-     \subsection{Geometric alteration of overlayers -- moire}
-	\input{./includes/chapter/moire}
+		\input{./includes/chapter/surface-states}
+     \subsection{Geometric alteration of ad-layers -- moire}
+		\input{./includes/chapter/moire}
   \section{Used molecules}
     \input{./includes/chapter/used-molecules}
-\printbibliography
-
+%\printbibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Epitaxial hexagonal boron nitride on copper foils}
 \section{Pre-treatment of Cu-foils}
@@ -80,7 +97,7 @@
      \input{./includes/chapter/xps-self-grown-foils}
   \section{XPS of as-bought h-BN/Cu-foils}
      \input{./includes/chapter/xps-as-bought}
-\printbibliography 	
+%\printbibliography	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{TPCN}
     \section{on Cu(111)}
@@ -89,7 +106,7 @@
        \input{./includes/chapter/TPCN-on-h-BN-on-Cu111}
     \section{on h-BN on Cu(foil)}
        \input{./includes/chapter/TPCN-on-h-BN-on-Cu-foil}
-\printbibliography
+%\printbibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{TBP - single leg}
    \input{./includes/chapter/TBP-intro}
@@ -97,31 +114,33 @@
       \input{./includes/chapter/TBP-on-Cu111}
    \section{on Ag(100)}
       \input{./includes/chapter/TBP-on-Ag100}
-   \section{on h-BN on Cu-foil}
+   \section{on \textit{h}-BN/Cu-foil}
       \input{./includes/chapter/TBP-on-h-BN-on-Cufoil}
    \section{on h-BN on Cu(111)}
       \input{./includes/chapter/TBP-on-h-BN-on-Cu111}
-\printbibliography
+%\printbibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{TBP: double}
+\chapter{TBP - double}
    \section{on Cu(111)}
       \input{./includes/chapter/TBP-double-Cu111}
    \section{on Ag(100)}
       \input{./includes/chapter/TBP-double-Ag100}
-\printbibliography
+%\printbibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Pyrene}
    \section{on h-BN on Cu(111)}
       \input{./includes/chapter/pyrene-on-h-BN}
-\printbibliography
+%\printbibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Unsorted}
    \section{measurements without clear interpretation}
       \input{./includes/chapter/unsorted}
-\printbibliography  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\addcontentsline{toc}{chapter}{Index}
-\printindex
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\printbibliography
+	\printindex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter{}
+	\printbibliography  
+%	\addcontentsline{toc}{chapter}{Index}
+    \input{./includes/backmatter/backmatter}
 \end{document}

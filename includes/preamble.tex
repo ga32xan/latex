@@ -2,14 +2,12 @@
 \author{Domenik Matthias Zimmermann}
 \title{Molecular fictionalization of h-BN}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \usepackage[utf8]{inputenc}
 % when latex complains about unicode char U+2212 is not configured for use in latex use the line below
 \DeclareUnicodeCharacter{2212}{-}% support older LaTeX versions
 %\usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-
 \usepackage[english]{babel}
 \usepackage{csquotes}
 \usepackage{amsmath}
@@ -42,36 +40,22 @@
 % Stichwortverzeichnis erstellen
 \makeindex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[style=numeric,backend=biber,refsection=chapter]{biblatex} 	%kommentieren f�r use of BibTeX
-% bibliogryphy-styles: alphabetic, numeric, chem-angew, ieee, nature, science
-\addbibresource{./bib.bib}  % relative to root directory (where the file that includes this file is located)! do NOT OMIT .bib ending
-%\bibliography{./bib}		% outdated
+\usepackage[style=numeric		% bibliogryphy-styles: alphabetic, numeric, chem-angew, ieee, nature, science
+,backend=biber
+%,refsection=chapter			% setzt bibliographies nach chaptern getrennt, nach jedem chapter muss ein 
+								% printbibliogrphy stehen
+]{biblatex} 	
+\addbibresource{./bib.bib}  	% relative to root directory (where the file that includes this file is located)! 
+								%do NOT OMIT .bib ending
+
 %avoids ugly line breaks within bibligraphy
 \addto\bibsetup{\setlength{\emergencystretch}{1.5em}} 	
+
 % Zum Verwalten der Zitate benutze ich Zotero, zum Erzeugen der .bib-Datein f�r Latex wird die Exportfunktion von Zotero benutzt (rechtsklick auf ``Meine Bibliothek'' im linken Reiter: Option Biblatex in die Datei bib-zotero-export.bib aus welcher ich dann die betreffenden Zitate auf Richtigkeit \"uberpr\"ufe und in die bib.bib kopiere.
-%
-% \printbibliography nach jedem chapter und option biblatex [refsection=chapter] 
-% legt bibliography nach jedem Chapter an
-%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \usepackage[top=2.5cm,left=2.5cm,right=3.5cm,bottom=3.5cm]{geometry}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{xcolor}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{fancyhdr}
-\usepackage{titlesec}
-%Fußzeile
-\renewcommand{\footrulewidth}{1pt}
-%\lfoot[]{\thepage} \rfoot[\thepage]{}			%setzt links / rechts Seitenzahlen bei pagestyle fancy
-% Kopfnote
-\setlength{\headheight}{15.2pt}
-\renewcommand{\headrulewidth}{1pt}				%
-\renewcommand{\sectionmark}[1]{\markright{#1}{}} \lhead[]{\leftmark} \rhead[\leftmark]{}
-
-\pagestyle{fancy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Section Überschriften gestalten		geht auch one pagestyle fancy
-\definecolor{gray75}{gray}{0.75}
-\newcommand{\hsp}{\hspace{20pt}}
-\titleformat{\section}[hang]{\LARGE\bfseries}{\thesection\hsp\textcolor{gray75}{|}\hsp}{0pt}{\LARGE\bfseries}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[draft=false]{scrlayer-scrpage}		%deaktiviert ruler in der draft version
+\pagestyle{scrheadings}

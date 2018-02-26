@@ -1,0 +1,28 @@
+\newcommand*{\AnzBilder}{200}		            		%<--Variablen anpassen
+\newcommand*{\KinoPfad}{./images/animation/lumo/} 	%<--Variablen anpassen
+
+%%%%Quelltext%%%
+\newcommand*{\SafeboxName}{sbKino}
+
+\makeatletter
+%Erzeugt neue Saveboxen und füllt sie mit includegraphics-Anweisungen
+%Aufruf: \NewSaveBoxes{sbKino}{5}{daumenkino/kino}
+\newcommand*{\NewSaveBoxes}[3]{%
+	\@tempcnta 1
+	\@whilenum \@tempcnta< \numexpr(#2+1) \do{%
+		%Savebox anlegen
+		\expandafter\newsavebox\csname #1\the\@tempcnta\endcsname
+		%Savebox mit Leben füllen
+		\expandafter\savebox\csname #1\the\@tempcnta\endcsname{%
+			\includegraphics[width=0.5cm]{#3\the\@tempcnta}%
+		}%
+		\advance\@tempcnta 1
+	}%
+}
+
+\newcommand*{\bildnr}{\numexpr\intcalcMod{\numexpr\value{page}}{\numexpr\AnzBilder}\relax}
+\newcommand*{\lumoseries}{%
+	\usebox{\@nameuse{\SafeboxName\the\bildnr}}%
+}
+\makeatother
+\NewSaveBoxes{\SafeboxName}{\AnzBilder}{\KinoPfad}

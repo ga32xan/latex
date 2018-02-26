@@ -1,0 +1,29 @@
+\newcommand*{\AnzBilderLogo}{200}		            		%<--Variablen anpassen
+\newcommand*{\KinoPfadLogo}{./images/animation/logo/} 	%<--Variablen anpassen
+%%%%Quelltext%%%
+\newcommand*{\SafeboxNameLogo}{sbKinologo}
+
+\makeatletter
+%Erzeugt neue Saveboxen und füllt sie mit includegraphics-Anweisungen
+%Aufruf: \NewSaveBoxesLogo{sbKino}{5}{daumenkino/kino}
+\newcommand*{\NewSaveBoxesLogo}[3]{%
+	\@tempcntb 1
+	\@whilenum \@tempcntb< \numexpr(#2+1) \do{%
+		%Savebox anlegen
+		\expandafter\newsavebox\csname #1\the\@tempcntb\endcsname
+		%Savebox mit Leben füllen
+		\expandafter\savebox\csname #1\the\@tempcntb\endcsname{%
+			\includegraphics[width=0.5cm]{#3\the\@tempcntb}%
+		}%
+		\advance\@tempcntb 1
+	}%
+}
+%intcalc-version
+\newcommand*{\bildnrLogo}{\numexpr\intcalcMod{\numexpr\value{page}}{\numexpr\AnzBilderLogo}\relax}
+
+\newcommand*{\logoseries}{%
+	\usebox{\@nameuse{\SafeboxNameLogo\the\bildnrLogo}}%
+}
+\makeatother
+\NewSaveBoxesLogo{\SafeboxNameLogo}{\AnzBilderLogo}{\KinoPfadLogo}
+%%%Aufruf%%%%%%%

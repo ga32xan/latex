@@ -58,5 +58,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{xcolor}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[draft=false]{scrlayer-scrpage}		%deaktiviert ruler in der draft version
 \pagestyle{scrheadings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifdefined\daumenkino
+	\usepackage{etex}
+	\usepackage{intcalc} 
+	\include{./includes/anim/incl-lumoseries}
+	\lofoot{\lumoseries} %<-- Eigentlicher Aufruf für Fußzeile
+	
+	\include{./includes/anim/incl-logoseries}
+	\refoot{\logoseries} %<-- Eigentlicher Aufruf für Fußzeile
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

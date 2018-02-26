@@ -1,4 +1,5 @@
 \begin{titlepage}
+\begin{center}
 \centering
 \vspace{40mm}
 \includegraphics[width=40mm]{./includes/logo/tum} \\
@@ -6,13 +7,16 @@
 {\huge\MakeUppercase{\getFaculty{}}}\\
 \vspace{5mm}
 {\large\MakeUppercase{\getUniversity{}}}\\
-\vspace{20mm}
-{\Large \getDoctype{}} \\
+\vspace{30mm}
+{\huge\bfseries \getTitle{}} \\
+\end{center}
+\vspace{15mm}
+\getDoctypeger{} \\
 \vspace{15mm}
 %{\huge\bfseries \getTitle{}} \\
 %\vspace{10mm}
-{\huge\bfseries \getTitle{}} \\
-\vspace{15mm}
+
+\begin{center}
 \begin{tabular}{l l}
 Author: & \getAuthor{} \\
 Supervisor: & \getSupervisor{} \\
@@ -23,4 +27,5 @@ Chairman: & \getChairman{} \\
 \end{tabular}
 %\vspace{10mm} \\
 %\includegraphics[width=20mm]{./includes/logo/physics}
+\end{center}
 \end{titlepage}

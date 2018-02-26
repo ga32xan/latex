@@ -1,7 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\author{Domenik Matthias Zimmermann}
-\title{Molecular fictionalization of h-BN}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[utf8]{inputenc}
 % when latex complains about unicode char U+2212 is not configured for use in latex use the line below
 \DeclareUnicodeCharacter{2212}{-}% support older LaTeX versions
@@ -66,9 +62,10 @@
 	\usepackage{etex}
 	\usepackage{intcalc} 
 	\include{./includes/anim/incl-lumoseries}
-	\lofoot{\lumoseries} %<-- Eigentlicher Aufruf für Fußzeile
-	
+	%inner side of odd pages
+	\lofoot[\lumoseries]{\lumoseries} % Add flicker books to [plain.scrheadins] and {scrheadins}!
+	% inner side of even pages	
 	\include{./includes/anim/incl-logoseries}
-	\refoot{\logoseries} %<-- Eigentlicher Aufruf für Fußzeile
+	\refoot[\logoseries]{\logoseries} % Add flicker books to [plain.scrheadins] and {scrheadins}!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

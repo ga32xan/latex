@@ -1,5 +1,6 @@
-molecular-functionalisation-of-h-BN.pdf
-Thumbs.db
+*.pdf
+!/images/*.pdf
+*/Thumbs.db
 .directory
 *.backup
 *.aux

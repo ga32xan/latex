@@ -1,6 +1,21 @@
-WHY IS MECHANICAL POLISH NOT ENOUGH?
+As was mentioned before, clean, highly ordered surfaces are desirable to perform experiments on. Effort is done to clean the surfaces before every experiment to ensure a reproducible environment and interpretable results. This lead to a detailed understanding of the physics and chemistry behind a lot of systems. In case a systems order and functionality does not heavily depend on the substrates symmetry, single crystals loose most of their unique selling point. Instead of choosing a expensive bulk single crystal, thin copper foils can catch up in production environments. The mass produced foils still show some inconvenient properties. Although pure copper foils ($\geq \SI{99.999}{\percent}$) are available, their surface was never meant to be atomically flat. 
+A representation of a copper surface before electro polishing can be seen in figure \ref{fig:copper-foil-grains}. Here the layered structure of the (mechanically polished) foil is apparent and shows different sizes of grains and annealing twins at the surface. Small subgrains constitute the uppermost layers, while deeper lying layers consist of larger grains with grain boundaries becoming more and more diffuse with increasing distance to the surface.
 
-Growing high quality adlayers on polycrystalline copper foils requires a smooth surface. As-ordered Cu foils exhibit a root-mean-square (rms) surface roughness of about \SI{218}{\nm}\cite{bin_zhang_low-temperature_2012}. Striations - a fabrication remnant due to the cold rolled foils - are observed on the surface\cite{kim_synthesis_2012-1}. Also some manufacturers apply a thin layer of chromium oxide for corrosion protection\cite{bin_zhang_low-temperature_2012}. A common procedure to reduce the roughness of a material is to electrochemical polish the surface.
+%\begin{figure}[]\centering
+%	
+%	\includegraphics[width=0.45\textwidth]{./images/grain-structure-copper-foil}	
+%	\caption{\ref{turley_nature_19810}}
+%	\label{fig:}
+%\end{figure}
+
+
+\begin{wrapfigure}{r}{5cm}
+	\includegraphics[height=40mm]{./images/grain-structure-copper-foil}
+	\caption{Proposed bulk structure of a OFHC copper foil after abrasion with P1200 silicon carbide paper. Adopted from \cite{turley_nature_19810}}
+	\label{fig:copper-foil-grains}
+\end{wrapfigure}
+
+But growing high quality ad-layers on polycrystalline copper foils requires a smooth surface. As-ordered Cu foils exhibit a root-mean-square (RMS) surface roughness of about \SI{218}{\nm}\cite{bin_zhang_low-temperature_2012}. Striations - a fabrication remnant due to the cold rolled foils - are observed on the surface\cite{kim_synthesis_2012-1}. Also some manufacturers apply a thin layer of chromium oxide for corrosion protection\cite{bin_zhang_low-temperature_2012}. A common procedure to reduce the roughness of a material is to electrochemical polish the surface.
 
 A comprehensive overview of \index{electrochemical polishing} electrochemical polishing of Cu surfaces with different etchants can be found in \cite{jinshan_electrochemical_2004}. The following gives a short introduction in chemical polishing as used for preparation of thin copper foils:
 
@@ -40,15 +55,8 @@ Gas (oxygen or hydrogen) bubbles may block $Cu^{2+}$ ion transport and therefore
 \label{oxygen-pitting}
 \end{figure}
 
-\paragraph{experimental things in \cite{jinshan_electrochemical_2004}}
-\begin{itemize}
- \item[-]The distance between working and counter electrodes was about 15 mm. All experiments were carried out in a 200 mL glass container at room temperature. 100 mL electrolyte solution was used for each experiment.
- \item[-]Adding EG into phosphoric acid solutions decreases limiting current. The more EG added the lower the limiting current. This is true for both undiluted and diluted (with water) phosphoric acid solution. Dilyuting phosphoric acid - EG solutions with water (25\%, curve 2 in Fig. 3-10) increases limiting current. Further diluting phosphoric acid - EG solutions with water (5O\%, curve 3 in Fig. 3-10) decreases limiting current. Limiting current plateau disappears at solution "12.5\% phosphoric acid + 37.5\% EG + 50\% water.
-\end{itemize}
-The etching process relies on the fact that the current density (and thus the etching rate) is higher in protruding regions of the copper foil (Ohmic leveling).  As a result the surface of the copper foil will be smoothened \cite{luo_effect_2011}. Compare with migration smoothing and diffusion smoothing\cite{jinshan_electrochemical_2004}.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% ################## minpage for table ##################
+%%% ################## minipage for table ##################
 \begin{table}[!h]
 \centering
 \caption{Used chemicals for the etching process}
@@ -66,7 +74,7 @@ $[H(OCH_2CH_2)]_nOH$ & (P)EG & (Poly-)Ethylene Glycol\\
 \end{tabular}
 \label{tab:small-molecules}
 \end{table}
-%%% ################## minpage for table ##################
+%%% ################## minipage for table ##################
 \begin{figure}[!h]
  \includegraphics[angle=0,width=\textwidth]{./images/small-molecules-leabelled.jpg}
  \caption{Molecules from table \ref{tab:small-molecules}, in order from top to bottom (left to right).}
@@ -171,22 +179,26 @@ Urea		&[\SI{}{\gram}]		& 1	& ---	& --- \\
 
 %  Removal rates are about \SI{1.8}{\mu \meter \per \min}
 
+
 \begin{figure}[h]
- \begin{center}
-  \includegraphics[height=6cm]{./images/0fcfd512d196815269000000-fig1.jpg}
- \end{center}
-\caption{Height profiles before (a) and after (b) etching with solution \cite{bin_zhang_low-temperature_2012}.}
-\end{figure}
-\begin{figure}[h]
- \begin{center}
-  \includegraphics[height=6cm]{./images/cm1028854-fig2.jpg}
- \end{center}
-\caption{(a-b) Copper foil before and after etching with recipe \cite{luo_effect_2011} with corresponding height profiles (c). The experimental setup for polisching the foils is shown in (d)}
-\label{figure:luo-effect_2011}
+	\begin{center}
+		\includegraphics[height=6cm]{./images/0fcfd512d196815269000000-fig1.jpg}
+	\end{center}
+	\caption{Height profiles before (a) and after (b) etching with solution \cite{bin_zhang_low-temperature_2012}.}
 \end{figure}
 
+\paragraph{Experimental setup}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[height=6cm]{./images/cm1028854-fig2.jpg}
+	\end{center}
+	\caption{(a-b) Copper foil before and after etching with recipe \cite{luo_effect_2011} with corresponding height profiles (c). The experimental setup for polisching the foils is shown in (d)}
+	\label{figure:luo-effect_2011}
+\end{figure}
 \paragraph{Used solutions}\index{electrochemical polishing!Used solutions}
 Within this work, Cu-foil polishing will be done with recipe I broken down in table \ref{table:used-etching-solutions}
+
 \begin{table}\centering
 \caption{Used etching solutions (compare \cite[130]{jinshan_electrochemical_2004}). Note the change in the removal rate due to higher limiting currents in the solution.}
  \begin{tabular}{lcc}
@@ -201,6 +213,29 @@ Within this work, Cu-foil polishing will be done with recipe I broken down in ta
  \end{tabular}
 \label{table:used-etching-solutions}
 \end{table}
+
+\begin{table}
+	\centering
+	\caption{Volume and mass fractions for copper foil etching solution.}
+	\begin{tabular}{lcccc}
+		&unit	&$H_3PO_4$ (85\%)&	EG	&	$H_2O$	\\
+		Dichte $\rho$   &[$g/cm^3$]	&	1.87	&	1.11	&	1.00	\\
+		$1/rho$		&[$cm^3/g$]	&	0.54	&	0.90	&	1.00	\\
+		Anteil 		& \%		&	70	&	5	&	25	\\ \hline
+		Menge gesamt    &[$cm^3$]	&		\multicolumn{3}{c}{150} 	\\
+		Menge anteilig  &[$cm^3$]	&	105.00	&	7.50	&	37.50	\\
+		Gewicht         &[g]		&	196.35	&	8.33	&	37.50	\\
+	\end{tabular}
+	\label{tab:used-etching-solution}
+\end{table}
+
+\paragraph{experimental things in \cite{jinshan_electrochemical_2004}}
+\begin{itemize}
+	\item[-]The distance between working and counter electrodes was about 15 mm. All experiments were carried out in a 200 mL glass container at room temperature. 100 mL electrolyte solution was used for each experiment.
+	\item[-]Adding EG into phosphoric acid solutions decreases limiting current. The more EG added the lower the limiting current. This is true for both undiluted and diluted (with water) phosphoric acid solution. Dilyuting phosphoric acid - EG solutions with water (25\%, curve 2 in Fig. 3-10) increases limiting current. Further diluting phosphoric acid - EG solutions with water (5O\%, curve 3 in Fig. 3-10) decreases limiting current. Limiting current plateau disappears at solution "12.5\% phosphoric acid + 37.5\% EG + 50\% water.
+\end{itemize}
+The etching process relies on the fact that the current density (and thus the etching rate) is higher in protruding regions of the copper foil (Ohmic leveling).  As a result the surface of the copper foil will be smoothened \cite{luo_effect_2011}. Compare with migration smoothing and diffusion smoothing\cite{jinshan_electrochemical_2004}.
+
 The given roughness in table \ref{table:used-etching-solutions}is much lower compared to references (\SI{61}{\nm})\cite[2]{bin_zhang_low-temperature_2012} that did the polishing with another recipe (compare table \ref{tab:etching-recipes}). Although the roughness is higher, optical profiler images indicate removed striations and a smoother surface compared to the as-bought foils (\SI{218,56}{\nm})\cite[2]{bin_zhang_low-temperature_2012}.
 
 \paragraph{The etching process}
@@ -264,20 +299,7 @@ Figure \ref{fig:foil-afm-as-bought} shows the striations that stem from the prod
 After etching ($U=1.2V$,I=\SIrange{120}{250}{\mA}) for \SI{5}{\hour} in a solution (shown in table \ref{tab:used-etching-solution}) the striations have gone and the RMS value decreased by \SIrange{30}{45}{\percent} and an increase in foil quality is obvious even with bare eyes. Figure \ref{fig:foil-afm-as-bought} and \ref{fig:foil-afm-polished} show AFM images in the same size and contrast - before and after etching.
 The circular hole is an effect of bubbles in the etching process where the bubble affects the rate of etching. The over all structure changes from a heterogenous sample height to a flat height contribution with only a little amount of defects. Those are sufficiently seperated in space to exhibit flat regions where the h-BN may grow unperturbated.
 
-\begin{table}
-\centering
-\caption{Volume and mass fractions for copper foil etching solution.}
-\begin{tabular}{lcccc}
-		&unit	&$H_3PO_4$ (85\%)&	EG	&	$H_2O$	\\
-Dichte $\rho$   &[$g/cm^3$]	&	1.87	&	1.11	&	1.00	\\
-$1/rho$		&[$cm^3/g$]	&	0.54	&	0.90	&	1.00	\\
-Anteil 		& \%		&	70	&	5	&	25	\\ \hline
-Menge gesamt    &[$cm^3$]	&		\multicolumn{3}{c}{150} 	\\
-Menge anteilig  &[$cm^3$]	&	105.00	&	7.50	&	37.50	\\
-Gewicht         &[g]		&	196.35	&	8.33	&	37.50	\\
-\end{tabular}
-\label{tab:used-etching-solution}
-\end{table}
+
 
 \paragraph{not done yet - maybe future?}
 Some foil has been mechanically polished with 4k paper and several hours of Syton polishing. The roughness of these samples has been investigated also in AFM. These are compareable to the chemically polished ones, but are always slightly higher by $\approx 10\%$. Sometimes unwanted new scratches appear after mechanical polish.

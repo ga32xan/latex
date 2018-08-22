@@ -20,13 +20,13 @@ After the etching process one foil is investigated in SEM. It was stored for one
 		\includegraphics[height=6cm]{./images/Domenik_16031715.jpg}
 		\includegraphics[height=6cm]{./images/Domenik_16031717.jpg}
 	\end{center}
-	\caption{SEM image of etched copper foil. Different contrast suggests different grain-orientation within the surface. a) Larger (\SI{570}{\micro \meter}x\SI{380}{\micro \meter}) image schowing the contrast of different grains in the copper-foil, b) zoom (\SI{18}{\micro \meter}x\SI{12}{\micro \meter})} to a area with two different contrasts and their border.
+	\caption{SEM image of etched copper foil. Different contrast suggests different grain-orientation within the surface. a) Larger (\SI{570}{\micro \meter} x \SI{380}{\micro \meter}) image schowing the contrast of different grains in the copper-foil, b) zoom (\SI{18}{\micro \meter} x \SI{12}{\micro \meter})} to a area with two different contrasts and their border.
 	\label{SEM-gb}
 \end{figure}
 
-One can see (figure \ref{SEM-gb}) that the surface imaged in different intensities which correspond to the different orientation of the copper grains within the foil\cite{wu_effects_2015}. The grainsize may range from just a few \SI{}{\micro \meter} to several hundret \SI{}{\micro \meter} and in some cases even \SI{}{\milli \meter}. The grains are separated by grain boundaries. Large grains are preferred for growing graphene on copper foils because grain boundaries are subject to inhomogenities within the graphene layer and provide a route for unwanted surface chemistry (copper oxidation for example). These effect can be also be used to highlight grain boundaries as shown in \cite{wu_effects_2015}.
+One can see (\autoref{SEM-gb}) that the surface imaged in different intensities which correspond to the different orientation of the copper grains within the foil\cite{wu_effects_2015}. The grainsize may range from just a few \SI{}{\micro \meter} to several hundret \SI{}{\micro \meter} and in some cases even \SI{}{\milli \meter}. The grains are separated by grain boundaries. Large grains are preferred for growing graphene on copper foils because grain boundaries are subject to inhomogeneities within the graphene layer and provide a route for unwanted surface chemistry (copper oxidation for example). These effect can be also be used to highlight grain boundaries as shown in \cite{wu_effects_2015}.
 
-Although not very rough, the copper foil shows surface variation. While some areas of the sample show some wavy surface, whereas other are much flatter and appear in a different intensity (figure \ref{SEM-surface}).
+Although not very rough, the copper foil shows surface variation. While some areas of the sample show some wavy surface, whereas other are much flatter and appear in a different intensity (\autoref{fig:SEM-surface}).
 
 Neither estimation on the grainsize nor guesses for their absolute orientation have been done due to the lack of EBSD-data in the SEM setup.
 
@@ -36,24 +36,31 @@ Neither estimation on the grainsize nor guesses for their absolute orientation h
 		%\includegraphics[height=6cm]{../Daten/SEM/160317-Domenik/Domenik_16031717.jpg}
 	\end{center}
 	\caption{SEM image that shows different surface morphologies (\SI{5.6}{\micro \meter}x\SI{3.7}{\micro \meter})}
-	\label{SEM-surface}
+	\label{fig:SEM-surface}
 \end{figure}
 
 \paragraph{AFM}
-\begin{figure}[]
-	\centering
+\begin{figure}[] \centering
+	\subfigure[RMS $\approx$\SI{13}{\nm}, contrast \SI{100}{\nm}]{
 	\includegraphics[width=0.4\textwidth]{./images/as_bought0000.jpg}
+	}
+	\subfigure[RMS $\approx$ RMS \SI{9}{\nm}, contrast \SI{70}{\nm} in the right image]{
 	\includegraphics[width=0.4\textwidth]{./images/as_bought0001.jpg}
-	\caption{AFM image of the \SI{0.25}{\mm} copper foil as bought from alfa aesar, RMS$\approx$\SI{13}{\nm}, contrast \SI{100}{\nm} ($\approx$ RMS \SI{9}{\nm}, contrast \SI{70}{\nm} in the right image)}
+	}
+	
+	\caption{AFM image of the \SI{0.25}{\mm} copper foil as bought from alfa aesar.}
 	\label{fig:foil-afm-as-bought}
 \end{figure}
 
 Figure \ref{fig:foil-afm-as-bought} shows the striations that stem from the production process (from top to buttom).
-\begin{figure}[]
-	\centering
+\begin{figure}[] \centering
+	\subfigure[RMS $\approx$\SI{9}{\nm} in the left image, contrast \SI{100}{\nm}]{
 	\includegraphics[width=0.4\textwidth]{./images/polished0000.jpg}
+}
+	\subfigure[RMS $\approx$\SI{3}{\nm} in the right image, contrast \SI{70}{\nm}]{
 	\includegraphics[width=0.4\textwidth]{./images/polished0001.jpg}
-	\caption{AFM image of a copper foil polished 5h (according to table \ref{tab:used-etching-solution}), RMS$\approx$\SI{9}{\nm} in the left image, contrast \SI{100}{\nm} ($\approx$\SI{3}{\nm} in the right image, contrast \SI{70}{\nm})}
+}
+	\caption{AFM image of a copper foil polished 5h (according to table \ref{tab:used-etching-solution})}
 	\label{fig:foil-afm-polished}
 \end{figure}
 After etching ($U=1.2V$,I=\SIrange{120}{250}{\mA}) for \SI{5}{\hour} in a solution (shown in table \ref{tab:used-etching-solution}) the striations have gone and the RMS value decreased by \SIrange{30}{45}{\percent} and an increase in foil quality is obvious even with bare eyes. Figure \ref{fig:foil-afm-as-bought} and \ref{fig:foil-afm-polished} show AFM images in the same size and contrast - before and after etching.

@@ -24,6 +24,9 @@
 \usepackage[section]{placeins} %definiert \floatbarrier, mit option automatisch bei jeder section
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{subfigure}
+% Use subfigure to do (a), (b) and such graphics.
+\newcommand{\subfigureautorefname}{\figureautorefname}
+%There is nothing like a subfigure autoref name, so define one. Figures are cited with \autoref{label} and preceeded with a "Figure" in-text.,
 \usepackage{wrapfig}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{caption}

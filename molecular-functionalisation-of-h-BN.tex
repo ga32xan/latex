@@ -18,16 +18,29 @@
 % Using BiBLaTex, biber as frontend.
 % If biber complains (ERROR - Error: Found biblatex control file version 2.6, expected version 3.4.)
 % 	Update with your Miktex package manager (mpm_mfc.exe[single user install] or mpm_mfc_admin.exe [all user install])
-% no new biblatex version there? Sync database? NO omprovement!
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[10pt,a4paper,twoside
-,BCOR=8mm				% Bindekorrektur inkl. Biegefalz
-,headings=normal		% Kleinere Kapitelüberschriften => check preamble
-,headsepline			% Enable line to seperate head ...
-,footsepline			% ... and foot
-,plainfootsepline		% Footseperation line on chapter start
+% no new biblatex version there? Sync database? NO improvement!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Setup for document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[
+10pt,					% Schriftgröße
+a4paper,				% A4 paper
+twoside,				% Zweiseitig
+BCOR=8mm,				% Bindekorrektur inkl. Biegefalz
+headings=normal,		% Kleinere Kapitelüberschriften => check preamble
+headsepline,			% Enable line to seperate head ...
+footsepline,			% ... and foot
+plainfootsepline,		% Footseperation line on chapter start
 ]{scrbook}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Change Page Geometry %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[
+top=30mm,
+bottom=55mm,
+inner=25mm,
+outer=50mm,
+%marginparsep=7mm,
+%marginparwidth=48mm,
+%paperwidth=210mm,
+%paperheight=245mm, 286mm (A4)
+]{geometry}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{./includes/preamble}
 \input{./includes/commands}
@@ -38,8 +51,7 @@
 %\def\daumenkino{1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \input{./includes/frontmatter/cover}											%					%
@@ -87,9 +99,9 @@ To conduct experiments in the most controlled environment possible, sample prepa
         \input{./includes/chapter/crystal}
      \subsection{Surface states}
 		\input{./includes/chapter/surface-states}
-     \subsection{Electropolishing}
+     \subsection{Electro polishing}
     	\input{./includes/chapter/electropolishing}
-     \subsection{Growing atomically thin adlayers with \textbf{C}hemical \textbf{V}apor \textbf{D}eposition}
+     \subsection{Growing atomically thin ad layers with \textbf{C}hemical \textbf{V}apor \textbf{D}eposition}
         \input{./includes/chapter/cvd}     
      \subsection{Geometric effects in ad-layers}
 		\input{./includes/chapter/moire}
@@ -135,7 +147,7 @@ To conduct experiments in the most controlled environment possible, sample prepa
 %\printbibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Tert-Butyl-Phenyl Porphine}
-  \section{Single leg funtionalization}
+  \section{Single leg functionalization}
     \input{./includes/chapter/TBP-intro}
    \subsection{on Cu(111)}
       \input{./includes/chapter/TBP-on-Cu111}
@@ -147,12 +159,17 @@ To conduct experiments in the most controlled environment possible, sample prepa
       \input{./includes/chapter/TBP-on-h-BN-on-Cu111}
 %\printbibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \section{Double leg funtionalization}
+  \section{Double leg functionalization}
    \subsection{on Cu(111)}
       \input{./includes/chapter/TBP-double-Cu111}
    \subsection{on Ag(100)}
       \input{./includes/chapter/TBP-double-Ag100}
 %\printbibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Hexabenzocoronene - w/o central borazine core}
+	\section{Find a nice title!}
+		\input{./includes/chapter/HBC-HBBNC}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Unsorted}
    \section{measurements without clear interpretation}

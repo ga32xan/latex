@@ -50,7 +50,20 @@
 
 %avoids ugly line breaks within bibligraphy
 \addto\bibsetup{\setlength{\emergencystretch}{1.5em}} 	
-
+%%%%%%%%%%%%%% COLORED BOXES IN APPENDIX %%%%%%%%%%%%%
+\usepackage{tcolorbox}% http://ctan.org/pkg/tcolorbox
+\definecolor{mycolor}{rgb}{0.122, 0.435, 0.698}% Rule colour
+\makeatletter					% WHY?!
+\newcommand{\mybox}[1]{%
+	\setbox0=\hbox{#1}%
+	\setlength{\@tempdima}{\dimexpr\wd0+13pt}%
+	\begin{tcolorbox}[colframe=mycolor,boxrule=0.5pt,arc=4pt,
+		left=6pt,right=6pt,top=6pt,bottom=6pt,boxsep=0pt,width=\@tempdima]
+		#1
+	\end{tcolorbox}
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Zum Verwalten der Zitate benutze ich Zotero, zum Erzeugen der .bib-Datein f�r Latex wird die Exportfunktion von Zotero benutzt (rechtsklick auf ``Meine Bibliothek'' im linken Reiter: Option Biblatex in die Datei bib-zotero-export.bib aus welcher ich dann die betreffenden Zitate auf Richtigkeit \"uberpr\"ufe und in die bib.bib kopiere.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \usepackage[top=2.5cm,left=2.5cm,right=3.5cm,bottom=3.5cm]{geometry}

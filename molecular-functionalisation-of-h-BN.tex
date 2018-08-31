@@ -54,6 +54,7 @@ outer=50mm,
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
  \input{./includes/frontmatter/cover}											%					%
  \frontmatter{}			 														%					%
    \input{./includes/frontmatter/titlepage}										%					%
@@ -148,11 +149,11 @@ outer=50mm,
       \input{./includes/chapter/TBP-on-Cu111}
    \subsection{on Ag(100)}
       \input{./includes/chapter/TBP-on-Ag100}
-   \subsection{on \textit{h}-BN/Cu-foil}
-      \input{./includes/chapter/TBP-on-h-BN-on-Cufoil}
-   \subsection{on h-BN on Cu(111)}
-      \input{./includes/chapter/TBP-on-h-BN-on-Cu111}
+   \subsection{on \textit{h}-BN}
+      \input{./includes/chapter/TBP-on-h-BN}
 %\printbibliography
+	\subsection{Conclusion}
+      \input{./includes/chapter/TBP-conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \section{Double leg functionalization}
    \subsection{on Cu(111)}
@@ -171,10 +172,17 @@ outer=50mm,
       \input{./includes/chapter/unsorted}
 %\printbibliography
 	\printindex
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter{}
-	\printbibliography  
+  \printbibliography  
 %	\addcontentsline{toc}{chapter}{Index}
-    \input{./includes/backmatter/backmatter}
+  \input{./includes/backmatter/backmatter}
+    %% Orbital calculations
+  \input{./includes/chapter/backmatter/EHT-cis-pyrene}
+  \input{./includes/chapter/backmatter/EHT-cis-pyrene-60}
+  \input{./includes/chapter/backmatter/EHT-trans-pyrene}
+  \input{./includes/chapter/backmatter/EHT-tetra-pyrene}
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

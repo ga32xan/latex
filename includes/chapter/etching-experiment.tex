@@ -1,19 +1,22 @@
-\paragraph{Experiment realization}The first attempt to etch the Cu-foil was performed with the $5\%_{vol}$ EG, $25\%_{vol}\,H_2O$ filled up with phosphoric acid. The etching was performed in a \SI{200}{\ml} beaker, filled with \SI{150}{\ml} etching solution. The setup is as depicted in fig \ref{fig:etching-setup}. The potential was adjusted to be \SI{1.2}{\V} after some minutes. The current through the solution changes and is typically highest when the etching process started. 
 
-After some minutes, the foil starts to change. The reflectivity changes, making the foil - shiny before etching - a little dull. After some additional time the foil begins to reflect light better again. This is the moment where the etching process is interrupted. The time inside the etching solution depends on the handling (like shaking the beaker or moving the foil in the solution - but was usually $\geq \SI{2}{\hour}$.\footnote{Since the perfect point to perform polishing varies in time a automated etching process has been developed \cite{palmieri_besides_2001}}
+\paragraph{Experiment realization}The first attempt to etch the Cu-foil was performed with the $5\%_{vol}$ EG, $25\%_{vol}\,H_2O$ filled up with phosphoric acid. The etching was performed in a \SI{200}{\ml} beaker, filled with \SI{150}{\ml} etching solution. The setup is as depicted in \autoref{fig:etching-setup}. The potential was adjusted to be \SI{1.2}{\V} after some minutes. The current through the solution changes and is typically highest when the etching process started. 
+
+After some minutes, the foil starts to change. The reflectivity changes, making the foil - shiny before etching - a little dull. After some additional time the foil begins to reflect light better again. This is the moment where the etching process is interrupted. The time inside the etching solution depends on the handling (like shaking the beaker or moving the foil in the solution - but was usually $\geq \SI{2}{\hour}$.\footnote{Since the perfect voltage/current to perform polishing varies in time a automated etching process has been developed \cite{palmieri_besides_2001}}
+
+\underline{\textbf{ADD IMAGE from acutal setup}}
 
 One has to be careful if reproducible results are needed. During the etching process (as more and more copper settles on the counter electrode), the current and therefore the etching rate decrease continuously. When the beaker is moved, some of the debris on the electrode changes (the electrode's) surrounding and the etching rate (limiting current) increases again. Front- and backside of the foil are suspect to different etching rates. The back side is generally more flat, the side facing the counter-electrode always shows some additional protrusions.
 
+\underline{\textbf{ADD IMAGE from polished foils}}
+		
 \paragraph{After etching treatment}
-The foil is taken out and cleaned from remaining etchants with purified water first and isopropanol afterwards. Foils are be stored in ethanol to avoid oxidation. 
-
-To further improve the quality of the foil, one can follow the documented recipe for annealing the foil in a $H_2$ atmosphere (\SI{10}{sscm}, \SI{1000}{\celsius}, 30min)\cite{kim_synthesis_2012} to increase the copper grain size and further smoothen the surface. 
+The foil is taken out and cleaned from remaining etchants with purified water first and isopropanol afterwards. Foils are be stored in isopropanol to avoid oxidation.\footnote{To further improve the quality of the foil, one can follow the documented recipe for annealing the foil in a $H_2$ atmosphere (\SI{10}{sscm}, \SI{1000}{\celsius}, 30min)\cite{kim_synthesis_2012} to increase the copper grain size and further smoothen the surface. We decided to further prepare the foils within the UHV chamber and skipped this step.}
 
 So prepared foils are investigated in XPS (compare figure \ref{fig:xps-self-grown}) - (discussion of peaks can be found inside the text. Comparable experiments  are performed by \cite[8]{stables_report_2008}).
 After the etching process one foil is investigated in SEM. It was stored for one day in isopropanol and blown dry with nitrogen. 
 
 \paragraph{SEM}
-
+\label{sec:foil-SEM}
 \input{./includes/chapter/sem-technique}
 
 \begin{figure}[]
@@ -41,6 +44,7 @@ Neither estimation on the grainsize nor guesses for their absolute orientation h
 \end{figure}
 
 \paragraph{AFM}
+\label{sec:foil-AFM}
 \begin{figure}[] \centering
 	\subfigure[RMS $\approx$\SI{13}{\nm}, contrast \SI{100}{\nm}]{
 	\includegraphics[width=0.4\textwidth]{./images/as_bought0000.jpg}
@@ -73,6 +77,7 @@ The circular hole is an effect of bubbles in the etching process where the bubbl
 Some foil has been mechanically polished with 4k paper and several hours of Syton polishing. The roughness of these samples has been investigated also in AFM. These are comparable to the chemically polished ones, but are always slightly higher by $\approx 10\%$. Sometimes unwanted new scratches appear after mechanical polish.
 
 \paragraph{STM}
+\label{sec:foil-STM}
 The bought and chemically polished foils are mounted on a sample holder and loaded into the load lock. It is evacuated for \SIrange{2}{3}{\hour}, afterwards the valve is opened to the chamber. During transfer, no noteable increase in the base pressure is noted. The sample is put on the parking slot.
 
 The sample was initially degassed with slowly increasing temperatures to remove adsorbates like $CO, CO_2$ and $H_2O$.

@@ -29,6 +29,10 @@
 %There is nothing like a subfigure autoref name, so define one. Figures are cited with \autoref{label} and preceeded with a "Figure" in-text.,
 \usepackage{wrapfig}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Updated definition, see explanation below
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}} % One single link
+% see https://tex.stackexchange.com/questions/121865/nameref-how-to-display-section-name-and-its-number
+
 \usepackage{caption}
 \usepackage{microtype}
 %\usepackage{subcaption}

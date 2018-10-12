@@ -1,22 +1,25 @@
-Single crystals show a nicely ordered, clean surface - two properties important for reliable and reproducible experiments. We have chosen both silver and copper as substrates. They form fcc lattices and their surface termination can be chosen by precise cutting along a symmetry plane of choice. For the course of this thesis, experiments are conducted mainly on (111) and (100) terminated surfaces.\footnote{See \cite{riemann_ionic_2002} for another examples of vicinal metal surfaces (531), (532), (221), (311), (211).} Commercially available, single crystals guarantee a high precision in facet orientation and purity (99.999 \%) \cite{mateck}. Remaining contaminations in copper (Ag: \SI{0.8}{ppm}, Pb: \SI{0.3}{ppm}, Bi: \SI{0.8}{ppm}) and silver (Cu: \SI{2}{ppm}, Fe: \SI{2}{ppm}, Au: \SI{0.8}{ppm}, Ni: \SI{0.8}{ppm}) are removed by repeated sputter and anneal cycles in UHV. Typical cool down temperatures $\leq 2 \frac{K}{s}$ result in a smooth, atomically flat surface with large terrace size.
+Single crystals show a nicely ordered, clean surface - two properties important for reliable and reproducible experiments. We have chosen both silver and copper as bulk crystalline substrates. Both form fcc lattices and their surface termination can be chosen by precise cutting along a symmetry plane of choice. For the course of this thesis, experiments are conducted mainly on (111) and (100) terminated surfaces.\footnote{See \cite{riemann_ionic_2002} and appendix \fullref{appendix:crystal-facets} for another examples of vicinal metal surfaces (531), (532), (221), (311), (211).} Commercially available, single crystals guarantee a high precision in facet orientation and purity (99.999 \%) \cite{mateck}. Remaining contaminations in copper (Ag: \SI{0.8}{ppm}, Pb: \SI{0.3}{ppm}, Bi: \SI{0.8}{ppm}) and silver (Cu: \SI{2}{ppm}, Fe: \SI{2}{ppm}, Au: \SI{0.8}{ppm}, Ni: \SI{0.8}{ppm}) are removed by repeated sputter\footnote{$U_{accel}=\SIrange{800}{1000}{\volt}$, $T_{sample}\approx \SI{300}{\kelvin}$} and anneal cycles\footnote{Cu: $T_{sample}=\SI{750}{\celsius}$, Ag: $T_{sample}=\SI{450}{\celsius}$, Au\/Mica: $T_{sample}= \underline{\textbf{get value: 450?}}$} in UHV. Typical cool down temperatures $\leq 5 \frac{K}{s}$ result in a smooth, atomically flat surface with large terrace size. 
 
-\begin{table}
-\centering \index{Crystal:lattice constants}
-\caption{Inter atomic distances for Cu and Ag with respect to different surface termination. $a$ denotes the lattice constant and $\beta= \SI{60}{\degree}$ the angle within the (111) unit cell}
-  \begin{tabular}{ccccc}
-& Lattice constant a [\SI{}{\angstrom}] & Nearest neighbors [\SI{}{\angstrom}] & diagonal [\SI{}{\angstrom}]\\ \hline 
-\multicolumn{2}{c}{fcc(100)} & $\frac{\sqrt{2}a}{2}$ & a \\
-  Cu	 	& 3.61	& 2.55 | 2.55 & 3.61  \\
-  Ag		& 4.09	& 2.89 | 2.89 & 4.09 \\ \hline 
-\multicolumn{2}{c}{fcc(111)} & $\frac{\sqrt{2}a}{2} \ <110>$ & $\sqrt{2}a\sin(\frac{\beta}{2})$ | $\sqrt{2}a\cos(\frac{\beta}{2})$\\
-Cu 		& 3.61	& 2.55 | 2.55	& 2.55 | 4.42 \\
-Ag		& 4.09	& 2.89 | 2.89	& 2.89 | 5.01 \\ \hline
-%
-%\multicolumn{2}{c}{fcc(110)} & $\frac{\sqrt{2}a}{2}$ | a & $\sqrt{\frac{3}{2}}a$\\
-%  Cu	 	& 3.61	& 2.55 | 3.61	& 4.42 \\
-%  Ag		& 4.09	& 2.89 | 4.09	& 5.00 \\ \hline 
- \end{tabular}
-\end{table}
+The lattice constants at room temperatures for \underline{\textbf{cite!}} Cu(\SI{3,61}{\angstrom}), Ag(\SI{4,09}{\angstrom}) and Au(\SI{4,07}{\angstrom}) are related to the environment temperatures by their expansion coefficients.
+Coefficients of \SI{16,5e-6}{\per \kelvin}(Cu), \SI{18,9e-6}{\per \kelvin}(Ag) and \SI{14,2e-6}{\per \kelvin}(Au) make the substrate lattice shrink by $\approx \SI{0,5}{\percent}$ when it is cooled down from RT to low temperature measurement conditions in STM/AFM (\SIrange{5}{7}{\kelvin}). While rather negligible for bulk materials that are not heated and cooled over larger temperature ranges, the small change in substrate lattice size may introduce strain in grown ad layers since these are grown via CVD typically at elevated temperatures and may have partially negative thermal expansion coefficients\cite{farwick_zum_hagen_structure_2016}.
+
+%\begin{table}
+%\centering \index{Crystal:lattice constants}
+%\caption{Inter atomic distances for Cu and Ag with respect to different surface termination. $a$ denotes the lattice constant and $\beta= \SI{60}{\deg}$ the angle within the (111) unit cell}
+%  \begin{tabular}{ccccc}
+%& Lattice constant a [\SI{}{\angstrom}] & Nearest neighbors [\SI{}{\angstrom}] & diagonal [\SI{}{\angstrom}]\\ \hline 
+%\multicolumn{2}{c}{fcc(100)} & $\frac{\sqrt{2}a}{2}$ & a \\
+%  Cu	 	& 3.61	& 2.55 | 2.55 & 3.61  \\
+%  Ag		& 4.09	& 2.89 | 2.89 & 4.09 \\ \hline 
+%\multicolumn{2}{c}{fcc(111)} & $\frac{\sqrt{2}a}{2} \ <110>$ & $\sqrt{2}a\sin(\frac{\beta}{2})$ | $\sqrt{2}a\cos(\frac{\beta}{2})$\\
+%Cu 		& 3.61	& 2.55 | 2.55	& 2.55 | 4.42 \\
+%Ag		& 4.09	& 2.89 | 2.89	& 2.89 | 5.01 \\ \hline
+%%
+%%\multicolumn{2}{c}{fcc(110)} & $\frac{\sqrt{2}a}{2}$ | a & $\sqrt{\frac{3}{2}}a$\\
+%%  Cu	 	& 3.61	& 2.55 | 3.61	& 4.42 \\
+%%  Ag		& 4.09	& 2.89 | 4.09	& 5.00 \\ \hline 
+% \end{tabular}
+%\end{table}
 
 \begin{figure}\centering
 	\subfigure[(111)]{\includegraphics[width=0.3\textwidth]{./images/fcc-111-persp}} \quad
@@ -26,36 +29,57 @@ Ag		& 4.09	& 2.89 | 2.89	& 2.89 | 5.01 \\ \hline
 	\label{fig:crystal-termination}
 \end{figure}
 
- Dense packed rows are for fcc(111) the following directions: $<\bar 1 01>$, $<01\bar 1>$, $<1\bar 1 0>$. The diagonals are found in the $<\bar 1 \bar 1 2>$ and $<1\bar 2 1>$ directions. \underline{ADD INFO	FOR 100!!!}
- 
-% ``This surface consists of (111) terraces (three close-packed rows wide) and intrinsic (100) steps, which run parallel to the [011] direction. The close-packed atom rows located at the step edges are characterized by
-%a nearest-neighbor distance of \SI{2.55}{\angstrom}  for Cu and of \SI{2.89}{\angstrom} for Ag, whereas the intrinsic step
-%spacing is \SI{6.25}{\angstrom} for Cu and \SI{7.08}{\angstrom} for Ag. The surface symmetry is described by a primitive
-%rectangular unit cell (cf. Figure 3.1a). The (111) terraces and the micro facets which represent the intrinsic (100) steps are tilted by \SI{19.5}{\degree}, respectively, to macroscopic (211) surface, which can be seen in the side view of the hard-sphere model in the upper panel of Figure 3.1a. The interlayer spacing for this surface is \SI{0.74}{\angstrom} for Cu and \SI{0.83}{\angstrom} for Ag.''
-%
-%``The (311) surface consists also of (111) terraces (two close-packed rows wide) and intrinsic (100) steps.''
-
-Some experiments are done on polycrystalline surfaces of a copper foil. Here the surface termination is not homogeneous and is made of several domains with different facet orientation thus showing different step heights as indicated in table \ref{tab:step-heights}
-\begin{table}\centering
-\caption{Crystal properties from \cite[29ff]{riemann_ionic_2002, ma_interplay_2016, liu_oxygen_2014}}
-\label{tab:step-heights}
-
-\begin{tabular}{cccc}
-			&				& Copper 	 & Silver \\
-\multicolumn{2}{c}{Lattice constant}			& \SI{3.61}{\angstrom} & \SI{4.08}{\angstrom} \\
-\multicolumn{2}{c}{Nearest neighbor}			& \SI{2.55}{\angstrom} & \SI{2.89}{\angstrom} \\ \hline \\
-\multirow{3}{*}{Step height}	& (311) & \SI{4.23}{\angstrom} & \SI{4.78}{\angstrom} \\
-								& (211) & \SI{6.25}{\angstrom} & \SI{7.07}{\angstrom} \\
-								& (221) & \SI{7.66}{\angstrom} & \SI{8.65}{\angstrom} \\
-								& (110) & \SI{1.38}{\angstrom} & \\
-								& (111) & \SI{1}{\angstrom} & \\
-								& (100) & \SI{1.8}{\angstrom} & \\
-
-\end{tabular}
-\end{table}
-
 The surface free energy increases from the (111) surface with increasing angle of the (hkl) planes of interest with $$\cos(\phi)=\frac{h+k+l}{\sqrt{3(h^2+k^2+l^2)}}$$ \cite{jian-min_calculation_2004}. Thus, the (111) surface is the one with lowest energy, followed by (110) and (100).
+
+%\begin{table}\centering
+%\caption{Crystal properties from \cite[29ff]{riemann_ionic_2002, ma_interplay_2016, liu_oxygen_2014}}
+%\label{tab:step-heights}
+%\begin{tabular}{cccc}
+%			&				& Copper 	 & Silver \\
+%\multicolumn{2}{c}{Lattice constant}			& \SI{3.61}{\angstrom} & \SI{4.08}{\angstrom} \\
+%\multicolumn{2}{c}{Nearest neighbor}			& \SI{2.55}{\angstrom} & \SI{2.89}{\angstrom} \\ \hline \\
+%\multirow{3}{*}{Step height}	& (311) & \SI{4.23}{\angstrom} & \SI{4.78}{\angstrom} \\
+%								& (211) & \SI{6.25}{\angstrom} & \SI{7.08}{\angstrom} \\
+%								& (221) & \SI{7.66}{\angstrom} & \SI{8.65}{\angstrom} \\
+%								& (110) & \SI{1.38}{\angstrom} & \\
+%								& (111) & \SI{1}{\angstrom} & \\
+%								& (100) & \SI{1.8}{\angstrom} & \\
+%
+%\end{tabular}
+%\end{table}
 
 \subsection{Dislocation lines and crystal orientation}
 Due to the fact, that dislocation lines move within the crystal in a well defined manner, one can determine the crystals orientation when the orientation of a dislocation is known.
 For fcc crystals the orientation of dislocation lines occurs in the {111} plane in $<110>$ direction. Its Burgers vector is $\frac{a}{2}[110]$\cite{_dislocation-theory}. \underline{ADD INFO	FOR 100!!!}
+
+ Dense packed rows in fcc(111) are the following directions: $<\bar 1 01>$, $<01\bar 1>$, $<1\bar 1 0>$. The diagonals are found in the $<\bar 1 \bar 1 2>$ and $<1\bar 2 1>$ directions. \underline{ADD INFO	FOR 100!!!}
+ 
+\subsection{Au(111)/Mica}
+Au(111) substrates can be used either as single crystal or as thin evaporated layers on Mica. Here only the uppermost crystal layers ($\approx \SI{150}{\nano \meter}$) are gold that is supported by a mica substrate. Au(111) is known to reconstruct its surface to a herringbone shaped $22\times\sqrt{3}$\cite{Hanke_structure_2013}. This leads to the surface atoms being divided in regions with different registry (fcc/hcp) to the "bulk" atoms. When imaged in STM, these regions can be distinguished by their width, where fcc regions are wider than hcp regions which are separated by lines of higher lying, thus bright appearing, surface atoms. The two different surface terminations lead to chemical differing substrate regions, leading to a site-preferring adsorption of atoms and molecules \cite{pham_self-assembly_2014, pham_heat-induced_2015}.
+
+\begin{figure}\centering
+	\subfigure[Calculated structure of the reconstructed
+	Au(111) surface, using the vdWDF/PBE density functional. (a) Site
+	character c: distance from the ideal fcc and hcp site for each atom
+	in the top layer, as discussed in the text. (b) Structure of the top
+	layer. The color coding in the top half denotes the atom type, with
+	yellow atoms being of fcc and green atoms being of hcp type. On
+	the bottom half, the color indicates atomic height, with yellow atoms
+	being the closest to the ideal fcc lattice continuation from below.
+	(c) Calculated top-layer height with respect to the ideal fcc lattice
+	and an experimental line scan.
+	]{\includegraphics[width=0.45\textwidth]{./images/au-111-reconstruction}
+%		\label{fig:au-111-1}
+	} \quad
+	\subfigure[Schematic representation of the
+	Au(111)/$22\times\sqrt{3}$ reconstruction, showing how 23 surface atoms fit
+	into 22 lattice sites by compressing the top layer of the surface with
+	the additional atoms colored dark red. The positions corresponding
+	to lined-up fcc and hcp sites are indicated by the vertical lines.
+	STM image of the Au(111) herringbone reconstruction ($V_{tip} =
+	0.9 eV, I_{set} = 1 nA$).
+	]{\includegraphics[width=0.45\textwidth]{./images/au-111-reconstruction-2}
+%		\label{fig:au-111-2}
+	}
+\label{fig:au11-herigbone}
+\end{figure}

@@ -15,3 +15,41 @@
 \newcommand*{\getSubmissionLocation}{Munich}
 \newcommand*{\getDisclaimer}{I assure the single handed composition of this \MakeLowercase{\getDoctype{}} only supported by declared resources.}
 % TODO: add custom commands etc.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Python style for highlighting
+% Check https://tex.stackexchange.com/questions/83882/how-to-highlight-python-syntax-in-latex-listings-lstinputlistings-command#83883
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+
+\newcommand\pythonstyle{\lstset{
+		language=Python,
+		basicstyle=\small,             %\ttm, \tiny \small
+		otherkeywords={self},             % Add keywords here
+		keywordstyle=\small\color{deepblue},
+		emph={MyClass,__init__},          % Custom highlighting
+		emphstyle=\small\color{deepred},    % Custom highlighting style
+		stringstyle=\color{deepgreen},
+		frame=tb,                         % Any extra options here
+		showstringspaces=false,           % 
+		frame=single,
+		numbers = left,
+		numbersep=5pt
+}}
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+	\pythonstyle
+	\lstset{#1}
+}
+{}
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+		\pythonstyle
+		\lstinputlisting[#1]{#2}}}
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

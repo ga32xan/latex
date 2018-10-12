@@ -62,14 +62,14 @@ outer=50mm,
    \input{./includes/frontmatter/acknowledgements}								%	 				%
    \input{./includes/frontmatter/abstract}										%					%
  \microtypesetup{protrusion=false}												%					%
- \setcounter{tocdepth}{1}														%   [1=sections]	%
+ \setcounter{tocdepth}{4}														%   [1=sections]	%
 	\tableofcontents{}														 	% 					%
  	\listoffigures														 		% 					%
  	\listoftables																% 					%
  \microtypesetup{protrusion=true}												%		 			%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{./includes/frontmatter/preface}
+%\input{./includes/frontmatter/preface}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mainmatter{}
 \chapter{Introduction}
@@ -92,15 +92,24 @@ Several experimental methods are used within this work to determine different ph
 \chapter{Experimental setup and sample preparation}
 To conduct experiments in the most controlled environment possible, sample preparation is done in ultrahigh vacuum (UHV) chambers. With a base pressure of $\approx \SI{1e-10}{\milli \bar}$ these stainless steel chambers are virtually free of contaminants. After cleaning the metallic substrates, ad-layers and molecular species are deposited and investigated without contaminations of residual gases.  Experiments were done at three different experimental chambers: (1) A LT-STM chamber. The technical aspects of the preparation and experimental chamber are discussed elsewhere \cite{urgel_tendero_two-dimensional_2015, schwarz_assembly_2018, wiengarten_scanning_2015} and shortly summarized here. (2) A RT-STM with XPS capabilities. The technical aspects and build details are given in \cite{schwarz_assembly_2018}. (3) The NIM-XPS chamber. This chamber is chosen because of it is possible to investigate chemical properties and coverage with XPS while an UV-Vis spectrometer is used to access the electronic structure of the occupied states. (4) A LT-AFM machine offers a complementary investigation method for geometric information. Its setup details can be found in \cite{he_bottom-up_2017}.
 
+
+
   \section{Experimental setup}
     \input{./includes/chapter/experimental-setup}
-  \section{Surfaces and ad-layers}
-  Single crystals of copper and silver (terminated for (111) and (100) surfaces) are used as substrates as well as polycrystalline copper foils. All of them are used to deposit molecules. Some experiments are done to investigate molecules on \textit{h}-BN/Cu(111) and \textit{h}-BN/Cu(foil). The following sections will describe the relevant physical properties of the various substrates and will introduce a method to prepare polycrystalline copper foils to grow \textit{h}-BN on.
-     \subsection{Crystal facets}
+  \section{Substrates and ad-layers}
+Molecular adsorption experiments are done with single crystalline substrates of copper and silver, terminated at (111) and (100) surfaces. Polycrystalline copper foils and gold evaporated on mica are used as well. Some experiments are done to investigate molecules on \textit{h}-BN/Cu(111) and \textit{h}-BN/Cu(foil). 
+
+The following sections will describe the relevant physical properties of the various substrates and will introduce a method to prepare polycrystalline copper foils to grow \textit{h}-BN on. An example for chemical vapor deposition of borazine on a transition metal surface is given. The geometric properties of the resulting lattice mismatched system are discussed briefly. The molecules used for experiments are introduced at the end of the chapter.
+     \subsection{Single crystal substrates}
         \input{./includes/chapter/crystal}
-     \subsection{Surface states}
-		\input{./includes/chapter/surface-states}
-     \subsection{Electro polishing}
+  %   \subsection{Surface states}
+	%	\input{./includes/chapter/surface-states}
+     \subsection{Polycrystalline substrates}
+     As was mentioned before, clean, highly ordered surfaces are desirable to perform experiments on. Effort is done to clean the surfaces before every experiment to ensure a reproducible environment and interpretable results. This lead to a detailed understanding of the physics and chemistry behind a lot of systems. In case a systems order and functionality does not heavily depend on the substrates symmetry, single crystals loose most of their unique selling point. Instead of choosing a expensive bulk single crystal, thin copper foils can catch up in production environments. The mass produced foils still show some inconvenient properties. Although pure copper foils ($\geq \SI{99.999}{\percent}$) are available, their surface was never meant to be atomically flat. 
+     A representation of a copper surface before electro polishing can be seen in figure \ref{fig:copper-foil-grains}. Here the layered structure of the (mechanically polished) foil is apparent and shows different sizes of grains and annealing twins at the surface. Small subgrains constitute the uppermost layers, while deeper lying layers consist of larger grains with grain boundaries becoming more and more diffuse with increasing distance to the surface.
+     
+     The surface termination is not homogeneous and is made of several domains with different facet orientation thus showing different step heights as indicated in table \ref{tab:step-heights}.
+     \subsubsection{Electropolishing}
     	\input{./includes/chapter/electropolishing}
      \subsection{Growing atomically thin ad layers with \textbf{C}hemical \textbf{V}apor \textbf{D}eposition}
         \input{./includes/chapter/cvd}     
@@ -133,6 +142,8 @@ To conduct experiments in the most controlled environment possible, sample prepa
      \input{./includes/chapter/xps-as-bought}
   \section{Application: Molecular functionalization with TPCN}
      \input{./includes/chapter/TPCN-on-h-BN-on-Cu-foil}
+  \section{Conclusion}
+     \input{./includes/chapter/foils-conclusion}
 %\printbibliography	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%\chapter{TPCN}
@@ -141,7 +152,7 @@ To conduct experiments in the most controlled environment possible, sample prepa
 %%   \section{on h-BN on Cu(111)}
 %%    \input{./includes/chapter/TPCN-on-h-BN-on-Cu111}
 %%\printbibliography
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Tert-Butyl-Phenyl Porphine}
     \input{./includes/chapter/TBP-intro}
   \section{Single leg functionalization}
@@ -161,31 +172,54 @@ To conduct experiments in the most controlled environment possible, sample prepa
    \subsection{on Ag(100)}
       \input{./includes/chapter/TBP-double-Ag100}
 %\printbibliography
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Hexabenzocoronene - w/o central borazine core}
 	\section{Find a nice title!}
 		\input{./includes/chapter/HBC-HBBNC}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Unsorted}
-   \section{measurements without clear interpretation}
-      \input{./includes/chapter/unsorted}
-%\printbibliography
-	\printindex
+\chapter{Summary}
+      \input{./includes/chapter/summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter{}
   \printbibliography  
-%	\addcontentsline{toc}{chapter}{Index}
-  \addcontentsline{toc}{chapter}{Appendix}
-  \input{./includes/backmatter/backmatter}
-    %% TBP-Appendix
-  \input{./includes/chapter/backmatter/Appendix-tbp}
+\chapter{Appendix}
+%\addcontentsline{toc}{chapter}{Index}
+%  \addcontentsline{toc}{chapter}{Appendix}
+%  \input{./includes/backmatter/backmatter}
+\section{Crystal facets}
+  \input{./includes/chapter/backmatter/crystal-facet}
     %% Orbital calculations
+\section{Orbital calculations for pyrene molecules}
+In this section extended hückel theory calculations of functionalized pyrene molecules are shown. After structural relaxation via the AM1 semi-empirical method in the Hyperchem software, the result is exported to an IGOR script for presentation. Single molecular orbitals as well as their sum can be shown. For all molecules some basic information is given in a box. The number of atoms, electrons and calculated orbitals is given together with a ball and stick model of the corresponding molecule. Calculated HOMO/LUMO states are shown to the right with their energies noted below.
+The left side of the pages shows occupied states (second column) and their sum (first column). The right side shows the unoccupied in the same manner.
+
+The first two pages will show cis-pyrene as calculated in gas phase together with a model showing the rotation of pyridil legs and the influence on molecular orbitals. Trans- \& tetra-pyrene molecules are shown afterwards.
+
+Due to the same molecular center, all the species show distinct symmetry at their pyrene center. For the highest occupied state the nodal plane
+%%%%%%%%%%%%%%%%%%%%%
+% Change to larger page layout
+%%%%%%%%%%%%%%%%%%%%%
+\newgeometry{top=2cm,bottom=2cm}%
+%
   \input{./includes/chapter/backmatter/EHT-cis-pyrene}
   \input{./includes/chapter/backmatter/EHT-cis-pyrene-60}
   \input{./includes/chapter/backmatter/EHT-trans-pyrene}
   \input{./includes/chapter/backmatter/EHT-tetra-pyrene}
+\restoregeometry
+%%
+  \input{./includes/chapter/backmatter/TBP-distance}
 
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{landscape}
+\section{Python interface for a Maxigauge-TPG256A}
+  \pythonexternal{./includes/chapter/backmatter/Maxigauge-TPG256A.py} %see commands for this 
+\end{landscape}
+% Restore page layout
+\restoregeometry
+ %%%%%%%%%%%%%%%%%%%%
+     %% TBP-Appendix
+ \section{Ordered areas off TBP}
+ \input{./includes/chapter/backmatter/Appendix-tbp}
 \end{document}

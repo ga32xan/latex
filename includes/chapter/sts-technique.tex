@@ -8,7 +8,7 @@ Therefore the bias is modulated with a sinus like waveform. \index{STS!modulatio
 \index{STS!Bias below work function}
 First let us consider small biases.
 If tunneling conditions are such that $eV\leq\Phi$, observed features in $dI/dV$ are associated with the surface DOS. Critical points in the surface projected DOS give rise to features in $dI/dV$. Interpretation of these features with the WKB theory (i.e. differentiating equation \eqref{WKB}) gives
-$$dI/dV=\rho_s(r,eV)\rho_t(r,0)T(eV,eV,r)+\int_0^{eV}\rho_s(eV)\rho_t(r,E-eV)\frac{dT(E,eV,r)}{dV}dE$$
+$$dI/dV=\rho_s(r,eV)\rho_t(r,0)T(\textcolor{red}{\textbf{eV}},eV,r)+\int_0^{eV}\rho_s(eV)\rho_t(r,E-eV)\frac{dT(E,eV,r)}{dV}dE$$
 The first term contains the DOS of the sample and tip and the transmission function. While it is usually unknown, a closer look to \eqref{Transmission-function} indicates a smooth, monotonically increasing function in V. This mannered dependence on V gives a smooth background described by the second term $\int_0^{eV}\rho_s(eV)\rho_t(r,E-eV)\frac{dT(E,eV,r)}{dV}dE$.
 Because T is smooth and monotonic the first term $\rho_s(r,eV)\rho_t(r,0)T(eV,eV,r)$ introduces the dependence on the DOS in the sample for energies $eV$ - our desired spectrum.
 
@@ -18,14 +18,14 @@ As the transmission factor changes with the decay length, the tunneling current 
 
 The origin of the strongly voltage depended background can be found in WKB theory as well.
 When writing the tunneling current as 
-$$ I=\int_0^{eV}\rho_s(r,E)\rho_t(r,eV+E)exp\left(-\frac{2Z\sqrt{2m}}{\hbar}\sqrt{\frac{\Phi_s+\Phi_t}{2}+\frac{eV}{2}-E}\right)dE $$
+$$ I=\int_0^{eV}\rho_s(r,E)\rho_t(r,eV+E)exp\left(-\frac{\textcolor{red}{\textbf{2}}Z\sqrt{2m}}{\hbar}\sqrt{\frac{\Phi_s+\Phi_t}{2}+\frac{eV}{2}-E}\right)dE $$
 the tunneling current reduces to 
 \begin{equation}
-\bar I=\rho_s\rho_t \bar V exp\left(-\frac{2\sqrt{2m}}{\hbar}\sqrt{\Phi}Z\right)
+\bar I=\rho_s\rho_t \bar V exp\left(-\frac{\textcolor{red}{\textbf{2}}\sqrt{2m}}{\hbar}\sqrt{\Phi}Z\right)
 \label{tc}
 \end{equation}
 Assuming that DOS of tip and sample $\rho_t/\rho_s$ are constant, as well as discarding the change of the tunneling barrier with the bias voltage(an assumption only valid for very small voltages with $eV<<\Phi$) the derivative of \eqref{tc} is given by
-$$\frac{dI}{dV}=e\rho_s\rho_texp\left(-\frac{2\sqrt{2m}}{\hbar}\sqrt{\Phi-\frac{eV}{2}}\right)Z$$
+$$\frac{dI}{dV}=e\rho_s\rho_texp\left(-\frac{\textcolor{red}{\textbf{2}}\sqrt{2m}}{\hbar}\sqrt{\Phi-\frac{eV}{2}}\right)Z$$
 Substituting Z with the one obtained by \eqref{tc} leads to $dI/dV= \bar I / \bar V$ - which diverges as  $1/V$ when going to very low bias voltages and gives another contribution to the background. This makes it hard to observe features in close proximity to the fermi level ($V_{bias}=\SI{0}{\volt}$). This background can be reduced when operating at constant tunneling resistance and not at constant current. When doing this, features usually obscured by the $1/V$ diverging background can be observed.\footnote{A comprehensive overview on measurement technique and analysis can be found in \cite{bonnell_scanning_1993}. For information on normalization of STS and to reduce the background close to $E_F$, see \cite{feenstra_tunneling_1987}.}
 
 \index{STS!Bias above work function}

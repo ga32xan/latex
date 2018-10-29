@@ -29,13 +29,14 @@ headings=normal,		% Kleinere Kapitelüberschriften => check preamble
 headsepline,			% Enable line to seperate head ...
 footsepline,			% ... and foot
 plainfootsepline,		% Footseperation line on chapter start
+%,draft
 ]{scrbook}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Change Page Geometry %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[
 top=30mm,
 bottom=55mm,
 inner=25mm,
-outer=50mm,
+outer=30mm,
 %marginparsep=7mm,
 %marginparwidth=48mm,
 %paperwidth=210mm,
@@ -64,8 +65,8 @@ outer=50mm,
  \microtypesetup{protrusion=false}												%					%
  \setcounter{tocdepth}{4}														%   [1=sections]	%
 	\tableofcontents{}														 	% 					%
- 	\listoffigures														 		% 					%
- 	\listoftables																% 					%
+% 	\listoffigures														 		% 					%
+% 	\listoftables																% 					%
  \microtypesetup{protrusion=true}												%		 			%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -112,7 +113,8 @@ The following sections will describe the relevant physical properties of the var
      \subsubsection{Electropolishing}
     	\input{./includes/chapter/electropolishing}
      \subsection{Growing atomically thin ad layers with \textbf{C}hemical \textbf{V}apor \textbf{D}eposition}
-        \input{./includes/chapter/cvd}     
+        \input{./includes/chapter/cvd}
+\clearpage             
      \subsection{Geometric effects in ad-layers}
 		\input{./includes/chapter/moire}
   \section{Used molecules}
@@ -173,7 +175,9 @@ The following sections will describe the relevant physical properties of the var
       \input{./includes/chapter/TBP-double-Ag100}
 %\printbibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Hexabenzocoronene - w/o central borazine core}
+\chapter{Borazine functionalized coronene}
+Coronene ($C_{24}H_{12}$, known as [6]circulene or superbenzene) is a polycyclic aromatic hydrocarbon made of six carbon rings to form a molecule reminiscent of a small graphene flake. It belongs to the family of circulenes where a central polygon is enclosed by different numbers of fused benzenoids. For example [5]circulene (corannulene), [6]circulene (coronene), [7]circulene,[2][3][4][5] and higher orders could be synthesized and show different conformation. While species with [5] or [7] benzene rings are bowl shaped, coronene is flat.
+
 	\section{Find a nice title!}
 		\input{./includes/chapter/HBC-HBBNC}
 
@@ -197,10 +201,10 @@ The left side of the pages shows occupied states (second column) and their sum (
 
 The first two pages will show cis-pyrene as calculated in gas phase together with a model showing the rotation of pyridil legs and the influence on molecular orbitals. Trans- \& tetra-pyrene molecules are shown afterwards.
 
-Due to the same molecular center, all the species show distinct symmetry at their pyrene center. For the highest occupied state the nodal plane
-%%%%%%%%%%%%%%%%%%%%%
+Due to the same molecular center, all the species show distinct symmetry at their pyrene center. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Change to larger page layout
-%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newgeometry{top=2cm,bottom=2cm}%
 %
   \input{./includes/chapter/backmatter/EHT-cis-pyrene}
@@ -208,18 +212,20 @@ Due to the same molecular center, all the species show distinct symmetry at thei
   \input{./includes/chapter/backmatter/EHT-trans-pyrene}
   \input{./includes/chapter/backmatter/EHT-tetra-pyrene}
 \restoregeometry
-%%
   \input{./includes/chapter/backmatter/TBP-distance}
-
-%
 \begin{landscape}
 \section{Python interface for a Maxigauge-TPG256A}
   \pythonexternal{./includes/chapter/backmatter/Maxigauge-TPG256A.py} %see commands for this 
 \end{landscape}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Restore page layout
 \restoregeometry
- %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
      %% TBP-Appendix
- \section{Ordered areas off TBP}
+ \section{Ordered areas of TBP}
  \input{./includes/chapter/backmatter/Appendix-tbp}
+ %%%%%%%%%%%%%%%%%%%%
+%% HBBNC-Appendix
+\section{HBBNC}
+\input{./includes/chapter/backmatter/HBBNC-SI} 
 \end{document}

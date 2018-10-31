@@ -1,5 +1,6 @@
 Introducing STM as a electronically sensitive method to investigate surfaces, the atomic force microscopy interacts in a different way with the sample.
 To scan the surface of the sample, one uses an small tip (cantilever) to interact with it. Due to its small distance different kinds of forces occur. The force induced movement of the tip is then interpreted and information about the surface may be derived.
+\subsection{Theory}
 The layout of a typical \index{AFM} consists of the cantilever itself and some kind of tip-position measurement. Earlier are made of the position-sensitive detector (PSD) consisting of two closely spaced photo diodes whose output signal is collected by a differential amplifier. Todays AFMs feature a Q-Plus sensor, as shown in \autoref{fig:AFM-qplus}. Here the tip is positioned on top of an oscillating fork that is operated close to its resonance frequency. If the tip interacts with the sample, its oscillations is hindered and the frequency of the oscillation shifts. From this shift in frequency one can estimate the strength of the acting force. Since every type of adsorbate atom acts in different ways with the tip, AFM is element specific. A magnetic tip can be used to scan for magnetic forces on the sample surface. With an added wire to the AFM tip, simultaneous AFM and STM measurements are possible. 
 
 \begin{figure}\centering
@@ -31,11 +32,9 @@ Types of forces are are typically:
 
 The typical resulting force between tip and sample is artistically shown in \autoref{fig:AFM-force}. On the top part a cantilever with an atomic tip is shown on top of the sample surface. The interaction forces $F_{ts}$ act between tip and sample and are indicated by an arrow. In the lower part a representation of the resulting force in dependence of the tip-sample distance is shown. Although many different forces may act, the resulting potential is often modeled with a Lennard-Jones-Potential $LJ$\cite{jones_determination_1924}. Two of these are plotted with green and blue dots. The acting vdW force is plotted in dashed green. The sum of the acting forces is labeled $\sum$. A typical frequency shift $\Delta f$ is given as red graph. One can distinguish different regimes as indicated by the arrows. When tip and sample are in considerable distance to each other, the attractive vdW forces are the dominant part in the sum. While the tip approaches the sample, more and more interactions with the surface and adsorbate add to this force, strengthening $F_{ts}$. When the separation reaches $z_0$, the distance becomes so small that repulsive forces overcome the attractive one - entering the repulsive regime shortly afterwards. The best images were recorded close to the onset where $F_{ts}$ 
 
-There are several operational modes to drive an AFM:
+We used AFM in the nc-mode:
 \begin{enumerate}
- \item \textbf{Contact (static) mode}: The cantilever is operated in contact with the sample surface. At very close proximity, repulsive forces are stronger than the attracting ones. The signal used to gain information on the sample is either the feedback loop to keep the tip at the same absolute position or directly the deflection of the cantilever.
- \item \textbf{Intermittend contact mode (tapping) mode}: While the contact mode has some disadvantages when scanning samples with an adsorbat layer (tip sticks to surface when close ehough to measure short-range forces) another mode has established. Hereby the tip oscillates with amplitudes in the \SIrange{100}{200}{\nm} regime and is not dragged the whole way across the sample. The intermittent forces acting on the tip when reaching the sample are measured. The change in amplitude when in close vicinity to the surface is a sign of the actual height.
- \item \textbf{Non-contact mode}: The cantilever is driven at its resonance frequency with amplitudes smaller than \SI{10}{\nm} and at a certain distance to the sample. Long-range forces like van-der-waals and others change the resonance frequency of the cantilever. This change is a indication of the acting force between cantilever and sample. This mode is used within the scope of this work.
+  \item \textbf{Non-contact mode}: The cantilever is driven at its resonance frequency with amplitudes smaller than \SI{10}{\nm} and at a certain distance to the sample. Long-range forces like van-der-waals and others change the resonance frequency of the cantilever. This change is a indication of the acting force between cantilever and sample. This mode is used within the scope of this work.
 \end{enumerate}
 
 \begin{itemize}
@@ -46,3 +45,7 @@ There are several operational modes to drive an AFM:
 Its advantages are the comparable large image size of many hundred \si{\nm} compared to only some dozen \si{\nm} in the case of STM. Scan speeds are typically some orders of magnitude larger than those in STM so that image acquisition is much faster.
 
 To increase the resolution the tip can be functionalized with CO (see figure \ref{fig:AFM-CO}). This method is widely used\footnote{Only a few examples from the recent years can be found here \cite{albrecht_direct_2016, kawai_multiple_2018, kawai_atomically_2015, schulz_elemental_2018, gross_chemical_2009, pavlicek_generation_2017, schwarz_corrugation_2017}} to investigate not only geometric features that are not accessible in STM, but also chemical differences on the sample\cite{wang_exploration_20170}.
+
+\subsection{Experimental details}
+\subsection{Methods}
+\subsection{Limitations}

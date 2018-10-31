@@ -1,1 +1,0 @@
-del /Q /S /F C:\Users\ga32xan\AppData\Local\Temp\par-6761333278616e\cache-c38a9b05b97a81d339b4947ba00f0aacefe00497

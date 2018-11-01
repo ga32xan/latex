@@ -40,8 +40,7 @@
 %\usepackage{url}
 \usepackage[section]{placeins} %definiert \floatbarrier, mit option automatisch bei jeder section
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{subfigure}
-% Use subfigure to do (a), (b) and such graphics.
+
 \newcommand{\subfigureautorefname}{\figureautorefname}
 %There is nothing like a subfigure autoref name, so define one. Figures are cited with \autoref{label} and preceeded with a "Figure" in-text.,
 \usepackage{wrapfig}
@@ -50,9 +49,18 @@
 \newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}} % One single link
 % see https://tex.stackexchange.com/questions/121865/nameref-how-to-display-section-name-and-its-number
 
-\usepackage{caption}
 \usepackage{microtype}
-%\usepackage{subcaption}
+
+\usepackage[format=plain,labelsep=endash,font=it,labelfont=bf]{caption}			% Change figure captions
+\usepackage{subfigure}					%replaced by subfig?!
+% Use subfigure to do (a), (b) and such graphics.
+% will apply to all captions
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% will apply to all subcaptions
+%\usepackage[labelfont=bf,font=it,singlelinecheck=off,justification=raggedright]{subcaption}
+% won't work in conjunction with subfigure!!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{multicol}
 \usepackage{multirow}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -65,7 +73,7 @@
 ,backend=biber
 %,refsection=chapter			% setzt bibliographies nach chaptern getrennt, nach jedem chapter muss ein 
 								% printbibliogrphy stehen
-,sorting=none
+,sorting=none					% Der Reihenfolge im Dokument nach ordnen
 ]{biblatex} 	
 \addbibresource{./bib.bib}  	% relative to root directory (where the file that includes this file is located)! 
 								%do NOT OMIT .bib ending

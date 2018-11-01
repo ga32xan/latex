@@ -1,0 +1,2077 @@
+#LyX file created by tex2lyx 2.1
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrbook
+\options BCOR=8mm,headings=normal,headsepline,footsepline,plainfootsepline
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chapter:used-molecules"
+
+\end_inset
+
+ The following molecules have been used to conduct experiments. Images show the molecules in a 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+SI
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+4x4
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+nano
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+meter
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ area in an orthographic projection. Since all of them feature distinct properties, all of them are introduced in the following subsections. We will utilize porphyrine derivatives (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+autoref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+sec:TBP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+), functionalized pyrene molecules (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+autoref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+sec:pyrene
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+), helicene species (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+autoref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+sec:helicene
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+) and coronene (w
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+/
+\end_layout
+
+\end_inset
+
+o central borazine functionalization, see 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+autoref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+sec:hbc
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+All the depicted molecules are modeled in Hyperchem
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "_hyperchemtm_1111"
+
+\end_inset
+
+ and calculated for optimized geometry with the AM1+ method. Afterwards their positions are exported and remodeled in blender. Note that this does not change their geometry. It is only for better control of the output (faster and more accurate model building especially in 3D) and for some aesthetic reasons.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	pyrenes   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Pyrene: Pyridilethynyl functionalized pyrenes
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:pyrene"
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+molecules!Pyrene
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+tetra-pyrene:
+\end_layout
+
+\end_inset
+
+1,3,6,8-Tetra(4-Pyridylethynyl)pyrene 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+cis-pyrene:
+\end_layout
+
+\end_inset
+
+1,8-Bis(4-Pyridylethynyl)pyrene 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+trans-pyrene:
+\end_layout
+
+\end_inset
+
+1,6-Bis(4-Pyridylethynyl)pyrene 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subfigure[Tetra-configuration]{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../../images/molecules/pyrene-tetra.png
+	width 30text%
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pyrene-tetra"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subfigure[Trans-configuration]{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../../images/molecules/pyrene-trans.png
+	width 30text%
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pyrene-trans"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subfigure[Cis-configuration]{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../../images/molecules/pyrene-cis.png
+	width 30text%
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pyrene-cis"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pyridyl-Pyrene molecules in trans- 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:pyrene-trans
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and cis- 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:pyrene-cis
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and tetra- 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:pyrene-tetra
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ configuration
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pyrene"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pyrene molecules, first investigated in 1973 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "khan_electronic_1973"
+
+\end_inset
+
+, are 4 ortho-fused carbon rings to result in a rhombic structure. As many other 
+\begin_inset Formula $\pi$
+\end_inset
+
+ conjugated systems they show interesting optoelectronic properties like 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "crawford_experimental_2011, lee_enhanced_2012, feng_functionalization_2016, kurata_diarylamino-_2017, maeda_alkynylpyrenes_2006, kurata_diarylamino-_2017"
+
+\end_inset
+
+ and assembly was investigated 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "pham_self-assembly_2014, matena_aggregation_2010, della_pia_anomalous_2014, pham_comparing_2016"
+
+\end_inset
+
+. Here they are used to investigate the influence of the number and position of functional groups on these properties. The very same species have been investigated on Cu(111) albeit data adsorbed on 
+\shape italic
+h
+\shape default
+-BN/Cu(111) was lacking up to this point. The nano-pattering effect of the 
+\shape italic
+h
+\shape default
+-BN substrate is used here to modulate the wide band gap of the species and therefor their optical properties. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	HBBNC + HBC   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Coronene: HBBNC and HBC
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:hbc"
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+molecules!Coronene
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+HBBNC:
+\end_layout
+
+\end_inset
+
+2-8-14-trixylyl-hexaphenyl borazinocoronene 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+HBC:
+\end_layout
+
+\end_inset
+
+2,8,14-trixylyl-hexabenzocoronene 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subfigure[HBBNC]{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../../images/molecules/HBBNC.png
+	width 30text%
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:HBBNC"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \quad{}
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subfigure[HBC]{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../../images/molecules/HBC.png
+	width 30text%
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:HBC"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \quad{}
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:HBBNC
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ HBBNC and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:HBC
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ HBC
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:HBBNC+HBC"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While in 2015
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Krieg_construction_2015"
+
+\end_inset
+
+ and 2016 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Ciccullo_Quasi-Free-Standing_2016"
+
+\end_inset
+
+ hexy-peri-Hexabenzoborazino coronene (HBBNC) was synthesized, its bad solubility prohibited experiments. In 2017 the synthesis 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "dosso_synthesis_2017"
+
+\end_inset
+
+ of a soluble, BN-doped coronene derivative by substitution of the central carbon ring was successful. By using HBBNC the HOMO-LUMO band gap could be widened and shows blue-shifted emission properties
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "dosso_synthesis_2017"
+
+\end_inset
+
+ compared to its all-carbon counterpart. Investigations with STM are performed on Au(111) 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Krieg_construction_2015"
+
+\end_inset
+
+. Here the central 
+\begin_inset Formula $(BN)_3$
+\end_inset
+
+ core is oriented to point all nitrogen atoms towards the leg functionalization. Due to the different electro negativity of the atomic species adsorption of gases in the central part can be interesting effects to look out for. In this thesis we focused on the geometric properties of this molecule first. Please refer to 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+autoref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+section:HBBNC
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ for detailed information.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	TPCN      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+subsection{TPCN}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%TPCN can be evaporated with an OMBE. Temperatures used are typically 
+\backslash
+SI{490}{
+\backslash
+celsius}, evaporation time depends on the intended coverage. 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+begin{itemize}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%	
+\backslash
+item [TPCN:] Tetra[(4-cyanophenyl)-phen-4-yl] porphyrin has four arms attached to the meso-positions of the macrocycle. Each is build up from two chained phenyl rings with one end attached to the macrocycle and the other one attached to a C-N end group. Due to their flexibility, they are versatile connection segments 
+\backslash
+cite{fendt_modification_2009}.
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+begin{figure}[]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%	
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%	
+\backslash
+includegraphics[width=0.3
+\backslash
+textwidth]{./images/molecules/TPCN}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%	
+\backslash
+caption{TPCN molecule}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%	
+\backslash
+label{fig:TPCN}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%nitro-prophines%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Porphine: [di-[tert-butyl]-phenyl)]-porphyrin derivatives
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:TBP"
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+molecules!TBP
+\end_layout
+
+\end_inset
+
+ Tetrapyrroles like porphyrins and phthalocyanines play important roles in biological systems 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "battersby_tetrapyrroles_2000"
+
+\end_inset
+
+. Both species are able to incorporate metal atoms that control the function. Not only are they interesting model systems to study interaction towards a (metallic) substrate
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "auwarter_porphyrins_2015, auwarter_controlled_2007, diller_vacuo_2016"
+
+\end_inset
+
+. Their use in metal-organic frameworks highlights the use of scientific knowledge to design "real world" sensor applications
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Lustig_Metal-organic_2017"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Tert-butyl functionals have been used in a variety of molecules 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "moresco_conformational_2001"
+
+\end_inset
+
+. Due to their bulky nature, they electronically decouple the porphyrinâs de-localized p-orbital system from the metallic surface just by lifting the molecule. They may undergo heavy conformational deformation when outer influences (like metalization of the central porphine core) act on the molecule 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "stark_massive_2014"
+
+\end_inset
+
+. Switching capabilities are well investigated 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "loppacher_direct_2003"
+
+\end_inset
+
+ and it is possible to switch them with the STM tip 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "ditze_energetics_2014"
+
+\end_inset
+
+. Experiments with similar molecules investigate the heat-induced formation of 1D and 2D conglomerates on a Au(111) surface.
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "pham_heat-induced_2015"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Free base nitrophenyl - 5,10,15 Tri [di-[tert-butyl]-phenyl)]-porphyrin 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+nitro porphin
+\end_layout
+
+\end_inset
+
+ has 3(2) di-tert-butyl-phenyl groups attached to the porphine macro cycle at the meso-positions of the molecule. The free meso-positions are occupied with nitrophenyl groups as shown in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+autoref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:TBP-single
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ If more than one functional group is present, one can distinguish between trans (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+autoref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:TBP-trans
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+) and cis configuration (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+autoref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:TBP-cis
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+), whether the two functional groups are opposite or neighboring. 
+\end_layout
+
+\begin_layout Itemize
+The appearance of STM data is correlated to the molecular configuration according to 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "mishra_current-driven_2015"
+
+\end_inset
+
+ meaning that the lobes consisting of (3,5-di-tert-butylphenyl) are imaged as bright protrusions, while the functional nitro group is imaged fainter. This holds true for cis- and trans-substituted molecules
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "yokoyama_selective_2001"
+
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Itemize
+Tert-butyl groups can rotate and form flexible legs. Interaction with the substrate results in adsorption-induced conformational changes.
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "ecija_dynamics_2016"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Drawings for various functional groups and molecules can be found in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "jorgensen_salem_1973"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+one-leg:
+\end_layout
+
+\end_inset
+
+5,10,15-Tri(3,5-di-tert-butylphenyl)- 20-(Nitrophenyl)porphyrine 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+two-leg cis:
+\end_layout
+
+\end_inset
+
+5,10-Bis(3,5-di-tert-butylphenyl)-15,20-Bis(Nitrophenyl)porphyrine 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+two-leg trans:
+\end_layout
+
+\end_inset
+
+5,15-Bis(3,5-di-tert-butylphenyl)-10,20-Bis(Nitrophenyl)porphyrine 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subfigure[Single functional group]{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../../images/molecules/TBP-single.png
+	width 30text%
+	rotateAngle 90
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TBP-single"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subfigure[Trans-configuration]{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../../images/molecules/TBP-trans.png
+	width 30text%
+	rotateAngle 0
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TBP-trans"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subfigure[Cis-configuration]{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../../images/molecules/TBP-cis.png
+	width 30text%
+	rotateAngle 0
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TBP-cis"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Functionalized tert-butyl-phenyl-porphines. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:TBP-single
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ shows a single functionalized porphine molecules. An additional function may be added in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:TBP-cis
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ cis- and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:TBP-trans
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ position.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TBP"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	helicenes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Helicene: Cyano functionalization of helicenes
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:helicene"
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+molecules!Helicene
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Dicyano-dibenzo-[5
+\end_layout
+
+\end_inset
+
+helicene]: 7,8-Bis(cyano)-Dibenzo-helicene 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subfigure[Top view]{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../../images/molecules/helicene.png
+	width 30text%
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:helicene-top"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \quad{}
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subfigure[Side view]{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../../images/molecules/helicene-side.png
+	width 30text%
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:helicene-side"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \quad{}
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DCDB on copper surface. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:helicene-top
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ Top view, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+fig:helicene-side
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ side view
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:helicene"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Helicenes were first synthezised 1950's 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "newman_synthesis_1956"
+
+\end_inset
+
+. They consist of ortho condensed carbon rings that form a spiral due to overcrowding in their center. While they first drew attention due to their fluorescence properties 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "vander_donckt_fluorescence_1968"
+
+\end_inset
+
+, helicenes are interesting molecules because of their chiral feature. Two different turn directions exist, left and right. The molecules investigated in this work are fcuntionalized with two benzene rings at positions 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+underline{
+\backslash
+qquad}
+\end_layout
+
+\end_inset
+
+ and two cyano groups at positions seven and eight. For more information, please refer to 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+autoref
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+section:helicene
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

@@ -57,8 +57,8 @@ The \index{XPS!binding energies} binding energies of some often observed peaks a
   N & 1s & 398.1\\
   C & 1s & 285\\
   B & 1s & 189.4 \\
-  Cu & 2p $\frac{1}{2} (\frac{3}{2})$ & 953 (933) \\
-  Cu & LMM & 560-580 \\
+%  Cu & 2p $\frac{1}{2} (\frac{3}{2})$ & 953 (933) \\
+%  Cu & LMM & 560-580 \\
   Cu & 3s & 123\\
   Cu & 3p $\frac{1}{2} (\frac{3}{2})$ & 77 (75)\\
  \end{tabular}
@@ -74,8 +74,8 @@ The shape of the peaks typically resembles the line shape of the used X-rays (Ga
  Subshell & j values & Area ratio \\ \hline
  s & $\frac{1}{2}$ & --- \\
  p & $\frac{1}{2}$,$\frac{3}{2}$ & 1:2 \\
- d & $\frac{3}{2}$,$\frac{5}{2}$ & 2:3 \\
- f & $\frac{5}{2}$,$\frac{7}{2}$ & 3:4 \\
+% d & $\frac{3}{2}$,$\frac{5}{2}$ & 2:3 \\
+% f & $\frac{5}{2}$,$\frac{7}{2}$ & 3:4 \\
  \end{tabular}
 \end{table}
 
@@ -84,12 +84,14 @@ The more atoms of a specific kind are present, the larger the signal gets. There
 
 As each irradiated atomic species has a different cross section for adsorption of X-rays with a certain energy they emit auger and core level spectra with a different intensity. Comparing the cross section of e.g. N with B's, one can see that it it roughly \SIrange{3}{4}{times} as large (B: \SI{6,87e3}{\barn\per atom}, N: \SI{25,82e3}{\barn\per atom} for $\textnormal{Al} K_{\alpha}$)\cite{henke_x-ray_1993}. Meaning that the signal from the N is much stronger than that of the B, although their number of atoms is equal.
 
-A calibrated XPS is capable of measuring the surface coverage of an ad-layer (e.g. BN) compared to the bulk of the sample. Calibration works as follows:
-\begin{itemize}
- \item A perfect, full layer of a known material (e.g. C) is prepared (graphene)
- \item The known cross section for C (\SI{6,87e3}{\barn\per atom})\cite{henke_x-ray_1993} relates the signal to the number of atoms in the full layer.
- \item One then has to divide the signal of the unknown coverage (of known material) by the cross section (of C) and directly receives the coverage. Keep in mind that the X-ray penetration depth (and with it the signal of the substrate) stays only constant if the illumination angle stays constant. Even small angular variations may change the signal.
-\end{itemize}
+A calibrated XPS is capable of measuring the \paragraph{surface coverage} of an ad-layer (e.g. \textit{h}-BN) compared to the bulk of the sample. 
+
+%Calibration works as follows:
+%\begin{itemize}
+% \item A perfect, full layer of a known material (e.g. C) is prepared (graphene)
+% \item The known cross section for C (\SI{6,87e3}{\barn\per atom})\cite{henke_x-ray_1993} relates the signal to the number of atoms in the full layer.
+% \item One then has to divide the signal of the unknown coverage (of known material) by the cross section (of C) and directly receives the coverage. Keep in mind that the X-ray penetration depth (and with it the signal of the substrate) stays only constant if the illumination angle stays constant. Even small angular variations may change the signal.
+%\end{itemize}
 Referring to \cite{ertl_low_1986} the fraction $\theta_A$ of an adsorbate A on a surface B can be calculated via
 \begin{equation}\label{eq:adlayer-coverage}
  \theta_A=\frac{I_AI_B^0\cdot \exp(\frac{a_A}{\lambda_A}\cos(\Theta))}{I_AI_B^0( \exp(\frac{a_A}{\lambda_A}\cos(\Theta))-1)+I_BI_A^0\cdot \exp(\frac{a_A}{\lambda_A}\cos(\Theta))}
@@ -110,6 +112,7 @@ where the parameters are given in table \ref{tab:adlayer-coverage-parameters}.
 \end{table}
 
 The mean free path of electrons with energy E in a solid is given by $\lambda_M=\SI{0,41}{}\cdot a_M^{\SI{0,41}{}}\cdot E_M^{\SI{0,5}{}} $ where $a_M$ is the atomic size of M. 
+\textcolor{red}{\textbf{Give atomic size and resulting value}}
 
 \subsection{Experimental details}
 	\paragraph{How X-Rays are created}

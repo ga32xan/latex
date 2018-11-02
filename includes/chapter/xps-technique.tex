@@ -42,9 +42,7 @@ E_B 	&=h\nu_{\textnormal{X-ray}}-E_{kin}-\Phi_{\textnormal{bulk}}
 \cite{zemlyanov_versatile_2018}
 The \index{XPS!chemical surrounding} chemical surrounding of atoms changes their binding energy, making XPS an ideal tool to detect changes in chemical surrounding. Although the analysis is averaged over the area of the incident X-rays (typically profiliate of microns up to several mm) its results are very precise. This makes it possible to distinguish differently bound atoms within single atomic species and therefore gives rise to otherwise not directly observable processes like growth, intercalation, etching and binding of for example graphene islands on Ir(111)\cite{busse_graphene_2011-1,granas_oxygen_2012}. XPS is used to identify oxidation processes of copper surfaces as the interaction of oxygen with the copper surface changes the Cu core level. \cite{deroubaix_x-ray_1992}.
 
-With the use of aluminum X-ray sources, electrons are accelerated with typically \SI{15}{\keV} onto the target. Most of the created radiation goes into the principal characteristic line ($K\alpha_{1,2}$). Higher ones ($K\alpha_{3,4}$, $K\beta$) are also observed but with much lower intensities. In addition there is a continuous background called Bremsstrahlung extending up to the energy of the incident electron energy. This background is of no use for the XPS measurement and has to be subtracted in a more or less artificial way.
-
-For the ease of analysis, many spectra are recorded with monochromatic radiation. This selects a certain energy for the following illumination of the sample. This technique relies on the dispersion of X-rays within a crystal. It is described by the Bragg relation $n\lambda = 2d\sin(\theta)$ where n is the diffraction order, $\lambda$ the wavelength of monochromatic radiation, d the distance between two crystal layers and $\theta$ is the so called Bragg angle. The first order peak for Al $K\alpha$ radiation ($\lambda=\SI{0,83}{\nm}$, $E=\SI{1486,6}{\eV}$) is at $\theta=\SI{78.5}{\degree}$ (using the $10\bar10$ planes of a quartz crystal with $d=\SI{0,425}{\nm}$). Therefore the angle between incident and reflected beam is about \SI{23}{\degree}.\cite{Riviere_90}
+%For the ease of analysis, many spectra are recorded with monochromatic radiation. This selects a certain energy for the following illumination of the sample. This technique relies on the dispersion of X-rays within a crystal. It is described by the Bragg relation $n\lambda = 2d\sin(\theta)$ where n is the diffraction order, $\lambda$ the wavelength of monochromatic radiation, d the distance between two crystal layers and $\theta$ is the so called Bragg angle. The first order peak for Al $K\alpha$ radiation ($\lambda=\SI{0,83}{\nm}$, $E=\SI{1486,6}{\eV}$) is at $\theta=\SI{78.5}{\degree}$ (using the $10\bar10$ planes of a quartz crystal with $d=\SI{0,425}{\nm}$). Therefore the angle between incident and reflected beam is about \SI{23}{\degree}.\cite{Riviere_90}
 
 The spectra used in this work are recorded without monochromatic radiation as not stated otherwise. This is because the electron intensity is attenuated when using a monochromatic source.
 
@@ -84,42 +82,44 @@ The more atoms of a specific kind are present, the larger the signal gets. There
 
 As each irradiated atomic species has a different cross section for adsorption of X-rays with a certain energy they emit auger and core level spectra with a different intensity. Comparing the cross section of e.g. N with B's, one can see that it it roughly \SIrange{3}{4}{times} as large (B: \SI{6,87e3}{\barn\per atom}, N: \SI{25,82e3}{\barn\per atom} for $\textnormal{Al} K_{\alpha}$)\cite{henke_x-ray_1993}. Meaning that the signal from the N is much stronger than that of the B, although their number of atoms is equal.
 
-A calibrated XPS is capable of measuring the \paragraph{surface coverage} of an ad-layer (e.g. \textit{h}-BN) compared to the bulk of the sample. 
-
-%Calibration works as follows:
-%\begin{itemize}
-% \item A perfect, full layer of a known material (e.g. C) is prepared (graphene)
-% \item The known cross section for C (\SI{6,87e3}{\barn\per atom})\cite{henke_x-ray_1993} relates the signal to the number of atoms in the full layer.
-% \item One then has to divide the signal of the unknown coverage (of known material) by the cross section (of C) and directly receives the coverage. Keep in mind that the X-ray penetration depth (and with it the signal of the substrate) stays only constant if the illumination angle stays constant. Even small angular variations may change the signal.
-%\end{itemize}
-Referring to \cite{ertl_low_1986} the fraction $\theta_A$ of an adsorbate A on a surface B can be calculated via
-\begin{equation}\label{eq:adlayer-coverage}
- \theta_A=\frac{I_AI_B^0\cdot \exp(\frac{a_A}{\lambda_A}\cos(\Theta))}{I_AI_B^0( \exp(\frac{a_A}{\lambda_A}\cos(\Theta))-1)+I_BI_A^0\cdot \exp(\frac{a_A}{\lambda_A}\cos(\Theta))}
-\end{equation}
-where the parameters are given in table \ref{tab:adlayer-coverage-parameters}.
-
-\begin{table}[h!]\centering
-\caption{Description of parameters used in equation
-\ref{eq:adlayer-coverage}}
-\label{tab:adlayer-coverage-parameters}
- \begin{tabular}{cc}
-  Parameter & Annotation \\ \hline
-  $I_A$	& integrated intensity of the adsorbate peak \\
-  $I_A^0$ & cross section of element A \\
-  $\lambda_A$ & mean free path of electrons in material A \\
-  $a_A$ & thickness of adlayer \\
- \end{tabular}
-\end{table}
-
-The mean free path of electrons with energy E in a solid is given by $\lambda_M=\SI{0,41}{}\cdot a_M^{\SI{0,41}{}}\cdot E_M^{\SI{0,5}{}} $ where $a_M$ is the atomic size of M. 
-\textcolor{red}{\textbf{Give atomic size and resulting value}}
-
 \subsection{Experimental details}
 	\paragraph{How X-Rays are created}
+	With the use of aluminum X-ray sources, electrons are accelerated with typically \SI{15}{\keV} onto the target. Most of the created radiation goes into the principal characteristic line ($K\alpha_{1,2}$). Higher ones ($K\alpha_{3,4}$, $K\beta$) are also observed but with much lower intensities. In addition there is a continuous background called Bremsstrahlung extending up to the energy of the incident electron energy. This background is of no use for the XPS measurement and has to be subtracted in a more or less artificial way.
 	\paragraph{XRays penetrate the crystal bulk and excite electrons in deep layers}
 	\paragraph{How electrons are analyzed}
 \subsection{Methods}
 	\paragraph{Coverage analysis}
+	
+	A calibrated XPS is capable of measuring the surface coverage of an ad-layer (e.g. \textit{h}-BN) compared to the bulk of the sample. 
+	
+	%Calibration works as follows:
+	%\begin{itemize}
+	% \item A perfect, full layer of a known material (e.g. C) is prepared (graphene)
+	% \item The known cross section for C (\SI{6,87e3}{\barn\per atom})\cite{henke_x-ray_1993} relates the signal to the number of atoms in the full layer.
+	% \item One then has to divide the signal of the unknown coverage (of known material) by the cross section (of C) and directly receives the coverage. Keep in mind that the X-ray penetration depth (and with it the signal of the substrate) stays only constant if the illumination angle stays constant. Even small angular variations may change the signal.
+	%\end{itemize}
+	Referring to \cite{ertl_low_1986} the fraction $\theta_A$ of an adsorbate A on a surface B can be calculated via
+	\begin{equation}\label{eq:adlayer-coverage}
+	\theta_A=\frac{I_AI_B^0\cdot \exp(\frac{a_A}{\lambda_A}\cos(\Theta))}{I_AI_B^0( \exp(\frac{a_A}{\lambda_A}\cos(\Theta))-1)+I_BI_A^0\cdot \exp(\frac{a_A}{\lambda_A}\cos(\Theta))}
+	\end{equation}
+	where the parameters are given in table \ref{tab:adlayer-coverage-parameters}.
+	
+	\begin{table}[h!]\centering
+		\caption{Description of parameters used in equation
+			\ref{eq:adlayer-coverage}}
+		\label{tab:adlayer-coverage-parameters}
+		\begin{tabular}{cc}
+			Parameter & Annotation \\ \hline
+			$I_A$	& integrated intensity of the adsorbate peak \\
+			$I_A^0$ & cross section of element A \\
+			$\lambda_A$ & mean free path of electrons in material A \\
+			$a_A$ & thickness of adlayer \\
+		\end{tabular}
+	\end{table}
+	
+	The mean free path of electrons with energy E in a solid is given by $\lambda_M=\SI{0,41}{}\cdot a_M^{\SI{0,41}{}}\cdot E_M^{\SI{0,5}{}} $ where $a_M$ is the atomic size of M. 
+	\textcolor{red}{\textbf{Give atomic size and resulting value}}
+	
 \subsection{Limitations}
 	\paragraph{Beam damage}
 	\paragraph{Small brilliance}

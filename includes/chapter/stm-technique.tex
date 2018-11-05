@@ -79,16 +79,18 @@ Because T is smooth and monotonic the first term $\rho_s(r,eV)\rho_t(r,0)T(eV,eV
 
 \paragraph{Machine description}
 Since all used UHV chambers have many common part, a typical setup is described with the LT-STM setup. Here the most experiments were carried out.
-\begin{itemize}
-	\item Commercial \textbf{Beetle-type STM scanner} \cite{zoephel_aufbau_2000}
-	\subitem Three outer piezo tubes are used in slip-stick motion
-	\subitem Moving on a helicoidal ramp is used to control height during tip approach (\SI{120}{\degree} segments, \SI{2}{\degree} inclination)
-	\subitem TM tip attached to inner piezo tube used for lateral tip position, image width, scan speed, tip-sample distance
+
+The central part of the STM setup is the commercial \textbf{Beetle-type STM scanner} \cite{zoephel_aufbau_2000}. A typical one is shown in \ref{fig:STM}. Here the helicoidal ramp is shown with the central scan piezo and STM tip attached. Three outer piezo tubes are used in slip-stick motion to circularly move on the ramp. Because the ramp is cut with an inclination of \SI{2}{\degree} the circular motion of each piezo results in the STM tip moving up and down. This is used to control the height above the sample during tip approach and lateral movement.
+
+A separate piezo is used to control the lateral position of the tip during scanning. With it image width, scan speed and tip-sample distance can be controlled on a continuous, sub-atomic length scale.
+
 	\subitem Two damping stages decouple the STM from the surrounding (Eddy current damping and floating on springs, floating chamber) (see experimental section below)
+
 	\item \textbf{DSP controller}
 	\subitem Measured tunneling current compared with set point
 	\subitem Current to high => retract, current to low => approach => CC-mode
 	\subitem Low pass filter for high frequency damping
+
 	\item \textbf{Lock-In Amplifier}
 	\subitem Used for STS measurements
 	\subitem Sinusoidal modulation of bias voltage with a frequency higher than the low pass frequency of the DSP 

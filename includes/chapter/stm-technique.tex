@@ -64,44 +64,41 @@ Because T is smooth and monotonic the first term $\rho_s(r,eV)\rho_t(r,0)T(eV,eV
 
 \paragraph{Experimental details}
 
-\begin{itemize}
-	\item[Topography images] show the change in z-direction to maintain the current set point
-	Images are created by raster scanning the surface. We use the constant current operating mode where the regulating voltage on the height control piezo is recorded and plotted in an orange color-scale. The brighter the color, the more the piezo had to retract the tip to maintain a constant tunneling current. Regions with the same DOS appear in the same contrast.
-	\subitem Modified tip allows for real space imaging of molecular orbitals
-	\item[dI/dV] performed in two ways
-	\subitem Spectroscopic information (information on the DOS) can be obtained by either changing the bias voltage (I(V,z)-spectroscopy) or the tip-sample distance (V(z)-spectroscopy) (I=const).  
+	\textbf{Topography images} are created by raster scanning the surface pixel by pixel. 
+%	They show the voltage aplied to the scan piezo in z-direction to maintain the current set point.
+	We use the constant current operating mode where the regulating voltage on the height control piezo is recorded and plotted in an orange color-scale of each pixel. The brighter the color, the more the piezo had to retract the tip to maintain a constant tunneling current. Regions with the same DOS thus appear in the same contrast.
+
+	A modified tip allows for real space imaging of molecular orbitals.
+
+	\textbf{dI/dV} is performed in two ways - on single points (spectrum) and on areas (map). Spectroscopic information can be obtained by either changing the bias voltage and tip height (I(V,z)-spectroscopy) or the tip-sample distance (V(z)-spectroscopy) (I=const).  
+
+	\textbf{Single point spectra} are used to measure electronic properties like molecular orbital energies and electronic band gaps.
 	
-	Therefore the bias is modulated with a sinus like waveform. \index{STS!modulation}The frequency of the low amplitude modulation of the DC bias is much larger than the feedback loop frequency (\SIrange{1}{2}{\kilo \hertz}). The AC part of the tunneling signal is than recorded with a lock in amplifier. The in-phase component is directly the $dI/dV|_{V=V_{bias}}$, recorded simultaneously with the topography. If the modulation frequency is too low, the feedback tries to compensate the modulation by changing the distance to the sample.	If the modulation frequency is too high, the capacitance between tip and sample leads to an $90\deg$ phase shifted current which increases with modulation frequency. One usually chooses the modulation frequency slightly above the cutoff frequency for the feedback loop.
-	
-	\subitem single point (open feedback loop, sweeping bias): measure electronic properties – molecular orbital energies
-	\subitem map (fixed bias, open feedback loop), show real space distribution of electronic states, choose an energy (bias) and integration time (modulation/scan speed), color code represents differential conductance $\propto$ DOS.
-\end{itemize}
+	\textbf{Spectral maps} at a fixed bias show real space distribution of electronic states at the DOS that corresponds to the chosen bias. The signal intensity represents the differential conductance $\propto$ DOS.
+	Therefore the bias is modulated with a sinus like waveform. \index{STS!modulation}The frequency of the low amplitude modulation of the DC bias is much larger than the feedback loop frequency (\SIrange{1}{2}{\kilo \hertz}). The AC part of the tunneling signal is than recorded with a lock in amplifier. \textcolor{red}{The in-phase component is directly the $dI/dV|_{V=V_{bias}}$}, recorded simultaneously with the topography.
+
 
 \paragraph{Machine description}
 Since all used UHV chambers have many common part, a typical setup is described with the LT-STM setup. Here the most experiments were carried out.
 
 The central part of the STM setup is the commercial \textbf{Beetle-type STM scanner} \cite{zoephel_aufbau_2000}. A typical one is shown in \ref{fig:STM}. Here the helicoidal ramp is shown with the central scan piezo and STM tip attached. Three outer piezo tubes are used in slip-stick motion to circularly move on the ramp. Because the ramp is cut with an inclination of \SI{2}{\degree} the circular motion of each piezo results in the STM tip moving up and down. This is used to control the height above the sample during tip approach and lateral movement.
 
-A separate piezo is used to control the lateral position of the tip during scanning. With it image width, scan speed and tip-sample distance can be controlled on a continuous, sub-atomic length scale.
+A separate piezo is used to control the lateral position of the tip during scanning. With it the image width, scan speed and tip-sample distance can be controlled on a continuous, sub-atomic length scale.
 
-	\subitem Two damping stages decouple the STM from the surrounding (Eddy current damping and floating on springs, floating chamber) (see experimental section below)
+The measured current is translated into a voltage (I/U converter) and processed in a 20 Bit digital $\rightarrow$ analog (D/A) converter. The current intensity is feed into the DSP Board. Here the STM Softwares current set point is compared with the measured value. The tips position is controlled with an Digital signal processor (\textbf{DSP-Board}) to maintain a constant current contour (used in cc-mode). If the tips position needs to be corrected, a voltage is passed through a HV amplifier and applied to the corresponding piezo element. For dI/dV maps the feedback loop that controls the tip vertical position is not in use, so that the tip maintains an even height. The DSP is used to attenuate high frequency components. \textcolor{red}{\textbf{ More detail?}}
 
-	\item \textbf{DSP controller}
-	\subitem Measured tunneling current compared with set point
-	\subitem Current to high => retract, current to low => approach => CC-mode
-	\subitem Low pass filter for high frequency damping
-
-	\item \textbf{Lock-In Amplifier}
-	\subitem Used for STS measurements
-	\subitem Sinusoidal modulation of bias voltage with a frequency higher than the low pass frequency of the DSP 
-	\subitem Tunneling current modulated with the same frequency
-	\subitem Differentiating (sin=>cos) is performed by reading the signal with a 90° phase shift (as sin and cos are shifted by 90°)
-	\subitem Little noise and computing effort to achieve spectrum
-	\subitem For Maps: DSP does not “recognize” modulation and change in current as topographic feature and regulates as without modulation
-\end{itemize}
+Differentiation of the current signal is done with an \textbf{Lock-In Amplifier}. Here the spectrum is not recorded directly by sweeping the bias and numerically differentiating the measured current. 
+	
+A sinusoidal modulation on top of the bias voltage with a frequency higher than the low pass frequency of the DSP is used. The modulated bias leads to a tunneling current modulation with the same frequency. The differentiation is performed by reading the AC current signal \textcolor{red}{with a 90° phase shift (as sin and cos are shifted by 90°)}. Because the Lock-In Amplifier only takes signals with the same frequency than the excitation frequency into account, the results are much less suspect to noise. Compared to numerical differentiation, the differentiation with hardware needs less computing effort, too. It is important to note that the DSP does not recognize the bias/current modulation as change in current as topographic feature and regulates as without modulation. If the modulation frequency is too low, the feedback tries to compensate the modulation by changing the distance to the sample. If the modulation frequency is too high, the capacitance between tip and sample leads to an $90\deg$ phase shifted current which increases with modulation frequency. One usually chooses the modulation frequency slightly above the cutoff frequency for the feedback loop.
 
 \paragraph{Vacuum system}
-\textcolor{red}{\textbf{DO SOMETHING!}}
+To maintain UHV conditions in the experimental setup, a set of pumps is used.
+
+For the preparation chamber, where high partial pressures occur during sample cleaning and preparation, a combination of roughening and turbo molecular pumps is used. First a roughening pump lowers the atmospheric pressure to \SI{1}{\milli \bar}. With this pressure on the outlet side a turbo molecular pump is used to decrease the pressure even further to the  \SI{1e-8}{\milli \bar} range. The remaining partial pressure is caused by adsorbate covered chamber walls where continuous ad-/desorption takes places and maintains a pressure equilibrium. After heating the entire chamber to temperatures above the evaporation temperature of the adsorbates (mainly water) while constantly pumping, most of the water can be desorped from the walls and is pumped. After cooling down to room temperatures, the pressure settles in the \SI{5e-10}{\milli \bar} regime.
+
+As the pumping efficiency of turbo molecular pumps decreases for low pressures, each chamber is equipped with an ion pump. Here a high voltage \SIrange{1}{7}{\kilo \volt} is applied between two plates. Residual gas particles ionize in such a strong field and are accelerated towards the plates. Here they impinge with high velocity and are buried deep in the plate material that they can't leave. The reduced number of residual gas particles results in a lower pressure.
+
+To further reduce the number of potential contaminations, parts of the chamber can be cooled down with liquid nitrogen. Because of the great temperature gradient, gaseous residuals condense on the much colder surface of the cooling trap and remain adsorped while the temperature is kept low. Without refilling with liquid nitrogen the temperature slowly increases over time, so that the cooling trap looses its pumping efficiency over time (usually within \SIrange{1}{2}{\hour}).
 
 \paragraph{Cooling system} 
 While low temperature (LT) STMs may be operated with solely helium, it is more resource-saving to cool the direct proximity of the sample and the STM with He and to suppress the heat flow out of the He-cryostat with a second surrounding nitrogen cryostat (boiling point: \SI{77}{\K}, compare figure \ref{fig:STM-cryo}). This diminishes consumption of globally limited and rather expensive He. To maintain a temperature of \SIrange{5}{7}{\K}, one to two liters of liquid helium are required a day, plus an additional amount of three to four liters liquid nitrogen. Evaporated helium is reclaimed in a closed circuit with a system of purifying and storage/cooling steps so that only a small amount of helium escapes the circuit and is lost.
@@ -120,13 +117,6 @@ Sample temperatures down to \SIrange{5}{7}{\K} allow for observations not possib
 	\caption{Typical setup for low temperature measurements. A vibration isolated UHV chamber is used to prepare samples and investigate them in a separable chamber with either STM or AFM. A liquid bath cryostat is used to maintain low temperatures. Images stem from \textcolor{red}{\cite{diss-knud}}}
 	\label{fig:STM}
 \end{figure}
-
-\paragraph{Damping stages}
-Two damping stages are used, one for the chamber and a sequential one for the STM.
-\begin{itemize}
-	\item The whole UHV system is placed on air pressurized legs. These can be operated on demand, so that the chamber floats on four dampers and external vibrations/shocks are damped.
-	\item A second stage decouples the sensitive STM scanner from the rest of the setup. First the complete STM stage hangs on springs to further limit the direct influence of vibrations. Second the remaining oscillation amplitude is damped by a eddy current damping. It is made of three magnets in close proximity to the surrounding support so that eddy currents are induced for each movement. The eddy current is typically larger at cryogenic temperatures, that results in a damping that works best at low temperatures. The kinetic energy of the oscillating system is transferred by the eddy currents into heat within the surrounding conductor. The heat is then mitigated by the external cooling of the cryostat.
-\end{itemize}
 
 \paragraph{Piezo elements}
 \begin{wrapfigure}{O}{5cm} \centering
@@ -151,6 +141,13 @@ The position of the tip (x, y, z) and macroscopic movement of the stage is contr
 	\caption{Operating principles of an STM. A macroscopic sketch  shows the central piezo that controls the tip position on the sample. The main piezo is divided in four parts to control movement in the x-y plane and tip-sample distance\cite{STM-rutgers}. A microscopic sketch shows the tips movement in constant current mode while moving across a atomic step edge.}
 	\label{fig:STM-sketch}
 \end{figure}
+
+\paragraph{Damping stages}
+Two damping stages are used, one for the chamber and a sequential one for the STM.
+\begin{itemize}
+	\item The whole UHV system is placed on air pressurized legs. These can be operated on demand, so that the chamber floats on four dampers and external vibrations/shocks are damped.
+	\item A second stage decouples the sensitive STM scanner from the rest of the setup. First the complete STM stage hangs on springs to further limit the direct influence of vibrations. Second the remaining oscillation amplitude is damped by a eddy current damping. It is made of three magnets in close proximity to the surrounding support so that eddy currents are induced for each movement. The eddy current is typically larger at cryogenic temperatures, that results in a damping that works best at low temperatures. The kinetic energy of the oscillating system is transferred by the eddy currents into heat within the surrounding conductor. The heat is then mitigated by the external cooling of the cryostat.
+\end{itemize}
 
 \subsection{Limitations}\index{STM:resolution}The accuracy of a STM is very high with spatial resolution down to the atomic scale. Due to the fact that the tips motion is controlled with different piezos, one has to take different elongations in different directions into account. For example, if the STM scans the fast scanning direction just a bit further than the slow scan direction, the resulting image (although pixel wise square) is no longer physically square anymore. Imagine a square (1:1 side ratio, diagonal angle 45\textdegree) where one side is elongated by 5\%. The resulting square (1:1.05 side ratio, diagonal angle 43.6\textdegree) looks square because it has the equal number of pixels in both directions, but it is physically rectangular. The expression used to calculate the uncertainty with known calibration parameters is
 $$\Delta \Theta = 45 - \frac{180}{\pi}\cdot\arctan(\frac{1}{1+x})$$ where x is the percentage of one side being longer. This results in an uncertainty of 0.3\textdegree(1\%), 1.4\textdegree(5\%, see example above), 2.7\textdegree(10\%). For moderate shear, conformity is almost conserved and the uncertainty below 2\textdegree.

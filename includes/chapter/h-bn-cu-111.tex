@@ -1,3 +1,10 @@
+In the last years, 2D materials with interesting properties were synthesized. One of it is hexagonal boron nitride (\textit{h}-BN). It is made up of the same number of nitrogen and boron atoms. They are arranged in an $\textnormal{sp}^2$-bonded honeycomb lattice so that each nitrogen is neighbored by boron atoms and vice versa. The ionic bond character between both is a direct result from the nitrogens larger electrochemical negativity, withdrawing electrons from the boron lattice site and making \textit{h}-BN an insulator with wide band gap of approximately \SI{6}{\eV} \cite{watanabe_direct-bandgap_2004, cassabois_hexagonal_2016, blase_quasiparticle_1995}
+
+It can be grown on a variety of metal surfaces (see \autoref{tab:h-BN-mismatch}). Many geometric corrugations can be achieved with increasing lattice mismatch and substrate-\textit{h}-BN interaction. Since this interaction is believed to have its origin in the partially filled 3d states of the substrate, transition metal substrates are widely used. 
+The growth of \textit{h}-BN on nearly lattice matched Ni(111) resulted in uniform commensurate layers. With increasing lattice mismatch, moir\'e patterns are formed on Pd and Pt. The stronger interaction of \textit{h}-BN and Rh(111) results in a corrugated nanomesh to be formed on the substrate. Even one-dimensional structures are reported on Fe(110) \cite{vinogradov_one-dimensional_2012} and Cr(110) \cite{10.1016/j.susc.2008.06.037}. 
+
+Here we consider \textit{h}-BN on Cu(111) as example system of self-limited growth and highlight most relevant insights reported in literature \cite{joshi_boron_2012, schwarz_corrugation_2017, auwarter_hexagonal_2018}.
+
 \begin{table}\centering
 	\caption{Lattice mismatches between \textit{h}-BN and several transition metal surfaces. The mismatch is given to describe the relative size of the \textit{h}-BN layer compared to the substrate, e.g. negative values indicate a larger lattice constant in the substrate bulk.}
 	
@@ -8,16 +15,24 @@
 		Rh(111)		& \SI{-7}{\percent} \\	
 		Pd(111)		& \SI{-9}{\percent} \\
 		Ag(111)		& \SI{-13}{\percent} \\
-		Ir(111)		& \textcolor{red}{\SI{}{\percent}} \\
+		Ir(111)		& \textcolor{red}{\textbf{\SI{}{\percent}}} \\
 	\end{tabular}
 	\label{tab:h-BN-mismatch}
 \end{table}
 
 	\paragraph{Stoichiometry}
-	As a direct result of the chosen precursor the grown \textit{h}-BN layer posesses a 1:1 ratio of B:N. All additional hydrogens are cleaved from the precursor element prior to layer formation \textcolor{red}{\textbf{CITE!!}}.
+	XPS measurements (see \autoref{fig:XPS-hbn-Cu111-martin}) show B\textit{1s} and N\textit{1s} components in a 1:1 ratio, indicating that the layer retains the precursor stoichiometry during growth. All additional hydrogens are cleaved from the precursor prior to layer formation and desorp from the sample.
 	
-	\paragraph{Geometry}
-	The properties of various moir\'e superstructure are well described in literature and Hermann gives a comprehensive overview in his paper \cite{hermann_periodic_2012}. One can conclude the following: \label{section:moire}
+\begin{figure} \centering
+	\includegraphics[width=0.7\textwidth]{./images/XPS-hbn-Cu111-martin}%
+	\caption{XPS of a full ML \textit{h}-BN on Cu(111) grown with CVD. Fit components $B_0$ ($E_b=\SI{190.4}{\eV}$), $N_0$ ($E_b=\SI{398.0}{\eV}$) and $B_{def}$ ($E_b=\SI{191.0}{\eV}$) and $N_{def}$ ($E_b=\SI{398.5}{\eV}$) are assigned to pristine \textit{h}-BN layer and defective components respectively. Adopted from \cite{schwarz_assembly_2018}}
+	\label{fig:XPS-hbn-Cu111-martin}
+\end{figure}
+
+
+
+	\paragraph{Moir\'e geometry}
+	The properties of various moir\'e superstructures are well described in literature and Hermann gives a comprehensive overview in his paper \cite{hermann_periodic_2012}. One can conclude the following: \label{section:moire}
 	
 	If lattice constants are equal like in the case of a graphene bilayer, the needed lattice mismatch occurs due to a rotation of the two layers. A moir\'e is always present if an over layer shows a lattice mismatch with respect to the substrate. 
 	
@@ -29,37 +44,44 @@
 	For rotated and isotropically scaled over layers, one can determine the $\alpha$ and $p$ from experimental observables $\gamma$(moir\'e angle to substrate) and $\kappa$(scaling factor) through relations $ \alpha=\arctan \left ( \frac{sin(\gamma)}{cos(\gamma)+\kappa} \right )\qquad p=\frac{\kappa}{\sqrt{1+\kappa^2+2\kappa cos(\gamma)}}$
 	
 	
-	\begin{wrapfigure}{O}{5cm} \centering
-		\subfigure[Isotropically scaled and aligned overlayer (gr/Pt(111): $p = 0.89$)]{
-			\includegraphics[width=0.25\textwidth]{./images/moire-scaled}%
-			\label{fig:moire-pattern-scaled}
-		}
-		\subfigure[Isotropically scaled overlayer with rotation of \SI{5.4}{\degree} (gr/\textit{h}-BN: $p = 0.98$)]{
-			\includegraphics[width=0.25\textwidth]{./images/moire-scaled-rotated}%
-			\label{fig:moire-pattern-scaled-rotated}
-		}
-		%	\subfigure[Isotropically scaled, alligned layer overgrowing a step edge (gr/Ir(111): $p = 0.91$)]{
-		%		\includegraphics[width=0.25\textwidth]{./images/moire-scaled-step-edge}%
-		%		\label{fig:moire-pattern-scaled-step-edge}
-		%	}
-		\caption{Adopted from \cite{hermann_periodic_2012}}
-		\label{fig:moire-pattern}
-	\end{wrapfigure}
+%	\begin{wrapfigure}{O}{5cm} \centering
+%		\subfigure[Isotropically scaled and aligned overlayer (gr/Pt(111): $p = 0.89$)]{
+%			\includegraphics[width=0.25\textwidth]{./images/moire-scaled}%
+%			\label{fig:moire-pattern-scaled}
+%		}
+%		\subfigure[Isotropically scaled overlayer with rotation of \SI{5.4}{\degree} (gr/\textit{h}-BN: $p = 0.98$)]{
+%			\includegraphics[width=0.25\textwidth]{./images/moire-scaled-rotated}%
+%			\label{fig:moire-pattern-scaled-rotated}
+%		}
+%		%	\subfigure[Isotropically scaled, alligned layer overgrowing a step edge (gr/Ir(111): $p = 0.91$)]{
+%		%		\includegraphics[width=0.25\textwidth]{./images/moire-scaled-step-edge}%
+%		%		\label{fig:moire-pattern-scaled-step-edge}
+%		%	}
+%		\caption{Adopted from \cite{hermann_periodic_2012}}
+%		\label{fig:moire-pattern}
+%	\end{wrapfigure}
 	
 	When a scaled over layers over grows a step edge, the moir\'e pattern is altered. While period and orientation remain the same, a lateral shift in the superstructure is observed that interrupts the regular pattern and shifts subsequent moir\'e features by a vector \textcolor{red}{\textbf{$\vec{V}$=}}.
 	
-	\begin{figure} \centering
-		\subfigure[DFT simulation of \textit{h}-BN on Ir(111). The moir\'e unit cell as well as regions where B and N atoms occupy high-symmetry positions w.r.t. the Ir lattice are indicated. The change in adsorption height is caused by the changing registry of substrate (Ir) and ad layer atoms (B,N).  Adopted from \cite{schulz_epitaxial_2014}]{
-			\includegraphics[width=0.5\textwidth]{./images/h-BN_Ir-moire}%
-			\label{fig:h-BN-Ir-moire-DFT}
-		} \quad
-		\subfigure[\textbf{STM image of \textit{h}-BN grown with CVD on Ir(111)} \cite{farwick_zum_hagen_structure_2016}]{
-			\includegraphics[width=0.25\textwidth]{./images/STM-hBN-Ir111-pub}%
-			\label{fig:h-BN-Ir-moire-STM}
-		}
-		\caption{DTF calculation and STM images of \textit{h}-BN/Ir(111). While being aligned, a lattice mismatch creates a moir\'e  superstructure. It is well visible in adsorption height calculations \ref{fig:h-BN-Ir-moire-DFT} and as apparent height differences in STM images \ref{fig:h-BN-Ir-moire-STM}.}
-		\label{fig:moire-DFT-TSM}
-	\end{figure}
+%	\begin{figure} \centering
+%		\subfigure[DFT simulation of \textit{h}-BN on Ir(111). The moir\'e unit cell as well as regions where B and N atoms occupy high-symmetry positions w.r.t. the Ir lattice are indicated. The change in adsorption height is caused by the changing registry of substrate (Ir) and ad layer atoms (B,N).  Adopted from \cite{schulz_epitaxial_2014}]{
+%			\includegraphics[width=0.5\textwidth]{./images/h-BN_Ir-moire}%
+%			\label{fig:h-BN-Ir-moire-DFT}
+%		} \quad
+%		\subfigure[\textbf{STM image of \textit{h}-BN grown with CVD on Ir(111)} \cite{farwick_zum_hagen_structure_2016}]{
+%			\includegraphics[width=0.25\textwidth]{./images/STM-hBN-Ir111-pub}%
+%			\label{fig:h-BN-Ir-moire-STM}
+%		}
+%		\caption{DTF calculation and STM images of \textit{h}-BN/Ir(111). While being aligned, a lattice mismatch creates a moir\'e  superstructure. It is well visible in adsorption height calculations \ref{fig:h-BN-Ir-moire-DFT} and as apparent height differences in STM images \ref{fig:h-BN-Ir-moire-STM}.}
+%		\label{fig:moire-DFT-TSM}
+%	\end{figure}
+
+
+\begin{figure} \centering
+	\includegraphics[width=0.5\textwidth]{./images/h-BN-cvd-cu111.png}%
+\caption{(a) STM topography of \textit{h}-BN on Cu(111). Large domains with uniform orientation and moir\'e period are formed after CVD growth. (b) Different rotational domains are observed that show different moir\'e periods, reproduced by three models (c-e) where different \textit{h}-BN rotations are shown together with the resulting moir\'e periods a. Adopted from \cite{joshi_boron_2012}}
+\label{fig:moire-STM-model}
+\end{figure}
 
 As mentioned above the orientation of the moir\'e superstructure is determined by its rotation alone, while its period is determined by lattice mismatch, too. This results in a variety of moir\'e superstructure orientations and periods, strongly related to the used substrate (\autoref{tab:h-BN-mismatch}).
 
@@ -71,10 +93,16 @@ While a first report in 2004 \cite{corso_boron_2004}, pointed to the formation o
 
 After growth of \textit{h}-BN the substrates work function in reduced [Rh: \SIrange{5.01}{3.07}{\eV} \cite{gomez_diaz_hexagonal_2013}. Therefor a dipole moment $\mu$ pointing from the the bulk to the surface is necessary \cite{roman_periodic_2013}, rather likely created by a negative charge transfer from the bulk into the ad layer.
 
-\begin{figure}\centering
-	\includegraphics[width=5cm]{./images/h-BN-Cu(111)-wf-change}
-	\caption{Work function variation along \textit{h}-BN/Cu(111) moir\'e. (a) STM image showing the \textit{h}-BN moir\'e with a periodicity of 8.4 nm. Scan parameter: $U_b= 4.0 V, I_t= 40 pA$. (b)	Field emission resonances acquired along the black dotted line in a) revealing a variation of the peak positions. (c) Work  function  differences  between bright  (“hill”/pore)  and  dark  (“valley”/wire)  regions obtained  from  the  dI/dV curves  of  the  field emission  resonances  displayed  in  b). Adopted from \cite{schwarz_corrugation_2017}}
-	\label{fig:h-bn-cu-wf}
+
+\begin{figure} \centering
+	\subfigure[Work function variation along \textit{h}-BN/Cu(111) moir\'e. (a) STM image showing the \textit{h}-BN moir\'e with a periodicity of 8.4 nm. Scan parameter: $U_b= 4.0 V, I_t= 40 pA$. (b)	Field emission resonances acquired along the black dotted line in a) revealing a variation of the peak positions. (c) Work  function  differences  between bright  (“hill”/pore)  and  dark  (“valley”/wire)  regions obtained  from  the  dI/dV curves  of  the  field emission  resonances  displayed  in  b). Adopted from \cite{schwarz_corrugation_2017}]{
+		\includegraphics[width=5cm]{./images/h-BN-Cu(111)-wf-change}
+	\label{fig:h-BN-Cu(111)-wf-change}
+		} \quad
+	\subfigure[Position dependent energy level alignment of $NC-Ph_4-CN$ on \textit{h}-BN / CU(111). Three spectra are compared, recorded on molecules at valley (blue) and hill positions (green). A spectrum of the bare Ag(111) is shown as reference. Taken from \cite{diss-joshi}]{
+	\includegraphics[width=6cm]{./images/h-BN-Cu(111)-wf-change-II}
+	\label{fig:h-BN-Cu(111)-wf-change-II}
+	} 
 \end{figure}
 
 \paragraph{Molecular adsorption and assembly}
@@ -84,3 +112,8 @@ With changing work function, a lateral electronic field emerges, pointing from \
 It was shown that this moir\'e superstructure influences molecular assembly. 
 \textcolor{red}{\textbf{Explain the Porphine adsorption on metal and on \textit{h}-BN}}
 
+\begin{figure} \centering
+	\includegraphics[width=0.5\textwidth]{./images/2H-P-hBN-Cu111-joshi}%
+	\caption{STM topography of 2H-P adsorped on \textit{h}-BN/Cu(111). (a) Large moir\'e domain guides the formation of small 2H-P islands with off center vacancies. (b) High coverage overcomes the templating effect of the \textit{h}-BN support. Adopted from \cite{diss-joshi}}
+	\label{fig:2H-P-hBN-Cu111-joshi}
+\end{figure}

@@ -1,5 +1,4 @@
-\paragraph{Single crystals}
-Single crystals show a nicely ordered, clean surface - two properties important for reliable and reproducible experiments. We have chosen both silver and copper as bulk crystalline substrates. Both form fcc lattices and their surface termination can be chosen by precise cutting along a symmetry plane of choice. For the course of this thesis, experiments are conducted mainly on (111) and (100) terminated surfaces.\footnote{See \cite{riemann_ionic_2002} and appendix \fullref{appendix:crystal-facets} for another examples of vicinal metal surfaces (531), (532), (221), (311), (211).} Commercially available, single crystals guarantee a high precision in facet orientation and purity (99.999 \%) \cite{mateck}. 
+Single crystals show a nicely ordered, clean surface - two properties important for reliable and reproducible experiments. We have chosen both silver and copper as bulk crystalline substrates. Both form fcc lattices and their surface termination can be fixed by precise cutting along a symmetry plane of choice. For the course of this thesis, experiments are conducted mainly on (111) and (100) terminated surfaces.\footnote{See \cite{riemann_ionic_2002} and appendix \fullref{appendix:crystal-facets} for another examples of vicinal metal surfaces (531), (532), (221), (311), (211).} Commercially available single crystals guarantee a high precision in facet orientation and purity (99.999 \%) \cite{mateck}. 
 Remaining contaminations 
 %in copper (Ag: \SI{0.8}{ppm}, Pb: \SI{0.3}{ppm}, Bi: \SI{0.8}{ppm}) and silver (Cu: \SI{2}{ppm}, Fe: \SI{2}{ppm}, Au: \SI{0.8}{ppm}, Ni: \SI{0.8}{ppm}) 
 are removed by repeated sputter\footnote{$U_{accel}=$\SIrange{800}{1000}{\volt}, $T_{sample}\approx \SI{300}{\kelvin}$} and anneal cycles\footnote{Cu: $T_{sample}=\SI{750}{\celsius}$, Ag: $T_{sample}=\SI{450}{\celsius}$, Au\textbackslash Mica: $T_{sample}= \underline{\textbf{get value: 450?}}$} in UHV. Typical cool down temperatures $\leq 5 \frac{K}{s}$ result in a smooth, atomically flat surface with large terrace size. 
@@ -33,9 +32,9 @@ Coefficients of \SI{16,5e-6}{\per \kelvin}(Cu), \SI{18,9e-6}{\per \kelvin}(Ag) a
 	\label{fig:crystal-termination}
 \end{figure}
 
-The surface free energy increases from the (111) surface with increasing angle of the (hkl) planes of interest with $$\cos(\phi)=\frac{h+k+l}{\sqrt{3(h^2+k^2+l^2)}}$$ \cite{jian-min_calculation_2004}. Thus, the (111) surface is the one with lowest energy, followed by (110) and (100).
+The surface free energy increases from the (111) surface with increasing angle of the (hkl) planes of interest with $$\cos(\phi)=\frac{h+k+l}{\sqrt{3(h^2+k^2+l^2)}}$$ \cite{jian-min_calculation_2004}. Thus, the (111) surface is the one with lowest energy, followed by (110) and (100). For polycrystalline foils it is expected to observe the lowest energy facet more often than the less favorable (110) and (100) facet.
 
-Due to the fact, that dislocation lines move within the crystal in a well defined manner, one can determine the crystals orientation when the orientation of a dislocation is known.
+Due to the fact that dislocation lines move within the crystal in a well defined manner, one can determine the crystals orientation when dislocation lines and step edges show on the surface.
 
 \textcolor{red}{\textbf{
 For fcc crystals the orientation of dislocation lines occurs in the {111} plane in $<110>$ direction. Its Burgers vector is $\frac{a}{2}[110]$\cite{_dislocation-theory}. \underline{ADD INFO	FOR 100!!!}
@@ -44,13 +43,14 @@ Dense packed rows in fcc(111) are the following directions: $<\bar 1 01>$, $<01\
  
  \subsection{Polycrystalline copper foils}
  
- \begin{figure}\centering
- 	\includegraphics[height=40mm]{./images/grain-structure-copper-foil}
- 	\caption{Proposed bulk structure of a OFHC copper foil after abrasion with P1200 silicon carbide paper. Adopted from \cite{turley_nature_1981}}
- 	\label{fig:copper-foil-grains}
- \end{figure}
+  As was mentioned before, clean, highly ordered surfaces are desirable to perform experiments on. In case a systems order and functionality does not heavily depend on the substrates crystalline properties, single crystals loose most of their unique selling point. Instead of choosing a expensive bulk single crystal, thin copper foils can catch up in production environments. The mass produced foils, although pure ($\geq \SI{99.999}{\percent}$), were never meant to be atomically flat and show considerable height variation.
 
- As was mentioned before, clean, highly ordered surfaces are desirable to perform experiments on. Effort is done to clean the surfaces before every experiment to ensure a reproducible environment and interpretable results. This lead to a detailed understanding of the physics and chemistry behind a lot of systems. In case a systems order and functionality does not heavily depend on the substrates symmetry, single crystals loose most of their unique selling point. Instead of choosing a expensive bulk single crystal, thin copper foils can catch up in production environments. The mass produced foils, although pure ($\geq \SI{99.999}{\percent}$), were never meant to be atomically flat. 
- A representation of a copper surface before electro polishing can be seen in \autoref{fig:copper-foil-grains}. Here the layered structure of the (mechanically polished) foil is apparent and shows different sizes of grains and annealing twins at the surface. Small subgrains constitute the uppermost layers, while deeper lying layers consist of larger grains with grain boundaries becoming more and more diffuse with increasing distance to the surface.
+\begin{wrapfigure}{O}{4cm}\centering
+	\includegraphics[height=40mm]{./images/grain-structure-copper-foil}
+	\caption{Sketched bulk structure of a OFHC copper foil after abrasion with P1200 silicon carbide paper. Adopted from \cite{turley_nature_1981}}
+	\label{fig:copper-foil-grains}
+\end{wrapfigure}
+
+ A representation of a mechanically polished copper surface can be seen in \autoref{fig:copper-foil-grains}. Here the layered structure is apparent and shows different sizes of grains. Small subgrains constitute the uppermost layers, while deeper lying layers consist of larger grains with grain boundaries becoming more and more diffuse with increasing distance to the surface. 
  
-To overcome these limitations, etching of the copper foil is performed as described in \autoref{sec:etching}
+To overcome the limitation of small grain size and heavily corrugated surface, etching of the copper foil is performed as described in \autoref{sec:etching}.

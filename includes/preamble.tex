@@ -5,7 +5,7 @@
 %\usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[english]{babel}
+\usepackage[english]{babel}	%loads AMERICAN english, same as american USenglish
 \usepackage{csquotes}
 \usepackage{amsmath}
 \usepackage{textcomp}		%enables \textdegree to use as �
@@ -57,6 +57,8 @@
 % Use subfigure to do (a), (b) and such graphics.
 % will apply to all captions
 
+%%%%%%%%% Change Text type of autorefencing figures for english language
+\renewcaptionname{english}\figureautorefname{\texttt{Figure}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % will apply to all subcaptions
 %\usepackage[labelfont=bf,font=it,singlelinecheck=off,justification=raggedright]{subcaption}

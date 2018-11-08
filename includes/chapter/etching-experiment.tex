@@ -1,14 +1,14 @@
 
 \paragraph{Experiment realization}The first attempt to etch the Cu-foil was performed with the $5\%_{vol}$ EG, $25\%_{vol}\,H_2O$ filled up with phosphoric acid. The etching was performed in a \SI{200}{\ml} beaker, filled with \SI{150}{\ml} etching solution. The setup is as depicted in \autoref{fig:etching-setup}. The potential was adjusted to be \SI{1.2}{\V} after some minutes. The current through the solution changes and is typically highest when the etching process started. 
 
-After some minutes, the foil starts to change. The reflectivity changes, making the foil - shiny before etching - a little dull. After some additional time the foil begins to reflect light better again. This is the moment where the etching process is interrupted. The time inside the etching solution depends on the handling (like shaking the beaker or moving the foil in the solution - but was usually $\geq \SI{2}{\hour}$.\footnote{Since the perfect voltage/current to perform polishing varies in time a automated etching process has been developed \cite{palmieri_besides_2001}}
+After some minutes the foils reflectivity changes. The foils surface - shiny before etching - becomes hazy. After some more time the foils reflectivity improves again. When no visual change to the surface is observed the etching process is interrupted. 
 
-\underline{\textbf{ADD IMAGE from actual setup}}
+The time inside the etching solution depends on the handling (like shaking the beaker or moving the foil in the solution - but was usually $\geq \SI{2}{\hour}$.
+%\footnote{Since the perfect voltage/current to perform polishing varies in time a automated etching process has been developed \cite{palmieri_besides_2001}}
 
-One has to be careful if reproducible results are needed. During the etching process (as more and more copper settles on the counter electrode), the current and therefore the etching rate decrease continuously. When the beaker is moved, some of the debris on the electrode changes (the electrode's) surrounding and the etching rate (limiting current) increases again. Front- and backside of the foil are suspect to different etching rates. The back side is generally more flat, the side facing the counter-electrode always shows some additional protrusions.
+One has to be careful if reproducible results are needed. During the etching process (as more and more copper settles on the counter electrode), the current and therefore the etching rate decreases continuously. When the beaker is moved, some of the debris on the electrode changes (the electrode's) surrounding and the etching rate (limiting current) increases again. 
+Front- and backside of the foil are suspect to different etching processes. The back side is generally more flat, the side facing the counter-electrode always shows some additional protrusions.
 
-\underline{\textbf{ADD IMAGE from polished foils}}
-		
 \paragraph{After etching treatment}
 The foil is taken out and cleaned from remaining etchants with purified water first and isopropanol afterwards. Foils are be stored in isopropanol to avoid oxidation.\footnote{To further improve the quality of the foil, one can follow the documented recipe for annealing the foil in a $H_2$ atmosphere (\SI{10}{sscm}, \SI{1000}{\celsius}, 30min)\cite{kim_synthesis_2012} to increase the copper grain size and further smoothen the surface. We decided to further prepare the foils within the UHV chamber and skipped this step.}
 
@@ -44,29 +44,35 @@ Neither estimation on the grainsize nor guesses for their absolute orientation h
 \paragraph{AFM}
 \label{sec:foil-AFM}
 \begin{figure}[] \centering
-	\subfigure[RMS $\approx$\SI{13}{\nm}, contrast \SI{100}{\nm}]{
-	\includegraphics[width=0.4\textwidth]{./images/as_bought0000.jpg}
+	\subfigure[Copper foil before etching.]{
+	\includegraphics[width=0.35\textwidth]{./images/as_bought0000}
+	\label{fig:foil-bought-afm}
+	} \quad
+	\subfigure[Copper foil after etching]{
+	\includegraphics[width=0.35\textwidth]{./images/polished0000}
+	\label{fig:foil-polished-afm}
 	}
-	\subfigure[RMS $\approx$ RMS \SI{9}{\nm}, contrast \SI{70}{\nm} in the right image]{
-	\includegraphics[width=0.4\textwidth]{./images/as_bought0001.jpg}
+	\subfigure[Height profiles of the two samples.]{
+	\includegraphics[width=0.7\textwidth]{./images/as_bought-polished_0000-profiles}
+	\label{fig:foil-profiles}
 	}
-	\caption{AFM image of the \SI{0.25}{\mm} copper foil as bought from alfa aesar.\textcolor{red}{\textbf{IMAGING PARAMETERS!}}}
+	\caption{AFM topography image of copper foil as bought from Alfa Aesar \subref{fig:foil-bought-afm} before and \subref{fig:foil-polished-afm} after etching. \subref{fig:foil-profiles} Height profile averaging the lower 10 lines of \subref{fig:foil-bought-afm} and \subref{fig:foil-polished-afm}. Roughness along the line profiles decreases after etching ($Rq_{before}=\SI{7.3}{\nano \meter} \rightarrow Rq_{after}=\SI{3.6}{\nano \meter}$). Color scale for both AFM images \SI{100}{\nano \meter} \textcolor{red}{\textbf{Image width: \SI{20}{\micro \meter}IMAGING PARAMETERS!}}}
 	\label{fig:foil-afm-as-bought}
 \end{figure}
 
-Figure \ref{fig:foil-afm-as-bought} shows the striations that stem from the production process (from top to buttom).
-\begin{figure}[] \centering
-	\subfigure[RMS $\approx$\SI{9}{\nm} in the left image, contrast \SI{100}{\nm}]{
-	\includegraphics[width=0.4\textwidth]{./images/polished0000.jpg}
-}
-	\subfigure[RMS $\approx$\SI{3}{\nm} in the right image, contrast \SI{70}{\nm}]{
-	\includegraphics[width=0.4\textwidth]{./images/polished0001.jpg}
-}
-	\caption{AFM image of a copper foil polished 5h (according to table \ref{tab:used-etching-solution}), \textcolor{red}{\textbf{IMAGING PARAMETERS!}}}
-	\label{fig:foil-afm-polished}
-\end{figure}
+Figure \ref{fig:foil-bought-afm} shows the striations that stem from the production process (from top to buttom).
+%\begin{figure}[] \centering
+%	\subfigure[RMS $\approx$\SI{9}{\nm} in the left image, contrast \SI{100}{\nm}]{
+%	\includegraphics[width=0.4\textwidth]{./images/polished0000.jpg}
+%}
+%	\subfigure[RMS $\approx$\SI{3}{\nm} in the right image, contrast \SI{70}{\nm}]{
+%	\includegraphics[width=0.4\textwidth]{./images/polished0001.jpg}
+%}
+%	\caption{AFM image of a copper foil polished 5h (according to table \ref{tab:used-etching-solution}), \textcolor{red}{\textbf{IMAGING PARAMETERS!}}}
+%	\label{fig:foil-afm-polished}
+%\end{figure}
 
-After etching ($U=1.2V$,I=\SIrange{120}{250}{\mA}) for \SI{5}{\hour} in a solution (shown in table \ref{tab:used-etching-solution}) the striations have gone and the RMS value decreased by \SIrange{30}{45}{\percent} and an increase in foil quality is obvious even with bare eyes. Figure \ref{fig:foil-afm-as-bought} and \ref{fig:foil-afm-polished} show AFM images in the same size and contrast - before and after etching.
+After etching ($U=1.2V$,I=\SIrange{120}{250}{\mA}) for \SI{5}{\hour} in a solution (shown in table \ref{tab:used-etching-solution}) the striations have gone and the RMS value decreased by \SI{50}{\percent} and an increase in foil quality is obvious even with bare eyes. Figure \ref{fig:foil-afm-as-bought} and \ref{fig:foil-afm-polished} show AFM images in the same size and contrast - before and after etching.
 The circular hole is an effect of bubbles in the etching process where the bubble affects the rate of etching. The over all structure changes from a heterogenous sample height to a flat height contribution with only a little amount of defects. Those are sufficiently seperated in space to exhibit flat regions where the h-BN may grow unperturbated.
 
 \paragraph{not done yet - maybe future?}

@@ -1,29 +1,46 @@
-The tunneling effect describes the behavior of a particle that faces a potential barrier. In the classical picture the particle is prohibited to move across the potential barrier if its energy is lower than the barrier. In quantum mechanics, a wave character is added to the particle. When the wave now faces the potential barrier, a fraction of the wave package that constitutes the particle is transmitted through the barrier - an effect known as tunneling.
+The tunneling effect describes the behavior of a particle that faces a potential barrier. In the classical picture the particle is prohibited to move across the potential barrier if its energy is lower than the barrier height. In quantum mechanics however, the particle is described as wave. When this now faces the potential barrier, a fraction of the wave package transmitted through the barrier - an effect known as tunneling.
 
-\subsection{Overview...historically}
-The tunneling effect was first observed by Hund in 1926 in molecules, where he explained the sharing of an electron between atoms, each represented by a potential well.\cite{Mehra_tunneling_1982} A principle fundamental for an understanding of covalent chemical bonds. 
+\subsection{An historic overview}
+The tunneling effect was first observed by Hund in 1926 in molecules, where he explained the sharing of an electron between atoms, each separated by a potential well.\cite{Mehra_tunneling_1982} A principle fundamental for an understanding of covalent chemical bonds. 
 
-The first quantitative expression of the tunneling current in a metal-insulator-metal junction was introduced by Bardeen in 1961 \cite{Bardeen_tunneling_1961}. \textcolor{red}{\textbf{MORE}}
+The first quantitative expression of the tunneling current between two vacuum serperated metals was introduced by Bardeen in 1961.\cite{Bardeen_tunneling_1961} 
 
-This lead to an early prototype build by Russell Young, John Ward and Fredric Scire in 1972. \cite{Young_topographiner_1972}. Here the basic principles are shown already (piezo actuators, tunneling with metal tip). The concept was further improved by Binning \& Rohrer in 1981 \cite{binning_tunneling_1982} when they were the first to report experimental evidence for the tunneling through an vaccum gap with controllable width. They showcased the excelled resolution capabilities by resolving the ($7 \times 7$) reconstruction of the Si(111) surface \cite{binnig_1983}. They received the noble prize in 1986 \cite{_noble_price_1986} for "their design of the scanning tunneling microscope" (STM). 
+This lead to an early experiment build by Russell Young, John Ward and Fredric Scire in 1972.\cite{Young_topographiner_1972} Here the basic principles are shown already (tunneling with metal tip). The concept was further improved by Binning \& Rohrer in 1981 \cite{binning_tunneling_1982} when they were the first to report experimental evidence for the tunneling through an vacuum gap. Its width was controlled with ceramics exhibiting the piezoelectric effect. They showcased the excelled resolution capabilities by resolving the ($7 \times 7$) reconstruction of the Si(111) surface \cite{binnig_1983} and received the noble prize in 1986 for "their design of the scanning tunneling microscope" (STM).\cite{_noble_price_1986} 
 
-In the following the tunneling process through a vacuum gap between metallic tip and sample will be summarized and used as model system to describe the basic concept of STM.
+In the following the tunneling process through a vacuum gap between metallic tip and sample will be summarized addressed theoretically and used as model system to describe the basic concept of STM.
 
-\subsection{Theory...on 1D tunneling at a single point}
+\subsection{Basic principles}
 \index{STM!One dimensional tunneling}
 
 \begin{figure}[]\centering
 	\includegraphics[width=0.7\textwidth]{./images/tunnel-barrier}
-	\caption{Energy diagram to visualize the tunneling process between sample (left) and tip (right) separated by a distance d. Work functions of sample and tip ($\Phi_s$ and $\Phi_t$) separate the filled states (shaded regions) and the vacuum level ($\epsilon_{vac}$). Since sample ($\rho_s$) and tip DOS ($\rho_t$) may not be uniform, a fictional DOS is sketched in darker colors between both. The samples energy is lifted by $eV$ after a bias is applied and results in a net electron current from the sample into the tip. One tunneling process is indicated by a wave function in the sample. After overcoming the vacuum barrier its amplitude decreases and the corresponding electron occupies a free state (not shaded) in the tip material.  Taken from \cite{diss-schunack}}
+	\caption{Energy diagram to visualize the tunneling process between sample (left) and tip (right) separated by a distance d. Work functions of sample and tip ($\Phi_s$ and $\Phi_t$) separate the filled states (shaded regions) and the vacuum level ($\epsilon_{vac}$). Since sample ($\rho_s$) and tip DOS ($\rho_t$) may not be uniform, a fictional DOS is sketched in darker colors between both. The samples energy is lifted by $eV$ after a bias is applied and results in a net electron current from the sample into the tip. One tunneling process is indicated by a wave function in the sample. After overcoming the vacuum barrier its amplitude decreased and the corresponding electron occupies a free state (white) in the tip material.  Adopted from \cite{diss-schunack}}
 	\label{fig:STM-barrier}
 \end{figure}
 
-\textcolor{red}{\textbf{Consider a system with two metals separated by a vacuum gap. Describe more!}}
-While the tip is far away from the sample (both metallic), their vacuum levels are the same. The corresponding Fermi energies of sample and tip lie below the vacuum level by the amount of their work functions ($\Phi_s$ and $\Phi_t$ for sample and tip respectively). Wave functions of electrons within the tip and sample decay exponentially in vacuum, depended on their energy with respect to the Fermi level.
-If sample and tip are in thermodynamic equilibrium, their Fermi levels are the same. Electrons now face a potential barrier (approximately rectangular) which can be overcome if their energy is high enough and the barrier sufficiently narrow. When a voltage is applied across the tunneling barrier, the energy of the tip-electrons is shifted by $eV$ as illustrated in \autoref{fig:STM-barrier}. When a positive bias voltage is applied, electrons tunnel from the tip into unoccupied states in the sample - a negative bias results in a tunneling current in opposite direction. 
+Consider a system where two metals (sample and tip) are separated by a vacuum gap. 
 
-Following the model of \index{STM!Tersoff-Hamann} 
-Tersoff-Hamann\footnote{Please's note that there are more models and corrections to them. An evolution from Bardeen's approach to the one done by Tersoff-Hamann can be found here \cite{lounis_theory_2014, wortmann_interpretation_2000} including Chen's expansion.}((1) uniform density of states in the tip, (2) temperature is low, (3) small bias voltage of some mV, (4) waveform of electrons in tip are s-waves) the tunneling current measured at the center of the curvature of the s-wave like tip results to $$I=32\pi^3\hbar^{-1}e^2V\Phi_t^2 R^2\kappa^{-4}e^{-2\kappa R}\rho_t(E_F)\rho_s(r_o,E_F)$$ Here the current is described in relation to $\rho_t$ the density of states per unit volume of the tip, R the tip radius and $\rho_s(r_0,E_F)$ the Fermi level density of states in the sample\cite{bonnell_scanning_1993}. The distance between tip and sample is denoted as \textcolor{red}{\textbf{$Z$}} and the inverse decay length of the electrons wave function is $\kappa=\frac{\sqrt{2m\Phi_t}}{\hbar}$. If $I$ is held constant one can see that the tip in principle follows a contour of constant Fermi level density of states at the sample surface. While its a good first approximation of the system, in many cases the bias is in the range of (\SIrange{1}{5}{\V}) so more than just the electrons near Fermi contribute. Also a uniform $\rho_t$ may not be accurate in all cases.
+The amount of energy needed to remove an electron from the metals highest occupied energy level ($E_F$, Fermi energy) is called work function $\Phi$. It depends on the electrostatic potential $\phi_E$ that has to be overcome by an electron charge $e$ at the surface.
+$$ \Phi = -e \phi_E - E_F $$
+
+\autoref{fig:STM-barrier} shows an energy diagram for tip and sample. The work function $\Phi_s$ (sample) and $\Phi_t$ (tip) separates the vacuum level $\epsilon_{vac}$ and Fermi energy $E_F$.
+
+If sample and tip are in thermodynamic equilibrium, their Fermi energies are equal.
+When both are brought in close contact, electrons from the sample tunnel into unoccupied states of the tip and vice versa in the same number. Hereby electrons close to $E_F$ have the largest decay length and attenuate less strong in vacuum and contribute strongest to the tunneling current. This current can be modeled and calculated in simple systems. 
+
+In the model of Tersoff-Hamann\index{STM!Tersoff-Hamann}\footnote{Please's note that there are more models and corrections to them. An evolution from Bardeen's approach to the one done by Tersoff-Hamann can be found here \cite{lounis_theory_2014, wortmann_interpretation_2000} including Chen's expansion.} the tip is atomically sharp and its electrons waveform is s-like. Further assuming low temperature and a constant band structure for the tip, it is possible to calculate 
+the tunneling current $I$. It is for an s-wave like tip with radius R. 
+
+$$I \propto U \cdot \rho_t(E_F) \cdot \rho_s(E_F) \cdot \kappa^{-4}R^2e^{2\kappa R} $$
+
+With this theory constant current STM images image the surface density of states for  a given voltage $U$. The exponential decay ($\propto e^{-\kappa d}$) of an electron wave function into vacuum limits the current, which is proportional to the squared amplitude of it. 
+
+$$I\propto e^{-2\kappa d}$$
+
+Like in one dimension the current depends on the barrier height $\Phi$ ($\kappa=\frac{\sqrt{2m\Phi}}{\hbar}$). 
+Increasing the distance exponentially decreases the tunneling current.\footnote{http://pmrb.free.fr/work/diplom/html/mainse2.html} This exponential relation is the reason for the excellent topography resolution capabilities of STM.
+
+While its a good first approximation of the system, in many cases the bias is in the range of (\SIrange{1}{5}{\V}) so more than just the electrons near Fermi contribute. Also a uniform $\rho_t$ may not be accurate in all cases.
 
 Using \index{STM!WKB} Wentzel-Kramers-Brillouin (WKB) theory\cite{wentzel_verallgemeinerung_1926, kramers_wellenmechanik_1926, brillouin_mecanique_1926} the tunneling current is given by
 \begin{equation}
@@ -37,18 +54,18 @@ T(E,eV)=exp\left(-\frac{\textcolor{red}{\textbf{2}}Z\sqrt{2m}}{\hbar}\sqrt{\frac
 \end{equation}
 describing the propability of an tunneling event between tip and sample.
 
-If $eV<0$ the tunneling current is largest for $E=0$ (electrons on the Fermi-level of the sample), if $eV>0$ the tunneling current is largest for $E=eV$ (electrons of Fermi level in tip).
+The samples potential can be changed by applying a voltage $V=U_b$ to it. This lifts its Fermi energy with respect to the tips and leads to  a net electron current from the sample into the tip. Reversing the voltage results in electrons tunneling from the tip into the sample. 
 
-Since states with highest energy have the largest decay lengths in vacuum, most of the tunneling current is determined by electrons within close proximity to the Fermi level.\footnote{More information related to tunneling processes can be found here \cite{bonnell_scanning_1993}.}
+If $eV<0$ the tunneling current is largest for $E=0$ (electrons on the Fermi-level of the sample), if $eV>0$ the tunneling current is largest for $E=eV$ (electrons of Fermi level in tip).
 
 Due to the fact that the tunneling current is proportional the density of states in the tip and the molecule one can deduce the band structure within a range of several volts in the vicinity of the Fermi energy.
 
-Tunneling current between tip and sample depends on the LDOS of tip and surface and is therefore not implicitly maximized at the atomic positions. It may also vary with the bias voltage applied in a non-trivial manner. Investigation of this behavior led to the establishment of a new measurement technique, called scanning tunneling spectroscopy (see \autoref{section:STS}). 
+Investigation of this behavior led to the establishment of a new measurement technique, called scanning tunneling spectroscopy (STS)(see \autoref{section:STS}). 
 
 \subsection{\textbf{S}canning \textbf{T}unneling \textbf{S}pectroscopy}
 \paragraph{Theory...on STS}
 \label{section:STS}
-First changes of the tunneling current with the bias voltage were observed by Tromp et al. in 1986 \cite{tromp_atomic_1986}. They discovered a change in contrast when scanning a SI(111) surface with either positive or negative bias. The change in contrast is most apparent in semiconductors and semi metals\cite{bonnell_scanning_1993}, but adsorbates and charged areas of the sample change the DOS locally and therefore the contrast in STM. While simple results may be already obtained when comparing two images recorded at different voltages, more detailed information can be achieved. At low temperatures the vanishing lateral movement of molecules makes them also accessible to tunneling spectroscopy with submolecular lateral resolution. It is possible to deduce the electronic configuration with atomic spatial resolution.
+First changes of the tunneling current with the bias voltage were observed by Tromp et al. in 1986 \cite{tromp_atomic_1986}. They discovered a change in contrast when scanning a SI(111) surface with either positive or negative bias. The change in contrast is most apparent in semiconductors and semi metals\cite{bonnell_scanning_1993}, but adsorbates and charged areas of the sample change the DOS locally and therefore the contrast in STM. While simple results may be already obtained when comparing two images recorded at different voltages, more detailed information can be achieved. At low temperatures the vanishing lateral movement of molecules makes them also accessible to tunneling spectroscopy with sub molecular lateral resolution. It is possible to deduce the electronic configuration with atomic spatial resolution.
 
 \index{STS!Bias below work function}
 First let us consider small biases.
@@ -57,15 +74,11 @@ $$dI/dV=\rho_s(r,eV)\rho_t(r,0)T(\textcolor{red}{\textbf{eV}},eV,r)+\int_0^{eV}\
 The first term contains the DOS of the sample and tip and the transmission function. While it is usually unknown, a closer look to \eqref{Transmission-function} indicates a smooth, monotonically increasing function in V. This mannered dependence on V gives a smooth background described by the second term $\int_0^{eV}\rho_s(eV)\rho_t(r,E-eV)\frac{dT(E,eV,r)}{dV}dE$.
 Because T is smooth and monotonic the first term $\rho_s(r,eV)\rho_t(r,0)T(eV,eV,r)$ introduces the dependence on the DOS in the sample for energies $eV$ - our desired spectrum. As for STM topography images, bias voltage can be chosen to either record occupied (-) or unoccupied states (+).
 
-%\subsection{...and how an image is created}
-%The current recorded in a certain area of the sample is translated into a contrast variation on a color scale. While some images encourage the operator to interpret points with high intensity as elevated atoms it is not that trivial. The \textbf{constant current mode}\index{STM:operating mode} is the most widely used one. The tip height is regulated with a feedback controller to achieve a constant tunneling current for the chosen bias. The recorded information is now the voltage applied to the z-piezo to maintain a plane with the same current. Sample features that increase the tunneling current cause the feedback to decrease it again by retracting the tip.
-
 \subsection{Experimental details and machine description}
-
+The success of STM and STS is promoted by good mechanical engineering. Since distances down to the atomic length scales are investigates, the experiment has to be carefully set up. This is needed especially for external vibration damping that would otherwise superimpose with the sample structure.
 \paragraph{Experimental details}
 
 	\textbf{Topography images} are created by raster scanning the surface pixel by pixel. 
-%	They show the voltage aplied to the scan piezo in z-direction to maintain the current set point.
 	We use the constant current operating mode where the regulating voltage on the height control piezo is recorded and plotted in an orange color-scale of each pixel. The brighter the color, the more the piezo had to retract the tip to maintain a constant tunneling current. Regions with the same DOS thus appear in the same contrast.
 
 	A modified tip allows for real space imaging of molecular orbitals.
@@ -126,38 +139,25 @@ Sample temperatures down to \SIrange{5}{7}{\K} allow for observations not possib
 \end{wrapfigure}
 The position of the tip (x, y, z) and macroscopic movement of the stage is controlled with a set of piezos (see \textcolor{red}{\autoref{fig:STM-tip}}). In this work a central tubular piezo is used to control the tips position. The piezo length can be controlled with the voltage applied to them, which is used to choose not only the tip-sample distance, but other parameters like image size and scan speed as well. A feedback loop controls the piezo voltages. For recording an image the area is raster scanned in consecutive lines, applying a sawtooth voltage to the fast scan direction. The next lines are chosen by slowly increasing the voltage along the slow scan direction. Depending on the operating mode the tip-sample distance is controlled by piezo elements, too.
 
-%\begin{figure}[ht]
-%	\begin{center}
-%	\includegraphics[width=0.45\textwidth]{./images/STM-sketch}
-%	\end{center}
-%	\caption{Taken from \cite{diss-manuela}}
-%\end{figure}
-
 \begin{figure}\centering
 	
 \includegraphics[width=0.6\textwidth]{./images/stm-rutgers-modified.jpg}
-\label{fig:STM-tip}
-
 	\caption{Operating principles of an STM. A macroscopic sketch  shows the central piezo that controls the tip position on the sample. The main piezo is divided in four parts to control movement in the x-y plane and tip-sample distance\cite{STM-rutgers}. A microscopic sketch shows the tips movement in constant current mode while moving across a atomic step edge.}
-	\label{fig:STM-sketch}
+\label{fig:STM-tip}
 \end{figure}
 
 \paragraph{Damping stages}
 Two damping stages are used, one for the chamber and a sequential one for the STM.
-\begin{itemize}
-	\item The whole UHV system is placed on air pressurized legs. These can be operated on demand, so that the chamber floats on four dampers and external vibrations/shocks are damped.
-	\item A second stage decouples the sensitive STM scanner from the rest of the setup. First the complete STM stage hangs on springs to further limit the direct influence of vibrations. Second the remaining oscillation amplitude is damped by a eddy current damping. It is made of three magnets in close proximity to the surrounding support so that eddy currents are induced for each movement. The eddy current is typically larger at cryogenic temperatures, that results in a damping that works best at low temperatures. The kinetic energy of the oscillating system is transferred by the eddy currents into heat within the surrounding conductor. The heat is then mitigated by the external cooling of the cryostat.
-\end{itemize}
+
+The whole UHV system is placed on air pressurized legs. These can be operated on demand, so that the chamber floats on four dampers and external vibrations/shocks are damped. 
+
+A second stage decouples the sensitive STM scanner from the rest of the setup. First the complete STM stage hangs on springs to further limit the direct influence of vibrations. Second the remaining oscillation amplitude is damped by a eddy current damping. It is made of three magnets in close proximity to the surrounding support so that eddy currents are induced for each movement. The eddy current is typically larger at cryogenic temperatures, that results in a damping that works best at low temperatures. The kinetic energy of the oscillating system is transferred by the eddy currents into heat within the surrounding conductor. The heat is then mitigated by the external cooling of the cryostat.
 
 \subsection{Limitations}\index{STM:resolution}The accuracy of a STM is very high with spatial resolution down to the atomic scale. Due to the fact that the tips motion is controlled with different piezos, one has to take different elongations in different directions into account. For example, if the STM scans the fast scanning direction just a bit further than the slow scan direction, the resulting image (although pixel wise square) is no longer physically square anymore. Imagine a square (1:1 side ratio, diagonal angle 45\textdegree) where one side is elongated by 5\%. The resulting square (1:1.05 side ratio, diagonal angle 43.6\textdegree) looks square because it has the equal number of pixels in both directions, but it is physically rectangular. The expression used to calculate the uncertainty with known calibration parameters is
 $$\Delta \Theta = 45 - \frac{180}{\pi}\cdot\arctan(\frac{1}{1+x})$$ where x is the percentage of one side being longer. This results in an uncertainty of 0.3\textdegree(1\%), 1.4\textdegree(5\%, see example above), 2.7\textdegree(10\%). For moderate shear, conformity is almost conserved and the uncertainty below 2\textdegree.
 
 Because STM is sensible to electronic changes, it may change the footprint of an adsorbed compound \cite{sautet_interpretation_1992}. When laterally approaching an adsorbate this results in an additional tunneling current, because now electrons do not only tunnel directly into the substrate but through the adsorbate as well. Interferences between both tunneling processes depend on the adsorbate's orbital-symmetry and tip-shape. Local density of states calculations \cite{tersoff_theory_1985, lang_theory_1986, eigler_imaging_1991} is not adapted to grasp this effect since the tip is considered far away from the surface. Moreover, the tip radius or the tip-substrate distance is optimized to fit the lateral size of the adsorbate print with the experimental image \cite{tersoff_theory_1985, eigler_imaging_1991}.
 
-\begin{itemize}
-	\item Mechanical and thermal vibrations limit the resolution of the STM \& STS
-	Mechanical and thermal vibrations limit the resolution of the STM, too. Therefor several damping stages decouple the STM from the surrounding. Although STM works at room temperature, additional cooling may be applied to reduce the thermal vibrations.
-	\item No chemical resolution
-	\subitem As complimentary method, XPS is used for chemical identification of adsorbates
-\end{itemize}
+Mechanical and thermal vibrations limit the resolution of the STM, too. Therefor several damping stages decouple the STM from the surrounding. Although STM works at room temperature, additional cooling may be applied to reduce the thermal vibrations.
 
+STM is not capable to discern different elements. As complimentary method, XRay photoelectron spectroscopy (XPS) is used for chemical identification of adsorbates.

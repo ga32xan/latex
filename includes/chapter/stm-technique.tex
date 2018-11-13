@@ -1,9 +1,9 @@
-The tunneling effect describes the behavior of a particle that faces a potential barrier. In the classical picture the particle is prohibited to move across the potential barrier if its energy is lower than the barrier height. In quantum mechanics however, the particle is described as wave. When this now faces the potential barrier, a fraction of the wave package transmitted through the barrier - an effect known as tunneling.
+The tunneling effect occurs when a particle a potential barrier. In the classical picture the particle is prohibited to move across the potential barrier if its energy is lower than the barrier height. In quantum mechanics however, the particle is described as wave. When this now faces the potential barrier, a fraction of the wave package is transmitted through the barrier - an effect called tunneling.
 
 \subsection{An historic overview}
 The tunneling effect was first observed by Hund in 1926 in molecules, where he explained the sharing of an electron between atoms, each separated by a potential well.\cite{Mehra_tunneling_1982} A principle fundamental for an understanding of covalent chemical bonds. 
 
-The first quantitative expression of the tunneling current between two vacuum serperated metals was introduced by Bardeen in 1961.\cite{Bardeen_tunneling_1961} 
+The first quantitative expression of the tunneling current between two vacuum separated metals was introduced by Bardeen in 1961.\cite{Bardeen_tunneling_1961} 
 
 This lead to an early experiment build by Russell Young, John Ward and Fredric Scire in 1972.\cite{Young_topographiner_1972} Here the basic principles are shown already (tunneling with metal tip). The concept was further improved by Binning \& Rohrer in 1981 \cite{binning_tunneling_1982} when they were the first to report experimental evidence for the tunneling through an vacuum gap. Its width was controlled with ceramics exhibiting the piezoelectric effect. They showcased the excelled resolution capabilities by resolving the ($7 \times 7$) reconstruction of the Si(111) surface \cite{binnig_1983} and received the noble prize in 1986 for "their design of the scanning tunneling microscope" (STM).\cite{_noble_price_1986} 
 
@@ -28,19 +28,18 @@ $$ \Phi = -e \phi_E - E_F $$
 If sample and tip are in thermodynamic equilibrium, their Fermi energies are equal.
 When both are brought in close contact, electrons from the sample tunnel into unoccupied states of the tip and vice versa in the same number. Hereby electrons close to $E_F$ have the largest decay length and attenuate less strong in vacuum and contribute strongest to the tunneling current. This current can be modeled and calculated in simple systems. 
 
-In the model of Tersoff-Hamann\index{STM!Tersoff-Hamann}\footnote{Please's note that there are more models and corrections to them. An evolution from Bardeen's approach to the one done by Tersoff-Hamann can be found here \cite{lounis_theory_2014, wortmann_interpretation_2000} including Chen's expansion.} the tip is atomically sharp and its electrons waveform is s-like. Further assuming low temperature and a constant band structure for the tip, it is possible to calculate 
-the tunneling current $I$. It is for an s-wave like tip with radius R. 
+\paragraph{STM}
+In the model of Tersoff-Hamann\index{STM!Tersoff-Hamann}\footnote{Please's note that there are more models and corrections to them. An evolution from Bardeen's approach to the one done by Tersoff-Hamann can be found here \cite{lounis_theory_2014, wortmann_interpretation_2000} including Chen's expansion.} the tip is atomically sharp and its electrons waveform is s-like. Further assuming low temperature and a constant band structure for the tip with apex radius R, it is possible to calculate the tunneling current $I$. 
 
 $$I \propto U \cdot \rho_t(E_F) \cdot \rho_s(E_F) \cdot \kappa^{-4}R^2e^{2\kappa R} $$
 
-With this theory constant current STM images image the surface density of states for  a given voltage $U$. The exponential decay ($\propto e^{-\kappa d}$) of an electron wave function into vacuum limits the current, which is proportional to the squared amplitude of it. 
+With this theory constant current STM images image the surface density of states for  a given voltage $U$. The exponential decay ($\propto e^{-\kappa d}$) of an electron wave function into vacuum is characterized by $\kappa=\frac{\sqrt{2m\Phi}}{\hbar}$. It limits the current, which is proportional to the squared amplitude of it. 
 
 $$I\propto e^{-2\kappa d}$$
 
-Like in one dimension the current depends on the barrier height $\Phi$ ($\kappa=\frac{\sqrt{2m\Phi}}{\hbar}$). 
-Increasing the distance exponentially decreases the tunneling current.\footnote{http://pmrb.free.fr/work/diplom/html/mainse2.html} This exponential relation is the reason for the excellent topography resolution capabilities of STM.
+Like in one dimension the current depends on the barrier height $\Phi$ through $\kappa$. Increasing the distance exponentially decreases the tunneling current.\footnote{http://pmrb.free.fr/work/diplom/html/mainse2.html} This exponential relation is the reason for the excellent topography resolution capabilities of STM.
 
-While its a good first approximation of the system, in many cases the bias is in the range of (\SIrange{1}{5}{\V}) so more than just the electrons near Fermi contribute. Also a uniform $\rho_t$ may not be accurate in all cases.
+While its a good first approximation of the system, in many cases more than just the electrons near Fermi contribute. Also a uniform $\rho_t(E)$ may not be accurate in all cases.
 
 Using \index{STM!WKB} Wentzel-Kramers-Brillouin (WKB) theory\cite{wentzel_verallgemeinerung_1926, kramers_wellenmechanik_1926, brillouin_mecanique_1926} the tunneling current is given by
 \begin{equation}
@@ -52,74 +51,63 @@ where $\rho_s(\rho_t)$ is the density of states of the sample (tip) and T is the
 T(E,eV)=exp\left(-\frac{\textcolor{red}{\textbf{2}}Z\sqrt{2m}}{\hbar}\sqrt{\frac{\Phi_s+\Phi_t}{2}+\frac{eV}{2}-E}\right)
 \label{Transmission-function} 
 \end{equation}
-describing the propability of an tunneling event between tip and sample.
+describing the probability of an tunneling event between tip and sample.
 
-The samples potential can be changed by applying a voltage $V=U_b$ to it. This lifts its Fermi energy with respect to the tips and leads to  a net electron current from the sample into the tip. Reversing the voltage results in electrons tunneling from the tip into the sample. 
+The samples potential can be changed by applying a voltage $V=U_b$ (bias) to it. This lifts its Fermi energy with respect to the tips and leads to a net electron current from the sample into the tip. Reversing the voltage results in electrons tunneling from the tip into the sample. If $eV<0$ the tunneling current is largest for $E=0$ (electrons on the Fermi-level of the sample), if $eV>0$ the tunneling current is largest for $E=eV$ (electrons of Fermi level in tip).
 
-If $eV<0$ the tunneling current is largest for $E=0$ (electrons on the Fermi-level of the sample), if $eV>0$ the tunneling current is largest for $E=eV$ (electrons of Fermi level in tip).
-
-Due to the fact that the tunneling current is proportional the density of states in the tip and the molecule one can deduce the band structure within a range of several volts in the vicinity of the Fermi energy.
-
-Investigation of this behavior led to the establishment of a new measurement technique, called scanning tunneling spectroscopy (STS)(see \autoref{section:STS}). 
+Due to the fact that the tunneling current is proportional the density of states in the tip and the molecule one can deduce the band structure within a range of several volts in the vicinity of the Fermi energy. Investigation of this behavior led to the establishment of a new measurement technique, called scanning tunneling spectroscopy (STS).
 
 \subsection{\textbf{S}canning \textbf{T}unneling \textbf{S}pectroscopy}
-\paragraph{Theory...on STS}
 \label{section:STS}
-First changes of the tunneling current with the bias voltage were observed by Tromp et al. in 1986 \cite{tromp_atomic_1986}. They discovered a change in contrast when scanning a SI(111) surface with either positive or negative bias. The change in contrast is most apparent in semiconductors and semi metals\cite{bonnell_scanning_1993}, but adsorbates and charged areas of the sample change the DOS locally and therefore the contrast in STM. While simple results may be already obtained when comparing two images recorded at different voltages, more detailed information can be achieved. At low temperatures the vanishing lateral movement of molecules makes them also accessible to tunneling spectroscopy with sub molecular lateral resolution. It is possible to deduce the electronic configuration with atomic spatial resolution.
+First changes of the tunneling current with the bias voltage were observed by Tromp et al. in 1986 \cite{tromp_atomic_1986}. They discovered a change in contrast when scanning a SI(111) surface with either positive or negative bias. The change in contrast is most apparent in semiconductors and semi metals\cite{bonnell_scanning_1993}, but adsorbates and charged areas of the sample change the DOS locally and therefore the contrast in STM. While simple results may be already obtained when comparing two images recorded at different biases, more detailed information can be achieved.
 
 \index{STS!Bias below work function}
-First let us consider small biases.
 If tunneling conditions are such that $eV\leq\Phi$, observed features in $dI/dV$ are associated with the surface DOS. Critical points in the surface projected DOS give rise to features in $dI/dV$. Interpretation of these features with the WKB theory (i.e. differentiating equation \eqref{WKB}) gives
 $$dI/dV=\rho_s(r,eV)\rho_t(r,0)T(\textcolor{red}{\textbf{eV}},eV,r)+\int_0^{eV}\rho_s(eV)\rho_t(r,E-eV)\frac{dT(E,eV,r)}{dV}dE$$
 The first term contains the DOS of the sample and tip and the transmission function. While it is usually unknown, a closer look to \eqref{Transmission-function} indicates a smooth, monotonically increasing function in V. This mannered dependence on V gives a smooth background described by the second term $\int_0^{eV}\rho_s(eV)\rho_t(r,E-eV)\frac{dT(E,eV,r)}{dV}dE$.
-Because T is smooth and monotonic the first term $\rho_s(r,eV)\rho_t(r,0)T(eV,eV,r)$ introduces the dependence on the DOS in the sample for energies $eV$ - our desired spectrum. As for STM topography images, bias voltage can be chosen to either record occupied (-) or unoccupied states (+).
+The first term $\rho_s(r,eV)\rho_t(r,0)T(eV,eV,r)$ describes the dependence on the DOS in the sample for energies $eV$ - our desired spectrum. As for STM topography images, bias voltage can be chosen to either probe occupied (-) or unoccupied states (+).  At low temperatures the vanishing lateral movement of adsorbates makes them also accessible to tunneling spectroscopy with sub molecular lateral resolution. It is possible to deduce the electronic configuration with atomic spatial resolution.
 
 \subsection{Experimental details and machine description}
-The success of STM and STS is promoted by good mechanical engineering. Since distances down to the atomic length scales are investigates, the experiment has to be carefully set up. This is needed especially for external vibration damping that would otherwise superimpose with the sample structure.
-\paragraph{Experimental details}
+The success of STM and STS is promoted by good mechanical engineering. Since distances down to the atomic length scales are investigated, the experiment needs a careful set up. This is true especially for external vibration damping that would otherwise conflict with the measurement. Sufficiently low partial pressures are needed to achieve little contaminant adsorption and the long investigation times associated with it.
 
-	\textbf{Topography images} are created by raster scanning the surface pixel by pixel. 
-	We use the constant current operating mode where the regulating voltage on the height control piezo is recorded and plotted in an orange color-scale of each pixel. The brighter the color, the more the piezo had to retract the tip to maintain a constant tunneling current. Regions with the same DOS thus appear in the same contrast.
+\paragraph{LT-STM}
+Since all used UHV chambers have many common parts, a typical setup is described with the LT-STM setup. Here the most experiments were carried out.
 
-	A modified tip allows for real space imaging of molecular orbitals.
-
-	\textbf{dI/dV} is performed in two ways - on single points (spectrum) and on areas (map). Spectroscopic information can be obtained by either changing the bias voltage and tip height (I(V,z)-spectroscopy) or the tip-sample distance (V(z)-spectroscopy) (I=const).  
-
-	\textbf{Single point spectra} are used to measure electronic properties like molecular orbital energies and electronic band gaps.
-	
-	\textbf{Spectral maps} at a fixed bias show real space distribution of electronic states at the DOS that corresponds to the chosen bias. The signal intensity represents the differential conductance $\propto$ DOS.
-	Therefore the bias is modulated with a sinus like waveform. \index{STS!modulation}The frequency of the low amplitude modulation of the DC bias is much larger than the feedback loop frequency (\SIrange{1}{2}{\kilo \hertz}). The AC part of the tunneling signal is than recorded with a lock in amplifier. \textcolor{red}{The in-phase component is directly the $dI/dV|_{V=V_{bias}}$}, recorded simultaneously with the topography.
-
-
-\paragraph{Machine description}
-Since all used UHV chambers have many common part, a typical setup is described with the LT-STM setup. Here the most experiments were carried out.
-
-The central part of the STM setup is the commercial \textbf{Beetle-type STM scanner} \cite{zoephel_aufbau_2000}. A typical one is shown in \ref{fig:STM}. Here the helicoidal ramp is shown with the central scan piezo and STM tip attached. Three outer piezo tubes are used in slip-stick motion to circularly move on the ramp. Because the ramp is cut with an inclination of \SI{2}{\degree} the circular motion of each piezo results in the STM tip moving up and down. This is used to control the height above the sample during tip approach and lateral movement.
+The central part of the STM setup is the commercial \textbf{Beetle-type STM scanner} \cite{zoephel_aufbau_2000} as shown in \autoref{fig:STM}. Here a helicoidal ramp carries the central scan piezo with attached STM tip. Three outer piezo tubes are used in slip-stick motion to circularly move on the ramp. Because the ramp is cut with an inclination of \SI{2}{\degree} the circular motion of the piezos results in the STM tip moving up and down. This is used to control the height above the sample during tip approach and macroscopic lateral movement.
 
 A separate piezo is used to control the lateral position of the tip during scanning. With it the image width, scan speed and tip-sample distance can be controlled on a continuous, sub-atomic length scale.
 
-The measured current is translated into a voltage (I/U converter) and processed in a 20 Bit digital $\rightarrow$ analog (D/A) converter. The current intensity is feed into the DSP Board. Here the STM Softwares current set point is compared with the measured value. The tips position is controlled with an Digital signal processor (\textbf{DSP-Board}) to maintain a constant current contour (used in cc-mode). If the tips position needs to be corrected, a voltage is passed through a HV amplifier and applied to the corresponding piezo element. For dI/dV maps the feedback loop that controls the tip vertical position is not in use, so that the tip maintains an even height. The DSP is used to attenuate high frequency components. \textcolor{red}{\textbf{ More detail?}}
+The measured current is translated into a voltage (I/U converter) and processed in a 20 Bit digital $\rightarrow$ analog (D/A) converter. The current intensity is feed into the DSP Board. Here the STM Softwares current set point is compared with the measured value. The tips position is controlled with an Digital signal processor (\textbf{DSP}) to maintain a constant current contour in cc-STM. If the tips position needs to be corrected, a voltage is passed through a HV amplifier and applied to the corresponding piezo element. For dI/dV maps the feedback loop that controls the tip vertical position is not in use, so that the tip maintains an even height. 
+%The DSP is used to attenuate high frequency components. \textcolor{red}{\textbf{ More detail?}}
 
-Differentiation of the current signal is done with an \textbf{Lock-In Amplifier}. Here the spectrum is not recorded directly by sweeping the bias and numerically differentiating the measured current. 
-	
-A sinusoidal modulation on top of the bias voltage with a frequency higher than the low pass frequency of the DSP is used. The modulated bias leads to a tunneling current modulation with the same frequency. The differentiation is performed by reading the AC current signal \textcolor{red}{with a 90° phase shift (as sin and cos are shifted by 90°)}. Because the Lock-In Amplifier only takes signals with the same frequency than the excitation frequency into account, the results are much less suspect to noise. Compared to numerical differentiation, the differentiation with hardware needs less computing effort, too. It is important to note that the DSP does not recognize the bias/current modulation as change in current as topographic feature and regulates as without modulation. If the modulation frequency is too low, the feedback tries to compensate the modulation by changing the distance to the sample. If the modulation frequency is too high, the capacitance between tip and sample leads to an $90\deg$ phase shifted current which increases with modulation frequency. One usually chooses the modulation frequency slightly above the cutoff frequency for the feedback loop.
+Differentiation of the current signal is done with an \textbf{Lock-In Amplifier}. Here the spectrum is not recorded directly by sweeping the bias and numerically differentiating the measured current. A sinusoidal modulation on top of the bias voltage with a frequency higher than the low pass frequency of the DSP is used. The modulated bias leads to a tunneling current modulation with the same frequency. The differentiation is performed by reading the AC current signal with the same frequency as the modulation which directly gives the $dI/dV$ signal and therefor the DOS of the sample. 
+
+Because the Lock-In Amplifier then only takes signals with the same frequency than the excitation frequency into account, the results are much less suspect to noise. Compared to numerical differentiation, a Lock-In needs less computing effort, too. It is important to note that the DSP does not recognize the bias/current modulation as topographic feature and regulates as without modulation. If the modulation frequency is too low, the feedback tries to compensate the modulation by changing the distance to the sample. If the modulation frequency is too high, the capacitance between tip and sample leads to an $90\deg$ phase shifted current which increases with modulation frequency. One usually chooses the modulation frequency slightly above the cutoff frequency for the feedback loop.
+
+\paragraph{Piezo elements}
+\begin{wrapfigure}{O}{5cm} \centering
+	\includegraphics[width=4cm]{./images/STM-sketch-2}
+	\caption{STM sample stage to control the tip position. The coarse movement is controlled by exterior piezos. Each moves on a heliocoidal ramp with slip-stick motion. The precise positioning during scan is done with a central piezo to which the tip is attached. Modified from \cite{heliocoidal_ramp_2018}.}
+	\label{fig:stm-heliocoidal ramp}
+\end{wrapfigure}
+Not only the macroscopic movement of the STM stage is controlled with a set of piezos, but the position of the tip (x, y, z) during scanning, too (see \autoref{fig:STM-tip}). In this work a segmented tubular piezo is used to control the tips position. The piezos elongation can be controlled with the voltage applied to them, which is used to choose not only the tip-sample distance. Lateral movement is done by addressing its four segments. Each is used to control movement along $\pm \textnormal{x}$ and $\pm \textnormal{y}$ direction and controlled by the feedback loop. For recording an image the area is raster scanned in consecutive lines, applying a sawtooth voltage to the fast scan direction. The next lines are chosen by stepwise increasing the voltage along the slow scan direction. Other parameters like image size and scan speed are controlled wit the piezos as well.
 
 \paragraph{Vacuum system}
-To maintain UHV conditions in the experimental setup, a set of pumps is used.
-
-For the preparation chamber, where high partial pressures occur during sample cleaning and preparation, a combination of roughening and turbo molecular pumps is used. First a roughening pump lowers the atmospheric pressure to \SI{1}{\milli \bar}. With this pressure on the outlet side a turbo molecular pump is used to decrease the pressure even further to the  \SI{1e-8}{\milli \bar} range. The remaining partial pressure is caused by adsorbate covered chamber walls where continuous ad-/desorption takes places and maintains a pressure equilibrium. After heating the entire chamber to temperatures above the evaporation temperature of the adsorbates (mainly water) while constantly pumping, most of the water can be desorped from the walls and is pumped. After cooling down to room temperatures, the pressure settles in the \SI{5e-10}{\milli \bar} regime.
+To maintain UHV conditions in the experimental setup, a set of pumps is used. For the preparation chamber, where high partial pressures occur during sample cleaning and preparation, a combination of roughening and turbo molecular pumps is used. First a roughening pump lowers the atmospheric pressure to \SI{1}{\milli \bar}. With this pressure on the outlet side a turbo molecular pump is used to decrease the pressure even further to the  \SI{1e-8}{\milli \bar} range. The remaining partial pressure is caused by adsorbate covered chamber walls where continuous ad-/desorption takes places and maintains a pressure equilibrium. After heating the entire chamber to temperatures above the evaporation temperature of the adsorbates (mainly water) while constantly pumping, most of the water can be desorped from the walls and is pumped. After cooling down to room temperatures, the pressure settles in the \SI{5e-10}{\milli \bar} regime.
 
 As the pumping efficiency of turbo molecular pumps decreases for low pressures, each chamber is equipped with an ion pump. Here a high voltage \SIrange{1}{7}{\kilo \volt} is applied between two plates. Residual gas particles ionize in such a strong field and are accelerated towards the plates. Here they impinge with high velocity and are buried deep in the plate material that they can't leave. The reduced number of residual gas particles results in a lower pressure.
 
-To further reduce the number of potential contaminations, parts of the chamber can be cooled down with liquid nitrogen. Because of the great temperature gradient, gaseous residuals condense on the much colder surface of the cooling trap and remain adsorped while the temperature is kept low. Without refilling with liquid nitrogen the temperature slowly increases over time, so that the cooling trap looses its pumping efficiency over time (usually within \SIrange{1}{2}{\hour}).
+To further reduce the number of potential contaminations, parts of the chamber can be cooled down with liquid nitrogen. Because of the great temperature gradient, gaseous residuals condense on the much colder surface of the cooling trap and remain adsorbed while the temperature is kept low. Without refilling with liquid nitrogen the temperature slowly increases over time, so that the cooling trap looses pumping efficiency over time (usually within \SIrange{1}{2}{\hour}).
+
+A titanium sublimation pump is installed to evaporate titanium on demand. This covers the chamber walls and, due to its reactivity, binds residual gas. After some time the reactivity diminishes and a new layer has to be evaporated. With routine operation intervals the base pressure of the UHV system can be improved permanently.
 
 \paragraph{Cooling system} 
-While low temperature (LT) STMs may be operated with solely helium, it is more resource-saving to cool the direct proximity of the sample and the STM with He and to suppress the heat flow out of the He-cryostat with a second surrounding nitrogen cryostat (boiling point: \SI{77}{\K}, compare figure \ref{fig:STM-cryo}). This diminishes consumption of globally limited and rather expensive He. To maintain a temperature of \SIrange{5}{7}{\K}, one to two liters of liquid helium are required a day, plus an additional amount of three to four liters liquid nitrogen. Evaporated helium is reclaimed in a closed circuit with a system of purifying and storage/cooling steps so that only a small amount of helium escapes the circuit and is lost.
+While low temperature (LT) STMs may be operated with solely helium, it is more resource saving to cool the direct proximity of the sample and the STM with He and to suppress the heat flow out of the He-cryostat with a second surrounding nitrogen cryostat (boiling point: \SI{77}{\K}, compare figure \ref{fig:STM-cryo}). This diminishes consumption of globally limited and rather expensive He. To maintain a temperature of \SIrange{5}{7}{\K}, one to two liters of liquid helium are required a day, plus an additional amount of three to four liters liquid nitrogen. Evaporated helium is reclaimed in a closed circuit with a system of purifying and storage/cooling steps so that only a small amount of helium escapes the circuit and is lost.
 
 Sample temperatures down to \SIrange{5}{7}{\K} allow for observations not possible at elevated (room) temperature. Cooling not only reduces thermal drift in the piezo elements that are used to control the tip's position on the sample. Thermal energy at low temperature is not high enough for atoms or molecules to move on most substrates. Species mobile at room temperature (and therefor not representable at room temperature in the sub-ML regime) become immobile and accessible for ST microscopy and spectroscopy. ST spectra resolution is better at low temperatures.
 
 \begin{figure}[ht]\centering
-	\subfigure[LT-STM setup mainly used in this work. Different functional groups are colored in different colors. A low base pressure in achieved with a combined pumping system comprised of ion pumps and turbo molecular pumps (cyan). The liquid helium/nitrogen bath cryostat (red) is used to maintain low temperatures. Sample holders are operated with a rote able, variable temperature manipulator (green). Sample preparation is done in the preparation chamber (blue). After transfer to the LT-STM chamber (yellow) a gate valve is used to seal the LT-STM from remaining residual gas that may be present in the preparation chamber. Vibration isolation of the frame is achieved with legs floating on pressurized cylinders (orange).]{
+	\subfigure[LT-STM setup. Different functional groups are highlighted by colors. A low base pressure in achieved with a combined pumping system comprised of ion pumps and turbo molecular pumps (cyan). The liquid helium/nitrogen bath cryostat (red) is used to maintain low temperatures. Sample holders are operated with a rote able, variable temperature manipulator (green). Sample preparation is done in the preparation chamber (blue). After transfer to the LT-STM chamber (yellow) a gate valve is used to seal the LT-STM from remaining residual gas that may be present in the preparation chamber. Vibration isolation of the frame is achieved with legs floating on pressurized cylinders (orange).]{
 		\includegraphics[width=0.45\textwidth]{./images/chamber-sketch.jpg}
 		\label{fig:chamber-sketch}
 	} \quad
@@ -127,37 +115,52 @@ Sample temperatures down to \SIrange{5}{7}{\K} allow for observations not possib
 		\includegraphics[width=0.45\textwidth]{./images/sketch-cryo.jpg}
 		\label{fig:STM-cryo}
 	}
-	\caption{Typical setup for low temperature measurements. A vibration isolated UHV chamber is used to prepare samples and investigate them in a separable chamber with either STM or AFM. A liquid bath cryostat is used to maintain low temperatures. Images stem from \textcolor{red}{\cite{diss-knud}}}
+	\caption{Typical setup for low temperature measurements. A vibration isolated UHV chamber is used to prepare samples and investigate them in a separable chamber with either STM or AFM. A liquid bath cryostat is used to maintain low temperatures. Images adopted from \cite{diss-knud}}
 	\label{fig:STM}
 \end{figure}
-
-\paragraph{Piezo elements}
-\begin{wrapfigure}{O}{5cm} \centering
-	\includegraphics[width=4cm]{./images/STM-sketch-2}
-	\caption{STM sample stage to control the tip position. The coarse movement is controlled by exterior piezos. Each moves up/down on a heliocoidal ramp with slip-stick motion. The precise positioning is done with a central scan piezo to which the tip is attached. Taken from}
-	\label{fig:stm-heliocoidal ramp}
-\end{wrapfigure}
-The position of the tip (x, y, z) and macroscopic movement of the stage is controlled with a set of piezos (see \textcolor{red}{\autoref{fig:STM-tip}}). In this work a central tubular piezo is used to control the tips position. The piezo length can be controlled with the voltage applied to them, which is used to choose not only the tip-sample distance, but other parameters like image size and scan speed as well. A feedback loop controls the piezo voltages. For recording an image the area is raster scanned in consecutive lines, applying a sawtooth voltage to the fast scan direction. The next lines are chosen by slowly increasing the voltage along the slow scan direction. Depending on the operating mode the tip-sample distance is controlled by piezo elements, too.
 
 \begin{figure}\centering
 	
 \includegraphics[width=0.6\textwidth]{./images/stm-rutgers-modified.jpg}
-	\caption{Operating principles of an STM. A macroscopic sketch  shows the central piezo that controls the tip position on the sample. The main piezo is divided in four parts to control movement in the x-y plane and tip-sample distance\cite{STM-rutgers}. A microscopic sketch shows the tips movement in constant current mode while moving across a atomic step edge.}
+	\caption{Operating principles of an STM. A macroscopic sketch  shows the central piezo that controls the tip position on the sample. The main piezo is divided in four parts to control movement in the x-y plane and tip-sample distance. A microscopic sketch shows the tips movement in constant current mode while moving across a atomic step edge. Here the tip is retracted to maintain a constant current, which in turn lead to a larger apparent height in STM. Note the single incorporated alien atom. Although its height is the same as its neighbors, STM records the change in DOS. Less electrons tunnel and the apparent height on the terrace is reduced above the alien atom.\cite{STM-rutgers}}
 \label{fig:STM-tip}
 \end{figure}
 
 \paragraph{Damping stages}
 Two damping stages are used, one for the chamber and a sequential one for the STM.
 
-The whole UHV system is placed on air pressurized legs. These can be operated on demand, so that the chamber floats on four dampers and external vibrations/shocks are damped. 
+First the whole UHV system is placed on air pressurized legs. These can be operated on demand, so that the chamber floats on four dampers and external vibrations/shocks are damped. 
 
 A second stage decouples the sensitive STM scanner from the rest of the setup. First the complete STM stage hangs on springs to further limit the direct influence of vibrations. Second the remaining oscillation amplitude is damped by a eddy current damping. It is made of three magnets in close proximity to the surrounding support so that eddy currents are induced for each movement. The eddy current is typically larger at cryogenic temperatures, that results in a damping that works best at low temperatures. The kinetic energy of the oscillating system is transferred by the eddy currents into heat within the surrounding conductor. The heat is then mitigated by the external cooling of the cryostat.
 
-\subsection{Limitations}\index{STM:resolution}The accuracy of a STM is very high with spatial resolution down to the atomic scale. Due to the fact that the tips motion is controlled with different piezos, one has to take different elongations in different directions into account. For example, if the STM scans the fast scanning direction just a bit further than the slow scan direction, the resulting image (although pixel wise square) is no longer physically square anymore. Imagine a square (1:1 side ratio, diagonal angle 45\textdegree) where one side is elongated by 5\%. The resulting square (1:1.05 side ratio, diagonal angle 43.6\textdegree) looks square because it has the equal number of pixels in both directions, but it is physically rectangular. The expression used to calculate the uncertainty with known calibration parameters is
-$$\Delta \Theta = 45 - \frac{180}{\pi}\cdot\arctan(\frac{1}{1+x})$$ where x is the percentage of one side being longer. This results in an uncertainty of 0.3\textdegree(1\%), 1.4\textdegree(5\%, see example above), 2.7\textdegree(10\%). For moderate shear, conformity is almost conserved and the uncertainty below 2\textdegree.
+\paragraph{Experimental details}
 
-Because STM is sensible to electronic changes, it may change the footprint of an adsorbed compound \cite{sautet_interpretation_1992}. When laterally approaching an adsorbate this results in an additional tunneling current, because now electrons do not only tunnel directly into the substrate but through the adsorbate as well. Interferences between both tunneling processes depend on the adsorbate's orbital-symmetry and tip-shape. Local density of states calculations \cite{tersoff_theory_1985, lang_theory_1986, eigler_imaging_1991} is not adapted to grasp this effect since the tip is considered far away from the surface. Moreover, the tip radius or the tip-substrate distance is optimized to fit the lateral size of the adsorbate print with the experimental image \cite{tersoff_theory_1985, eigler_imaging_1991}.
+\textbf{Topography images} are created by raster scanning the surface pixel by pixel. 
+We use the constant current (cc-STM) operating mode where the tips height is controlled to achieve a constant tunneling current as shown in \autoref{fig:STM-tip}. The regulating voltage on the height control piezo is recorded and plotted in an color-scale for each pixel. The brighter the color, the more the piezo had to retract the tip to maintain a constant tunneling current. Regions with the same DOS thus appear in the same contrast.
 
-Mechanical and thermal vibrations limit the resolution of the STM, too. Therefor several damping stages decouple the STM from the surrounding. Although STM works at room temperature, additional cooling may be applied to reduce the thermal vibrations.
+%	A modified tip allows for real space imaging of molecular orbitals.
+
+\textbf{dI/dV} is performed in two ways - on single points (spectrum) and on areas (map). Spectroscopic information can be obtained by either changing the bias voltage and tip height (I(V,z)-spectroscopy) or the tip-sample distance (V(z)-spectroscopy) (I=const).   
+
+\textbf{Single point spectra} are used to measure electronic properties like molecular orbital energies and electronic band gaps.
+
+\textbf{Spectral maps} at a fixed bias show real space distribution of electronic states at the DOS that corresponds to the chosen bias. The signal intensity represents the differential conductance $\propto$ DOS. Differentiation is done with a Lock-In (see paragraph above).
+
+\textbf{Lateral manipulation} of atoms and molecules is possible with the STM tip. With a matching current/voltage setpoint, the tips vertical position can be chosen such that the tip interacts with the adsorbate. Lateral displacement of single molecules within molecular assemblies is only possible if molecule-molecule interactions are weak, e.g. no covalent bonds are formed between molecules. 
+
+\subsection{Limitations}\index{STM:resolution}
+
+The accuracy of a STM is very high with spatial resolution down to the atomic scale. Due to the fact that the tips motion is controlled with different piezos, one has to take different elongations in different directions into account. For example, if the STM scans the fast scanning direction just a bit further than the slow scan direction, the resulting image (although pixel wise square) is no longer physically square anymore. 
+%Imagine a square (1:1 side ratio, diagonal angle 45\textdegree) where one side is elongated by 5\%. The resulting square (1:1.05 side ratio, diagonal angle 43.6\textdegree) looks square because it has the equal number of pixels in both directions, but it is physically rectangular. The expression used to calculate the uncertainty with known calibration parameters is
+%$$\Delta \Theta = 45 - \frac{180}{\pi}\cdot\arctan(\frac{1}{1+x})$$ where x is the percentage of one side being longer. This results in an uncertainty of 0.3\textdegree(1\%), 1.4\textdegree(5\%, see example above), 2.7\textdegree(10\%). 
+For moderate shear however, conformity is almost conserved and the uncertainty below 2\textdegree.
+
+Because STM is sensible to electronic changes, it may change the footprint of an adsorbed compound \cite{sautet_interpretation_1992}. When laterally approaching an adsorbate this results in an additional tunneling current, because now electrons do not only tunnel directly into the substrate but through the adsorbate as well. Interferences between both tunneling processes depend on the adsorbate's orbital-symmetry and tip-shape. Local density of states calculations \cite{tersoff_theory_1985, lang_theory_1986, eigler_imaging_1991} are not adapted to grasp this effect since the tip is considered far away from the surface. Moreover, the tip radius or the tip-substrate distance is optimized to fit the lateral size of the adsorbate print with the experimental image \cite{tersoff_theory_1985, eigler_imaging_1991}.
+
+Mechanical and thermal vibrations limit the resolution of STM and STS, too. Therefor the damping stages that decouple the STM from the surrounding are important but may not always filter all mechanical vibrations. 
+
+Signal wires are well shielded against electromagnetic radiation. Since the signal is transmitted with cables an external radio signal may otherwise couple into the wire and tamper with the signal.
+
+Although STM works at room temperature, additional cooling may be applied to reduce the thermal vibrations.
 
 STM is not capable to discern different elements. As complimentary method, XRay photoelectron spectroscopy (XPS) is used for chemical identification of adsorbates.

@@ -1,42 +1,21 @@
-Introducing STM as a electronically sensitive method to investigate surfaces, the atomic force microscopy interacts in a different way with the sample. To scan the surface of the sample, one uses an small tip to interact with it on short distance where forces between sample and tip occur. The force induced movement of the tip is then interpreted and information about the surface may be derived.
+Introducing STM as a electronically sensitive scanning probe method, the atomic force microscopy is another scanning probe tool. To scan the surface of the sample, one uses an small tip to interact with it on short distance where forces between sample and tip occur. The force induced movement of the tip is then interpreted and information about the surface may be derived. If the tip interacts with the sample, its oscillation is hindered/amplified and the frequency of the oscillation shifts. From this shift one can estimate the strength of the acting force. Since every type of adsorbate atom acts in different ways with the tip, AFM is element specific. When the tunneling current through the AFM tip is recorded, simultaneous AFM and STM measurements are possible. 
 \subsection{Theory}
-The layout of a typical \index{AFM} AFM consists of the cantilever itself and some kind of tip-position measurement. Earlier AFMs are made of the position-sensitive detector (PSD) consisting of two closely spaced photo diodes whose output signal is collected by a differential amplifier. The used LT-AFM features a tuning fork sensor, as shown in \autoref{fig:AFM-qplus}. Here the tip is positioned on below an oscillating fork that is operated close to its resonance frequency. If the tip interacts with the sample, its oscillation is hindered and the frequency of the oscillation shifts. From this shift in frequency one can estimate the strength of the acting force. Since every type of adsorbate atom acts in different ways with the tip, AFM is element specific. When the tunneling current thorugh the AFM tip is recorded, simultaneous AFM and STM measurements are possible. 
 
 \begin{figure}\centering
-	\subfigure[Photograph of the tuning fork and cantilever. The tip is glued to the tuning fork on the left side. From \cite{he_bottom-up_2017}]{\includegraphics[width=0.6\textwidth]{./images/AFM-qplus-photograph}
-		\label{fig:AFM-cantilever}}	
-	\subfigure[QPlus sensor used to excite oscillations of the cantilever with controlled amplitude and frequency. Simultanious excitation of the tuning fork ($S_-$ and $S_+$) and measurement of the tunneling current ($I_t$) is possible. From \cite{AFM-qplus}]{\includegraphics[width=0.3\textwidth]{./images/200px-QPlusSchematic}
-		\label{fig:AFM-qplus}}
-\caption{Photograph \subref{fig:AFM-cantilever} and sketch \subref{fig:AFM-qplus} of AFM cantilever as used in the used setup.}
+	\includegraphics[width=0.7\textwidth]{./images/AFM-qplus-photograph}
+	\caption{Photograph of the tuning fork and cantilever. The tip is glued to the tuning fork on the left side. From \cite{he_bottom-up_2017}}
 \label{fig:AFM-tuning-fork}
 \end{figure}	
 
 \begin{figure}\centering
-	\includegraphics[width=0.6\textwidth]{./images/AFM-graph-martin}
+	\includegraphics[width=0.7\textwidth]{./images/AFM-graph-martin}
 		\label{fig:AFM-force}
 \caption{Sketch of tip-sample interaction force (blue) together with relative frequency shift. Contributions of vdW and Lennard Jones like forces result in two separable frequency shifts $\Delta f_{LJ}$ and $\Delta f_{vdW}$ (black) that add up to a total of $\Delta f_{sum}$ (orange) from where the total force is derived. From \cite{schwarz_assembly_2018}}
 \label{fig:AFM-sketch}%
 \end{figure}
 
+Amongst others, forces between AFM tip and sample are made up of attractive forces like van der Waals forces and repulsive forces like mechanical contact force and pauli repulsion.
 
-%\begin{figure}\centering
-%	\includegraphics[width=0.6\textwidth]{./images/s41570-016-0005-f1}
-%		\label{fig:AFM-force}
-%\caption{Sketch of tip-sample interaction (top) together with force-distance graph (bottom). Schematic representation of tuning fork tip and atomically flat sample surface. The force between both $F_{TS}$ is indicated with an arrow. The attractive/repulsive force contributions are shown for varying tip-sample distances. From \cite{pavlicek_generation_2017}}
-%\label{fig:AFM-sketch}%
-%\end{figure}
-
-%\begin{figure}\centering
-%	\subfigure[Schematic representation of cantilever tip and atomically flat sample surface. The force between both $F_{TS}$ is indicated with an arrow. The attractive/repulsive force regimes are shown for variing tip-sample distances. From \cite{pavlicek_generation_2017}]{\includegraphics[width=0.6\textwidth]{./images/s41570-016-0005-f1}%
-%		\label{fig:AFM-force}}
-%	\subfigure[Enlarged sheme of AFM tip and top most sample layer with single adsorbate atom. CO functionalization of the tip leads to an decreased tip apex that increases resolution. Modified from\cite{AFM-qplus}.]{\includegraphics[width=0.3\textwidth]{./images/AFM_tip_with_CO-functionalization-mod}
-%		\label{fig:AFM-CO}}
-%	
-%	\caption{Basic function of a typical Q-plus AFM sensor. \subref{fig:AFM-force} Sketch of tip-sample interaction together with force-distance graph. The CO functionalization of the metalic AFM tip is shown in \subref{fig:AFM-CO}}%
-%	\label{fig:AFM-sketch}%
-%\end{figure}
-
-Types of forces are are typically:
 \begin{itemize}
  \item Van-der-waals interaction (always attractive)
  $$ F_{vdW} = - \frac{A_HR}{6z^2}$$
@@ -48,22 +27,23 @@ The typical resulting force between tip and sample is artistically shown in \aut
 
 $$\Delta f = - \frac{f_0}{2k_0}\frac{\delta F_{TS}}{\delta z}$$
 
-One can distinguish different regimes as indicated by the arrows. When tip and sample are in considerable distance to each other, the attractive vdW forces are the dominant part in the sum. While the tip approaches the sample, more and more interactions with the surface and adsorbate add to this force, strengthening $F_{ts}$. When the separation reaches $z_0$, the distance becomes so small that repulsive forces overcome the attractive one - entering the repulsive regime shortly afterwards. The best images were recorded close to the onset where $F_{ts}$ becomes repulsive.
+One can distinguish different regimes as indicated by the arrows. When tip and sample are in considerable distance to each other, the attractive vdW forces are the dominant part in the sum. While the tip approaches the sample, more and more interactions with the surface and adsorbate add to this force, strengthening $F_{ts}$. When the separation reaches $z_0$, the distance becomes so small that repulsive forces overcome the attractive one - entering the repulsive regime shortly afterwards. \textcolor{red}{\textbf{The best images were recorded close to the onset where $F_{ts}$ becomes repulsive.}}
 
-We used AFM in the nc-mode: The tuning fork is driven at its resonance frequency with fixed amplitude and at a certain distance to the sample. Long-range forces like van-der-waals and others change the resonance frequency of the cantilever. This change is a indication of the acting force between cantilever and sample. 
+AFM is used here in the non-contact mode (\textbf{nc-mode}): The tuning fork is driven at its resonance frequency with fixed amplitude and at a certain distance to the sample. Long-range forces like van-der-waals and others change the resonance frequency of the cantilever. This change is a indication of the acting force between cantilever and sample. 
 
-AFM measures a true height-profile of the sample (and not a mix of electronic and geometric information projected onto a 2D-map like in STM). Contour lines in $\Delta f$ images represent lines with the same tip interaction strength.
+\textcolor{red}{\textbf{AFM measures a true height-profile of the sample (and not a mix of electronic and geometric information projected onto a 2D-map like in STM). Contour lines in $\Delta f$ images represent lines with the same tip interaction strength.}}
 
-To increase the resolution the tip can be functionalized with CO. This method is widely used\footnote{Only a few examples from the recent years can be found here \cite{albrecht_direct_2016, kawai_multiple_2018, kawai_atomically_2015, schulz_elemental_2018, gross_chemical_2009, pavlicek_generation_2017, schwarz_corrugation_2017}} to investigate not only geometric features that are not accessible in STM, but also chemical differences on the sample\cite{wang_exploration_2017}.
+To increase the resolution the tip can be functionalized with CO. This method is widely used\footnote{Only a few examples from the recent years can be found here \cite{albrecht_direct_2016, kawai_multiple_2018, kawai_atomically_2015, schulz_elemental_2018, gross_chemical_2009, pavlicek_generation_2017, schwarz_corrugation_2017}} to investigate not only geometric features that are not directly accessible in STM, but also chemical differences on the sample\cite{wang_exploration_2017}.
 
 \subsection{\textcolor{red}{\textbf{Experimental details}}}
-A piezo element that continuously stimulates oscillations in a quarz crystal is used to drive the forced oscillation of the tuning fork ($f_0$, $k_0$). To its end the AFM/STM tip is attached and follows the oscillation that is driven close to its resonance frequency with a fixed amplitude. Measurements are done in the frequency modulated mode, meaning that the shift in resonance frequency, by an amount $\Delta f$  proportional to the force acting, is recorded in constant height to show the proportional local force gradient. As in STM an image is created by raster scanning the surface.
+The used LT-AFM features a tuning fork sensor, as shown in \autoref{fig:AFM-tuning-fork}. Here the tip is positioned on below an oscillating fork that is operated close to its resonance frequency $f_0$.  A piezo element that continuously stimulates oscillations in a quartz crystal is used to drive the forced oscillation of the tuning fork ($f_0$, $k_0$). To its end the AFM/STM tip is attached and follows the oscillation that is driven close to its resonance frequency with a fixed amplitude. Measurements are done in the frequency modulated mode, meaning that the shift in resonance frequency, by an amount $\Delta f$  proportional to the force acting, is recorded in constant height to show the proportional local force gradient. The image is created by raster scanning the surface.
 
 \subsection{\textcolor{red}{\textbf{Methods}}}
 \textbf{$\Delta f $ images} recorded 
-\textbf{$\frac{\Delta F}{\Delta z}$} spectroscopy is used to highlight changes in the local contact potential.
-\subsection{\textcolor{red}{\textbf{Limitations}}}
 
-\begin{itemize}
-	\item Element specific measurements in $\Delta f / \Delta z$ spectroscopy require long measurement times and a very little drift.
-\end{itemize}
+\textbf{$\frac{\Delta F}{\Delta z}$} spectroscopy is used to highlight changes in the local contact potential.
+
+%\subsection{\textcolor{red}{\textbf{Limitations}}}
+%\begin{itemize}
+%	\item Element specific measurements in $\Delta f / \Delta z$ spectroscopy require long measurement times and a very little drift.
+%\end{itemize}

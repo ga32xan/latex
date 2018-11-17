@@ -36,10 +36,10 @@ Here we consider \textit{h}-BN on Cu(111) as example system of self-limited grow
 	
 	If lattice constants are equal like in the case of a graphene bilayer, the needed lattice mismatch occurs due to a rotation of the two layers. A moir\'e is always present if an over layer shows a lattice mismatch with respect to the substrate. 
 	
-	For \textbf{isotropically scaled over layers} (refer to \autoref{fig:moire-pattern-scaled}) one can calculate the scaling factor $$p=\frac{R^{'}_{O1}}{R_{O1}}$$ which gives the size of the over layer lattice $R^{'}_{O1}$ in units of the substrate lattice $R_{O1}$. The moir\'e pattern shows the same Bravais lattice type than the substrate\cite[10]{hermann_periodic_2012}. If moir\'e and ad layer lattice are aligned ($\alpha=0$\textdegree) the direction of moir\'e and substrate is aligned. If the over layer is isotropically scaled and not rotated, the period of the moir\'e calculates to $$a_{moir\'e}=\underbrace{\frac{p}{|p-1|}}_{\kappa}a_{substrate}$$
+	For \textbf{isotropically scaled over layers} one can calculate the scaling factor $$p=\frac{R^{'}_{O1}}{R_{O1}}$$ which gives the size of the over layer lattice $R^{'}_{O1}$ in units of the substrate lattice $R_{O1}$. The moir\'e pattern shows the same Bravais lattice type than the substrate\cite[10]{hermann_periodic_2012}. If moir\'e and ad layer lattice are aligned ($\alpha=0$\textdegree) the direction of moir\'e and substrate is aligned. If the over layer is isotropically scaled and not rotated, the period of the moir\'e calculates to $$a_{moir\'e}=\underbrace{\frac{p}{|p-1|}}_{\kappa}a_{substrate}$$
 	With $a_{moir\'e}$ and $a_{substrate}$ are experimentally available, the ad layer lattice can be calculated with high precision (usually one order of magnitude more accurate than direction measurement of its period)\textcolor{red}{\textbf{CITE!!}}.
 	
-	For a \textbf{scaled and rotated over layer} (figure \ref{fig:moire-pattern-scaled-rotated}, the angle between substrate and moir\'e ($\gamma$[rad]) scales with the angle between over layer and substrate ($\alpha$[rad]) as $\alpha=(1-p)\gamma$.
+	For a \textbf{scaled and rotated over layer} the angle between substrate and moir\'e ($\gamma$[rad]) scales with the angle between over layer and substrate ($\alpha$[rad]) as $\alpha=(1-p)\gamma$.
 	
 	For rotated and isotropically scaled over layers, one can determine the $\alpha$ and $p$ from experimental observables $\gamma$(moir\'e angle to substrate) and $\kappa$(scaling factor) through relations $ \alpha=\arctan \left ( \frac{sin(\gamma)}{cos(\gamma)+\kappa} \right )\qquad p=\frac{\kappa}{\sqrt{1+\kappa^2+2\kappa cos(\gamma)}}$
 	
@@ -97,17 +97,18 @@ After growth of \textit{h}-BN the substrates work function in reduced [Rh: \SIra
 \begin{figure} \centering
 	\subfigure[Work function variation along \textit{h}-BN/Cu(111) moir\'e. (a) STM image showing the \textit{h}-BN moir\'e with a periodicity of 8.4 nm. Scan parameter: $U_b= 4.0 V, I_t= 40 pA$. (b)	Field emission resonances acquired along the black dotted line in a) revealing a variation of the peak positions. (c) Work  function  differences  between bright  (“hill”/pore)  and  dark  (“valley”/wire)  regions obtained  from  the  dI/dV curves  of  the  field emission  resonances  displayed  in  b). Adopted from \cite{schwarz_corrugation_2017}]{
 		\includegraphics[width=5cm]{./images/h-BN-Cu(111)-wf-change}
-	\label{fig:h-BN-Cu(111)-wf-change}
+	\label{fig:h-BN-Cu(111)-wf-change-I}
 		} \quad
 	\subfigure[Position dependent energy level alignment of $NC-Ph_4-CN$ on \textit{h}-BN / CU(111). Three spectra are compared, recorded on molecules at valley (blue) and hill positions (green). A spectrum of the bare Ag(111) is shown as reference. Taken from \cite{diss-joshi}]{
 	\includegraphics[width=6cm]{./images/h-BN-Cu(111)-wf-change-II}
 	\label{fig:h-BN-Cu(111)-wf-change-II}
-	} 
+	}
+	\label{fig:h-BN-Cu(111)-wf-change}
 \end{figure}
 
 \paragraph{Molecular adsorption and assembly}
-
-With changing work function, a lateral electronic field emerges, pointing from \underline{\qquad \qquad}. It can be used to trap adsorbates with dipole moment along the field lines. This was shown for FePc and pentacene molecules on a graphene/Ru(0001) substrate. Here FePc molecules adsorp first on regions with high lateral dipole along top-fcc direction, followed by regions with lower lateral dipole. Pentacene molecules are trapped along the top-fcc direction \cite{zhang_assembly_2011}, too. This general adsorption mechanism is applicable for other systems with periodic modulation of the work function. \autoref{fig:h-bn-cu-wf} depicts the work function change measured  with STM (Field emission resonances) indicating a similar modulation of the work function. In this theses TBP molecules (\autoref{section:TBP} and helicene molecules in \autoref{section:helicene} are used as sample molecules for specific adsorption site or orientation alignment.
+\textcolor{red}{\textbf{Write some more - explayin examples - how does the assembly process work?}}
+With changing work function, a lateral electronic field emerges, pointing from \underline{\qquad \qquad}. It can be used to trap adsorbates with dipole moment along the field lines. This was shown for FePc and pentacene molecules on a graphene/Ru(0001) substrate. Here FePc molecules adsorp first on regions with high lateral dipole along top-fcc direction, followed by regions with lower lateral dipole. Pentacene molecules are trapped along the top-fcc direction \cite{zhang_assembly_2011}, too. This general adsorption mechanism is applicable for other systems with periodic modulation of the work function. \autoref{fig:h-BN-Cu(111)-wf-change} depicts the work function change measured  with STM (Field emission resonances) indicating a similar modulation of the work function. In this theses TBP molecules (\autoref{section:TBP} and helicene molecules in \autoref{section:helicene} are used as sample molecules for specific adsorption site or orientation alignment.
 
 It was shown that this moir\'e superstructure influences molecular assembly. 
 \textcolor{red}{\textbf{Explain the Porphine adsorption on metal and on \textit{h}-BN}}
@@ -117,3 +118,5 @@ It was shown that this moir\'e superstructure influences molecular assembly.
 	\caption{STM topography of 2H-P adsorped on \textit{h}-BN/Cu(111). (a) Large moir\'e domain guides the formation of small 2H-P islands with off center vacancies. (b) High coverage overcomes the templating effect of the \textit{h}-BN support. Adopted from \cite{diss-joshi}}
 	\label{fig:2H-P-hBN-Cu111-joshi}
 \end{figure}
+
+\textcolor{red}{\textbf{What direction does the resulting surface dipole point at? Give an image?}}

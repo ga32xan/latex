@@ -1,5 +1,5 @@
 \label{chapter:used-molecules}
-The following molecules have been used to conduct experiments. Images show the molecules in an orthographic projection. We will utilize porphyrine derivatives (\autoref{section:TBP}), functionalized pyrene molecules (\autoref{section:pyrene}), helicene species (\autoref{section:helicene}) and coronene (w\/o central borazine functionalization, see \autoref{section:hbc}).
+The following molecules have been used to conduct experiments. Images show the molecules in an orthographic projection. We will utilize porphyrine derivatives (\autoref{section:TBP}), functionalized pyrene molecules (\autoref{section:pyrene}), helicene species (\autoref{section:helicene}) and coronene (w\/o central borazine functionalization, see \autoref{section:HBC}).
 
 All the depicted molecules are modeled in Hyperchem\cite{_hyperchemtm_1111} and calculated for optimized geometry with the AM1+ method. Afterwards their positions are exported and remodeled in blender. Note that this does not change their geometry. It is only for better control of the output (faster and more accurate model building especially in 3D) and for aesthetic reasons.
 
@@ -32,7 +32,7 @@ All the depicted molecules are modeled in Hyperchem\cite{_hyperchemtm_1111} and 
 	\label{fig:pyrene}
 \end{figure}
 
-Pyrene molecules, first investigated in 1973 \cite{khan_electronic_1973}, are 4 ortho-fused carbon rings to result in a rhombic structure. As many other $\pi$ conjugated systems they show interesting optoelectronic properties like \cite{crawford_experimental_2011, lee_enhanced_2012, feng_functionalization_2016, kurata_diarylamino-_2017, maeda_alkynylpyrenes_2006, kurata_diarylamino-_2017} and assembly was investigated \cite{pham_self-assembly_2014, matena_aggregation_2010, della_pia_anomalous_2014, pham_comparing_2016}. Here they are used to investigate the influence of the number and position of functional groups on these properties. The very same species have been investigated on Cu(111) albeit data adsorbed on \textit{h}-BN/Cu(111) was lacking up to this point. The nano-pattering effect of the \textit{h}-BN substrate is used here to modulate the wide band gap of the species and therefor their optical properties.
+Pyrene molecules, first investigated in 1973 \cite{khan_electronic_1973}, are 4 ortho-fused carbon rings to result in a rhombic structure. As many other $\pi$ conjugated systems they show interesting optoelectronic properties \cite{Crawford_experimental_2011, Lee_enhanced_2012, Feng_functionalization_2016, Maeda_alkynylpyrenes_2006, Kurata_donor_2017} and their assembly was investigated \cite{pham_self-assembly_2014, matena_aggregation_2010, della_pia_anomalous_2014, pham_comparing_2016}. Here they are used to investigate the influence of the number and position of functional groups on these properties. The very same species have been investigated on Cu(111) albeit data adsorbed on \textit{h}-BN/Cu(111) was lacking up to this point. The nano-pattering effect of the \textit{h}-BN substrate is used here to modulate the wide band gap of the species and therefor their optical properties.
 
 \textcolor{red}{\textbf{DIPOLE / CHIRALITY / Ref section}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -57,9 +57,29 @@ Pyrene molecules, first investigated in 1973 \cite{khan_electronic_1973}, are 4 
 	\label{fig:HBBNC+HBC}
 \end{figure}
 
-While in 2015\cite{Krieg_construction_2015} and 2016 \cite{Ciccullo_Quasi-Free-Standing_2016} hexy-peri-Hexabenzoborazino coronene (HBBNC) was synthesized, its bad solubility prohibited experiments. In 2017 the synthesis \cite{dosso_synthesis_2017} of a soluble, BN-doped coronene derivative by substitution of the central carbon ring was successful. By using HBBNC the HOMO-LUMO band gap could be widened and shows blue-shifted emission properties\cite{dosso_synthesis_2017} compared to its all-carbon counterpart. Investigations with STM are performed on Au(111) \cite{Krieg_construction_2015}.
-Here the central $(BN)_3$ core is oriented to point all nitrogen atoms towards the leg functionalization.
-Due to the different electro negativity of the atomic species adsorption of gases in the central part can be interesting effects to look out for. Please refer to \textcolor{red}{\textbf{\autoref{section:hbc} for detailed information.}}
+While in 2015\cite{Krieg_construction_2015} and 2016 \cite{Ciccullo_Quasi-Free-Standing_2016} hexy-peri-Hexabenzoborazino coronene (HBBNC) was synthesized, its bad solubility prohibited experiments. In 2017 the synthesis \cite{dosso_synthesis_2017} of a soluble, BN-doped coronene derivative by substitution of the central carbon ring was successful. 
+\begin{wrapfigure}{R}{5cm}\centering
+	\includegraphics[angle=90,width=5cm]{./images/molecules/max-zoom/HBBNC-600}
+	\caption{HBBNC}
+	\label{fig:HBBNC-molecule}
+\end{wrapfigure}
+
+HBC and HBBNC are modifications of coronene. First, for both species six benzo groups are added to form a larger molecular backbone. For both species three 2,6-Dimethylphenyl groups are added to extend the molecule that now resembles a triangular footprint. While HBC features a central carbon ring, HBBNC is functionalized with a central borazine ring instead. Here the central $(BN)_3$ core is oriented to point all nitrogen atoms towards the leg functionalization.
+
+Both species have the same number of atoms and molecular weight. The difference between both becomes apparent when electronic properties are compared (in gas phase).
+
+The regular covalent sp2 hybridization results in an evenly distributed electron density in HBC where the central region of the molecule shows considerable depletion. Changing the central carbon ring to a borazine ring changes the electron density. Now electrons are redistributed from the coronene parts towards the central borazine ring. Because the bond between B and N shows an added ionic character the aromacity is interrupted and the extended electron pi system is altered. Comparable to the difference between graphene (perfect C-C bonds, conductor) and h-BN (Ionic B-N bonds, insulator) the band gap present for HBC is \SI{0.4}{\eV} smaller than for HBBNC, changing its optoelectronic properties. By using HBBNC the HOMO-LUMO band gap could be widened and shows blue-shifted emission properties\cite{dosso_synthesis_2017} compared to its all-carbon counterpart.
+
+\begin{figure}[]\centering
+	\includegraphics[width=\textwidth]{./images/dosso-combined}
+	\caption{Taken from \cite{dosso_synthesis_2017}}
+	\label{}
+\end{figure}
+
+The present functionalization of the coronene molecule is twofold. Di-Methylphenyl groups are added to guide the formation of self-assembled islands of the molecule on the surface. The functionalized core of the molecule is used to create an adsorption platform for polar molecules.
+Investigations with STM are performed on Au(111) by \cite{Krieg_construction_2015}.
+
+Due to the different electro negativity of the atomic species adsorption of gases in the central part can be interesting effects to look out for. Please refer to \textcolor{red}{\textbf{\autoref{section:HBC} for detailed information.}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -135,10 +155,12 @@ Drawings for various functional groups and molecules can be found in \cite{jorge
 			\includegraphics[width=0.3\textwidth]{./images/molecules/helicene-side}
 			\label{fig:helicene-side}
 		} \quad
-		\caption{DCDB on copper surface. \subref{fig:helicene-top} Top view, \subref{fig:helicene-side} side view}
+		\caption{DCDB. \subref{fig:helicene-top} Top view, \subref{fig:helicene-side} side view}
 		\label{fig:helicene}
 	\end{figure}
 	
-	Helicenes were first synthezised in the 1950's \cite{newman_synthesis_1956}. They consist of ortho condensed carbon rings that form a spiral due to overcrowding in their center. While they first drew attention due to their fluorescence properties \cite{vander_donckt_fluorescence_1968}, helicenes are interesting molecules because of their chiral feature. Two different turn directions exist, left and right. The molecules investigated in this work are fcuntionalized with two benzene rings at positions \underline{\qquad} and two cyano groups at positions seven and eight. For more information, please refer to \autoref{sec:helicene}.
+	Helicenes were first synthezised in the 1950's \cite{Newman_synthesis_1956}. They consist of ortho condensed carbon rings that form a spiral due to overcrowding in their center. While they first drew attention due to their fluorescence properties \cite{vander_donckt_fluorescence_1968}, helicenes are interesting molecules because of their chiral feature. Two different turn directions exist, left and right.  
 	
-	\textcolor{red}{\textbf{ref section}}
+	In this work we investigate sub-monolayer coverages of 7,8-dicyano-5,6,9,10-dibenzo-[5]Helicene (dcdb-[5]H). The benzol groups condensed at positions 5,6,9,10 to the five carbon rings of [5]H (db-[5]H) are used to achieve a more distinct footprint of the molecule. Two cyano groups added at the central carbon ring induce a permanent dipole moment of 6.3 D (\autoref{fig:hel-fig1}a,b) and complete the molecule we use here. 
+
+	For more information, please refer to \autoref{section:helicene}.

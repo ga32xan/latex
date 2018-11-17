@@ -65,7 +65,7 @@ outer=30mm,
    \input{./includes/frontmatter/acknowledgements}								%	 				%
    \input{./includes/frontmatter/abstract}										%					%
  \microtypesetup{protrusion=false}												%					%
- \setcounter{tocdepth}{4}														%   [1=sections]	%
+ \setcounter{tocdepth}{2}														%   [1=sections]	%
 	\tableofcontents{}														 	% 					%
 % 	\listoffigures														 		% 					%
 % 	\listoftables																% 					%
@@ -77,19 +77,17 @@ outer=30mm,
 \mainmatter{}
 \chapter{Introduction}
 \input{./includes/chapter/introduction}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Experimental methods}
 Several experimental methods are used within this work to determine different physical properties. In this chapter we review the principles, benefits and limitations for each method. All of them are well known in surface science and used to analyze thin films on different substrates with respect to their geometric, electronic and chemical properties.
 
   \section{\textbf{S}canning \textbf{T}unneling \textbf{M}icroscopy}
     \input{./includes/chapter/stm-technique}
-%  \section{Experimental setup}
- %   \input{./includes/chapter/experimental-setup}
   \section{\textbf{X}-ray \textbf{P}hotoelectron \textbf{S}pectroscopy}
 	\input{./includes/chapter/xps-technique}
   \section{\textbf{A}tomic \textbf{F}orce \textbf{M}icroscopy}
 	\input{./includes/chapter/afm-technique}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Substrates, ad layers and sample preparation}
 To conduct experiments in the most controlled environment possible, sample preparation and investigation is done in ultrahigh vacuum (UHV) chambers. With a base pressure of $\approx \SI{5e-10}{\milli \bar}$ these stainless steel chambers are almost free of contaminants. Since the rate at which residual gas contaminates the sample is proportional to the residual partial pressure, the time needed to cover the surface is proportional to it. When the base pressure is lowered by a factor of \SI{1e-13} (\SI{1}{\bar} $\rightarrow$ \SI{1e-10}{\milli \bar}), the time needed to cover the sample is increased by a factor \SI{e13}. 
 
@@ -104,91 +102,41 @@ Experiments are mainly done with single crystalline substrates of copper and sil
 The following sections will describe the relevant physical properties of the various substrates and will introduce a method to prepare polycrystalline copper foils to grow \textit{h}-BN on. The geometric properties of the resulting lattice mismatched system are discussed briefly. The molecules used for experiments are introduced at the end of the chapter.
      \subsection{Single crystal substrates}
         \input{./includes/chapter/crystal}
-%     \subsection{Growing atomically thin ad layers with \textbf{C}hemical \textbf{V}apor \textbf{D}eposition}
-%        \input{./includes/chapter/cvd}
-\clearpage             
+
      \subsection{\textit{h}-BN on Cu(111)}
 		\input{./includes/chapter/h-bn-cu-111}
-  \section{Used molecules}
-    \input{./includes/chapter/used-molecules}
-%\printbibliography
+
   \section{Sample preparation}
     \input{./includes/chapter/sample-preparation}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Epitaxial hexagonal boron nitride on copper foils}
-  \input{./includes/chapter/motivation-copper-foils}
-\section{Pre-treatment of Cu-foils: Polishing}
-  	\input{./includes/chapter/etching-experiment}
-  \section{SEM \& STM of \textit{h}-BN on Cu-foil}
-     \input{./includes/chapter/bn-on-foil}
-  \section{XPS of self-grown \textit{h}-BN/Cu-foils}
-     \input{./includes/chapter/xps-self-grown-foils}
-  \section{XPS of bought \textit{h}-BN/Cu-foils}
-     \input{./includes/chapter/xps-as-bought}
-  \section{Application: Molecular functionalization with TPCN}
-     \input{./includes/chapter/TPCN-on-h-BN-on-Cu-foil}
-  \section{Conclusion}
-     \input{./includes/chapter/foils-conclusion}
-%\printbibliography	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%\chapter{TPCN}
-%%  \section{on Cu(111)}
-%%    \input{./includes/chapter/TPCN-on-Cu111}
-%%   \section{on h-BN on Cu(111)}
-%%    \input{./includes/chapter/TPCN-on-h-BN-on-Cu111}
-%%\printbibliography
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{./includes/chapter/etching-experiment}
+\input{./includes/chapter/copper-foils-chapter}
+
 \chapter{Bis- \& Tetra-pyridin-4-ylethynyl functionalized pyrene molecules on \textit{h}-BN\/Cu(111)}
-%\section{on h-BN on Cu(111)}
 \input{./includes/chapter/pyrene-paper}
-%\printbibliography
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Borazine functionalized coronene}
-Coronene ($C_{24}H_{12}$, known as [6]circulene or superbenzene) is a polycyclic aromatic hydrocarbon made of six carbon rings to form a molecule reminiscent of a small graphene flake. It belongs to the family of circulenes where a central polygon is enclosed by different numbers of fused benzenoids. For example [5]circulene (corannulene), [6]circulene (coronene), [7]circulene,[2][3][4][5] and higher orders could be synthesized and show different conformation. While species with [5] or [7] benzene rings are bowl shaped, coronene is flat.
-
-\section{HBC \& HBBNC}
 \input{./includes/chapter/HBC-HBBNC}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Nitro functionalized Porphine}
-    \input{./includes/chapter/TBP-intro}
-  \section{Single leg functionalization}
-   \subsection{on Cu(111)}
-      \input{./includes/chapter/TBP-on-Cu111}
-   \subsection{on Ag(100)}
-      \input{./includes/chapter/TBP-on-Ag100}
-   \subsection{on \textit{h}-BN}
-      \input{./includes/chapter/TBP-on-h-BN}
-%\printbibliography
-	\subsection{Conclusion}
-      \input{./includes/chapter/TBP-conclusion}
 
-  \section{Double leg functionalization}
-   \subsection{on Cu(111)}
-      \input{./includes/chapter/TBP-double-Cu111}
-   \subsection{on Ag(100)}
-      \input{./includes/chapter/TBP-double-Ag100}
-%\printbibliography
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Nitro functionalized Porphine}
+    \input{./includes/chapter/TBP-chapter}
+
 \chapter{Functionalized helicene molecules on Ag(111), Ag(100) and \textit{h}-BN supports}
 \input{./includes/chapter/helicene-paper}
-%%\printbibliography
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Summary}
-      \input{./includes/chapter/summary}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \backmatter{}
-  \printbibliography
+
 \chapter{Appendix}
 %\addcontentsline{toc}{chapter}{Index}
 %  \addcontentsline{toc}{chapter}{Appendix}
 %  \input{./includes/backmatter/backmatter}
-\section{Crystal facets}
-  \input{./includes/chapter/backmatter/crystal-facet}
+\section{Polycrystalline copper foils}
+  \input{./includes/chapter/backmatter/foil-SI}
+%  \input{./includes/chapter/backmatter/crystal-facet}
     %% Orbital calculations
 \section{Pyrene}
 In this section extended hückel theory calculations of functionalized pyrene molecules are shown. After structural relaxation via the AM1 semi-empirical method in the Hyperchem software, the result is exported to an IGOR script for presentation. Single molecular orbitals as well as their sum can be shown. For all molecules some basic information is given in a box. The number of atoms, electrons and calculated orbitals is given together with a ball and stick model of the corresponding molecule. Calculated HOMO/LUMO states are shown to the right with their energies noted below.
@@ -231,4 +179,6 @@ Due to the same molecular center, all the species show distinct symmetry at thei
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Peltier cooling unit}
 \input{./includes/chapter/backmatter/peltier-cooler} 
+
+\printbibliography
 \end{document}

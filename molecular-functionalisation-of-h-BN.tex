@@ -25,7 +25,7 @@
 %11pt,					% Schriftgröße, 11pt is standat
 %a5paper,				% a4paper is standart
 twoside,				% Zweiseitig
-BCOR=8mm,				% Bindekorrektur inkl. Biegefalz
+BCOR=12mm,				% Bindekorrektur inkl. Biegefalz
 headings=normal,		% Kleinere Kapitelüberschriften => check preamble
 headsepline,			% Enable line to seperate head ...
 footsepline,			% ... and foot
@@ -36,7 +36,7 @@ plainfootsepline,		% Footseperation line on chapter start
 \usepackage[
 top=30mm,
 bottom=55mm,
-inner=25mm,
+inner=30mm,
 outer=30mm,
 %marginparsep=7mm,
 %marginparwidth=48mm,
@@ -79,13 +79,17 @@ outer=30mm,
 \input{./includes/chapter/introduction}
 
 \chapter{Experimental methods}
-Several experimental methods are used within this work to determine different physical properties. In this chapter we review the principles, benefits and limitations for each method. All of them are well known in surface science and used to analyze thin films on different substrates with respect to their geometric, electronic and chemical properties.
+Several experimental methods are used within this work to determine different physical properties. All of them are well known in surface science and used to analyze thin films on different substrates with respect to their geometric, electronic and chemical properties.
+In this chapter we review the principles, benefits and limitations for scanning tunneling microscopy \ref{section:stm}, X-Ray photoelectron spectroscopy \ref{section:xps} and atomic force microscopy \ref{section:afm}. 
 
   \section{\textbf{S}canning \textbf{T}unneling \textbf{M}icroscopy}
+  \label{section:stm}
     \input{./includes/chapter/stm-technique}
   \section{\textbf{X}-ray \textbf{P}hotoelectron \textbf{S}pectroscopy}
+  \label{section:xps}
 	\input{./includes/chapter/xps-technique}
   \section{\textbf{A}tomic \textbf{F}orce \textbf{M}icroscopy}
+  \label{section:afm}
 	\input{./includes/chapter/afm-technique}
 
 \chapter{Substrates, ad layers and sample preparation}

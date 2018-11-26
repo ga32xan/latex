@@ -34,7 +34,7 @@ One can distinguish different regimes as indicated by the labels. When tip and s
 
 %AFM is used here in the non-contact mode (\textbf{nc-mode}): The tuning fork is driven at its resonance frequency with fixed amplitude and at a certain distance to the sample. Long-range forces like van-der-waals and others change the resonance frequency of the cantilever. This change is a indication of the acting force between cantilever and sample. 
 
-\textcolor{red}{\textbf{AFM measures a height-profile of the sample (and not a mix of electronic and geometric information projected onto a 2D-map like in STM).}}
+AFM measures does not measure a mix of electronic and geometric information projected onto a 2D-map like in STM.
 
 To increase the lateral resolution the tip can be functionalized with CO. This method is widely used \cite{albrecht_direct_2016, kawai_multiple_2018, kawai_atomically_2015, schulz_elemental_2018, gross_chemical_2009, pavlicek_generation_2017, schwarz_corrugation_2017} to investigate not only geometric features that are not directly accessible in STM, but also chemical differences on the sample\cite{wang_exploration_2017}.
 
@@ -47,10 +47,12 @@ To increase the lateral resolution the tip can be functionalized with CO. This m
 \subsection{\textcolor{red}{\textbf{Experimental details}}}
 The used LT-AFM features a tuning fork sensor, as shown in \autoref{fig:AFM-tuning-fork}. Here the tip is positioned below an oscillating fork.  A piezo element that continuously stimulates oscillations in a quartz crystal is used to drive the forced oscillation of the tuning fork ($f_0$, $k_0$). To its end the AFM/STM tip is attached and follows the oscillation with a fixed amplitude.
 
-Measurements are done in the frequency modulated mode, meaning that the shift in resonance frequency, by an amount $\Delta f$  proportional to the force acting, is recorded in constant height to show the proportional local force gradient. The image is created by raster scanning the surface like in LT-STM. \textcolor{red}{\textbf{The best images were recorded where repulsive contributions to $F_{TS,sum}$ arise.}}
+Measurements are done in the frequency modulated mode, meaning that the shift in resonance frequency, by an amount $\Delta f$  proportional to the force acting, is recorded in constant height to show the proportional local force gradient. The image is created by raster scanning the surface like in LT-STM. The best images were recorded where repulsive contributions to $F_{TS,sum}$ arise. This is because repulsive forces are short range while attractive vdW interaction is long range and thus does not provide atomic contrast.
+
+AFM experiments are done under ambient conditions (see copper foil characterization \ref{fig:foil-afm-as-bought}) and in UHV at \SI{5}{\kelvin} at the LT-AFM (see functionalized coronene chapter \ref{HBBNC}).
 
 \subsection{\textcolor{red}{\textbf{Methods}}}
 \textbf{$\Delta f $ images} 
-Contour lines in $\Delta f$ images represent lines with the same tip interaction strength.ed 
+Contour lines in $\Delta f$ images represent lines with the same tip interaction strength.
 
 \textbf{$\frac{\Delta F}{\Delta z}$} spectroscopy is used to highlight changes in the local contact potential.

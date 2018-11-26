@@ -310,7 +310,7 @@ If this effect is responsible for the O\textit{1s} peak at high temperatures is 
   
   They do not form ordered networks (like chains or squares) and lie rather loosely on the \textit{h}-BN layer (\textcolor{red}{\textbf{compare 150807.142226.dat}}). They can easily be moved with the STM tip (\SI{1}{\volt}, \SI{10}{\nano \ampere}). In some areas, denser TPCN islands form. Here they lie right next to each other, slightly shifted to match the neighboring molecules and to achieve the dense packed regions. The same motif was already investigated in the same system \cite{urgel_controlling_2015}.
   
-  During scanning (I=\SI{0.1}{\nA}, \SI{0.9}{\V} <U<\SI{1.3}{\V}) of a group of molecules, a single molecule could be pushed out of the group (compare figure \ref{fig:TPCN-manipulation}. While the chain initially consisted of 3 molecules in a row, after scanning one of the molecular units moved to the left while the remaining two stay at their positions. A closer look to the moved molecule's geometry reveals deformation of the legs.\textcolor{red}{\textbf{More information or don't mention?}}
+  During scanning (I=\SI{0.1}{\nA}, \SI{0.9}{\V} <U<\SI{1.3}{\V}) of a group of molecules, a single molecule could be pushed out of the group (compare figure \autoref{fig:TPCN-manipulation} in appendix). While the chain initially consisted of 3 molecules in a row, after scanning one of the molecular units moved to the left while the remaining two stay at their positions. A closer look to the moved molecule's geometry reveals deformation of the legs.\textcolor{red}{\textbf{More information or don't mention?}}
   
   It was shown that the imminic nitrogen species within a 2H-TPP molecule strongly interact a Cu(111) surface, thus orient along high symmetry directions.\cite{haq_clean_2011, buchner_diffusion_2011, gonzalez-moreno_following_2011, diller_self-metalation_2012, ditze_activation_2012,rojas_self-assembly_2010} 
   Rotation and diffusion are limited. \textcolor{red}{\textbf{What does this tell me?}}
@@ -319,22 +319,41 @@ If this effect is responsible for the O\textit{1s} peak at high temperatures is 
   %--------- Describe how the TPCN form that network on h-BN --------- 
   
   \paragraph{Adding Co}
-  Introducing some cobald (15min, \SI{90}{\celsius}) in the system, this self-assembly changes. The molecules now form a 2D network, too, but are further apart. Their only connection point to the other molecules is the tip of their legs pointing to the adjacent leg of the neighboring molecule.
+  Introducing some cobalt (15min, $T_{sample}=\SI{90}{\celsius}$) in the system, this self-assembly changes as depicted in \autoref{fig:TPCN+Co-STM}. The molecules now form a regular 2D network. All molecules are rotated the same and point their CN functions towards each other. 
   
   \begin{figure}[!h]
   	\centering
-  	\subfigure[Zoomed view ($\SI{10}\times\SI{10}{\square\nm}$)]{
-  		\includegraphics[width=0.45\textwidth]{./images/F150814-090450_01}
+%  	\subfigure[Zoomed view ($\SI{10}\times\SI{10}{\square\nm}$)]{
+%  		\includegraphics[width=0.45\textwidth]{./images/F150814-090450_01}
+%  	}
+%  	\subfigure[($\SI{20}\times\SI{35}{\square\nm}$)]{
+%  		\includegraphics[width=0.45\textwidth]{./images/F150814-090305-cut1}
+%	  	\label{fig:TPCN+Co-STM-large}
+%  	}
+
+  	\subfigure[Image width: $\SI{22}\times\SI{17}{\square\nm}$]{
+  		\includegraphics[angle=90,height=0.7\textwidth]{./images/F150814-090305-cut1}
+	  	\label{fig:TPCN+Co-STM-large}
+  	} 
+  	\subfigure[Image width: \SI{10}{\nano \meter}]{
+  		\includegraphics[angle=90,width=0.45\textwidth]{./images/F150814-090305-cut2-background}
+  		\label{fig:TPCN+Co-STM-small}
+  	} \quad
+  	\subfigure[Model]{
+  		\includegraphics[angle=90,width=0.45\textwidth]{./images/F150814-090305-cut2-2}
+	  	\label{fig:TPCN+Co-STM-small-model}
   	}
-  	\subfigure[Zoomed view ($\SI{20}\times\SI{35}{\square\nm}$)]{
-  		\includegraphics[width=0.45\textwidth]{./images/F150814-115601-cut1-overlay}
-  	}
-  	\caption{Self-Assembled TPCN molecules on \textit{h}-BN/Cu-foil. The cobalt atoms sit right in between the molecules and facilitate a regular, ordered arrangement of the TPCN.}
+  	\caption{Self-Assembled TPCN molecules after Co adsorption on \textit{h}-BN/Cu-foil. The two moir\'e hills are partially visible in \subref{fig:TPCN+Co-STM-large}, imaged at \SI{4.46}{\volt}, \SI{0.04}{\nano\ampere}. The cobalt atoms highlighted in \subref{fig:TPCN+Co-STM-small} sit right in between the TPCN molecules and facilitate a regular, ordered arrangement.}
+  	\label{fig:TPCN+Co-STM}
   \end{figure}
   
-  No sign for metalization (brighter center of porphyrin core) or cobalt ad atoms (bright spots in between the molecules) is observed. Because this type of binding is already reported \cite{urgel_controlling_2015}, similar binding mechanisms are derived for this system.
+Molecules arrange in a square unit cell with center-center distances of \SI{2.43 \pm 0.01}{\nano \meter}.
   
-  Molecules arrange periodically with center-center distances of about \SI{2.3}{\nano \meter}. This leaves a little void space in between 4 TPCN molecule's legs, space where a Co atom may be located. This would result in a distance of \SI{1.5}{\angstrom} between the end of a TPCN leg (its N-center) and the center of the cobalt atom. Typical binding distances for Co-NC are reported \cite{schlickum_metalorganic_2007, przychodzen_supramolecular_2006} and in good agreement.
+A Co atom connecting two neighboring molecules via their legs would result in a distance of \SI{2.81 \pm 0.01}{\angstrom} between the N terminated leg and the center of the cobalt atom. Typical binding distances for Co-NC are reported \cite{schlickum_metalorganic_2007, przychodzen_supramolecular_2006} and in good agreement.
+
+Few signs for porphyrin metalization, neither many access cobalt ad atoms (additional bright spots in between the molecules) are observed. Similar binding mechanisms are derived for this system.\cite{urgel_controlling_2015}
+
+%  \SI{2.3}{\nano \meter}. This leaves a little void space in between 4 TPCN molecule's legs, space where a Co atom may be located. This would result in a distance of \SI{1.5}{\angstrom} between the end of a TPCN leg (its N-center) and the center of the cobalt atom. Typical binding distances for Co-NC are reported \cite{schlickum_metalorganic_2007, przychodzen_supramolecular_2006} and in good agreement.
   
   %---------- Build models in blender for correct spacings etc. ---------
   

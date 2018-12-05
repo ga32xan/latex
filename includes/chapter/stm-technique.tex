@@ -31,24 +31,29 @@ When both are brought in close contact, electrons from the sample tunnel into un
 %\paragraph{STM}
 In the model of Tersoff-Hamann\index{STM!Tersoff-Hamann}\footnote{Please's note that there are more models and corrections to them. An evolution from Bardeen's approach to the one done by Tersoff-Hamann can be found here \cite{lounis_theory_2014, wortmann_interpretation_2000} including Chen's expansion.} the tip is atomically sharp and its electrons waveform is s-like. Further assuming low temperature and a constant band structure for the tip with apex radius R, it is possible to calculate the tunneling current $I$. 
 
-$$I \propto U \cdot \rho_t(E_F) \cdot \rho_s(E_F) \cdot \kappa^{-4}R^2e^{2\kappa R} $$
+\begin{figure}\centering
+	\includegraphics[width=0.7\textwidth]{./images/TH-tip-model}
+	\caption{Left: Tersoff-Hamann geometry model for a tip with radius R  positioned at a distance s above the sample at position $\vec{r_0}$. Right: Exponential decay of electronic states at the sample surface into the vacuum. Image adopted from \cite{STM_theory_versuch_temirov}.}
+	\label{fig:STM-TH_model}
+\end{figure}
 
-With this theory constant current STM images image the surface density of states for  a given voltage $U$. The exponential decay ($\propto e^{-\kappa d}$) of an electron wave function into vacuum is characterized by $\kappa=\frac{\sqrt{2m\Phi}}{\hbar}$. It limits the current, which is proportional to the squared amplitude of it. 
+$$I \propto \frac{2 \pi e^2}{\hbar} \cdot U \cdot \rho_t(E_F) \cdot e^{2\kappa R} \rho_s(E_F,\vec{ r_0})$$
 
-$$I\propto e^{-2\kappa d}$$
-
-Like in one dimension the current depends on the barrier height $\Phi$ through $\kappa$. Increasing the distance exponentially decreases the tunneling current.\footnote{http://pmrb.free.fr/work/diplom/html/mainse2.html} This exponential relation is the reason for the excellent topography resolution capabilities of STM.
-
-While its a good first approximation of the system, in many cases more than just the electrons near Fermi contribute. Also a uniform $\rho_t(E)$ may not be accurate in all cases.
+$\rho_s(E_F,\vec r_0)$ is the LDOS of the sample at $E_F$, evaluated at position $\vec{r_0}$.
+With this theory constant current STM images the surface density of states for  a given voltage $U$. 
+$$\rho_s(E_F,\vec r_0)= \rho_s(E) \cdot exp(-2\kappa (s+R))$$
+The exponential decay ($\propto e^{-\kappa Z}$) of an electron wave function into vacuum is characterized by $\kappa=\frac{\sqrt{2m\Phi}}{\hbar}$. It limits the current, which is proportional to the squared amplitude of it. 
+$$I\propto e^{-2\kappa Z}$$
+Like in one dimension the current depends on the barrier height $\Phi$ through $\kappa$. Increasing the distance exponentially decreases the tunneling current.\footnote{\url{http://pmrb.free.fr/work/diplom/html/mainse2.html} } This exponential relation is the reason for the excellent topography resolution capabilities of STM. While its a good first approximation of the system, in many cases more than just the electrons near Fermi contribute. Also a uniform $\rho_t(E)$ may not be accurate in all cases.
 
 Using \index{STM!WKB} Wentzel-Kramers-Brillouin (WKB) theory\cite{wentzel_verallgemeinerung_1926, kramers_wellenmechanik_1926, brillouin_mecanique_1926} the tunneling current is given by
 \begin{equation}
-I=\int_0^{eV}\rho_s(r,E)\rho_t(r,eV+E)T(E,eV,r)dE
+I=\int_0^{eU}\rho_s(r,E)\rho_t(r,eU+E)T(E,eU,r)dE
 \label{WKB}
 \end{equation}
 where $\rho_s(\rho_t)$ is the density of states of the sample (tip) and T is the tunneling transmission probability
 \begin{equation}
-T(E,eV)=exp\left(-\frac{\textcolor{red}{\textbf{2}}Z\sqrt{2m}}{\hbar}\sqrt{\frac{\Phi_s+\Phi_t}{2}+\frac{eV}{2}-E}\right)
+T(E,eV)=exp\left(-\frac{s\sqrt{2m}}{\hbar}\sqrt{\frac{\Phi_s+\Phi_t}{2}+\frac{eU}{2}-E}\right)=exp\left(-2\kappa_{eff}(E,U)s\right)
 \label{Transmission-function} 
 \end{equation}
 describing the probability of an tunneling event between tip and sample.
@@ -63,9 +68,9 @@ Changes of the tunneling current with the bias voltage were observed by Tromp et
 
 \index{STS!Bias below work function}
 If tunneling conditions are such that $eV\leq\Phi$, observed features in $dI/dV$ are associated with the surface DOS. Critical points in the surface projected DOS give rise to features in dI/dV. Interpretation of these features with the WKB theory (i.e. differentiating equation \eqref{WKB}) gives
-$$dI/dV=\rho_s(r,eV)\rho_t(r,0)T(\textcolor{red}{\textbf{eV}},eV,r)+\int_0^{eV}\rho_s(eV)\rho_t(r,E-eV)\frac{dT(E,eV,r)}{dV}dE$$
+$$dI/dV=\rho_s(r,eV)\rho_t(r,0)T(E,eV,r)+\int_0^{eV}\rho_s(eV)\rho_t(r,E-eV)\frac{dT(E,eV,r)}{dV}dE$$
 The first term contains the DOS of the sample and tip and the transmission function. While it is usually unknown, a closer look to \eqref{Transmission-function} indicates a smooth, monotonically increasing function in V. This mannered dependence on V gives a smooth background described by the second term $\int_0^{eV}\rho_s(eV)\rho_t(r,E-eV)\frac{dT(E,eV,r)}{dV}dE$.
-The first term $\rho_s(r,eV)\rho_t(r,0)T(\textcolor{red}{\textbf{eV}},eV,r)$ describes the dependence on the DOS in the sample for energies $eV$ - our desired spectrum. As for STM topography images, bias voltage can be chosen to either probe occupied ($U_b < \SI{0}{\volt}$) or unoccupied states ($U_b > \SI{0}{\volt}$).  At low temperatures the vanishing lateral movement of adsorbates makes them also accessible to tunneling spectroscopy with sub molecular lateral resolution. It is possible to deduce the electronic configuration with atomic spatial resolution.
+The first term $\rho_s(r,eV)\rho_t(r,0)T(E,eV,r)$ describes the dependence on the DOS in the sample for energies $eV$ - our desired spectrum. As for STM topography images, bias voltage can be chosen to either probe occupied ($U_b < \SI{0}{\volt}$) or unoccupied states ($U_b > \SI{0}{\volt}$).  At low temperatures the vanishing lateral movement of adsorbates makes them also accessible to tunneling spectroscopy with sub molecular lateral resolution. It is possible to deduce the electronic configuration with atomic spatial resolution.
 
 \subsection{Machine description and experimental details}
 The success of STM and STS is promoted by good mechanical engineering. Since distances down to the atomic length scales are investigated, the experiment needs a careful set up. This is true especially for damping of external vibration that would otherwise conflict with the measurement. Sufficiently low partial pressures are needed to achieve little contaminant adsorption and the long investigation times associated with it.

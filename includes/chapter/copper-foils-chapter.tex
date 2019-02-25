@@ -233,7 +233,7 @@ The needed dosage of borazine to assemble a full mono layer of \textit{h}-BN is 
 %	\label{fig:xps-self-grown}
 %\end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[!h]
 	\centering
 	\subfigure{
 		\includegraphics[width=.45\textwidth]{./images/N1s-prepared}
@@ -261,7 +261,7 @@ T and t dependence is not subject to investigation because the growth is suppose
 \subsubsection{Commercial \textit{h}-BN sample}
 The quality of the as-bought \textit{h}-BN on copper foils\cite{_graphene_2014} is examined in XPS. Results are shown in \autoref{fig:xps-bought}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% make it better looking? %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[ht]
+\begin{figure}[!h]
 	\centering
 	\subfigure{
 		\includegraphics[width=.45\textwidth]{./images/N1s-bought}
@@ -309,6 +309,70 @@ If this effect is responsible for the O\textit{1s} peak at high temperatures is 
 
 \textbf{An exchange of O with B or N would be easily visible in XPS (due to changed N/B surroundings. Not sure if the signal of oxygen is large enough for that. Check DATA - confirm maybe}
 
+\paragraph{Application: Molecular adsoprtion of TPCN}
+
+\begin{wrapfigure}{r}{5cm}\centering
+	\includegraphics[width=5cm]{./images/molecules/TPCN-scalebar}
+	\caption{TPCN}
+	\label{fig:TPCN-scalebar}
+\end{wrapfigure}
+
+To test the application of polycrystalline copper foils in molecular adsorption experiments, the Cu(111) support for the \textit{h}-BN growth is replaced by a polycrystalline copper foil. The \textit{h}-BN layer has been prepared by a dose of \SI{5E-7}{\milli\bar} borazine for \SI{20}{\min} (\SI{4500}{\L}) at the LT-STM chamber. During dosage the foil has been kept at \SI{820}{\celsius}. 
+
+Here carbonitrile-functionalized porphyrin derivatives (2H-TPCN) molecules are used as molecular building blocks, as these have been studied in the past \cite{urgel_controlling_2015} with single crystalline supports. On \textit{h}-BN/Cu(111) they show regular metal-organic coordination networks after Co dosage.
+%  
+%  When a \textit{h}-BN spacer layer is introduced, the molecules decouple from the substrate, lowering their interaction with the afore-mentioned. This can be seen in a change of the molecules' footprint (rectangular $\rightarrow$ square ).
+%  
+%  They do not form ordered networks (like chains or squares) and lie rather loosely on the \textit{h}-BN layer (\textcolor{red}{\textbf{compare 150807.142226.dat}}). They can easily be moved with the STM tip (\SI{1}{\volt}, \SI{10}{\nano \ampere}). In some areas, denser TPCN islands form. Here they lie right next to each other, slightly shifted to match the neighboring molecules and to achieve the dense packed regions. The same motif was already investigated in the same system \cite{urgel_controlling_2015}, hardening the assumption of a decoupling \textit{h}-BN layer.
+%  
+%  During scanning ($I=\SI{0.1}{\nA},\ \SI{0.9}{\V}<U<\SI{1.3}{\V}$) of a group of molecules, a single molecule could be pushed out of the group (compare figure \autoref{fig:TPCN-manipulation} in appendix). While the chain initially consisted of 3 molecules in a row, after scanning one of the molecular units moved to the left while the remaining two stay at their positions. A closer look to the moved molecule's geometry reveals deformation of the legs.\textcolor{red}{\textbf{More information or don't mention?}}
+%  
+%  It was shown that the imminic nitrogen species within a 2H-TPP molecule strongly interact a Cu(111) surface, thus orient along high symmetry directions.\cite{haq_clean_2011, buchner_diffusion_2011, gonzalez-moreno_following_2011, diller_self-metalation_2012, ditze_activation_2012,rojas_self-assembly_2010} 
+%  Rotation and diffusion are limited. \textcolor{red}{\textbf{What does this tell me? Molecules on Cu(111) are all oriented the same or rotated by \SI{90}{\degree} or \SI{60}{\degree}? Thats a $\pm$ \SI{30}{\degree}}}
+% 
+% TPCN without added cobalt form similar pattern on the \textit{h}-BN/Cu-foil system (compare fig. 2b in \cite{urgel_controlling_2015}). Although the ordered areas were quiet rare, an arranged region has been found. Here the molecules are not strictly equidistant or -rotated which makes it difficult to give an accurate unit cell for this type of motif.
+%  %--------- Describe how the TPCN form that network on h-BN --------- 
+
+\begin{figure}[!h]
+	\centering%
+	%  	\subfigure[Zoomed view ($\SI{10}\times\SI{10}{\square\nm}$)]{
+	%  		\includegraphics[width=0.45\textwidth]{./images/F150814-090450_01}
+	%  	}
+	%  	\subfigure[($\SI{20}\times\SI{35}{\square\nm}$)]{
+	%  		\includegraphics[width=0.45\textwidth]{./images/F150814-090305-cut1}
+	%	  	\label{fig:TPCN+Co-STM-large}
+	%  	}
+	%
+	\subfigure[Image width: $\SI{22}\times\SI{17}{\square\nm}$, Color scale \SIrange{0}{2}{\nano \meter}]{
+		\includegraphics[width=0.9\textwidth]{./images/F150814_090305_cut1-new-overlay}
+		\label{fig:TPCN+Co-STM-large}
+	}
+	\subfigure[Image width: \SI{10}{\nano \meter}, Color scale \SIrange{0}{1}{\nano \meter}]{
+		\includegraphics[width=0.42\textwidth]{./images/F150814_090305_cut2}
+		\label{fig:TPCN+Co-STM-small}
+	} \quad
+	\subfigure[Model]{
+		\includegraphics[angle=90,width=0.42\textwidth]{./images/F150814-090305-cut2-new}
+		\label{fig:TPCN+Co-STM-small-model}
+	}
+	\caption{Self-Assembled TPCN molecules after Co adsorption on \textit{h}-BN/Cu-foil. Two moir\'e hills are partially visible in \subref{fig:TPCN+Co-STM-large}, imaged at \SI{4.46}{\volt}, \SI{0.04}{\nano\ampere}. \subref{fig:TPCN+Co-STM-small-model} The cobalt atoms sit in between the TPCN molecules and facilitate a regular, ordered arrangement. The unit cell is shown as black square. Two defects are visible.}%
+	\label{fig:TPCN+Co-STM}%
+\end{figure}%
+
+Unveiling the structure of the island beginning at its edges shows the orientation and lateral position of the molecules which is highlighted by dashed outlines in \ref{fig:TPCN+Co-STM-large}. The molecular center is shown in black while the leg functionalization is shown in blue.
+
+The molecules form a regular 2D network and arrange in a square unit cell with center-center distances of \SI{2.43 \pm 0.05}{\nano \meter}. All molecules within are rotated the same and connected by their CN functions via Co atoms. 
+
+A Co atom connecting two neighboring molecules via their legs results in a distance of \SI{2.81 \pm 0.05}{\angstrom} between the N terminated leg and Co atom. Typical binding distances for Co-NC are reported \cite{schlickum_metalorganic_2007, przychodzen_supramolecular_2006} and in good agreement.
+
+Two defects are visible in \autoref{fig:TPCN+Co-STM-small} as depressions in the otherwise regular cobalt lattice connecting the molecules. A missing Co atom leads to a symmetric, cross like depression in the apparent height. The four protrusions resemble the shape of intact functional groups.
+
+A defect asymmetric in shape is visible in the lower half of \autoref{fig:TPCN+Co-STM-small}. Here the connection between four molecules is distorted. While three of four legs appear regular in shape and point to the central cobalt atom, a single leg appears different. This is attributed to an altered function of the leg, likely due to the loss of the pyridil group.
+
+Few signs for porphyrin center metalization, neither many access cobalt ad atoms (additional bright spots in between the molecular assembly) are observed. 
+
+The same mechanisms are present for 2H-TPCN/\textit{h}-BN/Cu(111)+Co \cite{urgel_controlling_2015} and show the resemblance of \textit{h}-BN grown on Cu(111) and polycrystalline copper foils as molecular assembly support.
+
 \section{Summary \& Outlook}
   \begin{itemize}
 	\item Look at Messzeit-April.ppt power point presentation
@@ -320,71 +384,6 @@ The surface roughness of polycrystalline copper foils has been improved with the
 
 The preprared \textit{h}-BN/Cu-foils were compared to bought \textit{h}-BN/Cu-foils in XPS experiments. For the commercial samples the binding energy for nitrogen and boron is lower by $\approx \SI{500}{\milli \eV}$ but both show carbon peaks. While the C\textit{1s} peak for the prepared sample is small, it is considerable for the bought samples. Here it could be removed partially by heating. For the bought samples oxygen contamination is present and annealing did not show a complete removal of the contaminants.
 
-Some foil has been mechanically polished with 4k paper and several hours of Syton polishing. The roughness of these samples has been investigated also in AFM. These are comparable to the chemically polished ones, but are always slightly higher by $\approx 10\%$. Sometimes unwanted new scratches appear after mechanical polish.
+Some foil has been mechanically polished with 4k paper and several hours of Syton polishing. The roughness of these samples has been investigated also in AFM. These are comparable to the chemically polished ones, but are always higher by $\approx 10\%$. Sometimes unwanted new scratches appear after mechanical polish.
 
-To further improve the quality of the foil, one can follow the documented recipe for annealing the foil in a $H_2$ atmosphere (\SI{10}{sscm}, \SI{1000}{\celsius}, 30min)\cite{kim_synthesis_2012} to increase the copper grain size and further smoothen the surface. We decided to prepare the foils within the UHV chamber for molecular adsorption and skipped this step.
-
-\paragraph{Application: Molecular adsoprtion of TPCN}
-  %--------- This is TPCN on h-BN/Cu-foil !
-  To test the application of polycrystalline copper foils in molecular adsorption experiments, the Cu(111) support for the \textit{h}-BN growth is replaced by a polycrystalline copper foil. The \textit{h}-BN layer has been prepared by a dose of \SI{5E-7}{\milli\bar} borazine for \SI{20}{\min} (\SI{4500}{\L}) at the LT-STM chamber. During dosage the foil has been kept at \SI{820}{\celsius}. 
-  
-  Here carbonitrile-functionalized porphyrinderivatives (2H-TPCN) molecules are used, as these have been studied in the past \cite{urgel_controlling_2015} and show regular metal-organic coordination networks after Co dosage. are therefor a promising benchmark candidate for 
-  
-  When a \textit{h}-BN spacer layer is introduced, the molecules decouple from the substrate, lowering their interaction with the afore-mentioned. This can be seen in a change of the molecules' footprint (rectangular $\rightarrow$ square ).
-  
-  They do not form ordered networks (like chains or squares) and lie rather loosely on the \textit{h}-BN layer (\textcolor{red}{\textbf{compare 150807.142226.dat}}). They can easily be moved with the STM tip (\SI{1}{\volt}, \SI{10}{\nano \ampere}). In some areas, denser TPCN islands form. Here they lie right next to each other, slightly shifted to match the neighboring molecules and to achieve the dense packed regions. The same motif was already investigated in the same system \cite{urgel_controlling_2015}, hardening the assumption of a decoupling \textit{h}-BN layer.
-  
-  During scanning ($I=\SI{0.1}{\nA},\ \SI{0.9}{\V}<U<\SI{1.3}{\V}$) of a group of molecules, a single molecule could be pushed out of the group (compare figure \autoref{fig:TPCN-manipulation} in appendix). While the chain initially consisted of 3 molecules in a row, after scanning one of the molecular units moved to the left while the remaining two stay at their positions. A closer look to the moved molecule's geometry reveals deformation of the legs.\textcolor{red}{\textbf{More information or don't mention?}}
-  
-  It was shown that the imminic nitrogen species within a 2H-TPP molecule strongly interact a Cu(111) surface, thus orient along high symmetry directions.\cite{haq_clean_2011, buchner_diffusion_2011, gonzalez-moreno_following_2011, diller_self-metalation_2012, ditze_activation_2012,rojas_self-assembly_2010} 
-  Rotation and diffusion are limited. \textcolor{red}{\textbf{What does this tell me? Molecules on Cu(111) are all oriented the same or rotated by \SI{90}{\degree} or \SI{60}{\degree}? Thats a $\pm$ \SI{30}{\degree}}}
- 
- TPCN without added cobalt form similar pattern on the \textit{h}-BN/Cu-foil system (compare fig. 2b in \cite{urgel_controlling_2015}). Although the ordered areas were quiet rare, an arranged region has been found. Here the molecules are not strictly equidistant or -rotated which makes it difficult to give an accurate unit cell for this type of motif.
-  %--------- Describe how the TPCN form that network on h-BN --------- 
-  
-  \paragraph{Adding Co}
-  Evaporation of cobalt (\SI{15}{\minute}, $T_{sample}=\SI{90}{\celsius}$) changes self-assembly as shown in \autoref{fig:TPCN+Co-STM}. 
-  
-  \begin{figure}[!h]
-  	\centering
-%  	\subfigure[Zoomed view ($\SI{10}\times\SI{10}{\square\nm}$)]{
-%  		\includegraphics[width=0.45\textwidth]{./images/F150814-090450_01}
-%  	}
-%  	\subfigure[($\SI{20}\times\SI{35}{\square\nm}$)]{
-%  		\includegraphics[width=0.45\textwidth]{./images/F150814-090305-cut1}
-%	  	\label{fig:TPCN+Co-STM-large}
-%  	}
-
-  	\subfigure[Image width: $\SI{22}\times\SI{17}{\square\nm}$, Color scale \SIrange{0}{2}{\nano \meter}]{
-  		\includegraphics[height=0.7\textwidth]{./images/F150814_090305_cut1-overlay}
-	  	\label{fig:TPCN+Co-STM-large}
-  	} 
-  	\subfigure[Image width: \SI{10}{\nano \meter}, Color scale \SIrange{0}{1}{\nano \meter}]{
-  		\includegraphics[width=0.45\textwidth]{./images/F150814_090305_cut2}
-  		\label{fig:TPCN+Co-STM-small}
-  	} \quad
-  	\subfigure[Model]{
-  		\includegraphics[angle=90,width=0.45\textwidth]{./images/F150814-090305-cut2-new}
-	  	\label{fig:TPCN+Co-STM-small-model}
-  	}
-  	\caption{Self-Assembled TPCN molecules after Co adsorption on \textit{h}-BN/Cu-foil. Two moir\'e hills are partially visible in \subref{fig:TPCN+Co-STM-large}, imaged at \SI{4.46}{\volt}, \SI{0.04}{\nano\ampere}. \subref{fig:TPCN+Co-STM-small-model} The cobalt atoms sit in between the TPCN molecules and facilitate a regular, ordered arrangement. The unit cell is shown as black square. Two defects are visible.}
-  	\label{fig:TPCN+Co-STM}
-  \end{figure}
- 
-Unveiling the structure of the island beginning at its edges shows the orientation and lateral position of the molecules which is highlighted by dashed outlines in \ref{fig:TPCN+Co-STM-large}. The molecular center is shown in black while the leg functionalization is shown in blue.
-
-The molecules now form a regular 2D network. Molecules arrange in a square unit cell with center-center distances of \SI{2.43 \pm 0.05}{\nano \meter}.  All molecules within are rotated the same and connected via their CN functions. 
-
-A Co atom connecting two neighboring molecules via their legs results in a distance of \SI{2.81 \pm 0.05}{\angstrom} between the N terminated leg and Co atom. Typical binding distances for Co-NC are reported \cite{schlickum_metalorganic_2007, przychodzen_supramolecular_2006} and in good agreement.
-
-The same mechanisms are derived for 2H-TPCN/\textit{h}-BN/Cu(111)+Co \cite{urgel_controlling_2015} and show the resemblence of \textit{h}-BN grown on Cu(111) and polycrystalline copper foils with respect t molecular assembly.
-
-Two defects are visible in \autoref{fig:TPCN+Co-STM-small} as depressions in the otherwise regular cobalt lattice connecting the molecules. A missing Co atom leads to a symmetric, cross like depression in the apparent height. The four protrusions resemble the shape of intact functional groups.
-
-A defect asymmetric in shape is visible in the lower half of \autoref{fig:TPCN+Co-STM-small}. Here the connection between four molecules is distorted. While three of four legs appear regular in shape and point to the central cobalt atom, a single leg appears different. This is attributed to an altered function of the leg, likely due to the loss of the pyridil group.
-
-Few signs for porphyrin center metalization, neither many access cobalt ad atoms (additional bright spots in between the molecular assembly) are observed. 
-
-%  \SI{2.3}{\nano \meter}. This leaves a little void space in between 4 TPCN molecule's legs, space where a Co atom may be located. This would result in a distance of \SI{1.5}{\angstrom} between the end of a TPCN leg (its N-center) and the center of the cobalt atom. Typical binding distances for Co-NC are reported \cite{schlickum_metalorganic_2007, przychodzen_supramolecular_2006} and in good agreement.
-  
-  %---------- Build models in blender for correct spacings etc. ---------
+To further improve the quality of the foil, one could follow the documented recipe for annealing the foil in a $H_2$ atmosphere (\SI{10}{sscm}, \SI{1000}{\celsius}, 30min)\cite{kim_synthesis_2012} to increase the copper grain size and further smoothen the surface. 

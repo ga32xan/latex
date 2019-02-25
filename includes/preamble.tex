@@ -51,7 +51,6 @@
 %\usepackage{url}
 \usepackage[section]{placeins} %definiert \floatbarrier, mit option automatisch bei jeder section
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \newcommand{\subfigureautorefname}{\figureautorefname}
 %There is nothing like a subfigure autoref name, so define one. Figures are cited with \autoref{label} and preceeded with a "Figure" in-text.,
 \usepackage{wrapfig}
@@ -81,7 +80,7 @@
 \usepackage{makeidx}
 % Stichwortverzeichnis erstellen
 \makeindex
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[style=numeric-comp		% bibliogryphy-styles: alphabetic, numeric, chem-angew, ieee, nature, science, numeric-comp
 ,backend=biber
 %,refsection=chapter			% setzt bibliographies nach chaptern getrennt, nach jedem chapter muss ein 
@@ -93,9 +92,12 @@
 
 %avoids ugly line breaks within bibligraphy
 \addto\bibsetup{\setlength{\emergencystretch}{1.5em}} 	
+%%%%%%%%%%%%%%%%%%%%%%%% Appendix %%%%%%%%%%%%%%%%%%%%
+\usepackage{appendix}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% COLORED BOXES IN APPENDIX %%%%%%%%%%%%%
 \usepackage{tcolorbox}% http://ctan.org/pkg/tcolorbox
-\makeatletter					% WHY?!
+\makeatletter					
 \newcommand{\mybox}[1]{%
 	\setbox0=\hbox{#1}%
 	\setlength{\@tempdima}{\dimexpr\wd0+13pt}%
@@ -105,8 +107,6 @@
 	\end{tcolorbox}
 }
 \makeatother
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Zum Verwalten der Zitate benutze ich Zotero, zum Erzeugen der .bib-Datein f�r Latex wird die Exportfunktion von Zotero benutzt (rechtsklick auf ``Meine Bibliothek'' im linken Reiter: Option Biblatex in die Datei bib-zotero-export.bib aus welcher ich dann die betreffenden Zitate auf Richtigkeit \"uberpr\"ufe und in die bib.bib kopiere.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[draft=false]{scrlayer-scrpage}		%deaktiviert ruler in der draft version
 \pagestyle{scrheadings}

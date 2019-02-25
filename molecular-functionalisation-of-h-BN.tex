@@ -55,7 +55,6 @@ outer=30mm,
 %\def\daumenkino{1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\renewcommand{\figureautorefname}{\texttt{\figureautorefname}} 
@@ -128,17 +127,13 @@ The following sections will describe the relevant physical properties of the var
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\backmatter{}
-
-\chapter{Appendix}
-%\addcontentsline{toc}{chapter}{Index}
-%  \addcontentsline{toc}{chapter}{Appendix}
-%  \input{./includes/backmatter/backmatter}
-\section{Polycrystalline copper foils}
+\begin{appendices}
+\addappheadtotoc
+\chapter{Polycrystalline copper foils}
   \input{./includes/chapter/backmatter/foil-SI}
 %  \input{./includes/chapter/backmatter/crystal-facet}
     %% Orbital calculations
-\section{Pyrene}
+\chapter{Pyrene}
 In this section extended hückel theory calculations of functionalized pyrene molecules are shown. After structural relaxation via the AM1 semi-empirical method in the Hyperchem software, the result is exported to an IGOR script for presentation. Single molecular orbitals as well as their sum can be shown. For all molecules some basic information is given in a box. The number of atoms, electrons and calculated orbitals is given together with a ball and stick model of the corresponding molecule. Calculated HOMO/LUMO states are shown to the right with their energies noted below.
 The left side of the pages shows occupied states (second column) and their sum (first column). The right side shows the unoccupied in the same manner.
 
@@ -159,17 +154,17 @@ Due to the same molecular center, all the species show distinct symmetry at thei
 \restoregeometry
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
      %% TBP-Appendix
- \section{TBP}
+ \chapter{TBP}
  \input{./includes/chapter/backmatter/Appendix-TBP}
 % \input{./includes/chapter/backmatter/TBP-distance}
  %%%%%%%%%%%%%%%%%%%%
 %% HBBNC-Appendix
-\section{HBBNC}
+\chapter{HBBNC}
 \input{./includes/chapter/backmatter/HBBNC-SI} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  %%%%%%%%%%%%%%%%%%%%
  %% HBBNC-Appendix
- \section{Helicene}
+ \chapter{Helicene}
  \input{./includes/chapter/backmatter/helicene-SI} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{landscape}
@@ -177,9 +172,12 @@ Due to the same molecular center, all the species show distinct symmetry at thei
 %	\pythonexternal{./includes/chapter/backmatter/Maxigauge-TPG256A.py} %see commands for this 
 %\end{landscape}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{\color{red}{Peltier cooling unit}}
+\chapter{\color{red}{Peltier cooling unit}}
 \input{./includes/chapter/backmatter/peltier-cooler} 
 
+\end{appendices}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography
 \end{document}

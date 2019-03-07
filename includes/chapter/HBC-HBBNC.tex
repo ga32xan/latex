@@ -166,19 +166,50 @@ It can be concluded that annealing HBBNC on a Ag(111) surface will lead to the f
 
 To further check the conformational changes in the molecule due to annealing, AFM measurements are done. nc-AFM has the big advantage over STM that it is less sensible to electronic changes in the molecule – more closely resembling the true geometric shape.
 
-\textbf{Before annealing} the adsorption geometry of monomers is investigated. By scanning the same molecule in different heights, elevated parts of the molecule can be easily distinguished by their larger interaction force with the tip (the involved larger frequency shift is shown as protrusion in nc-AFM images). In contrast to STM measurement where no obvious change in apparent height was observed at RT between legs, AFM measurements show that the dimethylphenyl legs of a monomer do not lie flat on the surface but have an elevated and lower lying part. While the initial orientation on the surface is likely determined at adsorption, the legs are able to flip under the influence of the AFM tip (see \autoref{fig:HBBNC-nc-AFM-legs-change}) and change the adsorption angle of the molecule.
+\textbf{Before annealing} the adsorption geometry of monomers is investigated. By scanning the same molecule in different heights, elevated parts of the molecule can be easily distinguished by their larger interaction force with the tip (the involved larger frequency shift is shown as protrusion in nc-AFM images). These show that the dimethylphenyl legs of a monomer do not lie flat on the surface but have an elevated and lower lying part. While their initial orientation on the surface is likely determined at adsorption, the legs are able to flip under the influence of the AFM tip (see \autoref{fig:HBBNC-nc-AFM-legs-change-calc}) and change the adsorption angle of the molecule. This is imaged as bright edge where the lower part of the rotated dimethylphenyl group lifts the molecule. The effect is most pronounced when neighboring groups rotate in opposite directions. This is underpinned by calculated AFM images (\autoref{fig:HBBNC-nc-AFM-legs-change}) that show the same feature pattern after gentle rotation of the side groups. 
 
 \textbf{After annealing}
 The fused triangular molecules that appeared flat in STM after annealing to \SI{420}{\celsius} reveal their interesting geometric properties when investigated by means of nc-AFM. It is observed that many of the molecules appear to have their dimethylphenyl groups aligned planar to the surface. A behavior expected for a ring closure reaction between the hexabenzol groups and dimethylphenyl legs.
- EXAMPLES for AFM showing that in other systems. 
-In the present case, almost all molecules showed some defined contrast in the connection region which is an indication for a chemical interaction between the molecules.
- DISCUSS distances, directions and excess of carbon rings.
+
+In the present case, almost all molecules show some defined contrast in the connection region which is an indication for a chemical interaction between the molecules.
+\autoref{fig:HBBNC-linking} shows a dimer configuration that is used to clarify the structure of this connection with sub molecular resolution. For the two molecules a center-center distance can be measured (\SI{1.8 \pm 0.1}{\nano \meter}) and is used as benchmark for model verification. The detailed AFM image emphasizes that a link between molecules is present i) either between a leg functionalization and the coronene body (Type I: \autoref{fig:HBBNC-link-lost-groups-AM1}) or ii) between legs (Type II: \autoref{fig:HBBNC-link-lost-hydrogen-AM1}). For both configurations the center-center distances are derived from the AM1 optimized models and result in a closer arrangement for type I (\SI{1.45 \pm 0.01}{\nano \meter}) as for type II (\SI{1.72 \pm 0.01}{\nano \meter}). A close match between the center-center distance of type II and the experimental value ($\delta \leq \SI{6}{\percent}$) is achieved.
+
+Both connection types increase the number of carbon rings and thus result in additional features visible in AFM. For type I the close link between leg and molecular core makes up for four new rings being formed, while a connection solely via the legs creates only one additional ring. This becomes most apparent in the planar configuration of both types (\autoref{fig:HBBNC-ring-structure}). This is not discussed in detail however, since the contrast in AFM is subject to changes in tip functionalization and scan height.
 
 \begin{figure}[] \centering
-	\includegraphics[width=0.7\textwidth]{./images/hbbnc-annealed-afm}
-	\caption{AFM image displaying the Laplace filtered frequency shift channel. While rings constituting the molecule are visible, features in between rigid molecular connection are visible. \textcolor{red}{Scalebar, Imaging parameter: \SI{11.07}{\nano \meter}, \SI{1.5}{\volt}, \SI{0.1}{\nano \ampere}}.}
-	\label{}
+	\subfigure[Raw AFM image of HBBNC on Ag(111) after annealing to \SI{420}{\celsius}. The distance between the two righmost molecules that form a dimer is \SI{1.8 \pm 0.1}{\nano \meter}]{
+		\includegraphics[width=0.7\textwidth]{./images/00337_180608-freq}
+		\label{fig:HBBNC-link-AFM-freq}
+	}
+	\subfigure[Simulated AFM image for type I. Molecular centers are \SI{1.45 \pm 0.01}{\nano \meter} apart.]{
+		\includegraphics[width=0.35\textwidth]{./images/00337-missing-methyl-group-link-2-AM1-model}
+		\label{fig:HBBNC-link-lost-groups-AM1}
+	} \quad
+	\subfigure[Simulated AFM image for type II. Center-center distance increases to \SI{1.72 \pm 0.01}{\nano \meter}.]{
+		\includegraphics[width=0.35\textwidth]{./images/00337-AM1-methyl-groups-fuse-link-2-split-hydrogen}
+		\label{fig:HBBNC-link-lost-hydrogen-AM1}
+	}
+	\subfigure[Connection type I but with planar molecules (no AM1 optimization). Slightly smaller molecule distance of \SI{1.70 \pm 0.01}{\nano \meter}]{
+		\includegraphics[width=0.7\textwidth]{./images/00337-methyl-groups-fuse-link-2-split-hydrogen-detail}
+		\label{fig:HBBNC-link-lost-hydrogen-guess}
+	}
+	\caption{Structure of a intermolecular connection between HBBNC on Ag(111) after annealing to \SI{420}{\celsius}. AFM image \subref{fig:HBBNC-link-AFM-freq} together with simulated AFM images of two different binding motifs. \subref{fig:HBBNC-link-lost-groups-AM1} Linking between leg and coronene center. This link may occur after the dimethyl groups at the phenyl legs are cleaved. \subref{fig:HBBNC-link-lost-hydrogen-AM1} Covalent bond formation after dehydrogenation of di-methyl-functions. The bond is formed via the remaining carbon of the methyl group and and adjacent phenyl ring and is present twice for each link. A slight ripple present close to the covalent bond is a result from the AM1 structure optimization performed. \subref{fig:HBBNC-link-lost-hydrogen-guess} shows the same bond motif as \subref{fig:HBBNC-link-lost-hydrogen-AM1} but for planar geometries and three different scan heights. The binding distances compare best for a bond via legs (configurations \subref{fig:HBBNC-link-lost-hydrogen-AM1} and \subref{fig:HBBNC-link-lost-hydrogen-guess}) with a mismatch of $\leq \SI{6}{\percent}$.}
+	\label{fig:HBBNC-linking}
 \end{figure}
+
+%\begin{figure}[] \centering
+%	\includegraphics[width=0.7\textwidth]{./images/hbbnc-annealed-afm}
+%	\caption{AFM image displaying the Laplace filtered frequency shift channel. While rings constituting the molecule are visible, features in between rigid molecular connection are visible. \textcolor{red}{Scalebar, Imaging parameter: \SI{11.07}{\nano \meter}, \SI{1.5}{\volt}, \SI{0.1}{\nano \ampere}}.}
+%	\label{}
+%\end{figure}
+
+\textbf{Accounting for variing number of visible rings}
+Through assignment of geometric shape and features in AFM images a good agreement between molecular model and image can be achieved and helps to clarify the bond motif between molecules. This relies on the number and position of imaged carbon rings and fixes the resulting bond distances. 
+ Due to some flexibility of the leg functionalization the bond angle and distance may vary. In the following the influence of changing molecular geometry during the annealing process is discussed briefly.
+ 
+The annealing temperature not only assists the covalent bond formation between legs, but may result in a intramolecular bond being formed. Hereby the leg functionalization rotates in plane and reduces the distance to the coronene backbone, a bond between methyl group and coronene carbon ring may result in the formation of a 5-membered ring as shown in \autoref{fig:HBBNC-ring-closure}. Depending on the turn direction, two different leg orientations are possible, kinked to whichever rotation direction was chosen.
+
+When these species now engage each other with the same bond motif as derived earlier, different bond geometries result. \autoref{fig:HBBNC-ring-closure-motifs} shows the same type of bond for pristine HBBNC molecules  \subref{fig:HBBNC-AM1-methyl-groups-fuse-link-2-split hydrogen} and its ring-closed complement \subref{fig:HBBNC-Closed-ring-dimer-1}. These differ in shape of the intermolecular connection and the number of carbon ring structures within the dimer. 
 
 \textbf{On Au(111)}To have the molecule adsorbed flat on the surface, another substrate is chosen. Silver is known to have a larger impact on adsorption geometries than Au(111) has.
 

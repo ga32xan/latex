@@ -1,76 +1,68 @@
-\graphicspath{{./images/molecules/orbitals/hbbnc/}}
 \begin{figure}[h!]
 	\centering
-%\begin{minipage}{\textwidth}\centering
-%\mybox{
-%\begin{tabular}{lrccc}
-%\multicolumn{2}{c}{\textbf{Tetra-Pyrene}} & Model & HOMO & LUMO\\
-%\multicolumn{2}{c}{\textbf{}}
-%&\multirow{3}{*}{\includegraphics[width=2.7cm]{model}}
-%&\multirow{3}{*}{\includegraphics[width=2.7cm]{homo}}
-%&\multirow{3}{*}{\includegraphics[width=2.7cm]{lumo}}\\
-%&&&& \\
-%\# Atoms & &&&\\
-%\# $e^-$ & 218 &&&\\
-%\# Orbitals & 109 &&&\\
-%$E_{Gap}$ &  \SI{}{\electronvolt} &&& \\
-%&&&& \\
-%&&& \SI{-11.56190}{\electronvolt} & \SI{-10.18613}{\electronvolt} \\
-%\end{tabular}
-%}
-%\end{minipage}
-	\subfigure[HOMO - 6]{
-		\includegraphics[width=2.7cm]{./flat/HOMO/153-148}
+\begin{minipage}{\textwidth}\centering
+\mybox{
+\begin{tabular}{cc|cc}
+\multicolumn{2}{c}{\textbf{HOMO}} & \multicolumn{2}{c}{\textbf{LUMO}} \\
+\includegraphics[width=2.7cm]{./images/molecules/HBBNC-flat} & \includegraphics[width=2.7cm]{./images/molecules/HBBNC} & \includegraphics[width=2.7cm]{./images/molecules/HBBNC} & \includegraphics[width=2.7cm]{./images/molecules/HBBNC-flat} \\
+\includegraphics[width=2.7cm]{./images/molecules/orbitals/hbbnc/flat/HOMO/153} & \includegraphics[width=2.7cm]{./images/molecules/orbitals/hbbnc/B3LYP/HOMO/153} &  \includegraphics[width=2.7cm]{./images/molecules/orbitals/hbbnc/B3LYP/LUMO/154} &
+\includegraphics[width=2.7cm]{./images/molecules/orbitals/hbbnc/flat/LUMO/154} \\
+\end{tabular}
+}
+\end{minipage}
+\graphicspath{{./images/molecules/orbitals/hbbnc/}}
+	\subfigure[]{
+		\frame{\includegraphics[width=2.7cm]{./flat/HOMO/153-148}}
 	}
-	\subfigure[HOMO - 6]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./B3LYP/HOMO/153-148}
 	}
-	\subfigure[LUMO + 6]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./B3LYP/LUMO/154-159}
 	}
-	\subfigure[LUMO + 6]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./flat/LUMO/154-159}
 	}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subfigure[HOMO - 12]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./flat/HOMO/153-142}
 	}
-	\subfigure[HOMO - 12]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./B3LYP/HOMO/153-142}
 	}
-	\subfigure[LUMO + 12]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./B3LYP/LUMO/154-165}
 	}
-	\subfigure[LUMO + 12]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./flat/LUMO/154-165}
 	}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subfigure[HOMO - 18]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./flat/HOMO/153-136}
 	}
-	\subfigure[HOMO - 18]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./B3LYP/HOMO/153-136}
 	}
-	\subfigure[LUMO + 18]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./B3LYP/LUMO/154-171}
 	}
-	\subfigure[LUMO + 18]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./flat/LUMO/154-171}
 	}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subfigure[HOMO - 24]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./flat/HOMO/153-130}
 	}
-	\subfigure[HOMO - 24]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./B3LYP/HOMO/153-130-mod}
 	}
-	\subfigure[LUMO + 24]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./B3LYP/LUMO/154-177-mod}
 	}
-	\subfigure[LUMO + 24]{
+	\subfigure[]{
 		\includegraphics[width=2.7cm]{./flat/LUMO/154-177-mod}
 	}
-	\caption{EHT calculated molecular orbitals. HOMO and LUMO states together with five neighboring states (shown in the same column). Inner two columns show HOMO \& LUMO states. Outer columns show integration of states as STM image estimation if all states to $E_F$ were contributing equally. Images are \SI{2.5}{\nano \meter} wide}
-	
+	\caption{Integrated EHT calculated molecular orbitals for two leg configurations of HBBNC. Inner two columns show molecular configuration as predicted by a B3LYP structure optimization. Here the coronene center is parallel to the image plane while the legs are oriented with \SI{90}{\degree} rotation. Outer columns show rotated di-methyl functionalization to lie in the image plane. The difference in shape at the leg funtionalization is best visible for occupied states as opposed to unoccupied states where similar features develop at the center. Images are \SI{2.5}{\nano \meter} wide.}
+\label{fig:HBBNC-EHT-leg-configuration}
 \end{figure}
 \vfill

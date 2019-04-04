@@ -125,18 +125,20 @@ Molecules are sublimated in UHV by organic molecular beam epitaxy (OMBE). The tw
 \begin{table}\centering
 	\caption{Evaporation and degas temperatures used for different molecules.}
 	\begin{tabular}{ccrc}
-		Name			& Configuration & Degas [\SI{}{\degreeCelsius}]	& Evaporate [\SI{}{\degreeCelsius}]	\\ \hline \hline 
+		Name			& Configuration & Degas [\SI{}{\celsius}]	& Evaporate [\SI{}{\celsius}]	\\ \hline \hline 
 		TPCN			& ---		& ---		& 490		\\ \hline 
-		\multirow{3}{*}{TBP}	&single		& \SI{4}{\hour} @ \SI{200}{\degreeCelsius}& 390	\\
-		&cis		& ---		& \SI{400}{\degreeCelsius}\\
-		&trans		& \SI{4}{\hour} @ \SI{200}{\degreeCelsius} + \SI{1}{\hour} @ \SI{270}{\degreeCelsius}&\SI{370}{\degreeCelsius}\\ \hline 
-		\multirow{4}{*}{pyrene} & \multirow{3}{*}{cis}		& \SI{2}{\hour} @ \SI{180}{\degreeCelsius}&	\multirow{3}{*}{250}	\\
-		&&+ \SI{1}{\hour} @ \SI{200}{\degreeCelsius} + \SI{10}{\minute} @ \SI{235}{\degreeCelsius} 	&\\
-		&&+ \SI{1}{\hour} @ \SI{220}{\degreeCelsius}&\\ 
-		&trans		& \SI{1}{\hour} @ \SI{230}{\degreeCelsius}		&\SI{265}{\degreeCelsius}		\\ \hline
-		\multirow{3}{*}{DCDB} & \multirow{3}{*}{---} & 1h @ \SIrange{100}{150}{\degreeCelsius}& \multirow{3}{*}{\SIrange{220}{240}{\degreeCelsius}}\\
-		&&+\SI{10}{\minute} @ \SI{170}{\degreeCelsius} + \SI{25}{\minute} @ \SI{200}{\degreeCelsius} & \\
-		&&+ \SI{40}{\minute} @ \SI{220}{\degreeCelsius}&\\
+		\multirow{3}{*}{TBP}	&single		& \SI{4}{\hour} @ \SI{200}{}& 390	\\
+		&cis		& ---		& \SI{400}{\celsius}\\
+		&trans		& \SI{4}{\hour} @ \SI{200}{} + \SI{1}{\hour} @ \SI{270}{}&\SI{370}{}\\ \hline 
+		\multirow{4}{*}{pyrene} & \multirow{3}{*}{cis}		& \SI{2}{\hour} @ \SI{180}{}&	\multirow{3}{*}{250}	\\
+		&&+ \SI{1}{\hour} @ \SI{200}{} + \SI{10}{\minute} @ \SI{235}{} 	&\\
+		&&+ \SI{1}{\hour} @ \SI{220}{}&\\ 
+		&trans		& \SI{1}{\hour} @ \SI{230}{}		&\SI{265}{}		\\ \hline
+		\multirow{3}{*}{DCDB} & \multirow{3}{*}{---} & 1h @ \SIrange{100}{150}{}& \multirow{3}{*}{\SIrange{220}{240}{}}\\
+		&&+\SI{10}{\minute} @ \SI{170}{} + \SI{25}{\minute} @ \SI{200}{} & \\
+		&&+ \SI{40}{\minute} @ \SI{220}{}&\\
+		\hline
+		Helicene & --- & \textcolor{red}{\textbf{1h @ \SIrange{100}{150}{}}} & \\
 	\end{tabular}
 	\label{tab:molecule-temperatures}
 \end{table}

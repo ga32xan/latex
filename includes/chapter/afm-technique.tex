@@ -1,4 +1,4 @@
-Introducing STM as a electronically sensitive scanning probe method, the atomic force microscopy (AFM) is another scanning probe tool. To scan the surface of the sample, one uses an small oscillating tip to interact with it on short distance where forces between sample and tip occur. If the tip interacts with the sample, its oscillation is hindered/amplified and the frequency of the oscillation shifts. 
+\textbf{A}tomic \textbf{f}orce \textbf{m}icroscopy (AFM) is like STM another scanning probe tool. To scan the surface of the sample, one uses an small oscillating tip to interact with it on short distance where forces between sample and tip occur. If the tip interacts with the sample, its oscillation is hindered/amplified and the frequency of the oscillation shifts. 
 From this shift one can estimate the strength of the acting force. Since every type of adsorbate atom acts in different ways with the tip, AFM is element specific. When the tunneling current through the AFM tip is recorded, simultaneous AFM and STM measurements are possible. 
 \subsection{Theory}
 
@@ -9,15 +9,15 @@ From this shift one can estimate the strength of the acting force. Since every t
 \label{fig:AFM-sketch}%
 \end{figure}
 
-Amongst others, forces between AFM tip and sample are made up of attractive forces like van der Waals forces and repulsive forces like mechanical contact force and Pauli repulsion.
+Amongst others, forces between AFM tip and sample are made up of attractive forces like van der Waals (vdW) forces and repulsive forces like mechanical contact force and Pauli repulsion.
 
-Van-der-Waals interaction is always attractive and described by
+vdW interaction is always attractive and described by
 \begin{equation} \label{eq:vdW}
 F_{vdW} = - \frac{A_H R}{6z^2}
 \end{equation}
-Here $A_H$ is the \textcolor{red}{\textbf{?}}, $R$ \textcolor{red}{\textbf{?}} and $z$ \textcolor{red}{\textbf{?}}.
+Here $A_H$ is the \textcolor{red}{\textbf{?}}, $R$ \textcolor{red}{\textbf{?}} and $z$ \textcolor{red}{\textbf{?}}. Although the strength quickly diminishes with distance $z$, vdW interaction is long range and thus always present in AFM measurements.
 
-Mechanical contact force, Pauli repulsion and chemical bonding are given in the Lennard Jones (LJ) model\cite{jones_determination_1924}.
+Mechanical contact force, Pauli repulsion and chemical bonding are given in the Lennard Jones (LJ) model.\cite{jones_determination_1924}
 \begin{equation} \label{eq:LJ}
  F_{LJ} = - \frac{12 E_{min}}{z_0} \left ( \left (\frac{z_0}{z} \right ) ^{13} - \left ( \frac{z_0}{z} \right )^7 \right )
 \end{equation}
@@ -25,17 +25,17 @@ $E_{min}$ is \textcolor{red}{\textbf{?}}.
 
 The typical resulting force between tip and sample $F_{TS,sum}$ is artistically shown in \autoref{fig:AFM-sketch}. 
 %On the top part a tuning fork with an atomic tip is shown on top of the sample surface. The interaction forces $F_{ts}$ act between tip and sample and are indicated by an arrow. In the lower part a representation of the resulting force in dependence of the tip-sample distance is shown. 
-The sum of interaction $F_{TS,sum}$ between tip and sample is shown as blue  line. The attractive vdW force is plotted in dashed black curve. A typical frequency shift $\Delta f$ is given as orange graph. 
+The sum of interaction $F_{TS,sum}$ between tip and sample is shown as blue  line. The attractive vdW force is plotted in dashed black curve. A typical frequency shift $\Delta f_{sum}$ is given as orange graph. The frequency shift $\Delta f$ is proportional to the force gradient acting on the tip.
 
 $$\Delta f = - \frac{f_0}{2k_0}\frac{\delta F_{TS}}{\delta z}$$
 
-One can distinguish different regimes as indicated by the labels. When tip and sample are in considerable distance to each other, the attractive vdW forces are the dominant part in the sum. While the tip approaches the sample, more and more interactions with the surface and adsorbate add to this force, increasing $F_{TS}$. When the separation reaches $z_0$, the distance becomes so small that repulsive forces overcome the attractive one - entering the repulsive regime shortly afterwards. 
+One can distinguish different regimes as indicated by the labels. When tip and sample are in considerable distance to each other, the attractive vdW forces are the dominant part in the sum. While the tip approaches the sample, more and more interactions with the surface and adsorbate add to this force, increasing $F_{TS}$. When the separation reaches $z_0$, the distance becomes so small that repulsive forces overcome the attractive one at the boarder to the repulsive regime.
 
 %AFM is used here in the non-contact mode (\textbf{nc-mode}): The tuning fork is driven at its resonance frequency with fixed amplitude and at a certain distance to the sample. Long-range forces like van-der-waals and others change the resonance frequency of the cantilever. This change is a indication of the acting force between cantilever and sample. 
 
 AFM measures does not measure a mix of electronic and geometric information projected onto a 2D-map like in STM.
 
-To increase the lateral resolution the tip can be functionalized with CO. This method is widely used \cite{albrecht_direct_2016, kawai_multiple_2018, kawai_atomically_2015, schulz_elemental_2018, gross_chemical_2009, pavlicek_generation_2017, schwarz_corrugation_2017} to investigate not only geometric features that are not directly accessible in STM, but also chemical differences on the sample\cite{wang_exploration_2017}.
+To increase the lateral resolution the tip can be functionalized with CO. This method is widely used \cite{albrecht_direct_2016, kawai_multiple_2018, kawai_atomically_2015, schulz_elemental_2018, gross_chemical_2009, pavlicek_generation_2017, schwarz_corrugation_2017} to investigate not only geometric features that are not directly accessible in STM, but also chemical differences on the sample.\cite{wang_exploration_2017}
 
 \begin{figure}\centering
 	\includegraphics[width=0.7\textwidth]{./images/AFM-qplus-photograph}
@@ -46,12 +46,12 @@ To increase the lateral resolution the tip can be functionalized with CO. This m
 \subsection{\textcolor{red}{\textbf{Experimental details}}}
 The used LT-AFM features a tuning fork sensor, as shown in \autoref{fig:AFM-tuning-fork}. Here the tip is positioned below an oscillating fork.  A piezo element that continuously stimulates oscillations in a quartz crystal is used to drive the forced oscillation of the tuning fork ($f_0$, $k_0$). To its end the AFM/STM tip is attached and follows the oscillation with a fixed amplitude.
 
-Measurements are done in the frequency modulated mode, meaning that the shift in resonance frequency, by an amount $\Delta f$  proportional to the force acting, is recorded in constant height to show the proportional local force gradient. The image is created by raster scanning the surface like in LT-STM. The best images were recorded where repulsive contributions to $F_{TS,sum}$ arise. This is because repulsive forces are short range while attractive vdW interaction is long range and thus does not provide atomic contrast.
+Measurements are done in the frequency modulated mode, meaning that the shift in resonance frequency, by an amount $\Delta f$  proportional to the force gradient, is recorded in constant height to show the proportional local force gradient. The image is created by raster scanning the surface like in LT-STM. The best images were recorded where repulsive contributions to $F_{TS,sum}$ arise. This is because repulsive forces are short range while attractive vdW interaction is long range and thus does not provide atomic contrast.
 
-AFM experiments are done under ambient conditions (see copper foil characterization \pageref{fig:foil-afm-as-bought}) and in UHV at \SI{5}{\kelvin} at the LT-AFM (see functionalized coronene chapter \pageref{section:HBBNC}).
+AFM experiments are done under ambient conditions (see copper foil characterization \autoref{fig:foil-afm-as-bought}) and in UHV at \SI{5}{\kelvin} at the LT-AFM (see functionalized coronene chapter \autoref{section:HBBNC}).
 
-\subsection{\textcolor{red}{\textbf{Methods}}}
-\textbf{$\Delta f $ images} 
-Contour lines in $\Delta f$ images represent lines with the same tip interaction strength.
-
-\textbf{$\frac{\Delta F}{\Delta z}$} spectroscopy is used to highlight changes in the local contact potential.
+%\subsection{\textcolor{red}{\textbf{Methods}}}
+%\textbf{$\Delta f $ images} 
+%Contour lines in $\Delta f$ images represent lines with the same tip interaction strength.
+%
+%\textbf{$\frac{\Delta F}{\Delta z}$} spectroscopy is used to highlight changes in the local contact potential.

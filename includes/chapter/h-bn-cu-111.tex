@@ -11,9 +11,9 @@ Free standing \textit{h}-BN is investigated with \textit{ab-initio} calculations
 
 The growth of \textit{h}-BN on nearly lattice matched Ni(111) resulted in uniform commensurate layers. With increasing lattice mismatch, moir\'e patterns are formed on Pd and Pt. The stronger interaction of \textit{h}-BN and Rh(111) results in a corrugated nanomesh to be formed on the substrate.\textcolor{red}{\textbf{citation}} Even 1D structures are reported on Fe(110) \cite{vinogradov_one-dimensional_2012} and Cr(110) \cite{muller_one-dimensional_2008}. 
 
-Here we consider \textit{h}-BN on Cu(111) as example system of self-limited growth and highlight most relevant insights reported in literature.\cite{joshi_boron_2012, schwarz_corrugation_2017, auwarter_hexagonal_2018}
+Here we consider \textit{h}-BN on Cu(111) ($\Delta \approx \SI{2}{\percent}$) as example system of self-limited growth and highlight most relevant insights reported in literature.\cite{joshi_boron_2012, schwarz_corrugation_2017, auwarter_hexagonal_2018}
 
-\subsubsection{on Cu(111)}
+\subsubsection{\textit{h}-BN on Cu(111)}
 %\begin{table}\centering
 %	\caption{Lattice mismatches between \textit{h}-BN and several transition metal surfaces. The mismatch is given to describe the relative size of the \textit{h}-BN layer compared to the substrate, e.g. negative values indicate a larger lattice constant in the substrate bulk. Information adopted from \cite{_ptable}}
 %	
@@ -35,21 +35,18 @@ Here we consider \textit{h}-BN on Cu(111) as example system of self-limited grow
 	\label{fig:XPS-hbn-Cu111-martin}
 \end{figure}
 
-
-
 	\paragraph{Moir\'e geometry}
 	The properties of various moir\'e superstructures are well described in literature and Hermann gives a comprehensive overview in his paper.\cite{hermann_periodic_2012}\label{section:moire}
-	
-%	If lattice constants are equal like in the case of a graphene bilayer, the needed lattice mismatch occurs due to a rotation of the two layers. 
 	A moir\'e is always present if an over layer shows a lattice mismatch with respect to the substrate. 
+	Here the two most important examples are given, i.e. for an overlayer with the substrate Bravais lattice (hexagonal) either aligned with the substrate basis or rotated by an angle $\alpha$.
 	
-	For \textbf{isotropically scaled over layers} one can calculate the scaling factor $$p=\frac{R^{'}_{O1}}{R_{O1}}$$ which gives the size of the over layer lattice $R^{'}_{O1}$ in units of the substrate lattice $R_{O1}$. The moir\'e pattern shows the same bravais lattice type than the substrate\cite[10]{hermann_periodic_2012}. If moir\'e and ad layer lattice are aligned ($\alpha=0$\textdegree) the direction of moir\'e and substrate is aligned. If the over layer is isotropically scaled and not rotated, the period of the moir\'e calculates to $$a_{moir\'e}=\underbrace{\frac{p}{|p-1|}}_{\kappa}a_{substrate}$$
+	For \textbf{isotropically scaled and aligned over layers} one can calculate the scaling factor $$p=\frac{R^{'}_{O1}}{R_{O1}}$$ which gives the size of the over layer lattice $R^{'}_{O1}$ in units of the substrate lattice $R_{O1}$. The moir\'e pattern shows the same bravais lattice type than the substrate\cite[10]{hermann_periodic_2012}. If moir\'e and ad layer lattice are aligned ($\alpha=0$\textdegree) the direction of moir\'e and substrate is aligned. The period of the moir\'e calculates to $$a_{moir\'e}=\underbrace{\frac{p}{|p-1|}}_{\kappa}a_{substrate}$$
 	With $a_{moir\'e}$ and $a_{substrate}$ are experimentally available, the ad layer lattice can be calculated with high precision (usually one order of magnitude more accurate than direct measurement of its period).\cite{farwick_zum_hagen_structure_2016}
 
 Depending on the relative orientation of \textit{h}-BN and substrate the moir\'e period changes. Although large domains with uniform orientation can be grown on single crystal substrates (\autoref{fig:moire-STM-model}(a,c)), rotational domains exist(\autoref{fig:moire-STM-model}(b,d,e)).
 The model representation nicely shows the change in moir\'e period when
-\autoref{fig:moire-STM-model}(c) shows a case where the \textit{h}-BN ad layer has the same unit cell orientation than the copper. For a \textbf{scaled and rotated over layer} the angle between substrate and moir\'e ($\gamma$[rad]) scales with the angle between over layer and substrate ($\alpha$[rad]) as $\alpha=(1-p)\gamma$.
-For rotated and isotropically scaled over layers, one can determine the $\alpha$ and $p$ from experimental observables $\gamma$(moir\'e angle to substrate) and $\kappa$(scaling factor) through relations $ \alpha=\arctan \left ( \frac{sin(\gamma)}{cos(\gamma)+\kappa} \right )\qquad p=\frac{\kappa}{\sqrt{1+\kappa^2+2\kappa cos(\gamma)}}$
+\autoref{fig:moire-STM-model}(c) shows a case where the \textit{h}-BN ad layer has the same unit cell orientation than the copper. For a \textbf{isotropically scaled and rotated over layer} the angle between substrate and moir\'e ($\gamma$[rad]) scales with the angle between over layer and substrate ($\alpha$[rad]) as $\alpha=(1-p)\gamma$.
+In this case, one can determine $\alpha$ and $p$ from experimental observables $\gamma$(moir\'e angle to substrate) and $\kappa$(scaling factor) through relations $$ \alpha=\arctan \left ( \frac{sin(\gamma)}{cos(\gamma)+\kappa} \right )\qquad p=\frac{\kappa}{\sqrt{1+\kappa^2+2\kappa cos(\gamma)}}$$
 
 \begin{figure} \centering
 	\includegraphics[width=0.5\textwidth]{./images/h-BN-cvd-cu111.png}%
@@ -62,13 +59,11 @@ As mentioned above the orientation of the moir\'e superstructure is determined b
 \paragraph{Periodic change in work function}
 A direct result of the lattice mismatch between \textit{h}-BN and Cu(111) is the changing registry of ad layer atoms and substrate. The periodic modulation of B/N registry to the substrate atoms results in regions of stronger and weaker interaction between \textit{h}-BN and substrate and is the reason for the nano templating effect of \textit{h}-BN on many substrates.\textcolor{red}{\textbf{citation}} In the following some effects are discussed that lay the foundation for a nano patterning effect of \textit{h}-BN and its influence on the electronic structure of adsorbates.
 
-While a first report in 2004 \cite{corso_boron_2004}, pointed to the formation of a complicated two layer structure, later experiments \cite{roth_chemical_2013, li_grain_2015} including ours \cite{joshi_boron_2012, schwarz_corrugation_2017} and others \textit{h}-BN/Cu(111) proofed a single layer of B \& N atoms in a regular hexagonal lattice. It evolved as well investigated system to perform experiments on. It could be shown that after CVD growth it adsorbs on Cu(111) as a flat layer. Due to its  lattice mismatch, "hill" regions  (corresponding to a $N_{top}B_{fcc}$ registry) and "valleys" (corresponding to a $N_{fcc}B_{hcp}$ registry) are formed. In these regions the work function is altered in opposite directions. While larger at the hill/pore regions, the work function reduces continuously to its lowest value in the valley/wire regions.\footnote{Please note that the notation is not uniform throughout the literature. Sometimes hills are referred to as pores and valley regions are denoted as wire regions.} 
+While a first report in 2004 \cite{corso_boron_2004}, pointed to the formation of a complicated two layer structure, later experiments \cite{roth_chemical_2013, li_grain_2015} including ours \cite{joshi_boron_2012, schwarz_corrugation_2017} proofed a single layer of B \& N atoms in a regular hexagonal lattice when grown on Cu(111). It evolved as well investigated system to perform experiments on. After CVD growth it adsorbs on Cu(111) as a flat layer. Due to its  lattice mismatch, "hill" regions  (corresponding to a $N_{top}B_{fcc}$ registry) and "valley" regions (corresponding to a $N_{fcc}B_{hcp}$ registry) are formed. In these regions the work function is altered in opposite directions. While larger at the hill/pore regions, the work function reduces continuously to its lowest value in the valley/wire regions.\footnote{Please note that the notation is not uniform throughout the literature. Sometimes hills are referred to as pores and valley regions are denoted as wire regions.} 
+
+After growth of \textit{h}-BN the substrates total work function is reduced [e.g. Rh: \SIrange{5.1}{3.07}{\eV} \cite{gomez_diaz_hexagonal_2013}. Therefor a dipole moment $\mu$ pointing from the the bulk to the surface is necessary, rather likely created by a negative charge transfer from the bulk into the ad layer.\cite{roman_periodic_2013}
 
 Everywhere two regions with different work functions meet, local electrostatic fields arise to compensate for the vacuum level misalignment.
-
-After growth of \textit{h}-BN the substrates over all work function is reduced [e.g. Rh: \SIrange{5.01}{3.07}{\eV} \cite{gomez_diaz_hexagonal_2013}. Therefor a dipole moment $\mu$ pointing from the the bulk to the surface is necessary, rather likely created by a negative charge transfer from the bulk into the ad layer.\cite{roman_periodic_2013}
-
-
 \begin{figure} \centering
 	\subfigure[Work function variation along \textit{h}-BN/Cu(111) moir\'e. (a) STM image showing the \textit{h}-BN moir\'e with a periodicity of \SI{8.4}{\nano \meter}. Scan parameter: $U_b = \SI{4.0}{\volt}, I_t = \SI{40}{\pico \ampere}$. (b)	Field emission resonances acquired along the black dotted line in a) revealing a variation of the peak positions. (c) Work  function  differences  between bright  (“hill”/pore)  and  dark  (“valley”/wire)  regions obtained  from  the  dI/dV curves  of  the  field emission  resonances  displayed  in  b). Adopted from \cite{schwarz_corrugation_2017}]{
 		\includegraphics[width=5cm]{./images/h-BN-Cu(111)-wf-change}

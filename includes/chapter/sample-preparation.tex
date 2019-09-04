@@ -1,5 +1,5 @@
 \subsection{Etching copper foils}
-Growing high quality \textit{h}-BN ad layers on polycrystalline copper foils requires a smooth surface, but as ordered Cu foils exhibit a root-mean-square (RMS) surface roughness $S_q$ of about \SI{218}{\nm}\cite{bin_zhang_low-temperature_2012}. Steep, linear depressions, called striations are fabrication remnants due to the cold rolled foils and observed on the surface\cite{kim_synthesis_2012-1}. Also some manufacturers apply a thin layer of chromium oxide for corrosion protection\cite{bin_zhang_low-temperature_2012}, that has to be removed prior \textit{h}-BN growth. A common procedure to reduce the roughness of a material is to mechanically polish the surface. When a small roughness $S_q$ is needed, electrochemical polishing is an alternative.
+Growing high quality \textit{h}-BN ad layers on polycrystalline copper foils requires a smooth surface, but as ordered Cu foils exhibit a root-mean-square (RMS) surface roughness $S_q$ of about \SI{218}{\nm}\cite{bin_zhang_low-temperature_2012}. Steep, linear depressions, called striations are fabrication remnants due to the cold rolled foils and observed on the surface\cite{kim_synthesis_2012-1}. Also some manufacturers apply a thin layer of chromium oxide for corrosion protection\cite{bin_zhang_low-temperature_2012}, that has to be removed prior \textit{h}-BN growth. A common procedure to reduce the roughness of a material is to mechanically polish the surface. When a small roughness $$RMS\ \hat{=}\ S_q = \frac{1}{N}\sum_{n=1}^N\left(z_n-\bar{z}\right) \qquad z: \textnormal{heigth at point n}, \quad \bar{z} = \textnormal{mean heigth}$$ is needed, electrochemical polishing is an alternative.
 
 A comprehensive overview of \index{electrochemical polishing} electrochemical polishing of Cu surfaces with different etchants  can be found in \cite{jinshan_electrochemical_2004}. The following gives a short introduction in chemical polishing as used for preparation of thin copper foils.\cite{antoine_polishing_1999, lilje_improved_2004, schulz_engeneering_2018}
 
@@ -107,20 +107,24 @@ After etching, the samples are rinsed with deionized water to neutralize and rem
 
 \subsection{Sample cleaning}
 \label{sec:sample-cleaning}
-Remaining contaminations 
+Contaminations 
 %in copper (Ag: \SI{0.8}{ppm}, Pb: \SI{0.3}{ppm}, Bi: \SI{0.8}{ppm}) and silver (Cu: \SI{2}{ppm}, Fe: \SI{2}{ppm}, Au: \SI{0.8}{ppm}, Ni: \SI{0.8}{ppm}) 
-are removed by repeated sputter\footnote{$U_{accel}=$\SIrange{800}{1000}{\volt}, $T_{sample}\approx \SI{300}{\kelvin}$} and anneal cycles\footnote{Cu: $T_{sample}=\SI{750}{\celsius}$, Ag: $T_{sample}=\SI{450}{\celsius}$, Au\textbackslash Mica: $T_{sample}= \underline{\textbf{get value: 450?}}$} in UHV. Typical cool down temperatures $\leq 5 \frac{K}{s}$ result in a smooth, atomically flat surface with large terrace size. 
+are removed by repeated sputter\footnote{$U_{accel}=$\SIrange{800}{1000}{\volt}, $T_{sample}\approx \SI{300}{\kelvin}$} and anneal cycles\footnote{Cu: $T_{sample}=\SI{750}{\celsius}$, Ag: $T_{sample}=\SI{450}{\celsius}$, Au\textbackslash Mica: $T_{sample}= \underline{\textbf{get value: 450?}}$} in UHV. 
 
-While sputter and anneal times are constant ($\approx$ \SIrange{20}{30}{\minute} and $\approx$ \SI{5}{\minute} respectively), the annealing temperature is chosen well below the melting point of the substrate \textcolor{red}{($T_{anneal}=(\textnormal{Cu}: \SI{}{\celsius} \textnormal{Ag}: \textnormal{Au}: )$)}. Before CVD growth of \textit{h}-BN on Cu(111)/Cu-foils the temperature is higher to accommodate for the elevated growth temperatures.
+While sputter and anneal times are very similar for all substrates ($t_{sputter}\approx \SIrange{20}{30}{\minute}$ and $t_{anneal}\approx \SI{5}{\minute}$ respectively), the annealing temperature is chosen well below the melting point of the substrate but high enough to allow contamination segregation from the bulk to the surface and atomic reordering at the surface. Typical cool down temperatures $\leq 5 \frac{K}{s}$ result in a smooth, atomically flat surface with large terrace size. 
+
+Before CVD growth of \textit{h}-BN on Cu(111)/Cu-foils the temperature is higher to accommodate for the elevated growth temperatures.
 
 \subsection{\textit{h}-BN growth}
-Borazine is used as chemical precursor. It is stored in an evacuated liquid cooler to maintain temperatures below \SI{0}{\celsius} and to ensure no water contaminants are present. Both, elevated temperature and water contaminants, cause the precursor to degenerate quickly in the storage.
+\label{sec:h-BN-growth}
+\textit{h}-BN is grown by catalytic decomposition of the  precursor on hot copper substrates in UHV. Typical borazine partial pressures of $\SI{1e-7}{\milli \bar}$ and evaporation times of $\approx \SI{5}{\minute}$ are used while the sample is kept at \SI{750}{\celsius}. After dosage, the temperature is kept constant for another \SI{5}{\minute} to ensure complete transition of the precursor into the 2D \textit{h}-BN layer and self-healing of defects created at growth. The sample is cooled down with cooling rates $\leq 5 \frac{\SI{}{\kelvin}}{\SI{}{\second}}$ so that no wrinkles are observed at STM temperatures of $\approx \SI{5}{\kelvin}$.
 
-\textit{h}-BN is grown by catalytically decomposing the precursor on hot copper substrates in UHV. Typical partial pressures of $\SI{1e-7}{\milli \bar}$ and evaporation times of $\approx \SI{5}{\minute}$ are used while the sample is kept at \SI{750}{\celsius}. After dosage, the temperature is kept constant for another \SI{5}{\minute} to ensure complete decomposition of the precursor and self-healing of defects present during growth. The sample is cooled down with cooling rates $\leq 5 \frac{\SI{}{\kelvin}}{\SI{}{\second}}$ so that no wrinkles are observed at STM temperatures of $\approx \SI{5}{\kelvin}$.
+Borazine is used as chemical precursor. It is stored in an evacuated liquid cooler to maintain temperatures below \SI{0}{\celsius} and to ensure no water contaminants are present. Both, elevated temperature and water contaminants, cause the precursor to degenerate quickly in the storage. The design can be found in \autoref{sec:borazine-cooler}
 
 \subsection{Molecule deposition}
+\label{sec:molecule-deposition}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Molecules are sublimated in UHV by organic molecular beam epitaxy (OMBE). The two/four pocket evaporators resistively heat small quarz crucibles to the chosen temperature while cooling the unused ones with process water (\SI{18}{\celsius}). Prior to deposition molecules undergo a degas precedure to remove unwanted chemicals from the powder. A shutter is used to choose the open pocket and allows for accurate timing of evaporation periods.
+Molecules are sublimated in UHV by organic molecular beam epitaxy (OMBE). The two/four pocket evaporators resistively heat small quarz crucibles to the chosen temperature while the unused ones are water cooled (\SI{18}{\celsius}). Prior to deposition molecules undergo a degas precedure to remove unwanted chemicals from the powder. A shutter is used to choose the open pocket and allows for accurate timing of evaporation periods.
 
 \begin{table}\centering
 	\caption{Evaporation and degas temperatures used for different molecules.}

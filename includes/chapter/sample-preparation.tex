@@ -1,12 +1,14 @@
 \subsection{Etching copper foils}
-Growing high quality \textit{h}-BN ad layers on polycrystalline copper foils requires a smooth surface, but as ordered Cu foils exhibit a root-mean-square (RMS) surface roughness $S_q$ of about \SI{218}{\nm}\cite{bin_zhang_low-temperature_2012}. Steep, linear depressions, called striations are fabrication remnants due to the cold rolled foils and observed on the surface\cite{kim_synthesis_2012-1}. Also some manufacturers apply a thin layer of chromium oxide for corrosion protection\cite{bin_zhang_low-temperature_2012}, that has to be removed prior \textit{h}-BN growth. A common procedure to reduce the roughness of a material is to mechanically polish the surface. When a small roughness $$RMS\ \hat{=}\ S_q = \frac{1}{N}\sum_{n=1}^N\left(z_n-\bar{z}\right) \qquad z: \textnormal{heigth at point n}, \quad \bar{z} = \textnormal{mean heigth}$$ is needed, electrochemical polishing is an alternative.
+Growing high quality \textit{h}-BN ad layers on polycrystalline copper foils requires a smooth surface, but as ordered Cu foils exhibit a root-mean-square (RMS) surface roughness $S_q$ of about \SI{218}{\nm}\cite{bin_zhang_low-temperature_2012}. Steep, linear depressions, called striations are fabrication remnants due to the cold rolled foils and observed on the surface\cite{kim_synthesis_2012-1}. Also some manufacturers apply a thin layer of chromium oxide for corrosion protection\cite{bin_zhang_low-temperature_2012}, that has to be removed prior \textit{h}-BN growth. A common procedure to reduce the roughness of a material is to mechanically polish the surface. When a small mean square roughness or RMS of height irregularities  
+$$RMS\ \hat{=}\ S_q = \frac{1}{N}\sum_{n=1}^N\left(z_n-\bar{z}\right) \qquad z: \textnormal{heigth at point n}, \quad \bar{z} = \textnormal{mean heigth}$$ 
+is needed, electrochemical polishing is an alternative.
 
 A comprehensive overview of \index{electrochemical polishing} electrochemical polishing of Cu surfaces with different etchants  can be found in \cite{jinshan_electrochemical_2004}. The following gives a short introduction in chemical polishing as used for preparation of thin copper foils.\cite{antoine_polishing_1999, lilje_improved_2004, schulz_engeneering_2018}
 
 
 \label{sec:etching}
 \paragraph{Electrochemical cell}
-An electrochemical cell used for etching is shown in \autoref{fig:etching-setup}. A beaker is filled with etching solution and two electrodes are immersed. One electrode is the material to be polished (copper foil, working electrode), the other one is the counter electrode (copper in this case, too). Both are placed with \SI{3}{\centi \meter} apart and are oriented parallel. The working electrode has a surface of about \SI{1}{\square \centi \meter}, the counter electrode of about \SI{16}{\square \centi \meter}. 
+The electrochemical cell used for etching is sketched in \autoref{fig:etching-setup}. A beaker is filled with etching solution and two electrodes are immersed. One electrode is the material to be polished (copper foil, working electrode), the other one is the counter electrode (copper in this case, counter electrode). Both are placed with \SI{3}{\centi \meter} apart and are oriented parallel. The working electrode has a surface of about \SI{1}{\square \centi \meter}, the counter electrode of about \SI{16}{\square \centi \meter}. 
 
 The beaker is filled with etching solution until both electrodes are covered.
 
@@ -25,7 +27,7 @@ An electric connection is made between working electrode (\SI{0}{\volt} < U < \S
 	\label{fig:setup-and-characteristic}
 \end{figure}
 
-\paragraph{aqueous etching solution}
+\paragraph{Aqueous etching solution}
 Within this work, Cu-foil polishing will be done with the recipe broken down in \autoref{tab:used-etching-solution}. It has several advantages. Since the main goal is the achieve a flat surface, the resulting roughness of the surface is the most important parameter. In contrast to etching recipes without PEG (where oxygen pitting is an issue) and more complex etching recipes (to reduce etching time on exchange of higher surface roughness) a simple etching solution is chosen.
 
 Here we use a simple but efficient etching solution that results in a smooth surface and little etch pits. Pure aqueous ortho-phospheric acid (\SI{85}{\percent}) was investigated \cite{jinshan_electrochemical_2004} and best results are achieved when a voltage of \SI{1.2}{\volt} is applied. The limiting current is \SI{12}{\milli \ampere} and an indication how much material is transported through solution. If now Ethylene-glycol (\SI{5}{\percent} of solutions volume) and deionized water (\SI{25}{\percent}) are added, the potential to etch at remains the same, but the critical current is increased \textcolor{red}{\textbf{due to}}. Not only does the etching rate increase by a factor of 4, the resulting roughness remains the same \SI{5}{\nano \meter}, so both foils are of comparable quality.

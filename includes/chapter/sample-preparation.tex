@@ -1,18 +1,18 @@
 \subsection{Etching copper foils}
-Growing high quality \textit{h}-BN ad layers on polycrystalline copper foils requires a smooth surface, but as ordered Cu foils exhibit a root-mean-square (RMS) surface roughness $S_q$ of about \SI{218}{\nm}\cite{bin_zhang_low-temperature_2012}. Steep, linear depressions, called striations are fabrication remnants due to the cold rolled foils and observed on the surface\cite{kim_synthesis_2012-1}. Also some manufacturers apply a thin layer of chromium oxide for corrosion protection\cite{bin_zhang_low-temperature_2012}, that has to be removed prior \textit{h}-BN growth. A common procedure to reduce the roughness of a material is to mechanically polish the surface. When a small mean square roughness or RMS of height irregularities  
+Growing high quality \textit{h}-BN ad layers on polycrystalline copper foils requires a smooth surface, but as ordered Cu foils exhibit a root-mean-square (RMS) surface roughness $S_q$ of up to \SI{218}{\nm}\cite{bin_zhang_low-temperature_2012}. Steep, linear depressions, called striations are fabrication remnants due to the cold rolled foils and are observed on the surface\cite{kim_synthesis_2012-1}. Also some manufacturers apply a thin layer of chromium oxide for corrosion protection\cite{bin_zhang_low-temperature_2012}, that has to be removed prior \textit{h}-BN growth. A common procedure to reduce the roughness of a material is to mechanically polish the surface. When an even smaller RMS of height irregularities  
 $$RMS\ \hat{=}\ S_q = \frac{1}{N}\sum_{n=1}^N\left(z_n-\bar{z}\right) \qquad z: \textnormal{heigth at point n}, \quad \bar{z} = \textnormal{mean heigth}$$ 
 is needed, electrochemical polishing is an alternative.
 
-A comprehensive overview of \index{electrochemical polishing} electrochemical polishing of Cu surfaces with different etchants  can be found in \cite{jinshan_electrochemical_2004}. The following gives a short introduction in chemical polishing as used for preparation of thin copper foils.\cite{antoine_polishing_1999, lilje_improved_2004, schulz_engeneering_2018}
+\textcolor{red}{What are typical values for single crystal and foils? Check \cite{jinshan_electrochemical_2004} and experimental images in STM of Cu(111).}
+
+The following gives a short introduction in chemical polishing as used for preparation of thin copper foils.\cite{antoine_polishing_1999, lilje_improved_2004, schulz_engeneering_2018}
 
 
 \label{sec:etching}
 \paragraph{Electrochemical cell}
-The electrochemical cell used for etching is sketched in \autoref{fig:etching-setup}. A beaker is filled with etching solution and two electrodes are immersed. One electrode is the material to be polished (copper foil, working electrode), the other one is the counter electrode (copper in this case, counter electrode). Both are placed with \SI{3}{\centi \meter} apart and are oriented parallel. The working electrode has a surface of about \SI{1}{\square \centi \meter}, the counter electrode of about \SI{16}{\square \centi \meter}. 
+The electrochemical cell, used to etch copper foils, is sketched in \autoref{fig:etching-setup}. A beaker is filled with etching solution and two electrodes are immersed. One electrode is the material to be polished (copper foil, working electrode), the other one is the counter electrode (copper in this case, counter electrode). Both are placed with \SI{3}{\centi \meter} apart and are oriented parallel. In this setup the working electrode has a surface of about \SI{1}{\square \centi \meter}, the counter electrode of about \SI{16}{\square \centi \meter}. The beaker is filled with etching solution until both electrodes are immersed.
 
-The beaker is filled with etching solution until both electrodes are covered.
-
-An electric connection is made between working electrode (\SI{0}{\volt} < U < \SI{2}{\volt}) and the power supply. The counter electrode acts as ground. Both electrodes are fixed with alligator clamps to the wires.
+An electric connection is made between working electrode (\SI{0}{\volt} < U < \SI{2}{\volt}) and the power supply. The counter electrode acts as ground. Both electrodes are fixed with alligator clamps to the wires. The current through the etchant depends on the applied potential and the etchant composition. The larger the current carried by the ionized copper atoms, the more material is transported from the working to the counter electrode.
 
 \begin{figure}\centering
 	\subfigure[Sketch of a typical setup used for electro polishing. A beaker is used to hold the aqueous cell medium. The copper foil and a counter electrode are immersed and connected a the + and - connections of a DC power supply. Image reproduced from \cite{stables_report_2008}]{
@@ -23,24 +23,17 @@ An electric connection is made between working electrode (\SI{0}{\volt} < U < \S
 		\includegraphics[width=0.4\textwidth]{./images/oxygen-pitting}
 		\label{fig:oxygen-pitting}
 	}
-	\caption{Experimental setup and voltage characteristic used for electrochemical polishing. \subref{fig:etching-setup} In the process the foil is connected as working electrode (+) and opposed by a counter electrode (-). Material is then transported from the working to the counter electrode resulting in a polished foil surface. \subref{fig:oxygen-pitting} Choosing proper voltage and current values in the polishing plateau is important for good results.}
+	\caption{Experimental setup and voltage characteristic used for electrochemical polishing of copper foils. \subref{fig:etching-setup} In the process the foil is connected as working electrode (+) and opposed by a counter electrode (-). Material is then transported from the working to the counter electrode resulting in a polished foil surface. \subref{fig:oxygen-pitting} Choosing proper voltage and current values within the polishing plateau is important for good results.}
 	\label{fig:setup-and-characteristic}
 \end{figure}
 
-\paragraph{Aqueous etching solution}
-Within this work, Cu-foil polishing will be done with the recipe broken down in \autoref{tab:used-etching-solution}. It has several advantages. Since the main goal is the achieve a flat surface, the resulting roughness of the surface is the most important parameter. In contrast to etching recipes without PEG (where oxygen pitting is an issue) and more complex etching recipes (to reduce etching time on exchange of higher surface roughness) a simple etching solution is chosen.
+\paragraph{Aqueous etching solution}\index{electrochemical polishing}
+Many different etching solutions are presented in literature, the most widely ones are summarized by Jinshan et al. in \cite{jinshan_electrochemical_2004}. Since the main goal is to achieve a flat surface, the resulting roughness of the surface is the most important parameter. 
 
-Here we use a simple but efficient etching solution that results in a smooth surface and little etch pits. Pure aqueous ortho-phospheric acid (\SI{85}{\percent}) was investigated \cite{jinshan_electrochemical_2004} and best results are achieved when a voltage of \SI{1.2}{\volt} is applied. The limiting current is \SI{12}{\milli \ampere} and an indication how much material is transported through solution. If now Ethylene-glycol (\SI{5}{\percent} of solutions volume) and deionized water (\SI{25}{\percent}) are added, the potential to etch at remains the same, but the critical current is increased \textcolor{red}{\textbf{due to}}. Not only does the etching rate increase by a factor of 4, the resulting roughness remains the same \SI{5}{\nano \meter}, so both foils are of comparable quality.
-
-Electrons and atoms at the solid surface have higher energy states. Thus some of the atoms on the metal surface may lose electrons to form ions. These ions may also recombine with electrons and become atoms at another moment. Depending on the electronic structures, some metals (such as sodium) are easier than others (such as platinum) to ionize. Copper is relatively stable. Still, some of the surface atoms may be expected to ionize at a moment. The ionization process may be promoted when the metal is in touch with aqueous solution because: 
-\begin{itemize}
-	\item Metal ions can not move in the metal electrode but can move through the solution, producing electric current in solution with an applied potential
-	\item Electrons can move freely in metal solid (electric current in a metal) but can not survive in solution and will quickly recombine with positive ions
-	\item Water dipoles and negative ions in solution may drag the surface metal ions into the solution
-\end{itemize}
+Here two simple but efficient etching solutions that both result in a smooth surface and little etch pits are compared in \autoref{table:used-etching-solutions}. First, pure aqueous ortho-phospheric acid (\SI{85}{\percent}) was investigated as etchant \cite{jinshan_electrochemical_2004} with a anode-cathode potential of \SI{1.2}{\volt}. The limiting current is \SI{12}{\milli \ampere}. If now Ethylene-glycol (EG) (\SI{5}{\percent} of solutions volume) and deionized water (\SI{25}{\percent}) are added, the potential range to etch at remains the same, but the critical current is increased. Although the etching rate increases by a factor of 4, the resulting roughness remains the same \SI{5}{\nano \meter}, so foils etched with one of both recipes are of comparable quality. In contrast to etching recipes without EG where oxygen pitting is an issue (see \autoref{oxygen-pitting}) and more complex etching recipes (with reduced etching time but larger RMS) the chosen etchant composition (see \autoref{tab:composition-etching-solution-I}) is reported to give the best results.
 
 \begin{table}\centering
-	\caption{Used etching solutions (compare \cite[130]{jinshan_electrochemical_2004}). Note the change in the removal rate due to higher limiting currents in the solution after adding ethylene-glycol to the solution.}
+	\caption{Used etching solutions (compare \cite[130]{jinshan_electrochemical_2004}). Note the change in the removal rate due to higher limiting currents in the solution after adding ethylene glycol to the solution.}
 	\begin{tabular}{lcc}
 		& I & II \\ \hline \hline
 		$\SI{85}{\percent} H_3PO_4$ & 70 & 100 \\
@@ -60,42 +53,49 @@ Electrons and atoms at the solid surface have higher energy states. Thus some of
 	\begin{tabular}{lcccc}
 		&unit	&$H_3PO_4$ (85\%)&	EG	&	$H_2O$	\\
 		Dichte $\rho$   &[$g/cm^3$]	&	1.87	&	1.11	&	1.00	\\
-		$1/rho$		&[$cm^3/g$]	&	0.54	&	0.90	&	1.00	\\
+%		$1/rho$		&[$cm^3/g$]	&	0.54	&	0.90	&	1.00	\\
 		Anteil 		& \%		&	70	&	5	&	25	\\ \hline
 		Menge gesamt    &[$cm^3$]	&		\multicolumn{3}{c}{150} 	\\
 		Menge anteilig  &[$cm^3$]	&	105.00	&	7.50	&	37.50	\\
 		Gewicht         &[g]		&	196.35	&	8.33	&	37.50	\\
 	\end{tabular}
-	\label{tab:used-etching-solution}
+	\label{tab:composition-etching-solution-I}
 \end{table}
 
-\paragraph{chemical reaction}\index{electrochemical polishing!chemical reaction}
-The electrode connected to the positive pole of the power supply is called anode. And the one connected to the negative pole of the power supply is called cathode. When the applied voltage is high enough, electrons in the anode may be pumped out and the metal atoms on the anode surface will be oxidized (e.g., $Cu - 2e = Cut^{2+}$) and dissolved into the electrolyte solution. Under electrical field, the positive ions (cations) move towards cathode and negative ions (anions) move towards anode. The cations may get electrons and be reduced to neutral atoms (e.g., $Cu^{2-} + 2e = Cu$) again at the cathode surface. Therefore, charge transfer between the two electrodes is carried out via the ion drift in the electrolyte and electron conduction in metal wire. When the working electrode is set to be anode, dissolution is processed at certain potential. Likewise, when the working electrode is set to be cathode, it can result in deposition. For electro polishing of copper, the copper part to be polished is set to be anode while the cathode can be any conductive material (e.g., copper).
+\paragraph{Redox reaction}\index{electrochemical polishing!chemical reaction}
 
-The critical potential at which the oxidation / reduction starts to occur is related to the standard redox potential for a specific anode material. The redox potential $E_O$ is a measure (in volts) of the affinity of a substance for electrons - its electro negativity - compared with hydrogen (which is set at \SI{0}{\volt}). Substances more strongly electronegative (i.e., capable of oxidizing or accepting electrons) than hydrogen have positive redox potentials (e.g., $Cu/CU^{2+}$: $E_O = \SI{0.34}{\volt}$). Substances less electronegative (i.e., capable of reducing or giving up electrons) than hydrogen have negative redox potentials (e.g., $Cr^{3+}/Cr^{2+}$: $E_O = \SI{-1.07}{\volt}$)\cite{jinshan_electrochemical_2004}
-
-\paragraph{Voltage-current-characteristic or polarization curve}
+Electrons and atoms at the solid surface have higher energy states. Thus some of the atoms on the metal surface may lose electrons to form ions. These ions may also recombine with electrons and become atoms at another moment. Depending on the electronic structures, some metals (such as sodium) are easier than others (such as platinum) to ionize. Copper is relatively stable. Still, some of the surface atoms may be expected to ionize at a moment. The ionization process may be promoted when the metal is in touch with an aqueous solution because: 
 \begin{itemize}
-	\item[-]On a polycrystalline metal surface there are sites, such as defects and grain boundaries, where atoms are at higher energy states. In addition, due to arbitrary crystal orientation, there are different crystalline planes with different energy states of atoms on the electrode surface. Therefore, atoms at all these different sites and planes have different standard redox potential $E_O$, and as a result, have different dissolution rates.
-%	 according to eq. \ref{dissolution-rate}. 
-	Such an anodic dissolution will not lead to polishing. Instead, a crystallographic etching is produced (reference [9, 33-35] within \cite{jinshan_electrochemical_2004}). This is true at lower current (or applied potential). This refers to the \textbf{"etching"} regime in \autoref{fig:oxygen-pitting} with $U<\SI{1.5}{\volt}$.
-	\item[-]The plateau where the current remains almost constant with increasing voltage is referred to as \textbf{"polishing plateau"}. Overall, the values of iL and EL of the limiting current plateau and the shape of a polarization curve depends on electrolyte solution, anode material, disk rotating speed, solution circulation, temperature, and the distance between anode and cathode.
-	Of all the factors, electrolyte is the most important one determining the polarization curve.
-	\item[-]With continuing increase of applied potential, other reactions than Cu oxidation and reduction may occur and contribute to the increasing current. These reactions produce $H_2$ and $O_2$ bubbles, which occur at or reach the anode surface. This is known as \textbf{"oxygen pitting"}.
+	\item Metal ions can not move in the metal electrode but can move through the solution, generating an electric current in solution when an potential is applied.
+	\item Electrons can move freely in metal solid (electric current in a metal) but can not survive in solution because they will quickly recombine with positive ions
+	\item Water dipoles and negative ions in solution may form a shell around the metal atom and drag the surface metal ions into the solution.
 \end{itemize}
 
-\paragraph{oxygen pitting}
-Gas (oxygen or hydrogen) bubbles may block $Cu^{2+}$ ion transport and therefore terminate the electrochemical dissolution process on the area inside the bubbles. However, the residual solution on the surface area inside the bubbles may react with Cu atom and result in chemical etching. Depending on the chemical property of the electrolyte solution and the value of current density at which the electrochemical dissolution is occurring, the etching speed can be higher than the rate of electrochemical dissolution. In this case, pits will be produced on the anode and produce a rough surface. If etching does not occur inside the bubbles, or if its speed is slower than that of electrochemical dissolution process, the area inside the bubbles will remain and appears as protruding particles after the electrochemical dissolution process. In either case, a rough surface is produced. Approaches to reduce the effect of oxygen bubbling are done by altering the etching solution with different additives.
+The electrode connected to the positive pole of the power supply is called anode, the one connected to the negative pole of the power supply is called cathode. When the applied voltage is high enough, electrons in the anode may be pumped out and the metal atoms on the anode surface will be oxidized (e.g., $Cu - 2e = Cu^{2+}$) and dissolved into the electrolyte solution. Under electrical field, the positive ions (cations) move to the cathode and negative ions (anions) move towards the anode. The cations may fetch electrons here and are reduced to neutral atoms (e.g., $Cu^{2-} + 2e = Cu$) at the cathode surface. Therefore, charge transfer between the two electrodes is carried out via the ion drift in the electrolyte and electron conduction in metal wire. When the coppper foil to be polished is connected to the anode, dissolution is processed at certain potential. Likewise, when the foil is connected to the cathode, it will result in deposition. For electro polishing of copper, the copper part to be polished is set to be anode while the cathode can be any conductive material (e.g. copper).
+
+The critical potential at which the oxidation / reduction starts to occur is related to the standard redox potential for a specific anode material. The redox potential $E_O$ is a measure (in volts) of the electron affinity of a substance - its electro negativity - compared with hydrogen (which is set at \SI{0}{\volt}). Substances more strongly electronegative (i.e., capable of oxidizing or accepting electrons) than hydrogen have positive redox potentials (e.g., $Cu/Cu^{2+}$: $E_O = \SI{0.34}{\volt}$). Substances less electronegative (i.e., capable of reducing or giving up electrons) than hydrogen have negative redox potentials (e.g., $Cr^{3+}/Cr^{2+}$: $E_O = \SI{-1.07}{\volt}$)\cite{jinshan_electrochemical_2004}
+
+\paragraph{Voltage-current-characteristic or polarization curve}
+On a polycrystalline metal surface there are sites, such as defects and grain boundaries, where atoms are at higher energy states. In addition, due to arbitrary crystal orientation, there are different crystalline planes with different energy states of atoms on the electrode surface. Therefore, atoms at all these different sites and planes have different standard redox potential $E_O$, and as a result, have different dissolution rates.
+%	 according to eq. \ref{dissolution-rate}. 
+Such an anodic dissolution will not lead to polishing. Instead, a crystallographic etching is produced (reference [9, 33-35] within \cite{jinshan_electrochemical_2004}). This is true at lower current (or applied potential). This refers to the \textbf{etching regime} in \autoref{fig:oxygen-pitting} with $U<\SI{1.5}{\volt}$.
+The plateau where the current remains almost constant with increasing voltage is referred to as \textbf{polishing plateau}. 
+		
+With continuing increase of applied potential, other reactions than Cu oxidation and reduction may occur and contribute to the increasing current. These reactions produce $H_2$ and $O_2$ bubbles, which occur at or reach the anode surface. This is known as \textbf{oxygen pitting}. Gas (oxygen or hydrogen) bubbles may block $Cu^{2+}$ ion transport and therefore terminate the electrochemical dissolution process on the area inside the bubbles. However, the residual solution on the surface area inside the bubbles may react with Cu atom and result in chemical etching. Depending on the chemical property of the electrolyte solution and the value of current density at which the electrochemical dissolution is occurring, the etching speed can be higher than the rate of electrochemical dissolution. In this case, pits will be produced on the anode and produce a rough surface. If etching does not occur inside the bubbles, or if its speed is slower than that of electrochemical dissolution process, the area inside the bubbles will remain and appears as protruding particles after the electrochemical dissolution process. In either case, a rough surface is produced. Approaches to reduce the effect of oxygen bubbling are done by altering the etching solution with different additives.
+
+Overall, the values of the current plateau and the shape of a polarization curve depends on electrolyte solution, anode material, solution circulation, temperature, and the distance between anode and cathode. Of all the factors, the electrolyte is the most important one determining the polarization curve.
 
 \paragraph{Leveling mechanisms}
-The etching process relies on the fact that the current density (and thus the etching rate) is higher in protruding regions of the copper foil (Ohmic leveling). As a result the surface of the copper foil will be smoothened \cite{luo_effect_2011}. \textcolor{red}{\textbf{Compare with migration smoothing and diffusion smoothing\cite{jinshan_electrochemical_2004, Huo_Electrochemistry_2007}.}}
+Up to now, only the dissolution of copper surface atoms into solution and their deposition at the counter electrode was discussed. If the surface is polished evenly depends on several processes that are known as leveling mechanisms. First of all, the etching process relies on the fact that the current density (and thus the etching rate) is higher in protruding regions of the copper foil (Ohmic leveling). For an evenly wetted copper foil surface, protruding regions have less electrolyte solution between the electrodes. The lower electrical resistance causes a larger current density and thus larger dissolution rates at protruding regions.
+
+Second, the surface geometry determines the shape of the electrostatic potential created at the working electrode. Convex regions at the surface have higher normal electric fields than concave ones, so that the force acting on a ionized copper surface atom is largest at protruding regions. Since the dissolution rate is proportional to the electric field strength, protrusions will be dissolved faster than cavities.\cite{jinshan_electrochemical_2004, Huo_Electrochemistry_2007, luo_effect_2011}
 
 It was shown that best results are achieved with following points fulfilled.\cite{Huo_Electrochemical_2003}
 \begin{itemize}
 	\item The polarization curve shows a wide limiting current plateau (polishing plateau) with low limiting current.
-	\item Etching is performed with voltage regulated.
+	\item Etching is performed voltage regulated.
 	\item Good circulation of the electrolyte solution to ensure even electro polishing.
-	\item Prevent oxygen and hydrogen bubbles created in the etching process to reach the anode surface. Parallel and vertical electrodes are preferred.
+	\item Prevent oxygen and hydrogen bubbles created in the etching process to reach the anode surface. Parallel aligned, vertical electrodes are preferred.
 	\item Extremely close electrodes increase the effect of ohmic leveling, though gas bubbles reach the anode surface quicker.
 \end{itemize}
 
@@ -111,11 +111,9 @@ After etching, the samples are rinsed with deionized water to neutralize and rem
 \label{sec:sample-cleaning}
 Contaminations 
 %in copper (Ag: \SI{0.8}{ppm}, Pb: \SI{0.3}{ppm}, Bi: \SI{0.8}{ppm}) and silver (Cu: \SI{2}{ppm}, Fe: \SI{2}{ppm}, Au: \SI{0.8}{ppm}, Ni: \SI{0.8}{ppm}) 
-are removed by repeated sputter\footnote{$U_{accel}=$\SIrange{800}{1000}{\volt}, $T_{sample}\approx \SI{300}{\kelvin}$} and anneal cycles\footnote{Cu: $T_{sample}=\SI{750}{\celsius}$, Ag: $T_{sample}=\SI{450}{\celsius}$, Au\textbackslash Mica: $T_{sample}= \underline{\textbf{get value: 450?}}$} in UHV. 
+are removed by repeated sputter\footnote{$U_{accel}=$\SIrange{800}{1000}{\volt}, $T_{sample}\approx \SI{300}{\kelvin}$} and anneal cycles\footnote{Cu: $T_{sample}=\SI{750}{\celsius}$, Ag: $T_{sample}=\SI{450}{\celsius}$, Au\textbackslash Mica: $T_{sample}= 450$} in UHV. While sputter and anneal times are very similar for all substrates ($t_{sputter}\approx$ \SIrange{20}{30}{\minute} and $t_{anneal}\approx \SI{5}{\minute}$ respectively), the annealing temperature is chosen well below the melting point of the substrate but high enough to allow contamination segregation from the bulk to the surface and atomic reordering at the surface. Typical cool down temperatures $\leq 5 \frac{K}{s}$ result in a smooth, atomically flat surface with large terrace size. 
 
-While sputter and anneal times are very similar for all substrates ($t_{sputter}\approx \SIrange{20}{30}{\minute}$ and $t_{anneal}\approx \SI{5}{\minute}$ respectively), the annealing temperature is chosen well below the melting point of the substrate but high enough to allow contamination segregation from the bulk to the surface and atomic reordering at the surface. Typical cool down temperatures $\leq 5 \frac{K}{s}$ result in a smooth, atomically flat surface with large terrace size. 
-
-Before CVD growth of \textit{h}-BN on Cu(111)/Cu-foils the temperature is higher to accommodate for the elevated growth temperatures.
+Before CVD growth of \textit{h}-BN on copper the last cleanaing cycle uses annealing temperature in the \textit{h}-BN growth regime to remove contaminations present at growth temperatures.
 
 \subsection{\textit{h}-BN growth}
 \label{sec:h-BN-growth}

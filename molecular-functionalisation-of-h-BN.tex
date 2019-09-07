@@ -32,7 +32,8 @@ headings=normal,		% Kleinere Kapitelüberschriften => check preamble
 headsepline,			% Enable line to seperate head ...
 footsepline,			% ... and foot
 plainfootsepline,		% Footseperation line on chapter start
-draft]
+%draft
+]
 {scrbook}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Change Page Geometry %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[
@@ -66,7 +67,7 @@ outer=30mm,
    \input{./includes/frontmatter/acknowledgements}								%	 				%
    \input{./includes/frontmatter/abstract}										%					%
  \microtypesetup{protrusion=false}												%					%
- \setcounter{tocdepth}{2}														%   [1=sections]	%
+ \setcounter{tocdepth}{5}														%   [1=sections]	%
 	\tableofcontents{}														 	% 					%
 % 	\listoffigures														 		% 					%
 % 	\listoftables																% 					%
@@ -134,14 +135,17 @@ The following section will describe the relevant physical properties of the vari
 %  \input{./includes/chapter/backmatter/crystal-facet}
     %% Orbital calculations
 \chapter{Pyrene}
-In this section extended hückel theory calculations of functionalized pyrene molecules are shown. After structural relaxation via the AM1 semi-empirical method in the Hyperchem software, the result is exported to an IGOR script for presentation. Single molecular orbitals as well as their sum can be shown. For all molecules some basic information is given in a box. The number of atoms, electrons and calculated orbitals is given together with a ball and stick model of the corresponding molecule. Calculated HOMO/LUMO states are shown to the right with their energies noted below.
+
+\input{./includes/chapter/backmatter/pyrene-SI}
+
+\section{\textbf{E}xtended \textbf{H}ückel \textbf{t}herory calculations}
+In the following extended Hückel theory calculations of functionalized pyrene molecules are shown. After structural relaxation via the AM1 semi-empirical method in the Hyperchem software, the result is exported to an IGOR script for presentation. Single molecular orbitals as well as their sum can be shown. For all molecules some basic information is given in a box. The number of atoms, electrons and calculated orbitals is given together with a ball and stick model of the corresponding molecule. Calculated HOMO/LUMO states are shown to the right with their energies noted below.
 The left side of the pages shows occupied states (second column) and their sum (first column). The right side shows the unoccupied in the same manner.
 
 The first two pages will show cis-pyrene as calculated in gas phase together with a model showing the rotation of pyridil legs and the influence on molecular orbitals. Trans- \& tetra-pyrene molecules are shown afterwards.
 
-Due to the same molecular center, all the species show distinct symmetry at their pyrene center. 
+Due to the same molecular center, all the species show distinct symmetry towards their pyrene center. 
 
-\input{./includes/chapter/backmatter/pyrene-SI}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Change to larger page layout
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -162,6 +166,7 @@ Due to the same molecular center, all the species show distinct symmetry at thei
 \chapter{HBBNC}
 \input{./includes/chapter/backmatter/HBBNC-SI} 
 \newgeometry{top=2cm,bottom=2cm}%
+\section{\textbf{E}xtended \textbf{H}ückel \textbf{t}herory calculations}
 \input{./includes/chapter/backmatter/EHT-HBBNC-B3LYP-flat-compare}
 \restoregeometry
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

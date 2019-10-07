@@ -1,7 +1,7 @@
 %\section{Motivation}
 In this chapter copper foils are first chemically polished and prepared for investigation in SEM (p. \pageref{fig:SEM-gb}), AFM (p. \pageref{fig:foil-afm-as-bought}) and STM (p. \pageref{fig:cu-foil-clean-stm}). 
 
-After CVD growth of \textit{h}-BN with borazine, foils are investigated in STM (\autoref{fig:h-bn-overgrown-cu}) and XPS (compare \autoref{fig:xps-self-grown}). 
+After CVD growth of \textit{h}-BN with borazine, foils are investigated in LT-STM (\autoref{fig:h-bn-overgrown-cu}) and XPS (compare \autoref{fig:xps-self-grown}). 
 
 A commercially available \textit{h}-BN/Cu-foil is investigated in XPS after stepwise annealing to \SI{970}{\kelvin} (p. \pageref{sec:commercial-hBN-XPS}). 
 
@@ -9,83 +9,51 @@ At the end of the chapter (p. \pageref{sec:foil-use-case}) a use case shows that
 
 %Comparable experiments  are performed by \cite[8]{stables_report_2008}). 
 
-	\section{Pre-treatment of Cu-foils: Polishing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\FloatBarrier
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Pre-treatment of Cu-foils: Polishing}
 	
 	\paragraph{Experiment realization}The first attempt to etch the Cu-foil was performed with the $5\%_{vol}$ EG, $25\%_{vol}\,H_2O$ filled up with phosphoric acid. The etching was performed in a \SI{200}{\ml} beaker, filled with \SI{150}{\ml} etching solution. The potential was adjusted to be \SI{1.2}{\V} during the polishing process. The current through the solution changes and is typically highest when the polishing process started (\SI{120}{\milli \ampere}). 
 	
 After some minutes the foils reflectivity changes. The surface - shiny before etching - becomes hazy. After some more time the foils reflectivity improves again. 
 	
-	The time spend for polishing depends on the handling (like shaking the beaker or moving the foil in the solution). When no visual change to the surface is observed the etching process is interrupted.\footnote{Since the perfect voltage/current to perform polishing varies in time a automated etching process has been developed. \cite{palmieri_besides_2001}}
+	The time spend for polishing depends on the handling (like shaking the beaker or moving the foil in the solution). When no visual change to the surface is observed the etching process is interrupted.%\footnote{Since the perfect voltage/current to perform polishing varies in time a automated etching process has been developed. \cite{palmieri_besides_2001}}
 	
 During the etching process, as more and more copper settles on the counter electrode, the current and therefore the etching rate decreases continuously. When the beaker is moved, some of the debris on the electrode changes the electrode's surrounding and the etching rate (limiting current) increases again. 
 	
 	Front- and backside of the foil are suspect to different etching processes. The back side is generally more flat, the side facing the counter electrode always shows some additional protrusions.
 
-The foil is cleaned from remaining etchants with purified water first and isopropanol afterwards. Foils are stored in isopropanol to avoid degradation under moist, oxygen rich ambient conditions. 
+The foil is cleaned from remaining etchants with purified water first and isopropyl alcohol afterwards in which they are stored in to avoid degradation under moist, oxygen rich ambient conditions. 
 	
-%	\paragraph{SEM}
-	\label{sec:foil-SEM}
-%	\input{./includes/chapter/sem-technique}
-	
-	\begin{figure}\centering
-		\subfigure[\SI{570}{\micro \meter}$\times$\SI{380}{\micro \meter}]{\includegraphics[width=0.9\textwidth]{./images/Domenik_16031715}
-			\label{fig:SEM-1}
-			
-		}
-		\subfigure[\SI{18}{\micro \meter}$\times$\SI{12}{\micro \meter}]{\includegraphics[width=0.43\textwidth]{./images/Domenik_16031717}
-			\label{fig:SEM-2}
-		} \quad
-		\subfigure[\SI{5.6}{\micro \meter}$\times$\SI{3.7}{\micro \meter}]{\includegraphics[width=0.43\textwidth]{./images/Domenik_16031700}
-			\label{fig:SEM-3}
-		}
-		\caption{SEM image of etched copper foil. Different contrast suggests different grain-orientation within the surface. \subref{fig:SEM-1} Larger image showing the contrast of different grains in the copper-foil, \subref{fig:SEM-2} zoom to an area with two different contrasts and their border. \subref{fig:SEM-3} A dark grain is embedded in an otherwise curly surface. On both, bright small features are visible and attributed to an inhomogeneous etching process. Recorded with U=\SI{5}{\kilo \eV}.}
-		\label{fig:SEM-gb}
-	\end{figure}
-	
-	\subsection{SEM characterization} 
-	One of the foils is blown dry with nitrogen to remove isopropyl alcohol remnants and is put into the loading stage of a \textbf{s}canning \textbf{e}lectron \textbf{m}icroscope (SEM). After operating conditions are met, a series of images is recorded to characterize the overall surface structure of the foil. 
-	
-\autoref{fig:SEM-1} shows a typical surface area. It is apparent that it is imaged in different intensities. According to \cite{wu_effects_2015, wendt_correlation_2007, langlois_crystal_2015} these are attributed to the copper grain orientation within the foil due to their differing resistivity. The derived grain size ranges from a few \SI{}{\micro \meter} to several hundred \SI{}{\micro \meter}. Many grains show distinct intensity differences compared to their neighbors, e.g. in the center region are several easily distinguishable grains. But there are regions where a similar grain intensity makes it hard to attribute different grains to a surface area.
-	
-A border region is shown in \autoref{fig:SEM-2} with larger magnification. Two grains are separated by a boundary running from top left to bottom center. It is irregularly shaped and does not show a preferred direction of propagation.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\FloatBarrier
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 
-Three darker circles in the top left image indicate the presence of different etching rates. Their origin is attributed to the presence of gaseous bubbles that hinder the etchant to immerse the copper surface at all times. The different surface treatment results in a change in contrast in SEM. These features are not frequent enough to co-determine the surface structure.
-
-Smaller bright spots are spread across the image area. Here the conductivity of the specimen is larger so that more electrons are accounted for in the detector. Their size is much smaller and they appear on every image. No long range order can be found but they show similarities to features present for crystal defects after etching. 
-
-The copper foil shows different surface morphologies. While some areas of the appear as  wavy structure in SEM, others are much flatter and appear in a different intensity. \autoref{fig:SEM-3} displays a grain that appears darker than its surrounding and  incorporates several bright small spots. The outline shows different corner geometries so that the overall shape of the grain appears asymmetric. Although the contrast between neighboring grains is clearly visible for this first example, a second smaller, elongated grain is embedded in the lower right part of the copper foil. Its contrast resembles the surrounding, but a border is visible as dark lines. In contrast to the first example, the inside of the grain merges with its surrounding via many small connections and blurs the grain appearance. Although the contrast and morphology is very similar, the copper grain appears to change its orientation.
-	
-No direct determination of the grains' facet orientation has been done due to the lack of EBSD-data in the used SEM setup.
-	
-%	\begin{figure}[] \centering
-%		\includegraphics[width=0.7\textwidth]{./images/Domenik_16031700.jpg}
-%		%\includegraphics[height=6cm]{../Daten/SEM/160317-Domenik/Domenik_16031717.jpg}
-%		\caption{Close up SEM image that shows different surface morphologies after polishing (\SI{5.6}{\micro \meter}$\times$\SI{3.7}{\micro \meter}). A dark grain is embedded in an otherwise curly surface. On both, bright small features are visible and attributed to an inhomogeneous etching process. Recorded with U=\SI{5}{\kilo \eV}}
-%		\label{fig:SEM-surface}
-%	\end{figure}
-	
-	\subsection{RT-AFM}
+\subsection{RT-AFM}
 	\label{sec:foil-AFM}
-	To investigate the sample roughness AFM measurements are done at an AFM operated under ambient conditions.
+	To investigate the sample roughness for as-bought and polished foils, AFM measurements are done under ambient conditions and shown in \autoref{fig:foil-bought-afm}.
 	
 	\begin{figure}\centering
-		\subfigure[Copper foil before etching.]{
-			\includegraphics[width=0.45\textwidth]{./images/as_bought_zoomed_upper_half}
+		\subfigure[Before etching]{
+			\includegraphics[width=0.25\textwidth]{./images/as_bought_zoomed_upper_half}
 			\label{fig:foil-bought-afm}
 		} \quad
-		\subfigure[Copper foil after etching]{
-			\includegraphics[width=0.45\textwidth]{./images/polished0000_zoomed_upper_half}
+		\subfigure[After etching.]{
+			\includegraphics[width=0.25\textwidth]{./images/polished0000_zoomed_upper_half}
 			\label{fig:foil-polished-afm}
 		} 
-		\subfigure[Height profiles of the two samples.]{
-			\includegraphics[width=0.9\textwidth]{./images/as_bought-polished_0000-profiles}
+		\subfigure[Height profiles before (red) and after (black) etching.]{
+			\includegraphics[width=0.4\textwidth]{./images/as_bought-polished_0000-profiles}
 			\label{fig:foil-profiles}
 		}
 		\caption{RT-AFM topography image of copper foil as bought from Alfa Aesar \subref{fig:foil-bought-afm} before and \subref{fig:foil-polished-afm} after etching. \subref{fig:foil-profiles} Height profile averaged across the lower 10 lines of \subref{fig:foil-bought-afm} and \subref{fig:foil-polished-afm}. Roughness along the line profiles decreases after etching ($Rq_{before}=\SI{7.3}{\nano \meter} \rightarrow Rq_{after}=\SI{3.6}{\nano \meter}$). Color scale for both AFM images \SI{100}{\nano \meter}, Image width: \SI{20}{\micro \meter}}.
 		\label{fig:foil-afm-as-bought}
 	\end{figure}
 	
-	Figure \ref{fig:foil-bought-afm} shows the striations that stem from the production process (from top to buttom).
+	The surface of the copper foil is imaged with an uneven height distribution. As expected for a mechanically rolled foil, remnants of the production process can be seen. These striations run parallel from top to bottom and are typically narrower than \SI{1}{\micro \meter}. Their depth is in the range of \SIrange{10}{20}{\nano \meter} and thus comparable to the height variation present in between them. A line profile (\subref{fig:foil-profiles}, red) averages the lowest 10 lines of the image and helps to assess the surface height. Unwanted adsorbates are imaged as bright spots and are ignored in roughness analysis that is \SI{7.4}{\nano \meter}.
+	
 	%\begin{figure}[] \centering
 	%	\subfigure[RMS $\approx$\SI{9}{\nm} in the left image, contrast \SI{100}{\nm}]{
 	%	\includegraphics[width=0.4\textwidth]{./images/polished0000.jpg}
@@ -97,17 +65,19 @@ No direct determination of the grains' facet orientation has been done due to th
 	%	\label{fig:foil-afm-polished}
 	%\end{figure}
 	
-	After etching (U=\SI{1.2}{\volt}, I=\SIrange{120}{250}{\mA} for \SI{5}{\hour} with solution shown in \autoref{tab:composition-etching-solution-I}) the striations vanish and the RMS value decreases by \SI{50}{\percent}. An increase in foil reflectivity is visible with bare eyes. \autoref{fig:foil-afm-as-bought} show RT-AFM images in the same size and contrast - before \subref{fig:foil-bought-afm} and after \subref{fig:foil-polished-afm} etching.
-	The over all structure changes from a heterogeneous sample height to a more even height distribution with far less steep ridges. Those are sufficiently separated in space to exhibit flat regions where the \textit{h}-BN may grow unperturbed. The circular depression is an result of bubbles affecting the rate of etching.
+	\autoref{fig:foil-afm-as-bought} show RT-AFM images in the same size and contrast - before \subref{fig:foil-bought-afm} and after \subref{fig:foil-polished-afm} etching.
 	
+	After etching (U=\SI{1.2}{\volt}, I=\SIrange{120}{250}{\mA} for \SI{5}{\hour} with solution shown in \autoref{tab:composition-etching-solution-I}) the striations vanish and the RMS value decreases by \SI{50}{\percent}. 
+	The over all structure changes from a heterogeneous sample height to an even height distribution with far less ridges. Those present are less steep and sufficiently separated in space to exhibit flat regions in between where \textit{h}-BN may grow unperturbed. The circular depression is an result of bubbles affecting the rate of etching (compare \autoref{fig:SEM-2}).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\FloatBarrier
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
 \subsection{LT-STM characterization}
 \label{section:foil-STM}
-The bought and chemically polished foils are mounted on a sample holder and loaded into the load lock. It is evacuated for \SIrange{2}{3}{\hour}, afterwards the valve is opened to the chamber. During transfer, no noteable increase in the base pressure is noted. The sample is put on the parking slot.
-		
-The sample was initially degassed with slowly increasing temperatures to remove adsorbates like $CO, CO_2$ and $H_2O$.
-		
-After some time of degassing, the sample was prepared with repeated sputter and anneal cycles. The annealing temperatures were increased up to \SI{800}{\degreeCelsius}. 
-The sample was cooled down and observed in LT-STM.
+The bought and chemically polished foils are mounted on a sample holder and loaded into the load lock. It is evacuated for \SIrange{2}{3}{\hour}, afterwards the valve is opened to the chamber. During transfer, no notable increase in the base pressure is noted. The sample was initially degassed with slowly increasing temperatures to remove adsorbates like $CO, CO_2$ and $H_2O$. After some time of degassing, the sample was prepared with repeated sputter and anneal cycles. The annealing temperatures were increased up to \SI{800}{\degreeCelsius}. The sample was cooled down and observed in LT-STM.
 		
 Further experiments were carried out to increase the cleanliness of the \textit{h}-BN on the polycrystalline copper foil. To reduce the amount of elements coming from the body of the foil, it is repeatedly sputtered and annealed to temperatures as high as \SI{800}{\celsius}. This may have also a positive influence on the grain size and amount of corrugation. Several attempts have been made which are described in summary below.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,7 +92,7 @@ After cleaning, the sample is investigated in STM. The foil shows a in-homogeneo
 	\subfigure[Cleaned copper foil before \textit{h}-BN growth. Surface shows many facets.
 %	, the roughness is \SI{70}{\pico\meter}.
 		]{%
-		\includegraphics[width=0.45\textwidth]{./images/F150331-125720}
+		\includegraphics[width=0.4\textwidth]{./images/F150331-125720}
 		\label{fig:cu-foil-clean-stm-1}
 	} \quad
 	%	\subfigure[STM image after \SI{4.5}{\langmuir} of borazine dosage on a \SI{750}{\celsius} hot copper foil surface. A small \textit{h}-BN island can be seen (lower right) on a largely uncovered copper foil background.]{%
@@ -134,7 +104,7 @@ After cleaning, the sample is investigated in STM. The foil shows a in-homogeneo
 	%	\label{cu-foil-hBN-stm}
 	%}
 	\subfigure[Typical height profile. The roughness is $R_q=\SI{70}{\pico\meter}$.]{%
-		\includegraphics[width=0.45\textwidth]{./images/F150331-125720-profile}
+		\includegraphics[width=0.4\textwidth]{./images/F150331-125720-profile}
 		\label{fig:cu-foil-clean-profile}
 	}
 	\caption{Cu-foil \subref{fig:cu-foil-clean-stm-1} after repeated sputtering and annealing cycles. \subref{fig:cu-foil-clean-profile} Height profile. Imaging parameters: \subref{fig:cu-foil-clean-stm-1} \SI{3.6}{\volt}, \SI{0.1}{\nano\ampere}, color scale \SIrange{0}{600}{\pico\meter}, Image width: \SI{88,6}{\nano \meter}, 
@@ -143,6 +113,58 @@ After cleaning, the sample is investigated in STM. The foil shows a in-homogeneo
 	}
 \label{fig:cu-foil-clean-stm}
 \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\FloatBarrier
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{SEM characterization} 
+\label{sec:foil-SEM}
+%	\input{./includes/chapter/sem-technique}
+
+\begin{figure}\centering
+	\subfigure[\SI{570}{\micro \meter}$\times$\SI{380}{\micro \meter}]{\includegraphics[width=0.7\textwidth]{./images/Domenik_16031715}
+		\label{fig:SEM-1}
+	}
+	\subfigure[\SI{18}{\micro \meter}$\times$\SI{12}{\micro \meter}]{\includegraphics[width=0.33\textwidth]{./images/Domenik_16031717}
+		\label{fig:SEM-2}
+	} \quad
+	\subfigure[\SI{5.6}{\micro \meter}$\times$\SI{3.7}{\micro \meter}]{\includegraphics[width=0.33\textwidth]{./images/Domenik_16031700}
+		\label{fig:SEM-3}
+	}
+	\caption{SEM image of etched copper foil. Different contrast suggests different grain-orientation within the surface. \subref{fig:SEM-1} Larger image showing the contrast of different grains in the copper-foil, \subref{fig:SEM-2} zoom to an area with two different contrasts and their border. \subref{fig:SEM-3} A dark grain is embedded in an otherwise curly surface. On both, bright small features are visible and attributed to an inhomogeneous etching process. Recorded with U=\SI{5}{\kilo \eV}.}
+	\label{fig:SEM-gb}
+\end{figure}
+
+One of the foils is blown dry with nitrogen to remove isopropyl alcohol remnants and is put into the loading stage of a \textbf{s}canning \textbf{e}lectron \textbf{m}icroscope (SEM). After operating conditions are met, a series of images is recorded to characterize the overall surface structure of the foil. 
+
+\autoref{fig:SEM-1} shows a typical surface area. It is apparent that it is imaged in different intensities. According to \cite{wu_effects_2015, wendt_correlation_2007, langlois_crystal_2015} these are attributed to the copper grain orientation within the foil due to their differing resistivity. The derived grain size ranges from a few \SI{}{\micro \meter} to several hundred \SI{}{\micro \meter}. Many grains show distinct intensity differences compared to their neighbors, e.g. in the center region are several easily distinguishable grains. But there are regions where a similar grain intensity makes it hard to attribute different grains to a surface area.
+
+A border region is shown in \autoref{fig:SEM-2} with larger magnification. Two grains are separated by a boundary running from top left to bottom center. It is irregularly shaped and does not show a preferred direction of propagation.
+
+Three darker circles in the top left image indicate the presence of different etching rates. Their origin is attributed to the presence of gaseous bubbles that hinder the etchant to immerse the copper surface at all times. The different surface treatment results in a change in contrast in SEM. These features are not frequent enough to co-determine the surface structure.
+
+Smaller bright spots are spread across the image area. Here the conductivity of the specimen is larger so that more electrons are accounted for in the detector. Their size is much smaller and they appear on every image. No long range order can be found but they show similarities to features present for crystal defects after etching. 
+
+The copper foil shows different surface morphologies. While some areas appear as wavy structure in SEM, others are much flatter. \autoref{fig:SEM-3} displays a grain that appears darker than its surrounding and incorporates some bright small spots. The outline shows no obvious corner geometry so that the overall shape of the grain appears asymmetric. 
+
+Although the contrast between neighboring grains is clearly visible for this first example, a second smaller, elongated grain is embedded in the lower right part of the image. Its contrast resembles the surrounding, but a border is visible as dark, fuzzy lines. In contrast to the first example, the inside of this grain merges with its surrounding via many small connections. These bridges across the boundary hinder the grain distinction from the embedding grain. 
+
+Although the contrast and morphology is very similar, one can see a change in the copper grain surface as it changes its orientation. One can see this as change in propagation direction of the wavy surface. While for the large grain the waves run from top to bottom, the inset grain appears to change their propagation direction to be more horizontal.
+
+No direct determination of the grains' facet orientation has been done due to the lack of EBSD-data in the used SEM setup.
+
+%	\begin{figure}[] \centering
+%		\includegraphics[width=0.7\textwidth]{./images/Domenik_16031700.jpg}
+%		%\includegraphics[height=6cm]{../Daten/SEM/160317-Domenik/Domenik_16031717.jpg}
+%		\caption{Close up SEM image that shows different surface morphologies after polishing (\SI{5.6}{\micro \meter}$\times$\SI{3.7}{\micro \meter}). A dark grain is embedded in an otherwise curly surface. On both, bright small features are visible and attributed to an inhomogeneous etching process. Recorded with U=\SI{5}{\kilo \eV}}
+%		\label{fig:SEM-surface}
+%	\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\FloatBarrier
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 
 \section{CVD-Growth of \textit{h}-BN with borazine}
 The sample was sputtered and annealed several times to temperatures of \SI{800}{\celsius}. Before the dosage it was held 5 minutes at \SI{750}{\celsius}. Borazine was dosed with the same pressure as before (\SI{1e-7}{\milli \bar}) but for \SI{1}{\minute} and at a lower temperature of \SI{750}{\celsius}. After the preparation the sample was kept at \SI{750}{\celsius} for another minute. It was cooled down slowly.
